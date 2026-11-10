@@ -1,0 +1,328 @@
+{
+  "kind": "one supported old-towel corner shelf feasibility; no asset created",
+  "wood_parts_board_local": [
+    {
+      "name": "front_wood_leaf",
+      "center": [
+        -0.17,
+        0.149,
+        0.1425
+      ],
+      "half": [
+        0.125,
+        0.029,
+        0.0075
+      ]
+    },
+    {
+      "name": "left_wood_leaf",
+      "center": [
+        -0.2875,
+        0.089,
+        0.1425
+      ],
+      "half": [
+        0.0075,
+        0.031,
+        0.0075
+      ]
+    },
+    {
+      "name": "left_front_leg",
+      "center": [
+        -0.2875,
+        0.1665,
+        0.0675
+      ],
+      "half": [
+        0.0075,
+        0.0075,
+        0.0675
+      ]
+    },
+    {
+      "name": "right_front_leg",
+      "center": [
+        -0.0525,
+        0.1665,
+        0.0675
+      ],
+      "half": [
+        0.0075,
+        0.0075,
+        0.0675
+      ]
+    },
+    {
+      "name": "left_side_leg",
+      "center": [
+        -0.2875,
+        0.074,
+        0.0675
+      ],
+      "half": [
+        0.0075,
+        0.0075,
+        0.0675
+      ]
+    }
+  ],
+  "towel_restored_center_board": [
+    -0.17,
+    0.11806697694740742,
+    0.152
+  ],
+  "towel_full_main_andfold_xy": [
+    [
+      -0.285,
+      -0.055
+    ],
+    [
+      0.06806697694740742,
+      0.1680669769474074
+    ]
+  ],
+  "towel_bottom_z_world_m": 1.05,
+  "wood_and_existing_vanity_top_world_m": 1.05,
+  "wood_bottom_top_world_m": [
+    1.035,
+    1.05
+  ],
+  "legs_bottom_top_world_m": [
+    0.9,
+    1.035
+  ],
+  "continuous_wood_table": [
+    {
+      "name": "front_wood_leaf",
+      "continuous_world_XY": [
+        -0.210248718175397,
+        -0.010677443677200037,
+        -0.3009255473737542,
+        0.006090911349603451
+      ],
+      "full_table": true
+    },
+    {
+      "name": "left_wood_leaf",
+      "continuous_world_XY": [
+        -0.15312986850068894,
+        0.05038063700955685,
+        -0.30094880822348014,
+        -0.2253156497585394
+      ],
+      "full_table": true
+    },
+    {
+      "name": "left_front_leg",
+      "continuous_world_XY": [
+        -0.20630948716334818,
+        -0.049084946044676156,
+        -0.30023095466308647,
+        -0.22603350331893313
+      ],
+      "full_table": true
+    },
+    {
+      "name": "right_front_leg",
+      "continuous_world_XY": [
+        -0.16550216541161958,
+        -0.08989226779640479,
+        -0.06880113270521758,
+        0.005396318638935749
+      ],
+      "full_table": true
+    },
+    {
+      "name": "left_side_leg",
+      "continuous_world_XY": [
+        -0.11521477000971893,
+        0.04200977110895307,
+        -0.29947312585855584,
+        -0.22679165926870834
+      ],
+      "full_table": true
+    }
+  ],
+  "full_table_supported": true,
+  "source_hand_exact_one_adverse_domain_state": {
+    "board_yaw_deg": 80,
+    "source_xy_perturbation": [
+      0.02,
+      0.02
+    ],
+    "board_xy_perturbation": [
+      -0.02,
+      -0.02
+    ],
+    "source_body_board_xyz": [
+      -0.2021709959324495,
+      0.2428815740043876,
+      0.039
+    ],
+    "original_real_grasp_no_offset": true,
+    "open_fingers": [
+      0.04,
+      -0.04
+    ]
+  },
+  "actual_gripper_vertex_inside_wood": [
+    {
+      "hand_geom": "gripper0_right_hand_visual",
+      "physical": false,
+      "wood_part": "front_wood_leaf",
+      "actual_vertex_index": 397,
+      "actual_vertex_board_xyz": [
+        -0.10956648949680672,
+        0.14142857870089998,
+        0.14874153829544048
+      ],
+      "inside_real_wood_depth_to_boundary_m": 0.0012584617045595103
+    },
+    {
+      "hand_geom": "gripper0_right_hand_collision",
+      "physical": true,
+      "wood_part": "front_wood_leaf",
+      "actual_vertex_index": 12,
+      "actual_vertex_board_xyz": [
+        -0.09078332839284964,
+        0.15097545040775584,
+        0.14974827657883386
+      ],
+      "inside_real_wood_depth_to_boundary_m": 0.000251723421166139
+    }
+  ],
+  "gripper_extents": [
+    {
+      "geom": "gripper0_right_hand_visual",
+      "physical": false,
+      "minimum": [
+        -0.13911262508705738,
+        0.1389350794145584,
+        0.09004378305896718
+      ],
+      "maximum": [
+        -0.07606796691908865,
+        0.34345147526080066,
+        0.18198954374558945
+      ]
+    },
+    {
+      "geom": "gripper0_right_hand_collision",
+      "physical": true,
+      "minimum": [
+        -0.1392032808050967,
+        0.13889185421335443,
+        0.09008161159036943
+      ],
+      "maximum": [
+        -0.0759515799710066,
+        0.343307452679861,
+        0.18196856349891938
+      ]
+    },
+    {
+      "geom": "gripper0_right_finger1_visual",
+      "physical": false,
+      "minimum": [
+        -0.1180890566151449,
+        0.2827978093098638,
+        0.04974388165324506
+      ],
+      "maximum": [
+        -0.09708659591899113,
+        0.3092270634141656,
+        0.1035104306138096
+      ]
+    },
+    {
+      "geom": "gripper0_right_finger1_collision",
+      "physical": true,
+      "minimum": [
+        -0.11808231487018936,
+        0.28274893116218475,
+        0.049794727582434646
+      ],
+      "maximum": [
+        -0.09710804357681901,
+        0.30928495593757505,
+        0.10351206636135604
+      ]
+    },
+    {
+      "geom": "gripper0_right_finger1_pad_collision",
+      "physical": true,
+      "minimum": [
+        -0.11558749665445214,
+        0.28238157400438746,
+        0.054643762178959825
+      ],
+      "maximum": [
+        -0.09958749665445216,
+        0.29038157400438747,
+        0.07064376217895979
+      ]
+    },
+    {
+      "geom": "gripper0_right_finger2_visual",
+      "physical": false,
+      "minimum": [
+        -0.1180883973899133,
+        0.17653608459460957,
+        0.04974388165324481
+      ],
+      "maximum": [
+        -0.09708593669375953,
+        0.20296533869891137,
+        0.10351043061380949
+      ]
+    },
+    {
+      "geom": "gripper0_right_finger2_collision",
+      "physical": true,
+      "minimum": [
+        -0.11806694973208542,
+        0.17647819207120014,
+        0.04979472758243462
+      ],
+      "maximum": [
+        -0.09709267843871508,
+        0.2030142168465905,
+        0.10351206636135588
+      ]
+    },
+    {
+      "geom": "gripper0_right_finger2_pad_collision",
+      "physical": true,
+      "minimum": [
+        -0.11558749665445227,
+        0.19538157400438771,
+        0.054643762178959644
+      ],
+      "maximum": [
+        -0.09958749665445228,
+        0.20338157400438772,
+        0.07064376217895971
+      ]
+    }
+  ],
+  "all_domain_source_palm_clear": false,
+  "geometry_counterexample_not_actual_contact": true,
+  "Scene": 0,
+  "IK": 0,
+  "controls": 0,
+  "physics": 0,
+  "GPU_models": 0,
+  "source_slot_mass_risk_thresholds_unchanged": true,
+  "limitations": [
+    "Exact single adverse configuration falsifies whole-domain source clearance if intersecting; absence alone cannot certify whole-domain clearance.",
+    "Wood geometry remains proposed; no live XML/Scene or control constructed.",
+    "Full wrist route requires separate root approval, not inferred from v7 same target slot."
+  ],
+  "inputs_sha256": {
+    "__LEASH_ROOT__/research/v4/candidates/user_rework_p4_20260927/p402_front_vanity_v1/compiled.xml": "2271785d25eb4caf0a12d76b0125cb6ace9980bc3a1cd22540469c9d1ec6385b",
+    "__LEASH_ROOT__/research/v4/candidates/user_rework_p4_20260927/p402_mat_front_v5/copied.json": "267f9f19f35f17382c2b40d73a83dbc2e52cc17f546ab33612c91d4a26ddc72a",
+    "__LEASH_ROOT__/research/v4/candidates/user_rework_p4_20260927/p402_vanity_backshift_v11/source_freeze.json": "f0f237cbd9379befd31824b0c613a80316a62f07d70fa6d507320231136d9fbf",
+    "__LEASH_ROOT__/research/v4/candidates/user_rework_p4_20260927/p402_v12_terminal_readonly/source_freeze.json": "a508526ebacf45ae9b154f369398215388ae0784c4568c1f65b0eb05c2e4d24c"
+  }
+}

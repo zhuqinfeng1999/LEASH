@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "source_nominal_xy": [
+    -0.3097790481490994,
+    0.072
+  ],
+  "source_nominal_x_supported_lower_bound": -0.3460678242194024,
+  "source_cradle_xy_half_extent_over_yaw": [
+    0.08393217578059756,
+    0.07014246299972784
+  ],
+  "source_y_interval_over_original_jitter": [
+    -0.018142462999727854,
+    0.16214246299972784
+  ],
+  "device_xy_jitter_m": 0.02,
+  "source_xy_jitter_m": 0.02,
+  "yaw_degrees": 10,
+  "initial_fully_open_door_rad": -2.08,
+  "all_actual_collidable_device_geoms": [
+    {
+      "geom": "microwave_1_g3",
+      "world_xy_interval_over_original_jitter": [
+        -0.2099999399404867,
+        0.2907709809151921,
+        0.1996653083692106,
+        0.36049334154413326
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.03752284536948275
+    },
+    {
+      "geom": "microwave_1_g4",
+      "world_xy_interval_over_original_jitter": [
+        -0.2099999399404867,
+        0.2907709809151921,
+        -0.36049334154413326,
+        -0.057852991935452666
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.03971052893572481
+    },
+    {
+      "geom": "microwave_1_g5",
+      "world_xy_interval_over_original_jitter": [
+        0.09768903576020062,
+        0.2808878697253965,
+        -0.1662158217295368,
+        0.30980079211871675
+      ],
+      "source_y_disjoint5mm": false,
+      "y_gap_m": -0.3279432551184446
+    },
+    {
+      "geom": "microwave_1_g6",
+      "world_xy_interval_over_original_jitter": [
+        -0.20084687236850185,
+        0.22843829468054805,
+        -0.16006939751173713,
+        0.30188171394549507
+      ],
+      "source_y_disjoint5mm": false,
+      "y_gap_m": -0.3200241769452229
+    },
+    {
+      "geom": "microwave_1_g7",
+      "world_xy_interval_over_original_jitter": [
+        -0.20084687236850185,
+        0.22666564072512604,
+        -0.16006939751173713,
+        0.30188171394549507
+      ],
+      "source_y_disjoint5mm": false,
+      "y_gap_m": -0.3200241769452229
+    },
+    {
+      "geom": "microwave_1_g8",
+      "world_xy_interval_over_original_jitter": [
+        -0.24979602123971006,
+        -0.059416807978418924,
+        -0.360321429848243,
+        -0.10056859856147034
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.08242613556174248
+    },
+    {
+      "geom": "microwave_1_g14",
+      "world_xy_interval_over_original_jitter": [
+        -0.5997668313658214,
+        -0.3140807096065528,
+        0.4725000166018165,
+        0.7166890735576692
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.31035755360208866
+    },
+    {
+      "geom": "microwave_1_g15",
+      "world_xy_interval_over_original_jitter": [
+        -0.6183904086686467,
+        -0.3157862890967673,
+        0.41894582537791275,
+        0.7145959789990858
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.2568033623781849
+    },
+    {
+      "geom": "microwave_1_g16",
+      "world_xy_interval_over_original_jitter": [
+        -0.6183904086686467,
+        -0.3157862890967673,
+        0.41894582537791275,
+        0.7145959789990858
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.2568033623781849
+    },
+    {
+      "geom": "microwave_1_g17",
+      "world_xy_interval_over_original_jitter": [
+        -0.6496546101353284,
+        -0.033649554205184375,
+        0.2599770692792703,
+        0.6826692689118321
+      ],
+      "source_y_disjoint5mm": true,
+      "y_gap_m": 0.09783460627954244
+    }
+  ],
+  "requires_X_separation": [
+    "microwave_1_g5",
+    "microwave_1_g6",
+    "microwave_1_g7"
+  ],
+  "controlling_front_bound_m": -0.20084687236850185,
+  "full_table_support_margin_x_m": 0.03628877607030301,
+  "device_original_xml_sha256": "50aff03b23a5166c57dfe4c1574aa0c0eb4d9f5742394dffa3349b8d05cd5e0d",
+  "Scene_IK_controls_GPU_models": 0,
+  "criterion": "Ydisjoint>=5mm excludes a panel; otherwise sourceX uses actual continuous fullX envelope. Conservative sufficient2D separation, not a claim of exact closest shape distance."
+}

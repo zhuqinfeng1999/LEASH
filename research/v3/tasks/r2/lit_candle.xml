@@ -1,0 +1,20 @@
+<mujoco model="v3_lit_candle">
+  <asset>
+    <material name="ivory_wax" rgba=".91 .84 .65 1" specular=".15" shininess=".25" />
+    <material name="yellow_flame" rgba="1 .68 .12 .85" emission=".9" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .041" mass=".09" diaginertia=".00007 .00007 .00003" />
+        <geom name="candle_wax" type="cylinder" pos="0 0 .041" size=".017 .041" material="ivory_wax" mass=".09" friction=".9 .005 .001" group="1" contype="0" conaffinity="0" />
+        <geom name="candle_wick" type="capsule" fromto="0 0 .081 0 0 .091" size=".0011" rgba=".12 .10 .08 1" contype="0" conaffinity="0" group="1" />
+        <geom name="flame_visual" type="ellipsoid" pos="0 0 .102" size=".008 .008 .015" material="yellow_flame" contype="0" conaffinity="0" group="1" />
+        <geom name="flame_core" type="ellipsoid" pos="0 0 .098" size=".003 .003 .008" rgba="1 .93 .45 .8" contype="0" conaffinity="0" group="1" />
+      <geom type="cylinder" pos="0 0 .041" size=".017 .041" friction=".9 .005 .001" name="candle_wax_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /></body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 .117" size=".001" />
+      <site name="horizontal_radius_site" pos=".020 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

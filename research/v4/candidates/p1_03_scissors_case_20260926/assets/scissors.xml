@@ -1,0 +1,94 @@
+<mujoco model="original_open_scissors">
+  <asset>
+    <material name="scissors_steel" rgba=".62 .67 .71 1" specular=".86" shininess=".8" />
+    <material name="scissors_polymer" rgba=".06 .21 .36 1" specular=".32" shininess=".35" />
+    <mesh name="scissors_blade_right" file="__LEASH_ROOT__/research/v4/candidates/p1_03_scissors_case_20260926/assets/scissors_blade_right.obj" />
+    <mesh name="scissors_loop_-1" file="__LEASH_ROOT__/research/v4/candidates/p1_03_scissors_case_20260926/assets/scissors_loop_-1.obj" />
+    <mesh name="scissors_blade_left" file="__LEASH_ROOT__/research/v4/candidates/p1_03_scissors_case_20260926/assets/scissors_blade_left.obj" />
+    <mesh name="scissors_loop_1" file="__LEASH_ROOT__/research/v4/candidates/p1_03_scissors_case_20260926/assets/scissors_loop_1.obj" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="-.026 0 0" mass=".095" diaginertia=".000041 .00022 .00024" />
+        <geom name="other_cutting_arm" type="mesh" mesh="scissors_blade_right" material="scissors_steel" group="0" friction="1 .005 .0001" />
+        <geom name="second_blade_visual" type="mesh" mesh="scissors_blade_right" material="scissors_steel" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="handle_contact_-1_0" type="capsule" fromto="-0.053 -0.021 0 -0.053441938550725696 -0.018268735491774206 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_1" type="capsule" fromto="-0.053441938550725696 -0.018268735491774206 0 -0.0547507707522404 -0.015642431946888746 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_2" type="capsule" fromto="-0.0547507707522404 -0.015642431946888746 0 -0.05687619891704146 -0.013222016737725571 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_3" type="capsule" fromto="-0.05687619891704146 -0.013222016737725571 0 -0.05973654403270941 -0.011100505063388336 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_4" type="capsule" fromto="-0.05973654403270941 -0.011100505063388336 0 -0.06322188464054915 -0.009359425427764368 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_5" type="capsule" fromto="-0.06322188464054915 -0.009359425427764368 0 -0.06719828105560294 -0.008065686544841986 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_6" type="capsule" fromto="-0.06719828105560294 -0.008065686544841986 0 -0.07151292259362904 -0.0072690060743547755 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_7" type="capsule" fromto="-0.07151292259362904 -0.0072690060743547755 0 -0.076 -0.007000000000000001 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_8" type="capsule" fromto="-0.076 -0.007000000000000001 0 -0.08048707740637094 -0.0072690060743547755 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_9" type="capsule" fromto="-0.08048707740637094 -0.0072690060743547755 0 -0.08480171894439706 -0.008065686544841986 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_10" type="capsule" fromto="-0.08480171894439706 -0.008065686544841986 0 -0.08877811535945085 -0.009359425427764365 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_11" type="capsule" fromto="-0.08877811535945085 -0.009359425427764365 0 -0.09226345596729059 -0.011100505063388335 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_12" type="capsule" fromto="-0.09226345596729059 -0.011100505063388335 0 -0.09512380108295854 -0.013222016737725571 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_13" type="capsule" fromto="-0.09512380108295854 -0.013222016737725571 0 -0.0972492292477596 -0.015642431946888743 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_14" type="capsule" fromto="-0.0972492292477596 -0.015642431946888743 0 -0.0985580614492743 -0.0182687354917742 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_15" type="capsule" fromto="-0.0985580614492743 -0.0182687354917742 0 -0.099 -0.021 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_16" type="capsule" fromto="-0.099 -0.021 0 -0.0985580614492743 -0.023731264508225797 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_17" type="capsule" fromto="-0.0985580614492743 -0.023731264508225797 0 -0.0972492292477596 -0.026357568053111256 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_18" type="capsule" fromto="-0.0972492292477596 -0.026357568053111256 0 -0.09512380108295854 -0.028777983262274428 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_19" type="capsule" fromto="-0.09512380108295854 -0.028777983262274428 0 -0.0922634559672906 -0.030899494936611666 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_20" type="capsule" fromto="-0.0922634559672906 -0.030899494936611666 0 -0.08877811535945085 -0.03264057457223563 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_21" type="capsule" fromto="-0.08877811535945085 -0.03264057457223563 0 -0.08480171894439707 -0.033934313455158016 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_22" type="capsule" fromto="-0.08480171894439707 -0.033934313455158016 0 -0.08048707740637095 -0.03473099392564523 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_23" type="capsule" fromto="-0.08048707740637095 -0.03473099392564523 0 -0.076 -0.035 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_24" type="capsule" fromto="-0.076 -0.035 0 -0.07151292259362904 -0.03473099392564523 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_25" type="capsule" fromto="-0.07151292259362904 -0.03473099392564523 0 -0.06719828105560292 -0.033934313455158016 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_26" type="capsule" fromto="-0.06719828105560292 -0.033934313455158016 0 -0.06322188464054916 -0.03264057457223564 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_27" type="capsule" fromto="-0.06322188464054916 -0.03264057457223564 0 -0.05973654403270941 -0.03089949493661167 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_28" type="capsule" fromto="-0.05973654403270941 -0.03089949493661167 0 -0.05687619891704146 -0.02877798326227443 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_29" type="capsule" fromto="-0.05687619891704146 -0.02877798326227443 0 -0.05475077075224041 -0.026357568053111267 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_30" type="capsule" fromto="-0.05475077075224041 -0.026357568053111267 0 -0.0534419385507257 -0.023731264508225804 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_-1_31" type="capsule" fromto="-0.0534419385507257 -0.023731264508225804 0 -0.053 -0.021 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="loop_visual_-1" type="mesh" mesh="scissors_loop_-1" material="scissors_polymer" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="handle_bridge_-1" type="capsule" fromto="-.043 -0.011 0 -.025 -0.005 0" size=".006" material="scissors_polymer" group="0" friction="1 .005 .0001" />
+        <geom name="handle_bridge_visual_-1" type="capsule" fromto="-.043 -0.011 0 -.025 -0.005 0" size=".006" material="scissors_polymer" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="blade" type="mesh" mesh="scissors_blade_left" material="scissors_steel" group="0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_0" type="capsule" fromto="-0.05 0.021 0 -0.05049958270951601 0.02412144515225805 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_1" type="capsule" fromto="-0.05049958270951601 0.02412144515225805 0 -0.051979132154706544 0.027122934917841436 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_2" type="capsule" fromto="-0.051979132154706544 0.027122934917841436 0 -0.05438179008013382 0.029889123728313635 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_3" type="capsule" fromto="-0.05438179008013382 0.029889123728313635 0 -0.05761522368914976 0.03231370849898476 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_4" type="capsule" fromto="-0.05761522368914976 0.03231370849898476 0 -0.06155517394149034 0.034303513796840726 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_5" type="capsule" fromto="-0.06155517394149034 0.034303513796840726 0 -0.06605023075850766 0.03578207252018059 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_6" type="capsule" fromto="-0.06605023075850766 0.03578207252018059 0 -0.07092765162758066 0.03669256448645169 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_7" type="capsule" fromto="-0.07092765162758066 0.03669256448645169 0 -0.076 0.037000000000000005 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_8" type="capsule" fromto="-0.076 0.037000000000000005 0 -0.08107234837241933 0.03669256448645169 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_9" type="capsule" fromto="-0.08107234837241933 0.03669256448645169 0 -0.08594976924149234 0.03578207252018059 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_10" type="capsule" fromto="-0.08594976924149234 0.03578207252018059 0 -0.09044482605850965 0.034303513796840726 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_11" type="capsule" fromto="-0.09044482605850965 0.034303513796840726 0 -0.09438477631085024 0.03231370849898477 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_12" type="capsule" fromto="-0.09438477631085024 0.03231370849898477 0 -0.09761820991986618 0.029889123728313635 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_13" type="capsule" fromto="-0.09761820991986618 0.029889123728313635 0 -0.10002086784529346 0.02712293491784144 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_14" type="capsule" fromto="-0.10002086784529346 0.02712293491784144 0 -0.10150041729048398 0.02412144515225806 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_15" type="capsule" fromto="-0.10150041729048398 0.02412144515225806 0 -0.102 0.021000000000000005 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_16" type="capsule" fromto="-0.102 0.021000000000000005 0 -0.10150041729048398 0.017878554847741947 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_17" type="capsule" fromto="-0.10150041729048398 0.017878554847741947 0 -0.10002086784529346 0.014877065082158566 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_18" type="capsule" fromto="-0.10002086784529346 0.014877065082158566 0 -0.09761820991986618 0.01211087627168637 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_19" type="capsule" fromto="-0.09761820991986618 0.01211087627168637 0 -0.09438477631085024 0.009686291501015241 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_20" type="capsule" fromto="-0.09438477631085024 0.009686291501015241 0 -0.09044482605850965 0.0076964862031592765 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_21" type="capsule" fromto="-0.09044482605850965 0.0076964862031592765 0 -0.08594976924149235 0.006217927479819417 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_22" type="capsule" fromto="-0.08594976924149235 0.006217927479819417 0 -0.08107234837241935 0.005307435513548314 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_23" type="capsule" fromto="-0.08107234837241935 0.005307435513548314 0 -0.076 0.005000000000000001 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_24" type="capsule" fromto="-0.076 0.005000000000000001 0 -0.07092765162758066 0.005307435513548314 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_25" type="capsule" fromto="-0.07092765162758066 0.005307435513548314 0 -0.06605023075850766 0.006217927479819415 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_26" type="capsule" fromto="-0.06605023075850766 0.006217927479819415 0 -0.06155517394149035 0.007696486203159273 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_27" type="capsule" fromto="-0.06155517394149035 0.007696486203159273 0 -0.05761522368914977 0.009686291501015238 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_28" type="capsule" fromto="-0.05761522368914977 0.009686291501015238 0 -0.05438179008013382 0.012110876271686366 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_29" type="capsule" fromto="-0.05438179008013382 0.012110876271686366 0 -0.05197913215470655 0.014877065082158556 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_30" type="capsule" fromto="-0.05197913215470655 0.014877065082158556 0 -0.05049958270951601 0.01787855484774194 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="handle_contact_1_31" type="capsule" fromto="-0.05049958270951601 0.01787855484774194 0 -0.05 0.021 0" size=".0055" group="0" rgba="0 0 0 0" friction="1 .005 .0001" />
+        <geom name="loop_visual_1" type="mesh" mesh="scissors_loop_1" material="scissors_polymer" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="handle_bridge_1" type="capsule" fromto="-.043 0.011 0 -.025 0.005 0" size=".006" material="scissors_polymer" group="0" friction="1 .005 .0001" />
+        <geom name="handle_bridge_visual_1" type="capsule" fromto="-.043 0.011 0 -.025 0.005 0" size=".006" material="scissors_polymer" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="bolster" type="cylinder" pos="0 0 .0041" size=".006 .002" material="scissors_steel" group="0" friction="1 .005 .0001" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.006" />
+      <site name="top_site" pos="0 0 .0065" />
+      <site name="horizontal_radius_site" pos=".12 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

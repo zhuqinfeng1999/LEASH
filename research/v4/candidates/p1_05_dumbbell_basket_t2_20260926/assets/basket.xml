@@ -1,0 +1,74 @@
+<mujoco>
+  <asset>
+    <material name="woven_willow" rgba=".56 .39 .22 1" specular=".08" shininess=".05" />
+    <material name="basket_floor" rgba=".62 .47 .29 1" specular=".03" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .03" mass=".65" diaginertia=".005 .007 .011" />
+        <geom name="plate" type="box" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" size="0.18 0.135 0.005" pos="0 0 0" material="basket_floor" />
+        <geom name="plate_visual" type="box" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" size="0.18 0.135 0.005" pos="0 0 0" material="basket_floor" />
+        <geom name="left_wall" type="box" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" size="0.0025 0.135 0.05" pos="-0.1775 0 0.05" material="woven_willow" />
+        <geom name="left_wall_visual" type="box" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" size="0.0025 0.135 0.05" pos="-0.1775 0 0.05" material="woven_willow" />
+        <geom name="right_wall" type="box" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" size="0.0025 0.135 0.05" pos="0.1775 0 0.05" material="woven_willow" />
+        <geom name="right_wall_visual" type="box" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" size="0.0025 0.135 0.05" pos="0.1775 0 0.05" material="woven_willow" />
+        <geom name="near_wall" type="box" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" size="0.175 0.0025 0.05" pos="0 -0.1325 0.05" material="woven_willow" />
+        <geom name="near_wall_visual" type="box" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" size="0.175 0.0025 0.05" pos="0 -0.1325 0.05" material="woven_willow" />
+        <geom name="far_wall" type="box" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" size="0.175 0.0025 0.05" pos="0 0.1325 0.05" material="woven_willow" />
+        <geom name="far_wall_visual" type="box" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" size="0.175 0.0025 0.05" pos="0 0.1325 0.05" material="woven_willow" />
+        <geom name="woven_rib_0_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.006 0.18 -0.135 0.006" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_0_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.006 0.18 0.135 0.006" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_0_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.006 -0.18 0.135 0.006" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_0_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.006 0.18 0.135 0.006" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_1_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.014 0.18 -0.135 0.014" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_1_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.014 0.18 0.135 0.014" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_1_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.014 -0.18 0.135 0.014" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_1_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.014 0.18 0.135 0.014" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_2_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.022 0.18 -0.135 0.022" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_2_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.022 0.18 0.135 0.022" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_2_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.022 -0.18 0.135 0.022" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_2_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.022 0.18 0.135 0.022" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_3_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.03 0.18 -0.135 0.03" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_3_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.03 0.18 0.135 0.03" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_3_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.03 -0.18 0.135 0.03" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_3_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.03 0.18 0.135 0.03" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_4_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.038 0.18 -0.135 0.038" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_4_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.038 0.18 0.135 0.038" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_4_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.038 -0.18 0.135 0.038" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_4_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.038 0.18 0.135 0.038" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_5_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.046 0.18 -0.135 0.046" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_5_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.046 0.18 0.135 0.046" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_5_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.046 -0.18 0.135 0.046" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_5_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.046 0.18 0.135 0.046" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_6_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.054 0.18 -0.135 0.054" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_6_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.054 0.18 0.135 0.054" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_6_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.054 -0.18 0.135 0.054" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_6_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.054 0.18 0.135 0.054" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_7_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.062 0.18 -0.135 0.062" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_7_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.062 0.18 0.135 0.062" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_7_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.062 -0.18 0.135 0.062" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_7_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.062 0.18 0.135 0.062" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_8_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.07 0.18 -0.135 0.07" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_8_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.07 0.18 0.135 0.07" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_8_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.07 -0.18 0.135 0.07" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_8_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.07 0.18 0.135 0.07" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_9_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.07800000000000001 0.18 -0.135 0.07800000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_9_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.07800000000000001 0.18 0.135 0.07800000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_9_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.07800000000000001 -0.18 0.135 0.07800000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_9_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.07800000000000001 0.18 0.135 0.07800000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_10_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.08600000000000001 0.18 -0.135 0.08600000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_10_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.08600000000000001 0.18 0.135 0.08600000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_10_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.08600000000000001 -0.18 0.135 0.08600000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_10_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.08600000000000001 0.18 0.135 0.08600000000000001" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_11_0" type="capsule" size=".0017" fromto="-0.18 -0.135 0.094 0.18 -0.135 0.094" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_11_1" type="capsule" size=".0017" fromto="-0.18 0.135 0.094 0.18 0.135 0.094" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_11_2" type="capsule" size=".0017" fromto="-0.18 -0.135 0.094 -0.18 0.135 0.094" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="woven_rib_11_3" type="capsule" size=".0017" fromto="0.18 -0.135 0.094 0.18 0.135 0.094" material="woven_willow" group="1" mass="0" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.005" />
+      <site name="top_site" pos="0 0 .100" />
+      <site name="horizontal_radius_site" pos=".225 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

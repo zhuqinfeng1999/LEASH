@@ -1,0 +1,16 @@
+{
+  "version": "confidence-prompts-v1",
+  "policy_source": "research/v4/docs/leash_v43_revised_20260928.txt",
+  "policy_sha256": "58b612f4c16238d52aab94bba6d90e666cf29d0606b2c92d55db6c8c39157815",
+  "authority": "release-user/.codex/attachments/6ff353f6-7985-4236-b342-c25a005b1830/Pasted text.txt",
+  "files": {
+    "research/v4/development/confidence_gates_20261006/prompt_binary_G2_v1.txt": "5039fa7fcb1b689265f6d826d8c74be8dec9bd4ce8b8f45cb5b2292268f0d724",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G1_v1.txt": "2a580aaf138b2d859c7d36932017992dff20c32f2d1de871b4d95bb3986ee3c1",
+    "research/v4/development/confidence_gates_20261006/policy_v43_original.txt": "58b612f4c16238d52aab94bba6d90e666cf29d0606b2c92d55db6c8c39157815",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G3_v1.txt": "a95730748937ef41f815b530205b42d38c160c7c8cd2b9b7207402289d927014",
+    "research/v4/development/confidence_gates_20261006/prompt_binary_G3_v1.txt": "6623017f2c2220e4847b365f777f69566c59733d116f8b8be451e8362832aac7",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G2_v1.txt": "1f3f68ff6a588ff18e1bd943bf362312b3e808a7024a2d74d6f8ae466bfe6a52",
+    "research/v4/development/confidence_gates_20261006/prompt_binary_G1_v1.txt": "f8393a606a449f882e2409b453ff4f10657110a22437503e5bc4e6d582db1f66"
+  },
+  "runner_bound": false
+}

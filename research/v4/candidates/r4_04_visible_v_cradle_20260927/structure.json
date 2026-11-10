@@ -1,0 +1,1589 @@
+{
+  "two_fixed_planes": "rack local z=.015+abs(y+.055); actual wooden deck top world .915",
+  "angle_degrees": 45,
+  "body_world_z_m": 1.1286209760077897,
+  "sides": [
+    {
+      "side": 1.0,
+      "required_body_world_z_m": 1.1286209760077897,
+      "minimum": -0.21362097600778968,
+      "geoms": [
+        {
+          "name": "adult_pillow_1_pillow_body_collision",
+          "min_z_plus_signed_centered_y_m": -0.21362097600778968,
+          "support_rack_relative": [
+            [
+              -3.783882585107814e-09,
+              -0.08250000397372695,
+              -0.18612097203406266
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_0_collision",
+          "min_z_plus_signed_centered_y_m": -0.0021213203435595726,
+          "support_rack_relative": [
+            [
+              0.3000000000000001,
+              -0.05606066017177982,
+              -0.0010606601717797412
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_1_collision",
+          "min_z_plus_signed_centered_y_m": 0.06049405806448341,
+          "support_rack_relative": [
+            [
+              0.29927683739390487,
+              -0.05606066017177985,
+              0.06155471823626327
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_2_collision",
+          "min_z_plus_signed_centered_y_m": 0.0862167398606646,
+          "support_rack_relative": [
+            [
+              0.2971038122210664,
+              -0.05606066017177978,
+              0.08727740003244437
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_3_collision",
+          "min_z_plus_signed_centered_y_m": 0.10563482607129002,
+          "support_rack_relative": [
+            [
+              0.2934699817969443,
+              -0.056060660171779804,
+              0.10669548624306982
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_4_collision",
+          "min_z_plus_signed_centered_y_m": 0.12160150412550758,
+          "support_rack_relative": [
+            [
+              0.2883559569802847,
+              -0.05606066017177979,
+              0.12266216429728735
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_5_collision",
+          "min_z_plus_signed_centered_y_m": 0.13519535553027562,
+          "support_rack_relative": [
+            [
+              0.28173198929364046,
+              -0.0560606601717798,
+              0.13625601570205542
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_6_collision",
+          "min_z_plus_signed_centered_y_m": 0.1469518473318611,
+          "support_rack_relative": [
+            [
+              0.27355486672188645,
+              -0.056060660171779804,
+              0.14801250750364087
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_7_collision",
+          "min_z_plus_signed_centered_y_m": 0.15717629849158113,
+          "support_rack_relative": [
+            [
+              0.2637630391139864,
+              -0.056060660171779804,
+              0.15823695866336093
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_8_collision",
+          "min_z_plus_signed_centered_y_m": 0.1660579627071834,
+          "support_rack_relative": [
+            [
+              0.25226892457611444,
+              -0.05606066017177978,
+              0.16711862287896317
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_9_collision",
+          "min_z_plus_signed_centered_y_m": 0.1737207057324313,
+          "support_rack_relative": [
+            [
+              0.23894642825271128,
+              -0.05606066017177978,
+              0.17478136590421106
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_10_collision",
+          "min_z_plus_signed_centered_y_m": 0.1802485908043648,
+          "support_rack_relative": [
+            [
+              0.22360975151313106,
+              -0.05606066017177978,
+              0.1813092509761446
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_11_collision",
+          "min_z_plus_signed_centered_y_m": 0.1857000058522007,
+          "support_rack_relative": [
+            [
+              0.20597501381075287,
+              -0.0560606601717798,
+              0.18676066602398048
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_12_collision",
+          "min_z_plus_signed_centered_y_m": 0.1901159843099636,
+          "support_rack_relative": [
+            [
+              0.18558423670360072,
+              -0.05606066017177981,
+              0.19117664448174337
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_13_collision",
+          "min_z_plus_signed_centered_y_m": 0.1935253341877367,
+          "support_rack_relative": [
+            [
+              0.1616342196222743,
+              -0.05606066017177978,
+              0.19458599435951646
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_14_collision",
+          "min_z_plus_signed_centered_y_m": 0.19594788780381803,
+          "support_rack_relative": [
+            [
+              0.13250709030633626,
+              -0.0560606601717798,
+              0.1970085479755978
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_15_collision",
+          "min_z_plus_signed_centered_y_m": 0.1973965712523769,
+          "support_rack_relative": [
+            [
+              0.09392306761206468,
+              -0.0560606601717798,
+              0.19845723142415667
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_16_collision",
+          "min_z_plus_signed_centered_y_m": 0.1973965712523769,
+          "support_rack_relative": [
+            [
+              -0.0939230676120646,
+              -0.05606066017177977,
+              0.19845723142415664
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_17_collision",
+          "min_z_plus_signed_centered_y_m": 0.195947887803818,
+          "support_rack_relative": [
+            [
+              -0.13250709030633623,
+              -0.05606066017177981,
+              0.1970085479755978
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_18_collision",
+          "min_z_plus_signed_centered_y_m": 0.19352533418773668,
+          "support_rack_relative": [
+            [
+              -0.1616342196222743,
+              -0.0560606601717798,
+              0.19458599435951646
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_19_collision",
+          "min_z_plus_signed_centered_y_m": 0.1901159843099636,
+          "support_rack_relative": [
+            [
+              -0.1855842367036007,
+              -0.05606066017177977,
+              0.19117664448174337
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_20_collision",
+          "min_z_plus_signed_centered_y_m": 0.1857000058522007,
+          "support_rack_relative": [
+            [
+              -0.2059750138107528,
+              -0.05606066017177981,
+              0.1867606660239805
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_21_collision",
+          "min_z_plus_signed_centered_y_m": 0.18024859080436476,
+          "support_rack_relative": [
+            [
+              -0.223609751513131,
+              -0.05606066017177981,
+              0.1813092509761446
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_22_collision",
+          "min_z_plus_signed_centered_y_m": 0.17372070573243126,
+          "support_rack_relative": [
+            [
+              -0.2389464282527113,
+              -0.05606066017177983,
+              0.1747813659042111
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_23_collision",
+          "min_z_plus_signed_centered_y_m": 0.16605796270718343,
+          "support_rack_relative": [
+            [
+              -0.2522689245761144,
+              -0.05606066017177977,
+              0.16711862287896317
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_24_collision",
+          "min_z_plus_signed_centered_y_m": 0.15717629849158113,
+          "support_rack_relative": [
+            [
+              -0.26376303911398646,
+              -0.056060660171779804,
+              0.15823695866336093
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_25_collision",
+          "min_z_plus_signed_centered_y_m": 0.1469518473318611,
+          "support_rack_relative": [
+            [
+              -0.27355486672188656,
+              -0.05606066017177979,
+              0.14801250750364087
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_26_collision",
+          "min_z_plus_signed_centered_y_m": 0.13519535553027565,
+          "support_rack_relative": [
+            [
+              -0.2817319892936405,
+              -0.05606066017177979,
+              0.13625601570205542
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_27_collision",
+          "min_z_plus_signed_centered_y_m": 0.12160150412550755,
+          "support_rack_relative": [
+            [
+              -0.2883559569802848,
+              -0.05606066017177982,
+              0.12266216429728735
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_28_collision",
+          "min_z_plus_signed_centered_y_m": 0.10563482607129004,
+          "support_rack_relative": [
+            [
+              -0.2934699817969443,
+              -0.0560606601717798,
+              0.10669548624306982
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_29_collision",
+          "min_z_plus_signed_centered_y_m": 0.08621673986066461,
+          "support_rack_relative": [
+            [
+              -0.29710381222106647,
+              -0.05606066017177982,
+              0.08727740003244443
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_30_collision",
+          "min_z_plus_signed_centered_y_m": 0.06049405806448345,
+          "support_rack_relative": [
+            [
+              -0.2992768373939048,
+              -0.0560606601717798,
+              0.06155471823626325
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_31_collision",
+          "min_z_plus_signed_centered_y_m": -0.00212131813028435,
+          "support_rack_relative": [
+            [
+              -0.30000000000000004,
+              -0.056060660171779825,
+              -0.001060657958504515
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_32_collision",
+          "min_z_plus_signed_centered_y_m": -0.06473669875160273,
+          "support_rack_relative": [
+            [
+              -0.2992768373939048,
+              -0.05606066017177983,
+              -0.06367603857982289
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_33_collision",
+          "min_z_plus_signed_centered_y_m": -0.09045938054778388,
+          "support_rack_relative": [
+            [
+              -0.29710381222106647,
+              -0.056060660171779825,
+              -0.08939872037600402
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_34_collision",
+          "min_z_plus_signed_centered_y_m": -0.10987746675840926,
+          "support_rack_relative": [
+            [
+              -0.2934699817969442,
+              -0.05606066017177984,
+              -0.10881680658662939
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_35_collision",
+          "min_z_plus_signed_centered_y_m": -0.1258441448126267,
+          "support_rack_relative": [
+            [
+              -0.28835595698028477,
+              -0.056060660171779866,
+              -0.1247834846408468
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_36_collision",
+          "min_z_plus_signed_centered_y_m": -0.13943799621739483,
+          "support_rack_relative": [
+            [
+              -0.2817319892936405,
+              -0.056060660171779846,
+              -0.13837733604561495
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_37_collision",
+          "min_z_plus_signed_centered_y_m": -0.1511944880189803,
+          "support_rack_relative": [
+            [
+              -0.2735548667218865,
+              -0.05606066017177985,
+              -0.15013382784720042
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_38_collision",
+          "min_z_plus_signed_centered_y_m": -0.1614189391787006,
+          "support_rack_relative": [
+            [
+              -0.26376303911398646,
+              -0.056060660171779846,
+              -0.16035827900692068
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_39_collision",
+          "min_z_plus_signed_centered_y_m": -0.17030060339430267,
+          "support_rack_relative": [
+            [
+              -0.2522689245761144,
+              -0.056060660171779846,
+              -0.16923994322252278
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_40_collision",
+          "min_z_plus_signed_centered_y_m": -0.17796334641955064,
+          "support_rack_relative": [
+            [
+              -0.23894642825271137,
+              -0.05606066017177983,
+              -0.17690268624777075
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_41_collision",
+          "min_z_plus_signed_centered_y_m": -0.184491231491484,
+          "support_rack_relative": [
+            [
+              -0.22360975151313103,
+              -0.056060660171779866,
+              -0.18343057131970408
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_42_collision",
+          "min_z_plus_signed_centered_y_m": -0.18994264653932,
+          "support_rack_relative": [
+            [
+              -0.2059750138107528,
+              -0.056060660171779866,
+              -0.18888198636754006
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_43_collision",
+          "min_z_plus_signed_centered_y_m": -0.19435862499708284,
+          "support_rack_relative": [
+            [
+              -0.1855842367036008,
+              -0.056060660171779866,
+              -0.19329796482530293
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_44_collision",
+          "min_z_plus_signed_centered_y_m": -0.19776797487485598,
+          "support_rack_relative": [
+            [
+              -0.16163421962227434,
+              -0.05606066017177985,
+              -0.19670731470307606
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_45_collision",
+          "min_z_plus_signed_centered_y_m": -0.2001905284909375,
+          "support_rack_relative": [
+            [
+              -0.1325070903063364,
+              -0.05606066017177984,
+              -0.19912986831915758
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_46_collision",
+          "min_z_plus_signed_centered_y_m": -0.2016392119394962,
+          "support_rack_relative": [
+            [
+              -0.09392306761206451,
+              -0.05606066017177984,
+              -0.20057855176771627
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_47_collision",
+          "min_z_plus_signed_centered_y_m": -0.20212132034355967,
+          "support_rack_relative": [
+            [
+              -4.066046215001062e-09,
+              -0.05606066017177984,
+              -0.20106066017177976
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_48_collision",
+          "min_z_plus_signed_centered_y_m": -0.20212132034355973,
+          "support_rack_relative": [
+            [
+              -4.066046215001062e-09,
+              -0.056060660171779866,
+              -0.20106066017177981
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_49_collision",
+          "min_z_plus_signed_centered_y_m": -0.20163921193949624,
+          "support_rack_relative": [
+            [
+              0.09392306761206434,
+              -0.05606066017177991,
+              -0.20057855176771633
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_50_collision",
+          "min_z_plus_signed_centered_y_m": -0.2001905284909375,
+          "support_rack_relative": [
+            [
+              0.13250709030633623,
+              -0.05606066017177985,
+              -0.19912986831915758
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_51_collision",
+          "min_z_plus_signed_centered_y_m": -0.19776797487485598,
+          "support_rack_relative": [
+            [
+              0.16163421962227426,
+              -0.05606066017177985,
+              -0.19670731470307606
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_52_collision",
+          "min_z_plus_signed_centered_y_m": -0.1943586249970828,
+          "support_rack_relative": [
+            [
+              0.18558423670360077,
+              -0.056060660171779825,
+              -0.19329796482530293
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_53_collision",
+          "min_z_plus_signed_centered_y_m": -0.18994264653932,
+          "support_rack_relative": [
+            [
+              0.20597501381075278,
+              -0.05606066017177985,
+              -0.18888198636754008
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_54_collision",
+          "min_z_plus_signed_centered_y_m": -0.1844912314914841,
+          "support_rack_relative": [
+            [
+              0.22360975151313098,
+              -0.056060660171779866,
+              -0.1834305713197042
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_55_collision",
+          "min_z_plus_signed_centered_y_m": -0.17796334641955067,
+          "support_rack_relative": [
+            [
+              0.23894642825271128,
+              -0.05606066017177987,
+              -0.17690268624777075
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_56_collision",
+          "min_z_plus_signed_centered_y_m": -0.1703006033943026,
+          "support_rack_relative": [
+            [
+              0.25226892457611433,
+              -0.056060660171779866,
+              -0.16923994322252273
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_57_collision",
+          "min_z_plus_signed_centered_y_m": -0.16141893917870065,
+          "support_rack_relative": [
+            [
+              0.26376303911398635,
+              -0.05606066017177987,
+              -0.16035827900692073
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_58_collision",
+          "min_z_plus_signed_centered_y_m": -0.15119448801898042,
+          "support_rack_relative": [
+            [
+              0.27355486672188645,
+              -0.056060660171779846,
+              -0.15013382784720053
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_59_collision",
+          "min_z_plus_signed_centered_y_m": -0.13943799621739492,
+          "support_rack_relative": [
+            [
+              0.2817319892936405,
+              -0.05606066017177985,
+              -0.13837733604561503
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_60_collision",
+          "min_z_plus_signed_centered_y_m": -0.12584414481262693,
+          "support_rack_relative": [
+            [
+              0.2883559569802847,
+              -0.05606066017177985,
+              -0.12478348464084704
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_61_collision",
+          "min_z_plus_signed_centered_y_m": -0.10987746675840926,
+          "support_rack_relative": [
+            [
+              0.2934699817969442,
+              -0.05606066017177984,
+              -0.10881680658662939
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_62_collision",
+          "min_z_plus_signed_centered_y_m": -0.09045938054778396,
+          "support_rack_relative": [
+            [
+              0.2971038122210665,
+              -0.05606066017177986,
+              -0.08939872037600408
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_63_collision",
+          "min_z_plus_signed_centered_y_m": -0.06473669875160276,
+          "support_rack_relative": [
+            [
+              0.29927683739390487,
+              -0.05606066017177981,
+              -0.06367603857982293
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pull_loop_left_leg_collision",
+          "min_z_plus_signed_centered_y_m": 0.1717360420484016,
+          "support_rack_relative": [
+            [
+              -0.251,
+              -0.05599999999999995,
+              0.17273604204840154
+            ],
+            [
+              -0.24700000000000003,
+              -0.05599999999999995,
+              0.17273604204840154
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pull_loop_right_leg_collision",
+          "min_z_plus_signed_centered_y_m": 0.1717360420484016,
+          "support_rack_relative": [
+            [
+              -0.233,
+              -0.05599999999999995,
+              0.17273604204840154
+            ],
+            [
+              -0.229,
+              -0.05599999999999995,
+              0.17273604204840154
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pull_loop_upper_bridge_collision",
+          "min_z_plus_signed_centered_y_m": 0.20573604204840149,
+          "support_rack_relative": [
+            [
+              -0.25100000000000006,
+              -0.055999999999999966,
+              0.20673604204840143
+            ],
+            [
+              -0.22900000000000004,
+              -0.055999999999999966,
+              0.20673604204840143
+            ]
+          ]
+        }
+      ],
+      "limiting": [
+        {
+          "name": "adult_pillow_1_pillow_body_collision",
+          "min_z_plus_signed_centered_y_m": -0.21362097600778968,
+          "support_rack_relative": [
+            [
+              -3.783882585107814e-09,
+              -0.08250000397372695,
+              -0.18612097203406266
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "side": -1.0,
+      "required_body_world_z_m": 1.128620971487603,
+      "minimum": -0.21362097148760303,
+      "geoms": [
+        {
+          "name": "adult_pillow_1_pillow_body_collision",
+          "min_z_plus_signed_centered_y_m": -0.21362097148760303,
+          "support_rack_relative": [
+            [
+              -3.783882583581257e-09,
+              -0.027500000546459652,
+              -0.18612097203406266
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_0_collision",
+          "min_z_plus_signed_centered_y_m": -0.0021213203435595587,
+          "support_rack_relative": [
+            [
+              0.3000000000000001,
+              -0.053939339828220176,
+              -0.0010606601717797447
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_1_collision",
+          "min_z_plus_signed_centered_y_m": 0.0604940580644835,
+          "support_rack_relative": [
+            [
+              0.29927683739390487,
+              -0.05393933982822022,
+              0.06155471823626327
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_2_collision",
+          "min_z_plus_signed_centered_y_m": 0.08621673986066455,
+          "support_rack_relative": [
+            [
+              0.2971038122210664,
+              -0.05393933982822015,
+              0.08727740003244437
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_3_collision",
+          "min_z_plus_signed_centered_y_m": 0.10563482607128999,
+          "support_rack_relative": [
+            [
+              0.2934699817969443,
+              -0.05393933982822015,
+              0.1066954862430698
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_4_collision",
+          "min_z_plus_signed_centered_y_m": 0.12160150412550752,
+          "support_rack_relative": [
+            [
+              0.2883559569802847,
+              -0.05393933982822014,
+              0.12266216429728735
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_5_collision",
+          "min_z_plus_signed_centered_y_m": 0.13519535553027562,
+          "support_rack_relative": [
+            [
+              0.28173198929364046,
+              -0.05393933982822016,
+              0.13625601570205542
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_6_collision",
+          "min_z_plus_signed_centered_y_m": 0.14695184733186106,
+          "support_rack_relative": [
+            [
+              0.27355486672188645,
+              -0.05393933982822016,
+              0.14801250750364087
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_7_collision",
+          "min_z_plus_signed_centered_y_m": 0.15717629849158113,
+          "support_rack_relative": [
+            [
+              0.2637630391139864,
+              -0.05393933982822016,
+              0.15823695866336093
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_8_collision",
+          "min_z_plus_signed_centered_y_m": 0.16605796270718334,
+          "support_rack_relative": [
+            [
+              0.25226892457611444,
+              -0.05393933982822014,
+              0.16711862287896317
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_9_collision",
+          "min_z_plus_signed_centered_y_m": 0.17372070573243126,
+          "support_rack_relative": [
+            [
+              0.23894642825271128,
+              -0.05393933982822015,
+              0.17478136590421106
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_10_collision",
+          "min_z_plus_signed_centered_y_m": 0.18024859080436476,
+          "support_rack_relative": [
+            [
+              0.22360975151313106,
+              -0.053939339828220134,
+              0.18130925097614456
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_11_collision",
+          "min_z_plus_signed_centered_y_m": 0.18570000585220067,
+          "support_rack_relative": [
+            [
+              0.20597501381075287,
+              -0.053939339828220134,
+              0.18676066602398048
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_12_collision",
+          "min_z_plus_signed_centered_y_m": 0.1901159843099636,
+          "support_rack_relative": [
+            [
+              0.18558423670360072,
+              -0.05393933982822016,
+              0.19117664448174337
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_13_collision",
+          "min_z_plus_signed_centered_y_m": 0.19352533418773665,
+          "support_rack_relative": [
+            [
+              0.1616342196222743,
+              -0.053939339828220134,
+              0.19458599435951646
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_14_collision",
+          "min_z_plus_signed_centered_y_m": 0.195947887803818,
+          "support_rack_relative": [
+            [
+              0.13250709030633626,
+              -0.053939339828220134,
+              0.1970085479755978
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_15_collision",
+          "min_z_plus_signed_centered_y_m": 0.19739657125237686,
+          "support_rack_relative": [
+            [
+              0.09392306761206468,
+              -0.053939339828220134,
+              0.19845723142415667
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_16_collision",
+          "min_z_plus_signed_centered_y_m": 0.1973965712523768,
+          "support_rack_relative": [
+            [
+              -0.0939230676120646,
+              -0.053939339828220106,
+              0.19845723142415664
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_17_collision",
+          "min_z_plus_signed_centered_y_m": 0.195947887803818,
+          "support_rack_relative": [
+            [
+              -0.13250709030633623,
+              -0.05393933982822016,
+              0.19700854797559778
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_18_collision",
+          "min_z_plus_signed_centered_y_m": 0.19352533418773665,
+          "support_rack_relative": [
+            [
+              -0.1616342196222743,
+              -0.053939339828220134,
+              0.19458599435951646
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_19_collision",
+          "min_z_plus_signed_centered_y_m": 0.19011598430996354,
+          "support_rack_relative": [
+            [
+              -0.1855842367036007,
+              -0.053939339828220134,
+              0.19117664448174337
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_20_collision",
+          "min_z_plus_signed_centered_y_m": 0.1857000058522007,
+          "support_rack_relative": [
+            [
+              -0.2059750138107528,
+              -0.05393933982822016,
+              0.1867606660239805
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_21_collision",
+          "min_z_plus_signed_centered_y_m": 0.18024859080436478,
+          "support_rack_relative": [
+            [
+              -0.223609751513131,
+              -0.053939339828220176,
+              0.1813092509761446
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_22_collision",
+          "min_z_plus_signed_centered_y_m": 0.1737207057324313,
+          "support_rack_relative": [
+            [
+              -0.2389464282527113,
+              -0.05393933982822018,
+              0.17478136590421106
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_23_collision",
+          "min_z_plus_signed_centered_y_m": 0.16605796270718334,
+          "support_rack_relative": [
+            [
+              -0.2522689245761144,
+              -0.053939339828220134,
+              0.16711862287896317
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_24_collision",
+          "min_z_plus_signed_centered_y_m": 0.15717629849158113,
+          "support_rack_relative": [
+            [
+              -0.26376303911398646,
+              -0.05393933982822016,
+              0.15823695866336093
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_25_collision",
+          "min_z_plus_signed_centered_y_m": 0.14695184733186106,
+          "support_rack_relative": [
+            [
+              -0.27355486672188656,
+              -0.05393933982822015,
+              0.14801250750364087
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_26_collision",
+          "min_z_plus_signed_centered_y_m": 0.13519535553027562,
+          "support_rack_relative": [
+            [
+              -0.2817319892936405,
+              -0.05393933982822015,
+              0.13625601570205542
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_27_collision",
+          "min_z_plus_signed_centered_y_m": 0.12160150412550758,
+          "support_rack_relative": [
+            [
+              -0.2883559569802848,
+              -0.05393933982822018,
+              0.12266216429728735
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_28_collision",
+          "min_z_plus_signed_centered_y_m": 0.10563482607128999,
+          "support_rack_relative": [
+            [
+              -0.2934699817969443,
+              -0.05393933982822014,
+              0.10669548624306982
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_29_collision",
+          "min_z_plus_signed_centered_y_m": 0.08621673986066464,
+          "support_rack_relative": [
+            [
+              -0.29710381222106647,
+              -0.053939339828220176,
+              0.08727740003244443
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_30_collision",
+          "min_z_plus_signed_centered_y_m": 0.060494058064483415,
+          "support_rack_relative": [
+            [
+              -0.2992768373939048,
+              -0.053939339828220155,
+              0.061554718236263246
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_31_collision",
+          "min_z_plus_signed_centered_y_m": -0.002121318130284322,
+          "support_rack_relative": [
+            [
+              -0.30000000000000004,
+              -0.05393933982822018,
+              -0.0010606579585045114
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_32_collision",
+          "min_z_plus_signed_centered_y_m": -0.06473669875160269,
+          "support_rack_relative": [
+            [
+              -0.2992768373939048,
+              -0.05393933982822019,
+              -0.06367603857982287
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_33_collision",
+          "min_z_plus_signed_centered_y_m": -0.09045938054778384,
+          "support_rack_relative": [
+            [
+              -0.29710381222106647,
+              -0.05393933982822019,
+              -0.08939872037600402
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_34_collision",
+          "min_z_plus_signed_centered_y_m": -0.1098774667584092,
+          "support_rack_relative": [
+            [
+              -0.2934699817969442,
+              -0.0539393398282202,
+              -0.1088168065866294
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_35_collision",
+          "min_z_plus_signed_centered_y_m": -0.1258441448126266,
+          "support_rack_relative": [
+            [
+              -0.28835595698028477,
+              -0.053939339828220224,
+              -0.12478348464084682
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_36_collision",
+          "min_z_plus_signed_centered_y_m": -0.13943799621739478,
+          "support_rack_relative": [
+            [
+              -0.2817319892936405,
+              -0.05393933982822019,
+              -0.13837733604561495
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_37_collision",
+          "min_z_plus_signed_centered_y_m": -0.15119448801898022,
+          "support_rack_relative": [
+            [
+              -0.2735548667218865,
+              -0.0539393398282202,
+              -0.15013382784720042
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_38_collision",
+          "min_z_plus_signed_centered_y_m": -0.1614189391787005,
+          "support_rack_relative": [
+            [
+              -0.26376303911398646,
+              -0.053939339828220204,
+              -0.16035827900692068
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_39_collision",
+          "min_z_plus_signed_centered_y_m": -0.1703006033943026,
+          "support_rack_relative": [
+            [
+              -0.2522689245761144,
+              -0.05393933982822019,
+              -0.16923994322252278
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_40_collision",
+          "min_z_plus_signed_centered_y_m": -0.17796334641955058,
+          "support_rack_relative": [
+            [
+              -0.23894642825271137,
+              -0.0539393398282202,
+              -0.17690268624777075
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_41_collision",
+          "min_z_plus_signed_centered_y_m": -0.1844912314914839,
+          "support_rack_relative": [
+            [
+              -0.22360975151313103,
+              -0.053939339828220204,
+              -0.18343057131970408
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_42_collision",
+          "min_z_plus_signed_centered_y_m": -0.18994264653931986,
+          "support_rack_relative": [
+            [
+              -0.2059750138107528,
+              -0.05393933982822022,
+              -0.18888198636754008
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_43_collision",
+          "min_z_plus_signed_centered_y_m": -0.19435862499708273,
+          "support_rack_relative": [
+            [
+              -0.1855842367036008,
+              -0.053939339828220204,
+              -0.19329796482530293
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_44_collision",
+          "min_z_plus_signed_centered_y_m": -0.19776797487485587,
+          "support_rack_relative": [
+            [
+              -0.16163421962227434,
+              -0.05393933982822023,
+              -0.19670731470307606
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_45_collision",
+          "min_z_plus_signed_centered_y_m": -0.2001905284909374,
+          "support_rack_relative": [
+            [
+              -0.1325070903063364,
+              -0.05393933982822019,
+              -0.19912986831915758
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_46_collision",
+          "min_z_plus_signed_centered_y_m": -0.2016392119394961,
+          "support_rack_relative": [
+            [
+              -0.09392306761206451,
+              -0.05393933982822022,
+              -0.2005785517677163
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_47_collision",
+          "min_z_plus_signed_centered_y_m": -0.2021213203435596,
+          "support_rack_relative": [
+            [
+              -4.066046215001062e-09,
+              -0.05393933982822022,
+              -0.2010606601717798
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_48_collision",
+          "min_z_plus_signed_centered_y_m": -0.2021213203435596,
+          "support_rack_relative": [
+            [
+              -4.066046215001062e-09,
+              -0.05393933982822022,
+              -0.2010606601717798
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_49_collision",
+          "min_z_plus_signed_centered_y_m": -0.20163921193949608,
+          "support_rack_relative": [
+            [
+              0.09392306761206434,
+              -0.05393933982822026,
+              -0.20057855176771633
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_50_collision",
+          "min_z_plus_signed_centered_y_m": -0.20019052849093738,
+          "support_rack_relative": [
+            [
+              0.13250709030633623,
+              -0.053939339828220204,
+              -0.19912986831915758
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_51_collision",
+          "min_z_plus_signed_centered_y_m": -0.19776797487485587,
+          "support_rack_relative": [
+            [
+              0.16163421962227426,
+              -0.05393933982822023,
+              -0.19670731470307606
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_52_collision",
+          "min_z_plus_signed_centered_y_m": -0.19435862499708276,
+          "support_rack_relative": [
+            [
+              0.18558423670360077,
+              -0.05393933982822019,
+              -0.19329796482530293
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_53_collision",
+          "min_z_plus_signed_centered_y_m": -0.1899426465393199,
+          "support_rack_relative": [
+            [
+              0.20597501381075278,
+              -0.05393933982822022,
+              -0.18888198636754008
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_54_collision",
+          "min_z_plus_signed_centered_y_m": -0.184491231491484,
+          "support_rack_relative": [
+            [
+              0.22360975151313098,
+              -0.05393933982822023,
+              -0.1834305713197042
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_55_collision",
+          "min_z_plus_signed_centered_y_m": -0.17796334641955056,
+          "support_rack_relative": [
+            [
+              0.23894642825271128,
+              -0.05393933982822022,
+              -0.17690268624777075
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_56_collision",
+          "min_z_plus_signed_centered_y_m": -0.1703006033943025,
+          "support_rack_relative": [
+            [
+              0.25226892457611433,
+              -0.053939339828220224,
+              -0.16923994322252273
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_57_collision",
+          "min_z_plus_signed_centered_y_m": -0.16141893917870054,
+          "support_rack_relative": [
+            [
+              0.26376303911398635,
+              -0.05393933982822024,
+              -0.16035827900692073
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_58_collision",
+          "min_z_plus_signed_centered_y_m": -0.15119448801898033,
+          "support_rack_relative": [
+            [
+              0.27355486672188645,
+              -0.05393933982822021,
+              -0.15013382784720053
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_59_collision",
+          "min_z_plus_signed_centered_y_m": -0.13943799621739483,
+          "support_rack_relative": [
+            [
+              0.2817319892936405,
+              -0.053939339828220204,
+              -0.13837733604561503
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_60_collision",
+          "min_z_plus_signed_centered_y_m": -0.12584414481262685,
+          "support_rack_relative": [
+            [
+              0.2883559569802847,
+              -0.05393933982822021,
+              -0.12478348464084704
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_61_collision",
+          "min_z_plus_signed_centered_y_m": -0.1098774667584092,
+          "support_rack_relative": [
+            [
+              0.2934699817969442,
+              -0.053939339828220204,
+              -0.10881680658662939
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_62_collision",
+          "min_z_plus_signed_centered_y_m": -0.09045938054778385,
+          "support_rack_relative": [
+            [
+              0.2971038122210665,
+              -0.05393933982822022,
+              -0.08939872037600408
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pillow_seam_63_collision",
+          "min_z_plus_signed_centered_y_m": -0.06473669875160276,
+          "support_rack_relative": [
+            [
+              0.29927683739390487,
+              -0.053939339828220176,
+              -0.06367603857982293
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pull_loop_left_leg_collision",
+          "min_z_plus_signed_centered_y_m": 0.17173604204840154,
+          "support_rack_relative": [
+            [
+              -0.251,
+              -0.05399999999999996,
+              0.1727360420484015
+            ],
+            [
+              -0.24700000000000003,
+              -0.05399999999999996,
+              0.1727360420484015
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pull_loop_right_leg_collision",
+          "min_z_plus_signed_centered_y_m": 0.17173604204840154,
+          "support_rack_relative": [
+            [
+              -0.233,
+              -0.05399999999999996,
+              0.1727360420484015
+            ],
+            [
+              -0.229,
+              -0.05399999999999996,
+              0.1727360420484015
+            ]
+          ]
+        },
+        {
+          "name": "adult_pillow_1_pull_loop_upper_bridge_collision",
+          "min_z_plus_signed_centered_y_m": 0.20573604204840146,
+          "support_rack_relative": [
+            [
+              -0.25100000000000006,
+              -0.053999999999999965,
+              0.20673604204840143
+            ],
+            [
+              -0.22900000000000004,
+              -0.053999999999999965,
+              0.20673604204840143
+            ]
+          ]
+        }
+      ],
+      "limiting": [
+        {
+          "name": "adult_pillow_1_pillow_body_collision",
+          "min_z_plus_signed_centered_y_m": -0.21362097148760303,
+          "support_rack_relative": [
+            [
+              -3.783882583581257e-09,
+              -0.027500000546459652,
+              -0.18612097203406266
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "base_dimensions_m": [
+    0.65,
+    0.24,
+    0.015
+  ],
+  "panel_dimensions_m": [
+    0.65,
+    0.12727922061357855,
+    0.015
+  ],
+  "panel_topface_center_abs_y_m": 0.065,
+  "panel_topface_center_z_m": 0.08,
+  "actual_controls": 0,
+  "GPU": false,
+  "models": [],
+  "intercept_derivation": "Actual15mm base deck top, not table floor. Draft table-level arithmetic preserved; no Scene/trajectory/physics was run for it."
+}

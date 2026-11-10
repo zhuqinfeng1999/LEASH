@@ -1,0 +1,28 @@
+<mujoco>
+  <asset>
+    <texture name="identity" type="2d" file="__LEASH_ROOT__/research/v4/candidates/r4_05_inclined_identity_v2_20260926/assets/identity.png" />
+    <material name="identity" texture="identity" rgba="1 1 1 1" specular=".05" shininess=".05" />
+    <material name="stand" rgba=".20 .23 .25 1" />
+    <mesh name="card_quad" vertex="0 -.085 -.0625 0 .085 -.0625 0 .085 .0625 0 -.085 .0625" face="0 1 2 0 2 3" texcoord="0 1 1 1 1 0 0 0" inertia="shell" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .020" mass=".14" diaginertia=".0005 .0001 .0005" />
+        <geom name="stand_base_collision" type="box" pos="0 0 .006" size=".025 .085 .006" group="0" contype="1" conaffinity="1" mass="0" material="stand" solref=".02 1" />
+        <geom name="card_support_collision" type="box" pos="0.0 0.0 0.11" size=".0015 .085 .0625" group="0" contype="1" conaffinity="1" mass="0" material="stand" solref=".02 1" quat="0.9238795325112867 0.0 -0.3826834323650898 0.0" />
+        <geom name="stand_base_visual" type="box" pos="0 0 .006" size=".025 .085 .006" group="1" contype="0" conaffinity="0" mass="0" material="stand" solref=".02 1" />
+        <geom name="card_support_visual" type="box" pos="0.0 0.0 0.11" size=".0015 .085 .0625" group="1" contype="0" conaffinity="0" mass="0" material="stand" solref=".02 1" quat="0.9238795325112867 0.0 -0.3826834323650898 0.0" />
+        <geom name="card_front_visual" type="mesh" mesh="card_quad" pos="0.001131370849898476 0.0 0.11113137084989848" group="1" contype="0" conaffinity="0" mass="0" material="identity" quat="0.9238795325112867 0.0 -0.3826834323650898 0.0" />
+        <geom name="card_back_visual" type="mesh" mesh="card_quad" pos="-0.001131370849898476 0.0 0.10886862915010152" group="1" contype="0" conaffinity="0" mass="0" material="identity" quat="5.657130561438501e-17 -0.3826834323650898 -2.3432602026631493e-17 0.9238795325112867" />
+        <geom name="stand_strut_0_collision" type="capsule" fromto="0 -0.068 .010 -.020 -0.068 .090" size=".003" group="0" contype="1" conaffinity="1" mass="0" material="stand" solref=".02 1" />
+        <geom name="stand_strut_0_visual" type="capsule" fromto="0 -0.068 .010 -.020 -0.068 .090" size=".003" group="1" contype="0" conaffinity="0" mass="0" material="stand" solref=".02 1" />
+        <geom name="stand_strut_1_collision" type="capsule" fromto="0 0.068 .010 -.020 0.068 .090" size=".003" group="0" contype="1" conaffinity="1" mass="0" material="stand" solref=".02 1" />
+        <geom name="stand_strut_1_visual" type="capsule" fromto="0 0.068 .010 -.020 0.068 .090" size=".003" group="1" contype="0" conaffinity="0" mass="0" material="stand" solref=".02 1" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" />
+      <site name="top_site" pos="0 0 .155" />
+      <site name="horizontal_radius_site" pos=".088 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

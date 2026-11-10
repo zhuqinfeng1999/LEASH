@@ -1,0 +1,7 @@
+<mujoco model="s3_cookie"><asset /><worldbody><body><body name="object">
+      <inertial pos="0 0 .009" mass=".026" diaginertia=".000004 .000004 .000007" />
+      <geom name="cookie_body" type="cylinder" pos="0 0 .009" size=".026 .009" rgba=".94 .79 .65 1" friction=".95 .005 .001" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="cookie_crumb_1" type="sphere" pos=".009 .006 .018" size=".004" rgba=".97 .86 .75 1" group="1" contype="0" conaffinity="0" />
+      <geom name="cookie_crumb_2" type="sphere" pos="-.010 -.003 .018" size=".003" rgba=".97 .86 .75 1" group="1" contype="0" conaffinity="0" />
+    <geom name="cookie_body_visual" type="cylinder" pos="0 0 .009" size=".026 .009" rgba=".94 .79 .65 1" friction=".95 .005 .001" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      </body><site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" /><site name="top_site" pos="0 0 .018" size=".001" rgba="0 0 0 0" /><site name="horizontal_radius_site" pos=".026 0 .009" size=".001" rgba="0 0 0 0" /></body></worldbody></mujoco>

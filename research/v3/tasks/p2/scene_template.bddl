@@ -1,0 +1,12 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+ (:domain robosuite)
+ (:language Hand me the {tool}.)
+ (:regions
+  (tool_start (:target main_table) (:ranges ((-.025 -.225 -.015 -.215))))
+  (person_anchor (:target main_table) (:ranges ((.255 .195 .265 .205)))))
+ (:fixtures main_table - table)
+ (:objects {tool_object} - {tool_category} proxy_forearm_1 - proxy_forearm)
+ (:obj_of_interest {tool_object})
+ (:init (On {tool_object} main_table_tool_start)
+        (On proxy_forearm_1 main_table_person_anchor))
+ (:goal (And (On {tool_object} main_table_tool_start))))

@@ -1,0 +1,280 @@
+<mujoco model="original_ceramic_soup_bowl">
+  <asset>
+    <material name="authored_bowl_ceramic" rgba=".87 .88 .82 1" specular=".55" shininess=".6" />
+    <material name="authored_soup" rgba=".72 .36 .065 1" specular=".45" shininess=".5" />
+    <mesh name="soup_bowl_visual" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/soup_bowl_visual.obj" />
+    <mesh name="bowl_wall_0_0" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_0.obj" />
+    <mesh name="bowl_wall_0_1" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_1.obj" />
+    <mesh name="bowl_wall_0_2" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_2.obj" />
+    <mesh name="bowl_wall_0_3" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_3.obj" />
+    <mesh name="bowl_wall_0_4" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_4.obj" />
+    <mesh name="bowl_wall_0_5" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_5.obj" />
+    <mesh name="bowl_wall_0_6" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_6.obj" />
+    <mesh name="bowl_wall_0_7" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_7.obj" />
+    <mesh name="bowl_wall_0_8" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_8.obj" />
+    <mesh name="bowl_wall_0_9" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_9.obj" />
+    <mesh name="bowl_wall_0_10" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_10.obj" />
+    <mesh name="bowl_wall_0_11" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_11.obj" />
+    <mesh name="bowl_wall_0_12" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_12.obj" />
+    <mesh name="bowl_wall_0_13" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_13.obj" />
+    <mesh name="bowl_wall_0_14" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_14.obj" />
+    <mesh name="bowl_wall_0_15" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_15.obj" />
+    <mesh name="bowl_wall_0_16" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_16.obj" />
+    <mesh name="bowl_wall_0_17" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_17.obj" />
+    <mesh name="bowl_wall_0_18" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_18.obj" />
+    <mesh name="bowl_wall_0_19" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_19.obj" />
+    <mesh name="bowl_wall_0_20" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_20.obj" />
+    <mesh name="bowl_wall_0_21" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_21.obj" />
+    <mesh name="bowl_wall_0_22" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_22.obj" />
+    <mesh name="bowl_wall_0_23" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_23.obj" />
+    <mesh name="bowl_wall_0_24" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_24.obj" />
+    <mesh name="bowl_wall_0_25" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_25.obj" />
+    <mesh name="bowl_wall_0_26" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_26.obj" />
+    <mesh name="bowl_wall_0_27" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_27.obj" />
+    <mesh name="bowl_wall_0_28" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_28.obj" />
+    <mesh name="bowl_wall_0_29" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_29.obj" />
+    <mesh name="bowl_wall_0_30" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_30.obj" />
+    <mesh name="bowl_wall_0_31" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_0_31.obj" />
+    <mesh name="bowl_wall_1_0" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_0.obj" />
+    <mesh name="bowl_wall_1_1" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_1.obj" />
+    <mesh name="bowl_wall_1_2" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_2.obj" />
+    <mesh name="bowl_wall_1_3" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_3.obj" />
+    <mesh name="bowl_wall_1_4" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_4.obj" />
+    <mesh name="bowl_wall_1_5" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_5.obj" />
+    <mesh name="bowl_wall_1_6" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_6.obj" />
+    <mesh name="bowl_wall_1_7" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_7.obj" />
+    <mesh name="bowl_wall_1_8" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_8.obj" />
+    <mesh name="bowl_wall_1_9" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_9.obj" />
+    <mesh name="bowl_wall_1_10" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_10.obj" />
+    <mesh name="bowl_wall_1_11" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_11.obj" />
+    <mesh name="bowl_wall_1_12" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_12.obj" />
+    <mesh name="bowl_wall_1_13" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_13.obj" />
+    <mesh name="bowl_wall_1_14" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_14.obj" />
+    <mesh name="bowl_wall_1_15" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_15.obj" />
+    <mesh name="bowl_wall_1_16" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_16.obj" />
+    <mesh name="bowl_wall_1_17" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_17.obj" />
+    <mesh name="bowl_wall_1_18" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_18.obj" />
+    <mesh name="bowl_wall_1_19" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_19.obj" />
+    <mesh name="bowl_wall_1_20" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_20.obj" />
+    <mesh name="bowl_wall_1_21" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_21.obj" />
+    <mesh name="bowl_wall_1_22" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_22.obj" />
+    <mesh name="bowl_wall_1_23" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_23.obj" />
+    <mesh name="bowl_wall_1_24" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_24.obj" />
+    <mesh name="bowl_wall_1_25" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_25.obj" />
+    <mesh name="bowl_wall_1_26" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_26.obj" />
+    <mesh name="bowl_wall_1_27" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_27.obj" />
+    <mesh name="bowl_wall_1_28" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_28.obj" />
+    <mesh name="bowl_wall_1_29" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_29.obj" />
+    <mesh name="bowl_wall_1_30" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_30.obj" />
+    <mesh name="bowl_wall_1_31" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_1_31.obj" />
+    <mesh name="bowl_wall_2_0" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_0.obj" />
+    <mesh name="bowl_wall_2_1" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_1.obj" />
+    <mesh name="bowl_wall_2_2" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_2.obj" />
+    <mesh name="bowl_wall_2_3" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_3.obj" />
+    <mesh name="bowl_wall_2_4" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_4.obj" />
+    <mesh name="bowl_wall_2_5" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_5.obj" />
+    <mesh name="bowl_wall_2_6" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_6.obj" />
+    <mesh name="bowl_wall_2_7" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_7.obj" />
+    <mesh name="bowl_wall_2_8" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_8.obj" />
+    <mesh name="bowl_wall_2_9" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_9.obj" />
+    <mesh name="bowl_wall_2_10" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_10.obj" />
+    <mesh name="bowl_wall_2_11" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_11.obj" />
+    <mesh name="bowl_wall_2_12" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_12.obj" />
+    <mesh name="bowl_wall_2_13" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_13.obj" />
+    <mesh name="bowl_wall_2_14" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_14.obj" />
+    <mesh name="bowl_wall_2_15" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_15.obj" />
+    <mesh name="bowl_wall_2_16" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_16.obj" />
+    <mesh name="bowl_wall_2_17" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_17.obj" />
+    <mesh name="bowl_wall_2_18" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_18.obj" />
+    <mesh name="bowl_wall_2_19" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_19.obj" />
+    <mesh name="bowl_wall_2_20" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_20.obj" />
+    <mesh name="bowl_wall_2_21" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_21.obj" />
+    <mesh name="bowl_wall_2_22" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_22.obj" />
+    <mesh name="bowl_wall_2_23" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_23.obj" />
+    <mesh name="bowl_wall_2_24" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_24.obj" />
+    <mesh name="bowl_wall_2_25" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_25.obj" />
+    <mesh name="bowl_wall_2_26" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_26.obj" />
+    <mesh name="bowl_wall_2_27" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_27.obj" />
+    <mesh name="bowl_wall_2_28" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_28.obj" />
+    <mesh name="bowl_wall_2_29" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_29.obj" />
+    <mesh name="bowl_wall_2_30" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_30.obj" />
+    <mesh name="bowl_wall_2_31" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_2_31.obj" />
+    <mesh name="bowl_wall_3_0" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_0.obj" />
+    <mesh name="bowl_wall_3_1" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_1.obj" />
+    <mesh name="bowl_wall_3_2" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_2.obj" />
+    <mesh name="bowl_wall_3_3" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_3.obj" />
+    <mesh name="bowl_wall_3_4" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_4.obj" />
+    <mesh name="bowl_wall_3_5" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_5.obj" />
+    <mesh name="bowl_wall_3_6" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_6.obj" />
+    <mesh name="bowl_wall_3_7" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_7.obj" />
+    <mesh name="bowl_wall_3_8" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_8.obj" />
+    <mesh name="bowl_wall_3_9" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_9.obj" />
+    <mesh name="bowl_wall_3_10" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_10.obj" />
+    <mesh name="bowl_wall_3_11" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_11.obj" />
+    <mesh name="bowl_wall_3_12" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_12.obj" />
+    <mesh name="bowl_wall_3_13" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_13.obj" />
+    <mesh name="bowl_wall_3_14" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_14.obj" />
+    <mesh name="bowl_wall_3_15" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_15.obj" />
+    <mesh name="bowl_wall_3_16" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_16.obj" />
+    <mesh name="bowl_wall_3_17" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_17.obj" />
+    <mesh name="bowl_wall_3_18" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_18.obj" />
+    <mesh name="bowl_wall_3_19" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_19.obj" />
+    <mesh name="bowl_wall_3_20" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_20.obj" />
+    <mesh name="bowl_wall_3_21" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_21.obj" />
+    <mesh name="bowl_wall_3_22" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_22.obj" />
+    <mesh name="bowl_wall_3_23" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_23.obj" />
+    <mesh name="bowl_wall_3_24" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_24.obj" />
+    <mesh name="bowl_wall_3_25" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_25.obj" />
+    <mesh name="bowl_wall_3_26" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_26.obj" />
+    <mesh name="bowl_wall_3_27" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_27.obj" />
+    <mesh name="bowl_wall_3_28" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_28.obj" />
+    <mesh name="bowl_wall_3_29" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_29.obj" />
+    <mesh name="bowl_wall_3_30" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_30.obj" />
+    <mesh name="bowl_wall_3_31" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/bowl_wall_3_31.obj" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .025" mass=".55" diaginertia=".00051 .00051 .00092" />
+        <geom name="bowl_visual" type="mesh" mesh="soup_bowl_visual" material="authored_bowl_ceramic" group="1" contype="0" conaffinity="0" />
+        <geom name="bowl_base" type="cylinder" pos="0 0 .0025" size=".038 .0025" group="0" rgba="0 0 0 0" friction=".9 .005 .001" priority="1" solref=".004 1" solimp=".99 .99 .001" />
+        <geom name="bowl_wall_0_0" type="mesh" mesh="bowl_wall_0_0" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_1" type="mesh" mesh="bowl_wall_0_1" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_2" type="mesh" mesh="bowl_wall_0_2" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_3" type="mesh" mesh="bowl_wall_0_3" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_4" type="mesh" mesh="bowl_wall_0_4" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_5" type="mesh" mesh="bowl_wall_0_5" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_6" type="mesh" mesh="bowl_wall_0_6" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_7" type="mesh" mesh="bowl_wall_0_7" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_8" type="mesh" mesh="bowl_wall_0_8" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_9" type="mesh" mesh="bowl_wall_0_9" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_10" type="mesh" mesh="bowl_wall_0_10" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_11" type="mesh" mesh="bowl_wall_0_11" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_12" type="mesh" mesh="bowl_wall_0_12" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_13" type="mesh" mesh="bowl_wall_0_13" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_14" type="mesh" mesh="bowl_wall_0_14" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_15" type="mesh" mesh="bowl_wall_0_15" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_16" type="mesh" mesh="bowl_wall_0_16" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_17" type="mesh" mesh="bowl_wall_0_17" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_18" type="mesh" mesh="bowl_wall_0_18" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_19" type="mesh" mesh="bowl_wall_0_19" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_20" type="mesh" mesh="bowl_wall_0_20" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_21" type="mesh" mesh="bowl_wall_0_21" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_22" type="mesh" mesh="bowl_wall_0_22" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_23" type="mesh" mesh="bowl_wall_0_23" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_24" type="mesh" mesh="bowl_wall_0_24" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_25" type="mesh" mesh="bowl_wall_0_25" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_26" type="mesh" mesh="bowl_wall_0_26" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_27" type="mesh" mesh="bowl_wall_0_27" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_28" type="mesh" mesh="bowl_wall_0_28" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_29" type="mesh" mesh="bowl_wall_0_29" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_30" type="mesh" mesh="bowl_wall_0_30" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_0_31" type="mesh" mesh="bowl_wall_0_31" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_0" type="mesh" mesh="bowl_wall_1_0" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_1" type="mesh" mesh="bowl_wall_1_1" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_2" type="mesh" mesh="bowl_wall_1_2" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_3" type="mesh" mesh="bowl_wall_1_3" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_4" type="mesh" mesh="bowl_wall_1_4" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_5" type="mesh" mesh="bowl_wall_1_5" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_6" type="mesh" mesh="bowl_wall_1_6" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_7" type="mesh" mesh="bowl_wall_1_7" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_8" type="mesh" mesh="bowl_wall_1_8" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_9" type="mesh" mesh="bowl_wall_1_9" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_10" type="mesh" mesh="bowl_wall_1_10" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_11" type="mesh" mesh="bowl_wall_1_11" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_12" type="mesh" mesh="bowl_wall_1_12" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_13" type="mesh" mesh="bowl_wall_1_13" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_14" type="mesh" mesh="bowl_wall_1_14" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_15" type="mesh" mesh="bowl_wall_1_15" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_16" type="mesh" mesh="bowl_wall_1_16" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_17" type="mesh" mesh="bowl_wall_1_17" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_18" type="mesh" mesh="bowl_wall_1_18" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_19" type="mesh" mesh="bowl_wall_1_19" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_20" type="mesh" mesh="bowl_wall_1_20" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_21" type="mesh" mesh="bowl_wall_1_21" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_22" type="mesh" mesh="bowl_wall_1_22" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_23" type="mesh" mesh="bowl_wall_1_23" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_24" type="mesh" mesh="bowl_wall_1_24" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_25" type="mesh" mesh="bowl_wall_1_25" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_26" type="mesh" mesh="bowl_wall_1_26" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_27" type="mesh" mesh="bowl_wall_1_27" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_28" type="mesh" mesh="bowl_wall_1_28" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_29" type="mesh" mesh="bowl_wall_1_29" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_30" type="mesh" mesh="bowl_wall_1_30" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_1_31" type="mesh" mesh="bowl_wall_1_31" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_0" type="mesh" mesh="bowl_wall_2_0" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_1" type="mesh" mesh="bowl_wall_2_1" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_2" type="mesh" mesh="bowl_wall_2_2" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_3" type="mesh" mesh="bowl_wall_2_3" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_4" type="mesh" mesh="bowl_wall_2_4" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_5" type="mesh" mesh="bowl_wall_2_5" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_6" type="mesh" mesh="bowl_wall_2_6" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_7" type="mesh" mesh="bowl_wall_2_7" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_8" type="mesh" mesh="bowl_wall_2_8" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_9" type="mesh" mesh="bowl_wall_2_9" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_10" type="mesh" mesh="bowl_wall_2_10" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_11" type="mesh" mesh="bowl_wall_2_11" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_12" type="mesh" mesh="bowl_wall_2_12" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_13" type="mesh" mesh="bowl_wall_2_13" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_14" type="mesh" mesh="bowl_wall_2_14" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_15" type="mesh" mesh="bowl_wall_2_15" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_16" type="mesh" mesh="bowl_wall_2_16" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_17" type="mesh" mesh="bowl_wall_2_17" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_18" type="mesh" mesh="bowl_wall_2_18" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_19" type="mesh" mesh="bowl_wall_2_19" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_20" type="mesh" mesh="bowl_wall_2_20" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_21" type="mesh" mesh="bowl_wall_2_21" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_22" type="mesh" mesh="bowl_wall_2_22" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_23" type="mesh" mesh="bowl_wall_2_23" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_24" type="mesh" mesh="bowl_wall_2_24" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_25" type="mesh" mesh="bowl_wall_2_25" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_26" type="mesh" mesh="bowl_wall_2_26" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_27" type="mesh" mesh="bowl_wall_2_27" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_28" type="mesh" mesh="bowl_wall_2_28" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_29" type="mesh" mesh="bowl_wall_2_29" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_30" type="mesh" mesh="bowl_wall_2_30" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_2_31" type="mesh" mesh="bowl_wall_2_31" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_0" type="mesh" mesh="bowl_wall_3_0" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_1" type="mesh" mesh="bowl_wall_3_1" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_2" type="mesh" mesh="bowl_wall_3_2" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_3" type="mesh" mesh="bowl_wall_3_3" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_4" type="mesh" mesh="bowl_wall_3_4" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_5" type="mesh" mesh="bowl_wall_3_5" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_6" type="mesh" mesh="bowl_wall_3_6" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_7" type="mesh" mesh="bowl_wall_3_7" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_8" type="mesh" mesh="bowl_wall_3_8" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_9" type="mesh" mesh="bowl_wall_3_9" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_10" type="mesh" mesh="bowl_wall_3_10" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_11" type="mesh" mesh="bowl_wall_3_11" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_12" type="mesh" mesh="bowl_wall_3_12" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_13" type="mesh" mesh="bowl_wall_3_13" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_14" type="mesh" mesh="bowl_wall_3_14" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_15" type="mesh" mesh="bowl_wall_3_15" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_16" type="mesh" mesh="bowl_wall_3_16" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_17" type="mesh" mesh="bowl_wall_3_17" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_18" type="mesh" mesh="bowl_wall_3_18" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_19" type="mesh" mesh="bowl_wall_3_19" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_20" type="mesh" mesh="bowl_wall_3_20" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_21" type="mesh" mesh="bowl_wall_3_21" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_22" type="mesh" mesh="bowl_wall_3_22" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_23" type="mesh" mesh="bowl_wall_3_23" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_24" type="mesh" mesh="bowl_wall_3_24" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_25" type="mesh" mesh="bowl_wall_3_25" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_26" type="mesh" mesh="bowl_wall_3_26" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_27" type="mesh" mesh="bowl_wall_3_27" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_28" type="mesh" mesh="bowl_wall_3_28" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_29" type="mesh" mesh="bowl_wall_3_29" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_30" type="mesh" mesh="bowl_wall_3_30" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="bowl_wall_3_31" type="mesh" mesh="bowl_wall_3_31" group="0" rgba="0 0 0 0" friction=".8 .005 .001" />
+        <geom name="soup_surface" type="cylinder" pos="0 0 .041" size=".062 .0005" material="authored_soup" group="1" contype="0" conaffinity="0" />
+        <geom name="soup_herb_0" type="ellipsoid" pos="-0.02 0.009 .0417" size=".003 .0015 .0003" rgba=".18 .27 .065 1" group="1" contype="0" conaffinity="0" />
+        <geom name="soup_herb_1" type="ellipsoid" pos="0.031 -0.014 .0417" size=".003 .0015 .0003" rgba=".18 .27 .065 1" group="1" contype="0" conaffinity="0" />
+        <geom name="soup_herb_2" type="ellipsoid" pos="0.012 0.023 .0417" size=".003 .0015 .0003" rgba=".18 .27 .065 1" group="1" contype="0" conaffinity="0" />
+        <geom name="soup_herb_3" type="ellipsoid" pos="-0.006 -0.031 .0417" size=".003 .0015 .0003" rgba=".18 .27 .065 1" group="1" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 .058" size=".001" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos=".070 0 0" size=".001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

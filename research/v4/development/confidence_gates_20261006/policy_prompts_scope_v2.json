@@ -1,0 +1,16 @@
+{
+  "version": "confidence-scope-dev2-20261007",
+  "authority": "Direct user instruction 2026-10-07: verify gate duties and clarify current primitive/transition scope",
+  "policy_sha256": "58b612f4c16238d52aab94bba6d90e666cf29d0606b2c92d55db6c8c39157815",
+  "active_prompts": {
+    "G1": "prompt_confidence_G1_v1.txt",
+    "G2": "prompt_confidence_G2_v2.txt",
+    "G3": "prompt_confidence_G3_v2.txt"
+  },
+  "files": {
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G1_v1.txt": "2a580aaf138b2d859c7d36932017992dff20c32f2d1de871b4d95bb3986ee3c1",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G2_v2.txt": "32f5d67fd35a3149028b27eacfd8e79e98811a3ce5d6f320edc3d5e9a16dbdaf",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G3_v2.txt": "c87cb81a303de6252ae1cf3568031d23e30bc4ebcca13349a09eb2d2cfc8a74b"
+  },
+  "scope": "New development only; original prompts/results/calibration unchanged; old thresholds are historical development candidates for this revision"
+}

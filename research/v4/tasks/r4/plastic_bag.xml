@@ -1,0 +1,35 @@
+<mujoco model="v4_r4_flat_grocery_bag">
+  <asset>
+    <texture name="v4_r4_bag_print" type="2d" file="plastic_bag_print.png" />
+    <material name="v4_r4_bag_print_mat" texture="v4_r4_bag_print" texrepeat="1 1" rgba="1 1 1 .96" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass="0.11" diaginertia="0.00022 0.00035 0.00052" />
+        <geom name="film_strip_0" type="box" size=".051 0.009 .0011" group="1" contype="0" conaffinity="0" pos="0 -0.025 0.008" rgba=".97 .97 .94 0.82" />
+        <geom name="film_strip_1" type="box" size=".051 0.01 .0011" group="1" contype="0" conaffinity="0" pos="0 -0.009 0.011" rgba=".97 .97 .94 0.93" />
+        <geom name="film_strip_2" type="box" size=".051 0.01 .0011" group="1" contype="0" conaffinity="0" pos="0 0.009 0.009" rgba=".97 .97 .94 0.91" />
+        <geom name="film_strip_3" type="box" size=".051 0.009 .0011" group="1" contype="0" conaffinity="0" pos="0 0.025 0.012" rgba=".97 .97 .94 0.82" />
+        <geom name="printed_outer_film" type="box" size=".050 .033 .0003" group="1" contype="0" conaffinity="0" pos="0 0 .015" material="v4_r4_bag_print_mat" />
+        <geom name="side_seam_low" type="capsule" size=".0015" group="1" contype="0" conaffinity="0" fromto="-.050 -0.034 .008 .047 -0.034 .012" rgba=".72 .75 .73 .72" />
+        <geom name="side_seam_high" type="capsule" size=".0015" group="1" contype="0" conaffinity="0" fromto="-.050 0.034 .008 .047 0.034 .012" rgba=".72 .75 .73 .72" />
+        <geom name="folded_opening" type="box" size=".003 .032 .0015" group="1" contype="0" conaffinity="0" pos=".047 0 .014" rgba=".91 .93 .92 .94" />
+        <geom name="left_handle_lower" type="capsule" size=".0032" group="1" contype="0" conaffinity="0" fromto=".047 -0.028 .013 .074 -0.028999999999999998 .009" rgba=".97 .97 .94 .94" />
+        <geom name="left_handle_upper" type="capsule" size=".0032" group="1" contype="0" conaffinity="0" fromto=".047 -0.012 .013 .074 -0.011000000000000001 .009" rgba=".97 .97 .94 .94" />
+        <geom name="left_handle_tip" type="capsule" size=".0032" group="1" contype="0" conaffinity="0" fromto=".074 -0.028999999999999998 .009 .074 -0.011000000000000001 .009" rgba=".97 .97 .94 .94" />
+        <geom name="right_handle_lower" type="capsule" size=".0032" group="1" contype="0" conaffinity="0" fromto=".047 0.012 .013 .074 0.011000000000000001 .009" rgba=".97 .97 .94 .94" />
+        <geom name="right_handle_upper" type="capsule" size=".0032" group="1" contype="0" conaffinity="0" fromto=".047 0.028 .013 .074 0.028999999999999998 .009" rgba=".97 .97 .94 .94" />
+        <geom name="right_handle_tip" type="capsule" size=".0032" group="1" contype="0" conaffinity="0" fromto=".074 0.011000000000000001 .009 .074 0.028999999999999998 .009" rgba=".97 .97 .94 .94" />
+        <geom name="crinkle_0" type="capsule" size=".0011" group="1" contype="0" conaffinity="0" fromto="-0.045 -0.031 .017 -0.019 0.029 .017" rgba=".72 .75 .73 .72" />
+        <geom name="crinkle_1" type="capsule" size=".0011" group="1" contype="0" conaffinity="0" fromto="-0.026 0.031 .017 0.007 -0.029 .017" rgba=".72 .75 .73 .72" />
+        <geom name="crinkle_2" type="capsule" size=".0011" group="1" contype="0" conaffinity="0" fromto="-0.004 -0.03 .017 0.022 0.03 .017" rgba=".72 .75 .73 .72" />
+        <geom name="crinkle_3" type="capsule" size=".0011" group="1" contype="0" conaffinity="0" fromto="0.014 0.029 .017 0.041 -0.025 .017" rgba=".72 .75 .73 .72" />
+        <geom name="bag_grasp_collision" type="box" size=".055 .030 .010" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" mass="0" friction="1 .005 .001" />
+      </body>
+      <site name="bottom_site" pos="0 0 -0.01" size=".001" />
+      <site name="top_site" pos="0 0 0.02" size=".001" />
+      <site name="horizontal_radius_site" pos=".085 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

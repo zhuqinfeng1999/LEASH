@@ -1,0 +1,18 @@
+<mujoco model="s2_sleeping_pill">
+  <asset>
+    <material name="ivory" rgba=".91 .91 .85 1" specular=".22" shininess=".18" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".002" diaginertia=".00000008 .00000020 .00000020" />
+        <geom name="pill_body" material="ivory" group="0" type="capsule" fromto="-.010 0 0 .010 0 0" size=".007" friction="1.1 .005 .001" />
+        <geom name="pill_body_vis" material="ivory" group="1" contype="0" conaffinity="0" type="capsule" fromto="-.010 0 0 .010 0 0" size=".007" friction="1.1 .005 .001" />
+        <geom name="score_line" type="box" pos="0 0 .007" size=".0006 .005 .00035" rgba=".62 .64 .60 1" group="1" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.007" size=".001" />
+      <site name="top_site" pos="0 0 .007" size=".001" />
+      <site name="horizontal_radius_site" pos=".017 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

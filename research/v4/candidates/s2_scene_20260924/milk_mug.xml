@@ -1,0 +1,124 @@
+<mujoco model="s2_milk_mug">
+  <asset>
+    <material name="glaze" rgba=".21 .35 .48 1" specular=".46" shininess=".55" />
+    <material name="rim_glaze" rgba=".29 .43 .54 1" specular=".55" shininess=".6" />
+    <material name="milk" rgba=".96 .95 .88 1" specular=".30" shininess=".22" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .044" mass=".32" diaginertia=".00038 .00038 .00045" />
+        <geom name="base" material="glaze" group="0" type="cylinder" pos="0 0 .004" size=".045 .004" friction=".85 .005 .001" />
+        <geom name="base_vis" material="glaze" group="1" contype="0" conaffinity="0" type="cylinder" pos="0 0 .004" size=".045 .004" friction=".85 .005 .001" />
+        <geom name="wall_00" material="glaze" group="0" type="box" pos="0.0420000 0.0000000 .047" size=".0048 .0053 .043" quat="1.00000000 0 0 0.00000000" friction=".75 .005 .001" />
+        <geom name="wall_00_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0420000 0.0000000 .047" size=".0048 .0053 .043" quat="1.00000000 0 0 0.00000000" friction=".75 .005 .001" />
+        <geom name="lip_00" type="box" pos="0.0420000 0.0000000 .087" size=".0054 .0053 .0017" quat="1.00000000 0 0 0.00000000" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_01" material="glaze" group="0" type="box" pos="0.0411930 0.0081938 .047" size=".0048 .0053 .043" quat="0.99518473 0 0 0.09801714" friction=".75 .005 .001" />
+        <geom name="wall_01_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0411930 0.0081938 .047" size=".0048 .0053 .043" quat="0.99518473 0 0 0.09801714" friction=".75 .005 .001" />
+        <geom name="lip_01" type="box" pos="0.0411930 0.0081938 .087" size=".0054 .0053 .0017" quat="0.99518473 0 0 0.09801714" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_02" material="glaze" group="0" type="box" pos="0.0388029 0.0160727 .047" size=".0048 .0053 .043" quat="0.98078528 0 0 0.19509032" friction=".75 .005 .001" />
+        <geom name="wall_02_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0388029 0.0160727 .047" size=".0048 .0053 .043" quat="0.98078528 0 0 0.19509032" friction=".75 .005 .001" />
+        <geom name="lip_02" type="box" pos="0.0388029 0.0160727 .087" size=".0054 .0053 .0017" quat="0.98078528 0 0 0.19509032" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_03" material="glaze" group="0" type="box" pos="0.0349217 0.0233339 .047" size=".0048 .0053 .043" quat="0.95694034 0 0 0.29028468" friction=".75 .005 .001" />
+        <geom name="wall_03_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0349217 0.0233339 .047" size=".0048 .0053 .043" quat="0.95694034 0 0 0.29028468" friction=".75 .005 .001" />
+        <geom name="lip_03" type="box" pos="0.0349217 0.0233339 .087" size=".0054 .0053 .0017" quat="0.95694034 0 0 0.29028468" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_04" material="glaze" group="0" type="box" pos="0.0296985 0.0296985 .047" size=".0048 .0053 .043" quat="0.92387953 0 0 0.38268343" friction=".75 .005 .001" />
+        <geom name="wall_04_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0296985 0.0296985 .047" size=".0048 .0053 .043" quat="0.92387953 0 0 0.38268343" friction=".75 .005 .001" />
+        <geom name="lip_04" type="box" pos="0.0296985 0.0296985 .087" size=".0054 .0053 .0017" quat="0.92387953 0 0 0.38268343" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_05" material="glaze" group="0" type="box" pos="0.0233339 0.0349217 .047" size=".0048 .0053 .043" quat="0.88192126 0 0 0.47139674" friction=".75 .005 .001" />
+        <geom name="wall_05_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0233339 0.0349217 .047" size=".0048 .0053 .043" quat="0.88192126 0 0 0.47139674" friction=".75 .005 .001" />
+        <geom name="lip_05" type="box" pos="0.0233339 0.0349217 .087" size=".0054 .0053 .0017" quat="0.88192126 0 0 0.47139674" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_06" material="glaze" group="0" type="box" pos="0.0160727 0.0388029 .047" size=".0048 .0053 .043" quat="0.83146961 0 0 0.55557023" friction=".75 .005 .001" />
+        <geom name="wall_06_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0160727 0.0388029 .047" size=".0048 .0053 .043" quat="0.83146961 0 0 0.55557023" friction=".75 .005 .001" />
+        <geom name="lip_06" type="box" pos="0.0160727 0.0388029 .087" size=".0054 .0053 .0017" quat="0.83146961 0 0 0.55557023" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_07" material="glaze" group="0" type="box" pos="0.0081938 0.0411930 .047" size=".0048 .0053 .043" quat="0.77301045 0 0 0.63439328" friction=".75 .005 .001" />
+        <geom name="wall_07_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0081938 0.0411930 .047" size=".0048 .0053 .043" quat="0.77301045 0 0 0.63439328" friction=".75 .005 .001" />
+        <geom name="lip_07" type="box" pos="0.0081938 0.0411930 .087" size=".0054 .0053 .0017" quat="0.77301045 0 0 0.63439328" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_08" material="glaze" group="0" type="box" pos="0.0000000 0.0420000 .047" size=".0048 .0053 .043" quat="0.70710678 0 0 0.70710678" friction=".75 .005 .001" />
+        <geom name="wall_08_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0000000 0.0420000 .047" size=".0048 .0053 .043" quat="0.70710678 0 0 0.70710678" friction=".75 .005 .001" />
+        <geom name="lip_08" type="box" pos="0.0000000 0.0420000 .087" size=".0054 .0053 .0017" quat="0.70710678 0 0 0.70710678" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_09" material="glaze" group="0" type="box" pos="-0.0081938 0.0411930 .047" size=".0048 .0053 .043" quat="0.63439328 0 0 0.77301045" friction=".75 .005 .001" />
+        <geom name="wall_09_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0081938 0.0411930 .047" size=".0048 .0053 .043" quat="0.63439328 0 0 0.77301045" friction=".75 .005 .001" />
+        <geom name="lip_09" type="box" pos="-0.0081938 0.0411930 .087" size=".0054 .0053 .0017" quat="0.63439328 0 0 0.77301045" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_10" material="glaze" group="0" type="box" pos="-0.0160727 0.0388029 .047" size=".0048 .0053 .043" quat="0.55557023 0 0 0.83146961" friction=".75 .005 .001" />
+        <geom name="wall_10_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0160727 0.0388029 .047" size=".0048 .0053 .043" quat="0.55557023 0 0 0.83146961" friction=".75 .005 .001" />
+        <geom name="lip_10" type="box" pos="-0.0160727 0.0388029 .087" size=".0054 .0053 .0017" quat="0.55557023 0 0 0.83146961" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_11" material="glaze" group="0" type="box" pos="-0.0233339 0.0349217 .047" size=".0048 .0053 .043" quat="0.47139674 0 0 0.88192126" friction=".75 .005 .001" />
+        <geom name="wall_11_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0233339 0.0349217 .047" size=".0048 .0053 .043" quat="0.47139674 0 0 0.88192126" friction=".75 .005 .001" />
+        <geom name="lip_11" type="box" pos="-0.0233339 0.0349217 .087" size=".0054 .0053 .0017" quat="0.47139674 0 0 0.88192126" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_12" material="glaze" group="0" type="box" pos="-0.0296985 0.0296985 .047" size=".0048 .0053 .043" quat="0.38268343 0 0 0.92387953" friction=".75 .005 .001" />
+        <geom name="wall_12_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0296985 0.0296985 .047" size=".0048 .0053 .043" quat="0.38268343 0 0 0.92387953" friction=".75 .005 .001" />
+        <geom name="lip_12" type="box" pos="-0.0296985 0.0296985 .087" size=".0054 .0053 .0017" quat="0.38268343 0 0 0.92387953" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_13" material="glaze" group="0" type="box" pos="-0.0349217 0.0233339 .047" size=".0048 .0053 .043" quat="0.29028468 0 0 0.95694034" friction=".75 .005 .001" />
+        <geom name="wall_13_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0349217 0.0233339 .047" size=".0048 .0053 .043" quat="0.29028468 0 0 0.95694034" friction=".75 .005 .001" />
+        <geom name="lip_13" type="box" pos="-0.0349217 0.0233339 .087" size=".0054 .0053 .0017" quat="0.29028468 0 0 0.95694034" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_14" material="glaze" group="0" type="box" pos="-0.0388029 0.0160727 .047" size=".0048 .0053 .043" quat="0.19509032 0 0 0.98078528" friction=".75 .005 .001" />
+        <geom name="wall_14_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0388029 0.0160727 .047" size=".0048 .0053 .043" quat="0.19509032 0 0 0.98078528" friction=".75 .005 .001" />
+        <geom name="lip_14" type="box" pos="-0.0388029 0.0160727 .087" size=".0054 .0053 .0017" quat="0.19509032 0 0 0.98078528" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_15" material="glaze" group="0" type="box" pos="-0.0411930 0.0081938 .047" size=".0048 .0053 .043" quat="0.09801714 0 0 0.99518473" friction=".75 .005 .001" />
+        <geom name="wall_15_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0411930 0.0081938 .047" size=".0048 .0053 .043" quat="0.09801714 0 0 0.99518473" friction=".75 .005 .001" />
+        <geom name="lip_15" type="box" pos="-0.0411930 0.0081938 .087" size=".0054 .0053 .0017" quat="0.09801714 0 0 0.99518473" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_16" material="glaze" group="0" type="box" pos="-0.0420000 0.0000000 .047" size=".0048 .0053 .043" quat="0.00000000 0 0 1.00000000" friction=".75 .005 .001" />
+        <geom name="wall_16_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0420000 0.0000000 .047" size=".0048 .0053 .043" quat="0.00000000 0 0 1.00000000" friction=".75 .005 .001" />
+        <geom name="lip_16" type="box" pos="-0.0420000 0.0000000 .087" size=".0054 .0053 .0017" quat="0.00000000 0 0 1.00000000" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_17" material="glaze" group="0" type="box" pos="-0.0411930 -0.0081938 .047" size=".0048 .0053 .043" quat="-0.09801714 0 0 0.99518473" friction=".75 .005 .001" />
+        <geom name="wall_17_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0411930 -0.0081938 .047" size=".0048 .0053 .043" quat="-0.09801714 0 0 0.99518473" friction=".75 .005 .001" />
+        <geom name="lip_17" type="box" pos="-0.0411930 -0.0081938 .087" size=".0054 .0053 .0017" quat="-0.09801714 0 0 0.99518473" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_18" material="glaze" group="0" type="box" pos="-0.0388029 -0.0160727 .047" size=".0048 .0053 .043" quat="-0.19509032 0 0 0.98078528" friction=".75 .005 .001" />
+        <geom name="wall_18_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0388029 -0.0160727 .047" size=".0048 .0053 .043" quat="-0.19509032 0 0 0.98078528" friction=".75 .005 .001" />
+        <geom name="lip_18" type="box" pos="-0.0388029 -0.0160727 .087" size=".0054 .0053 .0017" quat="-0.19509032 0 0 0.98078528" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_19" material="glaze" group="0" type="box" pos="-0.0349217 -0.0233339 .047" size=".0048 .0053 .043" quat="-0.29028468 0 0 0.95694034" friction=".75 .005 .001" />
+        <geom name="wall_19_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0349217 -0.0233339 .047" size=".0048 .0053 .043" quat="-0.29028468 0 0 0.95694034" friction=".75 .005 .001" />
+        <geom name="lip_19" type="box" pos="-0.0349217 -0.0233339 .087" size=".0054 .0053 .0017" quat="-0.29028468 0 0 0.95694034" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_20" material="glaze" group="0" type="box" pos="-0.0296985 -0.0296985 .047" size=".0048 .0053 .043" quat="-0.38268343 0 0 0.92387953" friction=".75 .005 .001" />
+        <geom name="wall_20_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0296985 -0.0296985 .047" size=".0048 .0053 .043" quat="-0.38268343 0 0 0.92387953" friction=".75 .005 .001" />
+        <geom name="lip_20" type="box" pos="-0.0296985 -0.0296985 .087" size=".0054 .0053 .0017" quat="-0.38268343 0 0 0.92387953" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_21" material="glaze" group="0" type="box" pos="-0.0233339 -0.0349217 .047" size=".0048 .0053 .043" quat="-0.47139674 0 0 0.88192126" friction=".75 .005 .001" />
+        <geom name="wall_21_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0233339 -0.0349217 .047" size=".0048 .0053 .043" quat="-0.47139674 0 0 0.88192126" friction=".75 .005 .001" />
+        <geom name="lip_21" type="box" pos="-0.0233339 -0.0349217 .087" size=".0054 .0053 .0017" quat="-0.47139674 0 0 0.88192126" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_22" material="glaze" group="0" type="box" pos="-0.0160727 -0.0388029 .047" size=".0048 .0053 .043" quat="-0.55557023 0 0 0.83146961" friction=".75 .005 .001" />
+        <geom name="wall_22_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0160727 -0.0388029 .047" size=".0048 .0053 .043" quat="-0.55557023 0 0 0.83146961" friction=".75 .005 .001" />
+        <geom name="lip_22" type="box" pos="-0.0160727 -0.0388029 .087" size=".0054 .0053 .0017" quat="-0.55557023 0 0 0.83146961" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_23" material="glaze" group="0" type="box" pos="-0.0081938 -0.0411930 .047" size=".0048 .0053 .043" quat="-0.63439328 0 0 0.77301045" friction=".75 .005 .001" />
+        <geom name="wall_23_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0081938 -0.0411930 .047" size=".0048 .0053 .043" quat="-0.63439328 0 0 0.77301045" friction=".75 .005 .001" />
+        <geom name="lip_23" type="box" pos="-0.0081938 -0.0411930 .087" size=".0054 .0053 .0017" quat="-0.63439328 0 0 0.77301045" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_24" material="glaze" group="0" type="box" pos="-0.0000000 -0.0420000 .047" size=".0048 .0053 .043" quat="-0.70710678 0 0 0.70710678" friction=".75 .005 .001" />
+        <geom name="wall_24_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="-0.0000000 -0.0420000 .047" size=".0048 .0053 .043" quat="-0.70710678 0 0 0.70710678" friction=".75 .005 .001" />
+        <geom name="lip_24" type="box" pos="-0.0000000 -0.0420000 .087" size=".0054 .0053 .0017" quat="-0.70710678 0 0 0.70710678" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_25" material="glaze" group="0" type="box" pos="0.0081938 -0.0411930 .047" size=".0048 .0053 .043" quat="-0.77301045 0 0 0.63439328" friction=".75 .005 .001" />
+        <geom name="wall_25_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0081938 -0.0411930 .047" size=".0048 .0053 .043" quat="-0.77301045 0 0 0.63439328" friction=".75 .005 .001" />
+        <geom name="lip_25" type="box" pos="0.0081938 -0.0411930 .087" size=".0054 .0053 .0017" quat="-0.77301045 0 0 0.63439328" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_26" material="glaze" group="0" type="box" pos="0.0160727 -0.0388029 .047" size=".0048 .0053 .043" quat="-0.83146961 0 0 0.55557023" friction=".75 .005 .001" />
+        <geom name="wall_26_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0160727 -0.0388029 .047" size=".0048 .0053 .043" quat="-0.83146961 0 0 0.55557023" friction=".75 .005 .001" />
+        <geom name="lip_26" type="box" pos="0.0160727 -0.0388029 .087" size=".0054 .0053 .0017" quat="-0.83146961 0 0 0.55557023" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_27" material="glaze" group="0" type="box" pos="0.0233339 -0.0349217 .047" size=".0048 .0053 .043" quat="-0.88192126 0 0 0.47139674" friction=".75 .005 .001" />
+        <geom name="wall_27_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0233339 -0.0349217 .047" size=".0048 .0053 .043" quat="-0.88192126 0 0 0.47139674" friction=".75 .005 .001" />
+        <geom name="lip_27" type="box" pos="0.0233339 -0.0349217 .087" size=".0054 .0053 .0017" quat="-0.88192126 0 0 0.47139674" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_28" material="glaze" group="0" type="box" pos="0.0296985 -0.0296985 .047" size=".0048 .0053 .043" quat="-0.92387953 0 0 0.38268343" friction=".75 .005 .001" />
+        <geom name="wall_28_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0296985 -0.0296985 .047" size=".0048 .0053 .043" quat="-0.92387953 0 0 0.38268343" friction=".75 .005 .001" />
+        <geom name="lip_28" type="box" pos="0.0296985 -0.0296985 .087" size=".0054 .0053 .0017" quat="-0.92387953 0 0 0.38268343" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_29" material="glaze" group="0" type="box" pos="0.0349217 -0.0233339 .047" size=".0048 .0053 .043" quat="-0.95694034 0 0 0.29028468" friction=".75 .005 .001" />
+        <geom name="wall_29_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0349217 -0.0233339 .047" size=".0048 .0053 .043" quat="-0.95694034 0 0 0.29028468" friction=".75 .005 .001" />
+        <geom name="lip_29" type="box" pos="0.0349217 -0.0233339 .087" size=".0054 .0053 .0017" quat="-0.95694034 0 0 0.29028468" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_30" material="glaze" group="0" type="box" pos="0.0388029 -0.0160727 .047" size=".0048 .0053 .043" quat="-0.98078528 0 0 0.19509032" friction=".75 .005 .001" />
+        <geom name="wall_30_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0388029 -0.0160727 .047" size=".0048 .0053 .043" quat="-0.98078528 0 0 0.19509032" friction=".75 .005 .001" />
+        <geom name="lip_30" type="box" pos="0.0388029 -0.0160727 .087" size=".0054 .0053 .0017" quat="-0.98078528 0 0 0.19509032" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="wall_31" material="glaze" group="0" type="box" pos="0.0411930 -0.0081938 .047" size=".0048 .0053 .043" quat="-0.99518473 0 0 0.09801714" friction=".75 .005 .001" />
+        <geom name="wall_31_vis" material="glaze" group="1" contype="0" conaffinity="0" type="box" pos="0.0411930 -0.0081938 .047" size=".0048 .0053 .043" quat="-0.99518473 0 0 0.09801714" friction=".75 .005 .001" />
+        <geom name="lip_31" type="box" pos="0.0411930 -0.0081938 .087" size=".0054 .0053 .0017" quat="-0.99518473 0 0 0.09801714" material="rim_glaze" group="1" contype="0" conaffinity="0" />
+        <geom name="handle_0" material="glaze" group="0" type="capsule" fromto="0.044 0 0.018 0.071 0 0.02" size=".006" />
+        <geom name="handle_0_vis" material="glaze" group="1" contype="0" conaffinity="0" type="capsule" fromto="0.044 0 0.018 0.071 0 0.02" size=".006" />
+        <geom name="handle_1" material="glaze" group="0" type="capsule" fromto="0.071 0 0.02 0.08 0 0.044" size=".006" />
+        <geom name="handle_1_vis" material="glaze" group="1" contype="0" conaffinity="0" type="capsule" fromto="0.071 0 0.02 0.08 0 0.044" size=".006" />
+        <geom name="handle_2" material="glaze" group="0" type="capsule" fromto="0.08 0 0.044 0.071 0 0.069" size=".006" />
+        <geom name="handle_2_vis" material="glaze" group="1" contype="0" conaffinity="0" type="capsule" fromto="0.08 0 0.044 0.071 0 0.069" size=".006" />
+        <geom name="handle_3" material="glaze" group="0" type="capsule" fromto="0.071 0 0.069 0.044 0 0.072" size=".006" />
+        <geom name="handle_3_vis" material="glaze" group="1" contype="0" conaffinity="0" type="capsule" fromto="0.071 0 0.069 0.044 0 0.072" size=".006" />
+        <geom name="milk_surface" type="cylinder" pos="0 0 .076" size=".037 .0006" material="milk" group="1" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 .09" size=".001" />
+      <site name="horizontal_radius_site" pos=".082 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

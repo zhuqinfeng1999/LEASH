@@ -1,0 +1,10 @@
+# gpu         pid   type     sm    mem    enc    dec    jpg    ofa    command 
+# Idx           #    C/G      %      %      %      %      %      %    name 
+    0       9984     G      -      -      -      -      -      -    Xorg           
+    0      10201   C+G      -      -      -      -      -      -    gnome-remote-de
+    0     238170   C+G      8      0      -      -      -      -    UnrealEditor   
+    0     239193     G      1      0      -      -      -      -    python         
+    0       9984     G      -      -      -      -      -      -    Xorg           
+    0      10201   C+G      -      -      -      -      -      -    gnome-remote-de
+    0     238170   C+G      0      0      -      -      -      -    UnrealEditor   
+    0     239193     G      1      0      -      -      -      -    python         

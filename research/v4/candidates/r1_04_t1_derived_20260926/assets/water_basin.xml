@@ -1,0 +1,33 @@
+<mujoco model="original_water_basin">
+  <asset>
+    <material name="basin_plastic" rgba=".78 .84 .86 1" specular=".4" shininess=".6" />
+    <material name="basin_rim" rgba=".85 .9 .92 1" specular=".4" shininess=".55" />
+    <material name="basin_water" rgba=".24 .56 .68 .84" specular=".95" shininess=".95" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .045" mass=".70" diaginertia=".008 .006 .012" />
+        <geom name="basin_base_visual" type="box" pos="0 0 0.005" size="0.158 0.188 0.005" group="1" contype="0" conaffinity="0" mass="0" material="basin_plastic" />
+        <geom name="basin_wall_left_visual" type="box" pos="-0.153 0 0.057" size="0.005 0.188 0.053" group="1" contype="0" conaffinity="0" mass="0" material="basin_plastic" />
+        <geom name="basin_wall_right_visual" type="box" pos="0.153 0 0.057" size="0.005 0.188 0.053" group="1" contype="0" conaffinity="0" mass="0" material="basin_plastic" />
+        <geom name="basin_wall_front_visual" type="box" pos="0 -0.183 0.057" size="0.148 0.005 0.053" group="1" contype="0" conaffinity="0" mass="0" material="basin_plastic" />
+        <geom name="basin_wall_back_visual" type="box" pos="0 0.183 0.057" size="0.148 0.005 0.053" group="1" contype="0" conaffinity="0" mass="0" material="basin_plastic" />
+        <geom name="basin_base_collision" type="box" pos="0 0 0.005" size="0.158 0.188 0.005" group="0" contype="1" conaffinity="1" mass="0" material="basin_plastic" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="basin_wall_left_collision" type="box" pos="-0.153 0 0.057" size="0.005 0.188 0.053" group="0" contype="1" conaffinity="1" mass="0" material="basin_plastic" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="basin_wall_right_collision" type="box" pos="0.153 0 0.057" size="0.005 0.188 0.053" group="0" contype="1" conaffinity="1" mass="0" material="basin_plastic" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="basin_wall_front_collision" type="box" pos="0 -0.183 0.057" size="0.148 0.005 0.053" group="0" contype="1" conaffinity="1" mass="0" material="basin_plastic" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="basin_wall_back_collision" type="box" pos="0 0.183 0.057" size="0.148 0.005 0.053" group="0" contype="1" conaffinity="1" mass="0" material="basin_plastic" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="basin_rolled_rim_left" type="box" pos="-0.153 0 0.11" size="0.007 0.193 0.002" group="1" contype="0" conaffinity="0" mass="0" material="basin_rim" />
+        <geom name="basin_rolled_rim_right" type="box" pos="0.153 0 0.11" size="0.007 0.193 0.002" group="1" contype="0" conaffinity="0" mass="0" material="basin_rim" />
+        <geom name="basin_rolled_rim_front" type="box" pos="0 -0.183 0.11" size="0.16 0.007 0.002" group="1" contype="0" conaffinity="0" mass="0" material="basin_rim" />
+        <geom name="basin_rolled_rim_back" type="box" pos="0 0.183 0.11" size="0.16 0.007 0.002" group="1" contype="0" conaffinity="0" mass="0" material="basin_rim" />
+        <geom name="basin_water_surface_visual" type="box" pos="0 0 0.075" size="0.147 0.177 0.0005" group="1" contype="0" conaffinity="0" mass="0" material="basin_water" />
+        <geom name="basin_floor_moulding" type="cylinder" pos="0.07 0 0.011" size="0.014 0.0004" group="1" contype="0" conaffinity="0" mass="0" material="basin_rim" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 0.11" size=".001" />
+      <site name="horizontal_radius_site" pos="0.26 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

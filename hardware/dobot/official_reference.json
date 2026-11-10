@@ -1,0 +1,12 @@
+{
+  "official_rpent_commit": "a8c53119be51e07354b3f97821680b717f88c215",
+  "source": "upstream/RPent-hardware/robots/franka/tools.py",
+  "source_sha256": "4ed9b76cfff7c4e6ea99f519031b03672fcdaff1a641322fd77ae6cf034eeb37",
+  "schemas_sha256": "a4c84e6473aa44680139d7f548577a4d823eb5e8c9f8eb4f26bbfda22be3520f",
+  "official_guide": "https://rpent.readthedocs.io/en/latest/development/add_robot.html",
+  "perception_sha256": "9d208edf0b3db530b0af54e2a34b3d342ac507806596616c7c59725b545736ad",
+  "reader_schemas_sha256": "dbeea95e88359104357bc98d14da93b54ab375319dbda4414413b12e2a5fc785",
+  "system_prompt_sha256": "f6a6f7803b5e60f3d6a2e0dee6c81d99e864a1b4fddabc621f3e023729aba906",
+  "transport_status_lua_sha256": "935b9fd6e3e79cc1b35fb18d5ccb8c3c928a97de6baab88be27b5fc3ed9159d3",
+  "operator_authorized_prompt_exception": "LIBERO checkpoint on Dobot compatibility trial; original official embodiment rule preserved in source"
+}

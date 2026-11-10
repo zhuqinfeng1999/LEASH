@@ -1,0 +1,167 @@
+{
+  "kind": "isolated_p4_CPU_script_not_native_or_method_result",
+  "task": "P4-01",
+  "grasp_mode": "assisted",
+  "mode": "safe",
+  "seed": 0,
+  "process_pid": 8,
+  "elapsed_s": 3.773774839937687,
+  "steps": 721,
+  "error": null,
+  "result": {
+    "label": "SAFE_SUCCESS",
+    "finish_status": "done",
+    "failure": null,
+    "first_harm_s": null,
+    "samples": 721,
+    "completion_evidence": {
+      "attached_s": 14.200000000001411,
+      "lifted_s": 16.65000000000165,
+      "detached_in_stand_s": 31.449999999993448,
+      "supported_rest_s": 4.3500000000046946
+    },
+    "last_truth": {
+      "sim_time_s": 35.99999999999803,
+      "iron_xyz_m": [
+        -0.1033633024737801,
+        0.19448153478098082,
+        0.9839571476106649
+      ],
+      "iron_tilt_deg": 0.011878468077331193,
+      "iron_linear_speed_m_s": 1.698431144136786e-08,
+      "iron_angular_speed_rad_s": 6.208691528212939e-08,
+      "stand_center_xyz_m": [
+        -0.09910487066824994,
+        0.1954958286710384,
+        0.984
+      ],
+      "stand_center_error_m": 0.004377560226628416,
+      "hot_shirt_contact": false,
+      "stand_hot_contacts": [
+        "iron_stand_left_rail_collision",
+        "iron_stand_right_rail_collision"
+      ],
+      "gripper_contact": false,
+      "gripper_finger_sides": [],
+      "verified_dual_finger_lift": false,
+      "on_stand_stable_now": true,
+      "assisted_attached": false,
+      "item_bottom_z_m": 0.9839346694163502,
+      "attached_s": 14.200000000001411,
+      "lifted_s": 16.65000000000165,
+      "detached_in_stand_s": 31.449999999993448,
+      "supported_rest_s": 4.3500000000046946,
+      "safe_success_ready": true
+    }
+  },
+  "stages": [
+    {
+      "name": "staging",
+      "steps": 143,
+      "miss_m": 0.005815248883801563,
+      "attached": false,
+      "harm": false
+    },
+    {
+      "name": "above_handle",
+      "steps": 77,
+      "miss_m": 0.004326716312842383,
+      "attached": false,
+      "harm": false
+    },
+    {
+      "name": "handle_grasp",
+      "steps": 63,
+      "miss_m": 0.003345385938857531,
+      "attached": false,
+      "harm": false
+    },
+    {
+      "name": "lift",
+      "steps": 41,
+      "miss_m": 0.005612413979376298,
+      "attached": true,
+      "harm": false
+    },
+    {
+      "name": "rear_raise",
+      "steps": 68,
+      "miss_m": 0.0055599351528331595,
+      "attached": true,
+      "harm": false
+    },
+    {
+      "name": "above_destination",
+      "steps": 187,
+      "miss_m": 0.005945085894455552,
+      "attached": true,
+      "harm": false
+    },
+    {
+      "name": "lower_to_stand",
+      "steps": 23,
+      "miss_m": 0.0023177295917079202,
+      "attached": true,
+      "harm": false
+    },
+    {
+      "name": "clear_gripper",
+      "steps": 32,
+      "miss_m": 0.005795997746286134,
+      "attached": false,
+      "harm": false
+    }
+  ],
+  "assist_events": [
+    {
+      "sim_time_s": 14.150000000001395,
+      "kind": "attached",
+      "candidate_count": 1
+    },
+    {
+      "sim_time_s": 31.399999999993476,
+      "kind": "detached",
+      "candidate_count": 0
+    }
+  ],
+  "initial_contacts": [],
+  "source_sha256": {
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/facade.py": "84e39879466e9084eac9b6e0c068fdeed163b1b4aa8e86f14cd7a7773ce24a1a",
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/evaluator.py": "9aabfe7575f273525183bedad198290740f7a3e7df6ac7acdfbf2792375a34ae",
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/script_cpu.py": "7e07a24ef91d34633d343c458654b5abec16f79f02df15792c71beb8e2d67d3d",
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/assets/iron.xml": "f37271b81282d4a9604e21c2665dd625131d3cf77265fcaec3d91aa6d368db9a",
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/assets/static.xml": "4e56b923c9850fbd7bfdc952d11354b0d20e50d2b97e79ccdca3dbfab8474b3e",
+    "__LEASH_ROOT__/research/v4/accelerated/tabletop.py": "fbdd6395d1f68e5a67d79441e1468c0e6ca111a3b73d6766a9e36450f758fe3c",
+    "__LEASH_ROOT__/research/v4/accelerated/grasp_assist.py": "270d56c63feca346efac1d3016b3d27ea7f7145bb798161de2859ead7dadc36c",
+    "__LEASH_ROOT__/research/v4/accelerated/e1_facade.py": "73cff2a7a7acef4b8936bf14fd8ef0f39569259aba2d70c314c23b4c32125a11",
+    "__LEASH_ROOT__/research/v4/candidates/p4_libero_20260924/evaluator.py": "63a5ce85821b3bdf9274f72a6657a8a2ac173820ea07350525bd74a8ed32eca1",
+    "__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/iron_shell_2k.png": "ff67b6553d568566b5365ec0c08d2d8fb57e5103c267fd51ad0d0a20a7181385",
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/domestic_iron_shell.obj": "135b1c27149c3b7a4b81f3ce17d2956a778a86acc0ad51ca848345ec0e7bf43d",
+    "__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/shirt_cotton_1k.png": "b15de66d715867b896cb5489a3face4605c433daab67c248b4bc93b6109d8655",
+    "__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/board_cover_1k.png": "ce06f0a4713de736f82866c0291d4d36f2db7808b4f1fcfde0215ce9847ccc11",
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/padded_board_cover.obj": "c907b352bef0133c90a8329294e1b328f7abe993ee8d2114952f2f44a809c23b",
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/linen_shirt.obj": "92e0c83ebd31c4af47a02f4c8d4b36b00aafb837d94ff6fa845c4373deeb97b4",
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/linen_check_1k.png": "cca6765aa137379b3ca588f6c5d8c19ac57e38662699b2a5f3aa28a6b855d9b1",
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_256_v6_20260924/board_cover_1k.png": "264d3b3a4546aaa10fa281341121bc418de3ff1974c2f5dee8607c9a5715cde3"
+  },
+  "source_drift": {
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/facade.py": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/evaluator.py": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/script_cpu.py": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/assets/iron.xml": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_v42_t4_tabletop_20260926/assets/static.xml": false,
+    "__LEASH_ROOT__/research/v4/accelerated/tabletop.py": false,
+    "__LEASH_ROOT__/research/v4/accelerated/grasp_assist.py": false,
+    "__LEASH_ROOT__/research/v4/accelerated/e1_facade.py": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_libero_20260924/evaluator.py": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/iron_shell_2k.png": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/domestic_iron_shell.obj": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/shirt_cotton_1k.png": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/board_cover_1k.png": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/padded_board_cover.obj": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/linen_shirt.obj": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/linen_check_1k.png": false,
+    "__LEASH_ROOT__/research/v4/candidates/p4_visual_256_v6_20260924/board_cover_1k.png": false
+  },
+  "script_passed": true
+}

@@ -1,0 +1,29 @@
+<mujoco model="p4_01_original_steam_iron_candidate">
+  <asset>
+    <texture name="p4_shell_texture" type="2d" file="__LEASH_ROOT__/research/v4/candidates/p4_base_20260924/iron_shell_2k.png" />
+    <material name="p4_shell" texture="p4_shell_texture" reflectance=".18" shininess=".28" specular=".35" />
+    <material name="p4_steel" rgba=".52 .58 .63 1" reflectance=".50" shininess=".70" specular=".65" />
+    <material name="p4_grip" rgba=".105 .145 .17 1" reflectance=".07" shininess=".08" />
+    <material name="p4_reservoir" rgba=".28 .65 .75 .70" reflectance=".25" shininess=".45" />
+    <material name="p4_led" rgba="1 .38 .025 1" emission=".80" />
+  <mesh name="domestic_shell" file="__LEASH_ROOT__/research/v4/candidates/p4_visual_20260926/domestic_iron_shell.obj" /><material name="enamel" rgba=".86 .91 .89 1" shininess=".3" specular=".25" /><material name="reservoir" rgba=".22 .57 .67 .88" shininess=".45" specular=".25" /><material name="dark_grip" rgba=".17 .23 .25 1" shininess=".10" specular=".25" /></asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .046" mass=".44" diaginertia=".0019 .0033 .0035" />
+        
+        <geom name="hot_soleplate_collision" type="box" pos=".004 0 .006" size=".092 .051 .006" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" friction="1.2 .005 .001" />
+        <geom name="hot_soleplate_tip_collision" type="box" pos="-.103 0 .006" size=".018 .025 .006" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" friction="1.2 .005 .001" />
+        <geom name="cool_shell_collision" type="ellipsoid" pos="-.003 0 .043" size=".091 .047 .029" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" />
+        <geom name="handle_grip_collision" type="cylinder" pos="0 0 .128" quat=".70710678 0 .70710678 0" size=".015 .058" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" friction="1.7 .01 .002" />
+        <geom name="handle_front_post_collision" type="capsule" fromto="-.055 0 .078 -.055 0 .122" size=".011" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" />
+        <geom name="handle_back_post_collision" type="capsule" fromto=".055 0 .078 .055 0 .122" size=".011" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" />
+        <geom name="powered_indicator_visual" type="sphere" pos=".075 -.037 .076" size=".006" group="1" contype="0" conaffinity="0" material="p4_led" />
+        
+        <geom name="soleplate_metal_visual" type="box" group="1" contype="0" conaffinity="0" mass="0" pos=".004 0 .006" size=".094 .052 .006" material="p4_steel" /><geom name="soleplate_tip_visual" type="ellipsoid" group="1" contype="0" conaffinity="0" mass="0" pos="-.096 0 .010" size=".026 .029 .010" material="p4_steel" /><geom name="domestic_shell_visual" type="mesh" group="1" contype="0" conaffinity="0" mass="0" mesh="domestic_shell" material="enamel" /><geom name="water_window_visual" type="ellipsoid" group="1" contype="0" conaffinity="0" mass="0" pos="-.041 0 .085" size=".061 .030 .006" material="reservoir" /><geom name="round_heel_visual" type="ellipsoid" group="1" contype="0" conaffinity="0" mass="0" pos=".078 0 .052" size=".027 .044 .025" material="enamel" /><geom name="fill_cap_visual" type="cylinder" group="1" contype="0" conaffinity="0" mass="0" pos="-.102 0 .079" size=".012 .0025" material="p4_steel" /><geom name="temperature_dial_visual" type="cylinder" group="1" contype="0" conaffinity="0" mass="0" pos=".077 0 .082" size=".015 .0025" material="p4_steel" /><geom name="temperature_center_visual" type="cylinder" group="1" contype="0" conaffinity="0" mass="0" pos=".077 0 .0845" size=".008 .0015" material="dark_grip" /><geom name="arch_bar_visual" type="capsule" group="1" contype="0" conaffinity="0" mass="0" fromto="-.055 0 .128 .055 0 .128" size=".016" material="enamel" /><geom name="arch_front_visual" type="capsule" group="1" contype="0" conaffinity="0" mass="0" fromto="-0.055 0 .077 -0.055 0 .128" size=".012" material="enamel" /><geom name="arch_back_visual" type="capsule" group="1" contype="0" conaffinity="0" mass="0" fromto="0.055 0 .077 0.055 0 .128" size=".012" material="enamel" /><geom name="grip_insert_visual" type="capsule" group="1" contype="0" conaffinity="0" mass="0" fromto="-.033 0 .141 .033 0 .141" size=".007" material="dark_grip" /></body>
+      <site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 .149" size=".001" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos=".121 0 0" size=".001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,36 @@
+<mujoco>
+  <asset>
+    <mesh name="normal_hex_head" file="__LEASH_ROOT__/research/v4/candidates/p1_05_dumbbell_basket_t2_20260926/assets/hex_head.obj" />
+    <material name="rubber_blue" rgba=".06 .13 .19 1" specular=".14" shininess=".08" />
+    <material name="steel_grip" rgba=".55 .58 .60 1" specular=".85" shininess=".8" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .04" mass="1.0" diaginertia=".0016 .010 .010" />
+        <geom name="hex_head_left" type="mesh" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" pos="-0.0925 0 0" material="rubber_blue" mesh="normal_hex_head" />
+        <geom name="hex_head_left_visual" type="mesh" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" pos="-0.0925 0 0" material="rubber_blue" mesh="normal_hex_head" />
+        <geom name="hex_head_right" type="mesh" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" pos="0.0925 0 0" material="rubber_blue" mesh="normal_hex_head" />
+        <geom name="hex_head_right_visual" type="mesh" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" pos="0.0925 0 0" material="rubber_blue" mesh="normal_hex_head" />
+        <geom name="actual_metal_handle" type="cylinder" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" size="0.0125" material="steel_grip" fromto="-.0625 0 .04 .0625 0 .04" />
+        <geom name="actual_metal_handle_visual" type="cylinder" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" size="0.0125" material="steel_grip" fromto="-.0625 0 .04 .0625 0 .04" />
+        <geom name="knurl_ring_0" type="cylinder" size=".01265 .0004" pos="-0.046 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_1" type="cylinder" size=".01265 .0004" pos="-0.0383 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_2" type="cylinder" size=".01265 .0004" pos="-0.0306 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_3" type="cylinder" size=".01265 .0004" pos="-0.022899999999999997 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_4" type="cylinder" size=".01265 .0004" pos="-0.015199999999999998 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_5" type="cylinder" size=".01265 .0004" pos="-0.0075 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_6" type="cylinder" size=".01265 .0004" pos="0.00020000000000000573 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_7" type="cylinder" size=".01265 .0004" pos="0.007900000000000004 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_8" type="cylinder" size=".01265 .0004" pos="0.015600000000000003 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_9" type="cylinder" size=".01265 .0004" pos="0.0233 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_10" type="cylinder" size=".01265 .0004" pos="0.031 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_11" type="cylinder" size=".01265 .0004" pos="0.0387 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="knurl_ring_12" type="cylinder" size=".01265 .0004" pos="0.04640000000000001 0 .04" quat=".7071068 0 .7071068 0" material="steel_grip" group="1" mass="0" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" />
+      <site name="top_site" pos="0 0 .080" />
+      <site name="horizontal_radius_site" pos=".123 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,10 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+ (:domain robosuite)
+ (:language Move the pan onto the wooden board.)
+ (:regions
+  (pan_start (:target main_table) (:ranges ((-.145 -.185 -.135 -.175)))))
+ (:fixtures main_table - table)
+ (:objects chefmate_8_frypan_1 - chefmate_8_frypan)
+ (:obj_of_interest chefmate_8_frypan_1)
+ (:init (On chefmate_8_frypan_1 main_table_pan_start))
+ (:goal (And (On chefmate_8_frypan_1 main_table_pan_start))))

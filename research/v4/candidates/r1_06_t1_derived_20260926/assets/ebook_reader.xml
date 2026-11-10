@@ -1,0 +1,29 @@
+<mujoco model="original_ebook_reader">
+  <asset>
+    <material name="reader_charcoal" rgba=".048 .054 .062 1" specular=".35" shininess=".35" />
+    <material name="reader_glass" rgba=".64 .66 .64 1" specular=".3" shininess=".45" />
+    <material name="reader_edge" rgba=".18 .20 .21 1" specular=".3" shininess=".35" />
+    <material name="reader_led" rgba=".14 .72 .17 1" specular=".15" shininess=".25" />
+    <texture name="reader_page_texture" type="2d" file="reader_page.png" />
+    <material name="reader_page_material" texture="reader_page_texture" texrepeat="1 1" texuniform="false" specular=".10" shininess=".15" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .004" mass="0.18" diaginertia="0.000185775 0.00037542 0.0005592749999999999" />
+        <geom name="reader_body_visual" type="box" pos="0 0 0.004" size="0.079 0.0555 0.004" group="1" contype="0" conaffinity="0" mass="0" material="reader_charcoal" />
+        <geom name="reader_body_collision" type="box" pos="0 0 0.004" size="0.079 0.0555 0.004" group="0" contype="1" conaffinity="1" mass="0" material="reader_charcoal" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="reader_screen_visual" type="box" pos="-0.004 0 0.0085" size="0.063 0.045 0.0005" group="1" contype="0" conaffinity="0" mass="0" material="reader_page_material" />
+        <geom name="reader_page_button_0" type="box" pos="0.071 -0.026 0.0085" size="0.002 0.008 0.0006" group="1" contype="0" conaffinity="0" mass="0" material="reader_edge" />
+        <geom name="reader_page_button_1" type="box" pos="0.071 0.026 0.0085" size="0.002 0.008 0.0006" group="1" contype="0" conaffinity="0" mass="0" material="reader_edge" />
+        <geom name="reader_power_button" type="box" pos="0 0.0559 0.0045" size="0.006 0.0005 0.0014" group="1" contype="0" conaffinity="0" mass="0" material="reader_edge" />
+        <geom name="reader_power_led" type="sphere" pos="0.009 0.0559 0.005" size="0.0009" group="1" contype="0" conaffinity="0" mass="0" material="reader_led" />
+        <geom name="reader_usb_socket" type="box" pos="0.0793 0 0.0035" size="0.0003 0.004 0.0013" group="1" contype="0" conaffinity="0" mass="0" material="reader_charcoal" />
+        <geom name="reader_usb_rim" type="box" pos="0.0791 0 0.0035" size="0.0003 0.005 0.002" group="1" contype="0" conaffinity="0" mass="0" material="reader_edge" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 0.01" size=".001" />
+      <site name="horizontal_radius_site" pos="0.098 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

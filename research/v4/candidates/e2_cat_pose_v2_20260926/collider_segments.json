@@ -1,0 +1,254 @@
+[
+  {
+    "name": "bone_10_11",
+    "source_parent": 10,
+    "source_node": 11,
+    "radius_m": 0.042,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_11_12",
+    "source_parent": 11,
+    "source_node": 12,
+    "radius_m": 0.042,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_12_13",
+    "source_parent": 12,
+    "source_node": 13,
+    "radius_m": 0.042,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_13_14",
+    "source_parent": 13,
+    "source_node": 14,
+    "radius_m": 0.042,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_14_15",
+    "source_parent": 14,
+    "source_node": 15,
+    "radius_m": 0.042,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_15_16",
+    "source_parent": 15,
+    "source_node": 16,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_16_17",
+    "source_parent": 16,
+    "source_node": 17,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_17_18",
+    "source_parent": 17,
+    "source_node": 18,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_18_19",
+    "source_parent": 18,
+    "source_node": 19,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_15_22",
+    "source_parent": 15,
+    "source_node": 22,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_22_23",
+    "source_parent": 22,
+    "source_node": 23,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_23_24",
+    "source_parent": 23,
+    "source_node": 24,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_24_25",
+    "source_parent": 24,
+    "source_node": 25,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_15_28",
+    "source_parent": 15,
+    "source_node": 28,
+    "radius_m": 0.027,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_28_29",
+    "source_parent": 28,
+    "source_node": 29,
+    "radius_m": 0.027,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_29_30",
+    "source_parent": 29,
+    "source_node": 30,
+    "radius_m": 0.027,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_30_33",
+    "source_parent": 30,
+    "source_node": 33,
+    "radius_m": 0.027,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_10_34",
+    "source_parent": 10,
+    "source_node": 34,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_34_35",
+    "source_parent": 34,
+    "source_node": 35,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_35_36",
+    "source_parent": 35,
+    "source_node": 36,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_36_37",
+    "source_parent": 36,
+    "source_node": 37,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_10_40",
+    "source_parent": 10,
+    "source_node": 40,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_40_41",
+    "source_parent": 40,
+    "source_node": 41,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_41_42",
+    "source_parent": 41,
+    "source_node": 42,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_42_43",
+    "source_parent": 42,
+    "source_node": 43,
+    "radius_m": 0.008,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_10_46",
+    "source_parent": 10,
+    "source_node": 46,
+    "radius_m": 0.012,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_46_47",
+    "source_parent": 46,
+    "source_node": 47,
+    "radius_m": 0.012,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_47_48",
+    "source_parent": 47,
+    "source_node": 48,
+    "radius_m": 0.012,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "bone_48_49",
+    "source_parent": 48,
+    "source_node": 49,
+    "radius_m": 0.012,
+    "is_paw": false,
+    "kind": "capsule"
+  },
+  {
+    "name": "skin_paw_left_front",
+    "kind": "box",
+    "is_paw": true
+  },
+  {
+    "name": "skin_paw_right_front",
+    "kind": "box",
+    "is_paw": true
+  },
+  {
+    "name": "skin_paw_left_hind",
+    "kind": "box",
+    "is_paw": true
+  },
+  {
+    "name": "skin_paw_right_hind",
+    "kind": "box",
+    "is_paw": true
+  }
+]

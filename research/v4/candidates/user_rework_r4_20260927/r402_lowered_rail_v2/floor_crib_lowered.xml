@@ -1,0 +1,162 @@
+<mujoco model="original_real_size_floor_crib">
+  <asset>
+    <texture name="crib_wood" type="2d" file="__LEASH_ROOT__/research/upstream/polyhaven/wood_table_diff_1k.png" />
+    <material name="wood" texture="crib_wood" specular=".08" shininess=".1" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 -.22" mass="25" diaginertia="3.6 4.8 5.4" />
+        <geom name="crib_base_collision" type="box" size="0.62 0.32 0.015" pos="0 0 0.005" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="crib_base_visual" type="box" size="0.62 0.32 0.015" pos="0 0 0.005" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="crib_mattress_collision" type="box" size="0.6 0.3 0.015" pos="0 0 0.025" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" rgba=".93 .90 .83 1" />
+        <geom name="crib_mattress_visual" type="box" size="0.6 0.3 0.015" pos="0 0 0.025" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" rgba=".93 .90 .83 1" />
+        <geom name="front_rail_0.09_collision" type="box" size="0.62 0.012 0.015" pos="0 -0.31 0.09" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_rail_0.09_visual" type="box" size="0.62 0.012 0.015" pos="0 -0.31 0.09" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_rail_0.435_collision" type="box" size="0.62 0.012 0.015" pos="0 -.31 .075" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_rail_0.435_visual" type="box" size="0.62 0.012 0.015" pos="0 -.31 .075" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_0_collision" type="box" size=".01 .01 .015" pos="-0.58 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_0_visual" type="box" size=".01 .01 .015" pos="-0.58 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_1_collision" type="box" size=".01 .01 .015" pos="-0.522 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_1_visual" type="box" size=".01 .01 .015" pos="-0.522 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_2_collision" type="box" size=".01 .01 .015" pos="-0.46399999999999997 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_2_visual" type="box" size=".01 .01 .015" pos="-0.46399999999999997 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_3_collision" type="box" size=".01 .01 .015" pos="-0.40599999999999997 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_3_visual" type="box" size=".01 .01 .015" pos="-0.40599999999999997 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_4_collision" type="box" size=".01 .01 .015" pos="-0.348 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_4_visual" type="box" size=".01 .01 .015" pos="-0.348 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_5_collision" type="box" size=".01 .01 .015" pos="-0.29 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_5_visual" type="box" size=".01 .01 .015" pos="-0.29 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_6_collision" type="box" size=".01 .01 .015" pos="-0.23199999999999998 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_6_visual" type="box" size=".01 .01 .015" pos="-0.23199999999999998 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_7_collision" type="box" size=".01 .01 .015" pos="-0.174 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_7_visual" type="box" size=".01 .01 .015" pos="-0.174 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_8_collision" type="box" size=".01 .01 .015" pos="-0.11599999999999999 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_8_visual" type="box" size=".01 .01 .015" pos="-0.11599999999999999 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_9_collision" type="box" size=".01 .01 .015" pos="-0.05799999999999994 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_9_visual" type="box" size=".01 .01 .015" pos="-0.05799999999999994 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_10_collision" type="box" size=".01 .01 .015" pos="0.0 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_10_visual" type="box" size=".01 .01 .015" pos="0.0 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_11_collision" type="box" size=".01 .01 .015" pos="0.05799999999999994 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_11_visual" type="box" size=".01 .01 .015" pos="0.05799999999999994 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_12_collision" type="box" size=".01 .01 .015" pos="0.11599999999999999 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_12_visual" type="box" size=".01 .01 .015" pos="0.11599999999999999 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_13_collision" type="box" size=".01 .01 .015" pos="0.17400000000000004 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_13_visual" type="box" size=".01 .01 .015" pos="0.17400000000000004 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_14_collision" type="box" size=".01 .01 .015" pos="0.23199999999999998 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_14_visual" type="box" size=".01 .01 .015" pos="0.23199999999999998 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_15_collision" type="box" size=".01 .01 .015" pos="0.2899999999999999 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_15_visual" type="box" size=".01 .01 .015" pos="0.2899999999999999 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_16_collision" type="box" size=".01 .01 .015" pos="0.348 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_16_visual" type="box" size=".01 .01 .015" pos="0.348 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_17_collision" type="box" size=".01 .01 .015" pos="0.406 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_17_visual" type="box" size=".01 .01 .015" pos="0.406 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_18_collision" type="box" size=".01 .01 .015" pos="0.4640000000000001 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_18_visual" type="box" size=".01 .01 .015" pos="0.4640000000000001 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_19_collision" type="box" size=".01 .01 .015" pos="0.5219999999999999 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_19_visual" type="box" size=".01 .01 .015" pos="0.5219999999999999 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_20_collision" type="box" size=".01 .01 .015" pos="0.58 -0.31 .045" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="front_slat_20_visual" type="box" size=".01 .01 .015" pos="0.58 -0.31 .045" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="head_panel_collision" type="box" size="0.012 0.32 0.21" pos="-0.61 0 0.24" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="head_panel_visual" type="box" size="0.012 0.32 0.21" pos="-0.61 0 0.24" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_-1_-0.275_collision" type="box" size="0.025 0.025 0.32" pos="-0.56 -0.275 -0.32" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_-1_-0.275_visual" type="box" size="0.025 0.025 0.32" pos="-0.56 -0.275 -0.32" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_-1_0.275_collision" type="box" size="0.025 0.025 0.32" pos="-0.56 0.275 -0.32" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_-1_0.275_visual" type="box" size="0.025 0.025 0.32" pos="-0.56 0.275 -0.32" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_rail_0.09_collision" type="box" size="0.62 0.012 0.015" pos="0 0.31 0.09" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_rail_0.09_visual" type="box" size="0.62 0.012 0.015" pos="0 0.31 0.09" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_rail_0.435_collision" type="box" size="0.62 0.012 0.015" pos="0 0.31 0.435" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_rail_0.435_visual" type="box" size="0.62 0.012 0.015" pos="0 0.31 0.435" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_0_collision" type="box" size="0.01 0.01 0.1575" pos="-0.58 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_0_visual" type="box" size="0.01 0.01 0.1575" pos="-0.58 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_1_collision" type="box" size="0.01 0.01 0.1575" pos="-0.522 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_1_visual" type="box" size="0.01 0.01 0.1575" pos="-0.522 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_2_collision" type="box" size="0.01 0.01 0.1575" pos="-0.46399999999999997 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_2_visual" type="box" size="0.01 0.01 0.1575" pos="-0.46399999999999997 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_3_collision" type="box" size="0.01 0.01 0.1575" pos="-0.40599999999999997 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_3_visual" type="box" size="0.01 0.01 0.1575" pos="-0.40599999999999997 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_4_collision" type="box" size="0.01 0.01 0.1575" pos="-0.348 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_4_visual" type="box" size="0.01 0.01 0.1575" pos="-0.348 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_5_collision" type="box" size="0.01 0.01 0.1575" pos="-0.29 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_5_visual" type="box" size="0.01 0.01 0.1575" pos="-0.29 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_6_collision" type="box" size="0.01 0.01 0.1575" pos="-0.23199999999999998 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_6_visual" type="box" size="0.01 0.01 0.1575" pos="-0.23199999999999998 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_7_collision" type="box" size="0.01 0.01 0.1575" pos="-0.174 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_7_visual" type="box" size="0.01 0.01 0.1575" pos="-0.174 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_8_collision" type="box" size="0.01 0.01 0.1575" pos="-0.11599999999999999 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_8_visual" type="box" size="0.01 0.01 0.1575" pos="-0.11599999999999999 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_9_collision" type="box" size="0.01 0.01 0.1575" pos="-0.05799999999999994 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_9_visual" type="box" size="0.01 0.01 0.1575" pos="-0.05799999999999994 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_10_collision" type="box" size="0.01 0.01 0.1575" pos="0.0 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_10_visual" type="box" size="0.01 0.01 0.1575" pos="0.0 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_11_collision" type="box" size="0.01 0.01 0.1575" pos="0.05799999999999994 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_11_visual" type="box" size="0.01 0.01 0.1575" pos="0.05799999999999994 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_12_collision" type="box" size="0.01 0.01 0.1575" pos="0.11599999999999999 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_12_visual" type="box" size="0.01 0.01 0.1575" pos="0.11599999999999999 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_13_collision" type="box" size="0.01 0.01 0.1575" pos="0.17400000000000004 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_13_visual" type="box" size="0.01 0.01 0.1575" pos="0.17400000000000004 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_14_collision" type="box" size="0.01 0.01 0.1575" pos="0.23199999999999998 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_14_visual" type="box" size="0.01 0.01 0.1575" pos="0.23199999999999998 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_15_collision" type="box" size="0.01 0.01 0.1575" pos="0.2899999999999999 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_15_visual" type="box" size="0.01 0.01 0.1575" pos="0.2899999999999999 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_16_collision" type="box" size="0.01 0.01 0.1575" pos="0.348 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_16_visual" type="box" size="0.01 0.01 0.1575" pos="0.348 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_17_collision" type="box" size="0.01 0.01 0.1575" pos="0.406 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_17_visual" type="box" size="0.01 0.01 0.1575" pos="0.406 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_18_collision" type="box" size="0.01 0.01 0.1575" pos="0.4640000000000001 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_18_visual" type="box" size="0.01 0.01 0.1575" pos="0.4640000000000001 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_19_collision" type="box" size="0.01 0.01 0.1575" pos="0.5219999999999999 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_19_visual" type="box" size="0.01 0.01 0.1575" pos="0.5219999999999999 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_20_collision" type="box" size="0.01 0.01 0.1575" pos="0.58 0.31 0.2625" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="back_slat_20_visual" type="box" size="0.01 0.01 0.1575" pos="0.58 0.31 0.2625" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="foot_panel_collision" type="box" size="0.012 0.32 0.21" pos="0.61 0 0.24" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="foot_panel_visual" type="box" size="0.012 0.32 0.21" pos="0.61 0 0.24" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_1_-0.275_collision" type="box" size="0.025 0.025 0.32" pos="0.56 -0.275 -0.32" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_1_-0.275_visual" type="box" size="0.025 0.025 0.32" pos="0.56 -0.275 -0.32" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_1_0.275_collision" type="box" size="0.025 0.025 0.32" pos="0.56 0.275 -0.32" group="0" contype="1" conaffinity="1" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="leg_1_0.275_visual" type="box" size="0.025 0.025 0.32" pos="0.56 0.275 -0.32" group="1" contype="0" conaffinity="0" mass="0" friction="1 .005 .001" solref=".02 1" material="wood" />
+        <geom name="doll_neck" type="sphere" size="0.0325" group="1" contype="0" conaffinity="0" pos="-0.09 0 0.1225" rgba=".78 .57 .44 1" />
+        <geom name="doll_head" type="ellipsoid" size="0.075 0.0675 0.07" group="1" contype="0" conaffinity="0" pos="-0.1725 0 0.135" rgba=".82 .61 .47 1" />
+        <geom name="doll_hair" type="ellipsoid" size="0.06 0.065 0.03" group="1" contype="0" conaffinity="0" pos="-0.2025 0 0.185" rgba=".25 .17 .12 1" />
+        <geom name="doll_eye_left" type="sphere" size="0.00675" group="1" contype="0" conaffinity="0" pos="-0.165 -0.0275 0.2025" rgba=".17 .13 .11 1" />
+        <geom name="doll_ear_left" type="sphere" size="0.015" group="1" contype="0" conaffinity="0" pos="-0.1775 -0.072875 0.1325" rgba=".78 .57 .44 1" />
+        <geom name="doll_eye_right" type="sphere" size="0.00675" group="1" contype="0" conaffinity="0" pos="-0.165 0.0275 0.2025" rgba=".17 .13 .11 1" />
+        <geom name="doll_ear_right" type="sphere" size="0.015" group="1" contype="0" conaffinity="0" pos="-0.1775 0.072875 0.1325" rgba=".78 .57 .44 1" />
+        <geom name="doll_nose" type="sphere" size="0.00825" group="1" contype="0" conaffinity="0" pos="-0.135 0 0.2" rgba=".74 .52 .40 1" />
+        <geom name="doll_mouth" type="capsule" size="0.00325" group="1" contype="0" conaffinity="0" fromto="-0.1225 -0.0125 0.1825 -0.1225 0.0125 0.1825" rgba=".55 .28 .27 1" />
+        <geom name="doll_onesie" type="ellipsoid" size="0.13 0.09 0.0575" group="1" contype="0" conaffinity="0" pos="0.0025 0 0.115" rgba=".75 .84 .85 1" />
+        <geom name="doll_bib" type="ellipsoid" size="0.055 0.055 0.00375" group="1" contype="0" conaffinity="0" pos="-0.0425 0 0.1725" rgba=".95 .93 .82 1" />
+        <geom name="doll_sleeve_left" type="capsule" size="0.025" group="1" contype="0" conaffinity="0" fromto="-0.05 -0.0725 0.1225 -0.01 -0.11 0.1025" rgba=".74 .83 .84 1" />
+        <geom name="doll_arm_left" type="capsule" size="0.02125" group="1" contype="0" conaffinity="0" fromto="-0.01 -0.11 0.1025 0.03 -0.1525 0.0875" rgba=".82 .61 .47 1" />
+        <geom name="doll_leg_left" type="capsule" size="0.0275" group="1" contype="0" conaffinity="0" fromto="0.0875 -0.0475 0.09 0.1925 -0.06 0.075" rgba=".75 .84 .85 1" />
+        <geom name="doll_foot_left" type="sphere" size="0.03" group="1" contype="0" conaffinity="0" pos="0.2 -0.06 0.07" rgba=".82 .61 .47 1" />
+        <geom name="doll_sleeve_right" type="capsule" size="0.025" group="1" contype="0" conaffinity="0" fromto="-0.05 0.0725 0.1225 -0.01 0.11 0.1025" rgba=".74 .83 .84 1" />
+        <geom name="doll_arm_right" type="capsule" size="0.02125" group="1" contype="0" conaffinity="0" fromto="-0.01 0.11 0.1025 0.03 0.1525 0.0875" rgba=".82 .61 .47 1" />
+        <geom name="doll_leg_right" type="capsule" size="0.0275" group="1" contype="0" conaffinity="0" fromto="0.0875 0.0475 0.09 0.1925 0.06 0.075" rgba=".75 .84 .85 1" />
+        <geom name="doll_foot_right" type="sphere" size="0.03" group="1" contype="0" conaffinity="0" pos="0.2 0.06 0.07" rgba=".82 .61 .47 1" />
+        <geom name="doll_neck_risk_collision" type="sphere" size="0.0325" group="0" contype="1" conaffinity="1" pos="-0.09 0 0.1225" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_head_risk_collision" type="ellipsoid" size="0.075 0.0675 0.07" group="0" contype="1" conaffinity="1" pos="-0.1725 0 0.135" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_hair_risk_collision" type="ellipsoid" size="0.06 0.065 0.03" group="0" contype="1" conaffinity="1" pos="-0.2025 0 0.185" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_eye_left_risk_collision" type="sphere" size="0.00675" group="0" contype="1" conaffinity="1" pos="-0.165 -0.0275 0.2025" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_ear_left_risk_collision" type="sphere" size="0.015" group="0" contype="1" conaffinity="1" pos="-0.1775 -0.072875 0.1325" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_eye_right_risk_collision" type="sphere" size="0.00675" group="0" contype="1" conaffinity="1" pos="-0.165 0.0275 0.2025" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_ear_right_risk_collision" type="sphere" size="0.015" group="0" contype="1" conaffinity="1" pos="-0.1775 0.072875 0.1325" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_nose_risk_collision" type="sphere" size="0.00825" group="0" contype="1" conaffinity="1" pos="-0.135 0 0.2" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_mouth_risk_collision" type="capsule" size="0.00325" group="0" contype="1" conaffinity="1" fromto="-0.1225 -0.0125 0.1825 -0.1225 0.0125 0.1825" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_onesie_risk_collision" type="ellipsoid" size="0.13 0.09 0.0575" group="0" contype="1" conaffinity="1" pos="0.0025 0 0.115" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_bib_risk_collision" type="ellipsoid" size="0.055 0.055 0.00375" group="0" contype="1" conaffinity="1" pos="-0.0425 0 0.1725" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_sleeve_left_risk_collision" type="capsule" size="0.025" group="0" contype="1" conaffinity="1" fromto="-0.05 -0.0725 0.1225 -0.01 -0.11 0.1025" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_arm_left_risk_collision" type="capsule" size="0.02125" group="0" contype="1" conaffinity="1" fromto="-0.01 -0.11 0.1025 0.03 -0.1525 0.0875" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_leg_left_risk_collision" type="capsule" size="0.0275" group="0" contype="1" conaffinity="1" fromto="0.0875 -0.0475 0.09 0.1925 -0.06 0.075" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_foot_left_risk_collision" type="sphere" size="0.03" group="0" contype="1" conaffinity="1" pos="0.2 -0.06 0.07" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_sleeve_right_risk_collision" type="capsule" size="0.025" group="0" contype="1" conaffinity="1" fromto="-0.05 0.0725 0.1225 -0.01 0.11 0.1025" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_arm_right_risk_collision" type="capsule" size="0.02125" group="0" contype="1" conaffinity="1" fromto="-0.01 0.11 0.1025 0.03 0.1525 0.0875" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_leg_right_risk_collision" type="capsule" size="0.0275" group="0" contype="1" conaffinity="1" fromto="0.0875 0.0475 0.09 0.1925 0.06 0.075" rgba="0 0 0 0" mass="0" />
+        <geom name="doll_foot_right_risk_collision" type="sphere" size="0.03" group="0" contype="1" conaffinity="1" pos="0.2 0.06 0.07" rgba="0 0 0 0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.64" size=".001" />
+      <site name="top_site" pos="0 0 .45" size=".001" />
+      <site name="horizontal_radius_site" pos=".70 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

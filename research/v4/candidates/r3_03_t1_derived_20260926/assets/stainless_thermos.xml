@@ -1,0 +1,38 @@
+<mujoco model="original_stainless_thermos">
+  <asset>
+    <material name="steel_brushed" rgba=".65 .68 .70 1" specular=".72" shininess=".75" />
+    <material name="steel_polished" rgba=".8 .83 .86 1" specular=".8" shininess=".9" />
+    <material name="thermos_dark" rgba=".045 .050 .054 1" specular=".15" shininess=".3" />
+    <material name="thermos_gray" rgba=".21 .23 .24 1" specular=".25" shininess=".35" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".26" diaginertia=".000618 .000618 .000159" />
+        <geom name="thermos_steel_body_visual" type="cylinder" pos="0 0 0" size="0.0345 0.071" group="1" contype="0" conaffinity="0" mass="0" material="steel_brushed" />
+        <geom name="thermos_steel_body_collision" type="cylinder" pos="0 0 0" size="0.0345 0.071" group="0" contype="1" conaffinity="1" mass="0" material="steel_brushed" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="thermos_bottom_visual" type="cylinder" pos="0 0 -0.075" size="0.035 0.004" group="1" contype="0" conaffinity="0" mass="0" material="thermos_dark" />
+        <geom name="thermos_bottom_collision" type="cylinder" pos="0 0 -0.075" size="0.035 0.004" group="0" contype="1" conaffinity="1" mass="0" material="thermos_dark" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="thermos_lid_visual" type="cylinder" pos="0 0 0.075" size="0.035 0.004" group="1" contype="0" conaffinity="0" mass="0" material="thermos_dark" />
+        <geom name="thermos_lid_collision" type="cylinder" pos="0 0 0.075" size="0.035 0.004" group="0" contype="1" conaffinity="1" mass="0" material="thermos_dark" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="thermos_lid_steel_ring" type="cylinder" pos="0 0 0.07" size="0.0355 0.002" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_base_steel_ring" type="cylinder" pos="0 0 -0.069" size="0.0355 0.002" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_button" type="box" pos="0 0.008 0.079" size="0.012 0.008 0.0015" group="1" contype="0" conaffinity="0" mass="0" material="thermos_gray" />
+        <geom name="thermos_drinking_spout" type="box" pos="0 -0.018 0.079" size="0.011 0.006 0.001" group="1" contype="0" conaffinity="0" mass="0" material="thermos_gray" />
+        <geom name="thermos_fine_machining_0" type="cylinder" pos="0 0 -0.057" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_1" type="cylinder" pos="0 0 -0.045" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_2" type="cylinder" pos="0 0 -0.033" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_3" type="cylinder" pos="0 0 -0.020999999999999998" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_4" type="cylinder" pos="0 0 -0.009000000000000001" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_5" type="cylinder" pos="0 0 0.0029999999999999957" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_6" type="cylinder" pos="0 0 0.015000000000000006" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_7" type="cylinder" pos="0 0 0.027000000000000003" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_8" type="cylinder" pos="0 0 0.039" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+        <geom name="thermos_fine_machining_9" type="cylinder" pos="0 0 0.051" size="0.0346 0.00016" group="1" contype="0" conaffinity="0" mass="0" material="steel_polished" />
+      </body>
+      <site name="bottom_site" pos="0 0 -0.079" size=".001" />
+      <site name="top_site" pos="0 0 0.081" size=".001" />
+      <site name="horizontal_radius_site" pos="0.036 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

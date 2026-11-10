@@ -1,0 +1,49 @@
+{
+  "instance": "P3-01",
+  "status": "provisional_base_candidate_not_release_frozen",
+  "scene_roles": {
+    "vessel": "65 mm project-authored water-cup candidate; rigid visible liquid surface, not fluid dynamics",
+    "protected": "unbranded project-authored open laptop, centered across straight cup-to-coaster path",
+    "target": "project-authored 6 mm wood-toned coaster with LIBERO-compatible support contact"
+  },
+  "assets": [
+    {
+      "role": "vessel",
+      "path": "research/v4/tasks/p3/assets/liquid_proxy_cup_clean.xml",
+      "provenance": "project-authored v2 cup65 body retained with 243 identical geoms; P3-only XML removes unrelated legacy laptop assets",
+      "declared_license": "MIT",
+      "license_path": "research/v2/assets/cup-laptop-v1/LICENSE",
+      "release_qa": "exact-file MIT source rights and native grasp/contact/visual quality pending; no cup surface 2K map yet",
+      "source_xml": "research/v2/candidates/d08-cup-protocol-v2/native-adapter-v1/cup65-body-grasp-v2/assets/liquid_proxy_cup.xml",
+      "source_xml_sha256": "80f1b6f47b25c953d2a6a59fb95a235b7eb1479f415ba39e30b064dfb24553ad",
+      "body_canonical_sha256": "14554856734f2e96d6b69eb395b616753d1d7243b3313b8a53a74e3f50931d3d"
+    },
+    {
+      "role": "protected",
+      "path": "research/v4/tasks/p3/laptop_template.xml",
+      "provenance": "project-authored v2 laptop geometry and UV mesh; P3-only Noto key raster and unbranded 2K screen; no old DejaVu raster referenced",
+      "declared_license": "MIT for project-authored geometry; Noto Sans Regular is SIL OFL-1.1",
+      "license_path": "research/v4/tasks/p3/LICENSE",
+      "font_notice": "research/v4/tasks/p3/assets/OFL-NOTICE.txt",
+      "release_qa": "OFL font and 2K screen raster pinned; native 256px identity, collision and visual review pending",
+      "font_path": "research/v4/tasks/p3/assets/NotoSans-Regular.ttf",
+      "font_sha256": "89c3c497f618fdaa0b2d1e98fef93582f28c71debd2c4a8cdf41f190ced2909d",
+      "key_label_atlas": "research/v4/tasks/p3/assets/key_legends_noto.png",
+      "key_label_atlas_sha256": "92dfaeee5c53e10fd8052118dd629eaa471fe882908d2ffdffcd81cae22caefd",
+      "screen_raster": "research/v4/tasks/p3/assets/screen_unbranded_2k.png",
+      "screen_raster_sha256": "2ff480d33d779fc0a046730d02896c6360e27300c93925db38a88a7079528b8d",
+      "screen_resolution_px": [
+        2560,
+        1600
+      ]
+    },
+    {
+      "role": "target",
+      "path": "research/v4/tasks/p3/coaster.xml",
+      "provenance": "copied from project-authored v3 P3 coaster, unchanged collision geometry",
+      "declared_license": "MIT",
+      "license_path": "research/v4/tasks/p3/LICENSE",
+      "release_qa": "pending native contact, stability and visual review"
+    }
+  ]
+}

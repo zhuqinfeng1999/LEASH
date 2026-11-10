@@ -1,0 +1,56 @@
+<mujoco model="original_aluminum_takeaway_tray">
+  <asset>
+    <material name="aluminum" rgba="0.76 0.79 0.81 1" specular=".85" shininess=".6" />
+    <material name="rim" rgba="0.9 0.91 0.92 1" specular=".85" shininess=".6" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".12" diaginertia=".00017 .00034 .00047" />
+        <geom name="tray_floor_visual" type="box" pos="0 0 -0.021" size="0.087 0.057 0.0015" group="1" mass="0" material="aluminum" contype="0" conaffinity="0" />
+        <geom name="tray_floor_collision" type="box" pos="0 0 -0.021" size="0.087 0.057 0.0015" group="0" mass="0" material="aluminum" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_left_visual" type="box" pos="-0.087 0 0" size="0.0015 0.057 0.021" group="1" mass="0" material="aluminum" contype="0" conaffinity="0" />
+        <geom name="tray_left_collision" type="box" pos="-0.087 0 0" size="0.0015 0.057 0.021" group="0" mass="0" material="aluminum" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_right_visual" type="box" pos="0.087 0 0" size="0.0015 0.057 0.021" group="1" mass="0" material="aluminum" contype="0" conaffinity="0" />
+        <geom name="tray_right_collision" type="box" pos="0.087 0 0" size="0.0015 0.057 0.021" group="0" mass="0" material="aluminum" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_front_visual" type="box" pos="0 -0.057 0" size="0.087 0.0015 0.021" group="1" mass="0" material="aluminum" contype="0" conaffinity="0" />
+        <geom name="tray_front_collision" type="box" pos="0 -0.057 0" size="0.087 0.0015 0.021" group="0" mass="0" material="aluminum" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_back_visual" type="box" pos="0 0.057 0" size="0.087 0.0015 0.021" group="1" mass="0" material="aluminum" contype="0" conaffinity="0" />
+        <geom name="tray_back_collision" type="box" pos="0 0.057 0" size="0.087 0.0015 0.021" group="0" mass="0" material="aluminum" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_rim_left_visual" type="capsule" fromto="-0.087 -0.057 0.0195 -0.087 0.057 0.0195" size=".003" group="1" mass="0" material="rim" contype="0" conaffinity="0" />
+        <geom name="tray_rim_left_collision" type="capsule" fromto="-0.087 -0.057 0.0195 -0.087 0.057 0.0195" size=".003" group="0" mass="0" material="rim" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_rim_right_visual" type="capsule" fromto="0.087 -0.057 0.0195 0.087 0.057 0.0195" size=".003" group="1" mass="0" material="rim" contype="0" conaffinity="0" />
+        <geom name="tray_rim_right_collision" type="capsule" fromto="0.087 -0.057 0.0195 0.087 0.057 0.0195" size=".003" group="0" mass="0" material="rim" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_rim_front_visual" type="capsule" fromto="-0.087 -0.057 0.0195 0.087 -0.057 0.0195" size=".003" group="1" mass="0" material="rim" contype="0" conaffinity="0" />
+        <geom name="tray_rim_front_collision" type="capsule" fromto="-0.087 -0.057 0.0195 0.087 -0.057 0.0195" size=".003" group="0" mass="0" material="rim" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tray_rim_back_visual" type="capsule" fromto="-0.087 0.057 0.0195 0.087 0.057 0.0195" size=".003" group="1" mass="0" material="rim" contype="0" conaffinity="0" />
+        <geom name="tray_rim_back_collision" type="capsule" fromto="-0.087 0.057 0.0195 0.087 0.057 0.0195" size=".003" group="0" mass="0" material="rim" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="pressed_rib_0_-0.0586" type="capsule" fromto="-0.075 -0.0586 -.016 -0.075 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_0_0.0586" type="capsule" fromto="-0.075 0.0586 -.016 -0.075 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_1_-0.0586" type="capsule" fromto="-0.06 -0.0586 -.016 -0.06 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_1_0.0586" type="capsule" fromto="-0.06 0.0586 -.016 -0.06 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_2_-0.0586" type="capsule" fromto="-0.045 -0.0586 -.016 -0.045 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_2_0.0586" type="capsule" fromto="-0.045 0.0586 -.016 -0.045 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_3_-0.0586" type="capsule" fromto="-0.03 -0.0586 -.016 -0.03 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_3_0.0586" type="capsule" fromto="-0.03 0.0586 -.016 -0.03 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_4_-0.0586" type="capsule" fromto="-0.015 -0.0586 -.016 -0.015 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_4_0.0586" type="capsule" fromto="-0.015 0.0586 -.016 -0.015 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_5_-0.0586" type="capsule" fromto="0.0 -0.0586 -.016 0.0 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_5_0.0586" type="capsule" fromto="0.0 0.0586 -.016 0.0 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_6_-0.0586" type="capsule" fromto="0.015 -0.0586 -.016 0.015 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_6_0.0586" type="capsule" fromto="0.015 0.0586 -.016 0.015 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_7_-0.0586" type="capsule" fromto="0.03 -0.0586 -.016 0.03 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_7_0.0586" type="capsule" fromto="0.03 0.0586 -.016 0.03 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_8_-0.0586" type="capsule" fromto="0.045 -0.0586 -.016 0.045 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_8_0.0586" type="capsule" fromto="0.045 0.0586 -.016 0.045 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_9_-0.0586" type="capsule" fromto="0.06000000000000001 -0.0586 -.016 0.06000000000000001 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_9_0.0586" type="capsule" fromto="0.06000000000000001 0.0586 -.016 0.06000000000000001 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_10_-0.0586" type="capsule" fromto="0.075 -0.0586 -.016 0.075 -0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="pressed_rib_10_0.0586" type="capsule" fromto="0.075 0.0586 -.016 0.075 0.0586 .016" size=".0007" material="rim" group="1" mass="0" contype="0" conaffinity="0" />
+        <site name="bottom_site" pos="0 0 -.0225" size=".001" />
+        <site name="top_site" pos="0 0 .0225" size=".001" />
+        <site name="horizontal_radius_site" pos=".09 0 0" size=".001" />
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

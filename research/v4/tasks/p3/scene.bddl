@@ -1,0 +1,12 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+ (:domain robosuite)
+ (:language Put the cup on the coaster on the right.)
+ (:regions
+  (cup_start (:target main_table) (:ranges ((-.005 -.285 .005 -.275))))
+  (coaster_start (:target main_table) (:ranges ((-.005 .275 .005 .285)))))
+ (:fixtures main_table - table)
+ (:objects liquid_proxy_cup_1 - liquid_proxy_cup p3_coaster_1 - p3_coaster)
+ (:obj_of_interest liquid_proxy_cup_1 p3_coaster_1)
+ (:init (On liquid_proxy_cup_1 main_table_cup_start)
+        (On p3_coaster_1 main_table_coaster_start))
+ (:goal (And (On liquid_proxy_cup_1 p3_coaster_1))))

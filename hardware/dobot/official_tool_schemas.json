@@ -1,0 +1,78 @@
+[
+  {
+    "name": "move_delta",
+    "description": "Move the Franka TCP by a bounded base-frame xyz delta in meters.",
+    "input_schema": {
+      "properties": {
+        "delta_xyz": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 3,
+          "minItems": 3,
+          "type": "array"
+        }
+      },
+      "required": [
+        "delta_xyz"
+      ],
+      "type": "object"
+    }
+  },
+  {
+    "name": "rotate_delta",
+    "description": "Rotate the Franka TCP by a bounded base-frame rpy delta in radians.",
+    "input_schema": {
+      "properties": {
+        "delta_rpy": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 3,
+          "minItems": 3,
+          "type": "array"
+        }
+      },
+      "required": [
+        "delta_rpy"
+      ],
+      "type": "object"
+    }
+  },
+  {
+    "name": "open_gripper",
+    "description": "Open the Franka gripper and wait for the command to settle.",
+    "input_schema": {
+      "properties": {},
+      "type": "object"
+    }
+  },
+  {
+    "name": "close_gripper",
+    "description": "Close the Franka gripper and wait for the command to settle.",
+    "input_schema": {
+      "properties": {},
+      "type": "object"
+    }
+  },
+  {
+    "name": "vla_grasp",
+    "description": "Run bounded real-world VLA action chunks for a local grasp attempt.",
+    "input_schema": {
+      "properties": {
+        "prompt": {
+          "type": "string"
+        },
+        "max_chunks": {
+          "maximum": 20,
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "prompt"
+      ],
+      "type": "object"
+    }
+  }
+]

@@ -1,0 +1,1791 @@
+{
+  "passed": true,
+  "controls": 0,
+  "GPU": false,
+  "render_calls": 0,
+  "native_removal": "pending_root",
+  "actual_vs_XML_recompile_differences": [],
+  "model_array_count": 396,
+  "changed_arrays": {
+    "_sizes": {
+      "before_shape": [
+        85
+      ],
+      "after_shape": [
+        85
+      ],
+      "changed_indices": [
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          24
+        ],
+        [
+          25
+        ],
+        [
+          26
+        ],
+        [
+          27
+        ],
+        [
+          29
+        ],
+        [
+          30
+        ],
+        [
+          31
+        ],
+        [
+          68
+        ],
+        [
+          84
+        ]
+      ]
+    },
+    "bvh_aabb": {
+      "before_shape": [
+        363676,
+        6
+      ],
+      "after_shape": [
+        364834,
+        6
+      ],
+      "changed_indices": null
+    },
+    "bvh_child": {
+      "before_shape": [
+        363676,
+        2
+      ],
+      "after_shape": [
+        364834,
+        2
+      ],
+      "changed_indices": null
+    },
+    "bvh_depth": {
+      "before_shape": [
+        363676
+      ],
+      "after_shape": [
+        364834
+      ],
+      "changed_indices": null
+    },
+    "bvh_nodeid": {
+      "before_shape": [
+        363676
+      ],
+      "after_shape": [
+        364834
+      ],
+      "changed_indices": null
+    },
+    "geom_aabb": {
+      "before_shape": [
+        131,
+        6
+      ],
+      "after_shape": [
+        131,
+        6
+      ],
+      "changed_indices": [
+        [
+          44,
+          0
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          44,
+          2
+        ],
+        [
+          44,
+          3
+        ],
+        [
+          44,
+          4
+        ],
+        [
+          44,
+          5
+        ]
+      ]
+    },
+    "geom_group": {
+      "before_shape": [
+        131
+      ],
+      "after_shape": [
+        131
+      ],
+      "changed_indices": [
+        [
+          45
+        ]
+      ]
+    },
+    "geom_pos": {
+      "before_shape": [
+        131,
+        3
+      ],
+      "after_shape": [
+        131,
+        3
+      ],
+      "changed_indices": [
+        [
+          44,
+          0
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          44,
+          2
+        ]
+      ]
+    },
+    "geom_quat": {
+      "before_shape": [
+        131,
+        4
+      ],
+      "after_shape": [
+        131,
+        4
+      ],
+      "changed_indices": [
+        [
+          44,
+          0
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          44,
+          2
+        ],
+        [
+          44,
+          3
+        ]
+      ]
+    },
+    "geom_rbound": {
+      "before_shape": [
+        131
+      ],
+      "after_shape": [
+        131
+      ],
+      "changed_indices": [
+        [
+          44
+        ]
+      ]
+    },
+    "geom_size": {
+      "before_shape": [
+        131,
+        3
+      ],
+      "after_shape": [
+        131,
+        3
+      ],
+      "changed_indices": [
+        [
+          44,
+          0
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          44,
+          2
+        ]
+      ]
+    },
+    "mesh_bvhadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_bvhnum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "mesh_face": {
+      "before_shape": [
+        181856,
+        3
+      ],
+      "after_shape": [
+        182435,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_faceadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_facenormal": {
+      "before_shape": [
+        181856,
+        3
+      ],
+      "after_shape": [
+        182435,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_facenum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "mesh_facetexcoord": {
+      "before_shape": [
+        181856,
+        3
+      ],
+      "after_shape": [
+        182435,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_normal": {
+      "before_shape": [
+        352217,
+        3
+      ],
+      "after_shape": [
+        352852,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_normaladr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_normalnum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "mesh_pathadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_polyadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_polymap": {
+      "before_shape": [
+        490307
+      ],
+      "after_shape": [
+        491851
+      ],
+      "changed_indices": null
+    },
+    "mesh_polymapadr": {
+      "before_shape": [
+        352217
+      ],
+      "after_shape": [
+        352852
+      ],
+      "changed_indices": null
+    },
+    "mesh_polymapnum": {
+      "before_shape": [
+        352217
+      ],
+      "after_shape": [
+        352852
+      ],
+      "changed_indices": null
+    },
+    "mesh_polynormal": {
+      "before_shape": [
+        160492,
+        3
+      ],
+      "after_shape": [
+        160976,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_polynum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "mesh_polyvert": {
+      "before_shape": [
+        490307
+      ],
+      "after_shape": [
+        491851
+      ],
+      "changed_indices": null
+    },
+    "mesh_polyvertadr": {
+      "before_shape": [
+        160492
+      ],
+      "after_shape": [
+        160976
+      ],
+      "changed_indices": null
+    },
+    "mesh_polyvertnum": {
+      "before_shape": [
+        160492
+      ],
+      "after_shape": [
+        160976
+      ],
+      "changed_indices": null
+    },
+    "mesh_pos": {
+      "before_shape": [
+        64,
+        3
+      ],
+      "after_shape": [
+        64,
+        3
+      ],
+      "changed_indices": [
+        [
+          30,
+          0
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          30,
+          2
+        ]
+      ]
+    },
+    "mesh_quat": {
+      "before_shape": [
+        64,
+        4
+      ],
+      "after_shape": [
+        64,
+        4
+      ],
+      "changed_indices": [
+        [
+          30,
+          0
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          30,
+          2
+        ],
+        [
+          30,
+          3
+        ]
+      ]
+    },
+    "mesh_texcoord": {
+      "before_shape": [
+        317824,
+        2
+      ],
+      "after_shape": [
+        318459,
+        2
+      ],
+      "changed_indices": null
+    },
+    "mesh_texcoordadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ]
+      ]
+    },
+    "mesh_texcoordnum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "mesh_vert": {
+      "before_shape": [
+        352217,
+        3
+      ],
+      "after_shape": [
+        352852,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_vertadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_vertnum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "tex_pathadr": {
+      "before_shape": [
+        6
+      ],
+      "after_shape": [
+        6
+      ],
+      "changed_indices": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    }
+  },
+  "unexpected_nonvisual_changes": [],
+  "explicit_visual_cache_allocation_metadata": {
+    "_sizes": {
+      "before_shape": [
+        85
+      ],
+      "after_shape": [
+        85
+      ],
+      "changed_indices": [
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          24
+        ],
+        [
+          25
+        ],
+        [
+          26
+        ],
+        [
+          27
+        ],
+        [
+          29
+        ],
+        [
+          30
+        ],
+        [
+          31
+        ],
+        [
+          68
+        ],
+        [
+          84
+        ]
+      ]
+    },
+    "mesh_polyadr": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          31
+        ],
+        [
+          32
+        ],
+        [
+          33
+        ],
+        [
+          34
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          37
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ],
+        [
+          41
+        ],
+        [
+          42
+        ],
+        [
+          43
+        ],
+        [
+          44
+        ],
+        [
+          45
+        ],
+        [
+          46
+        ],
+        [
+          47
+        ],
+        [
+          48
+        ],
+        [
+          49
+        ],
+        [
+          50
+        ],
+        [
+          51
+        ],
+        [
+          52
+        ],
+        [
+          53
+        ],
+        [
+          54
+        ],
+        [
+          55
+        ],
+        [
+          56
+        ],
+        [
+          57
+        ],
+        [
+          58
+        ],
+        [
+          59
+        ],
+        [
+          60
+        ],
+        [
+          61
+        ],
+        [
+          62
+        ],
+        [
+          63
+        ]
+      ]
+    },
+    "mesh_polymap": {
+      "before_shape": [
+        490307
+      ],
+      "after_shape": [
+        491851
+      ],
+      "changed_indices": null
+    },
+    "mesh_polymapadr": {
+      "before_shape": [
+        352217
+      ],
+      "after_shape": [
+        352852
+      ],
+      "changed_indices": null
+    },
+    "mesh_polymapnum": {
+      "before_shape": [
+        352217
+      ],
+      "after_shape": [
+        352852
+      ],
+      "changed_indices": null
+    },
+    "mesh_polynormal": {
+      "before_shape": [
+        160492,
+        3
+      ],
+      "after_shape": [
+        160976,
+        3
+      ],
+      "changed_indices": null
+    },
+    "mesh_polynum": {
+      "before_shape": [
+        64
+      ],
+      "after_shape": [
+        64
+      ],
+      "changed_indices": [
+        [
+          30
+        ]
+      ]
+    },
+    "mesh_polyvert": {
+      "before_shape": [
+        490307
+      ],
+      "after_shape": [
+        491851
+      ],
+      "changed_indices": null
+    },
+    "mesh_polyvertadr": {
+      "before_shape": [
+        160492
+      ],
+      "after_shape": [
+        160976
+      ],
+      "changed_indices": null
+    },
+    "mesh_polyvertnum": {
+      "before_shape": [
+        160492
+      ],
+      "after_shape": [
+        160976
+      ],
+      "changed_indices": null
+    },
+    "tex_pathadr": {
+      "before_shape": [
+        6
+      ],
+      "after_shape": [
+        6
+      ],
+      "changed_indices": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    }
+  },
+  "changed_geoms": [
+    44,
+    45
+  ],
+  "glyph_surface_coverage_samples": 370,
+  "glyph_surface_hits_panel": 370,
+  "glyph_surface_other_hits": [],
+  "other_meshes": [
+    {
+      "mesh": "robot0_link0",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link3",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link4",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link5",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_0",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_3",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_4",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_5",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_6",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_7",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_8",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_9",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_10",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link0_vis_11",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link1_vis",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link2_vis",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link3_vis_0",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link3_vis_1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link3_vis_2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link3_vis_3",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link4_vis_0",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link4_vis_1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link4_vis_2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link4_vis_3",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link5_vis_1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link5_vis_2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_0",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_3",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_4",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_5",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_6",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_7",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_8",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_9",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_10",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_11",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_12",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_13",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_14",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_15",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link6_vis_16",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_0",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_1",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_2",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_3",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_4",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_5",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_6",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "robot0_link7_vis_7",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "fixed_mount0_pedestal",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "gripper0_right_hand",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "gripper0_right_hand_vis",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "gripper0_right_finger",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "gripper0_right_finger_vis",
+      "vertices_faces_exact": true
+    },
+    {
+      "mesh": "gripper0_right_finger_vis2",
+      "vertices_faces_exact": true
+    }
+  ],
+  "collision_geoms": 24,
+  "all_collision_shape_material_parameters_exact": true,
+  "body_joint_mass_inertia_controller_camera_arrays_exact": true,
+  "integration_state_unchanged": true,
+  "added_forward": 0,
+  "synthetic_derived_geom_world_frames_not_physics_result": true,
+  "only_local_mesh_and_glyph_group_changed": true,
+  "compiled_mesh_local_derivative_not_original_MIT_source_mutation": true,
+  "original_residual_grid_exact": true,
+  "old_actual_font_samples": 1556,
+  "patched_original_font_all_panel": true,
+  "white_shell_remaining_within_font": 0,
+  "original_dark_grid_preserved": true,
+  "MjvScene_only_glyph_absent_others_present_RGBA_exact": true,
+  "sim_time": 0.0
+}

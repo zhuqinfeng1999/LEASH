@@ -1,0 +1,280 @@
+<mujoco model="original_204mm_frying_pan">
+  <asset>
+    <mesh name="pan_shell" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/pan_shell.obj" />
+    <mesh name="insulated_handle" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/insulated_handle.obj" />
+    <material name="brushed_steel" rgba=".62 .66 .69 1" specular=".75" shininess=".70" />
+    <material name="grip_polymer" rgba=".035 .040 .044 1" specular=".16" shininess=".18" />
+    <mesh name="rim_0_00" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_00.obj" />
+    <mesh name="rim_0_01" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_01.obj" />
+    <mesh name="rim_0_02" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_02.obj" />
+    <mesh name="rim_0_03" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_03.obj" />
+    <mesh name="rim_0_04" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_04.obj" />
+    <mesh name="rim_0_05" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_05.obj" />
+    <mesh name="rim_0_06" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_06.obj" />
+    <mesh name="rim_0_07" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_07.obj" />
+    <mesh name="rim_0_08" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_08.obj" />
+    <mesh name="rim_0_09" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_09.obj" />
+    <mesh name="rim_0_10" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_10.obj" />
+    <mesh name="rim_0_11" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_11.obj" />
+    <mesh name="rim_0_12" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_12.obj" />
+    <mesh name="rim_0_13" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_13.obj" />
+    <mesh name="rim_0_14" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_14.obj" />
+    <mesh name="rim_0_15" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_15.obj" />
+    <mesh name="rim_0_16" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_16.obj" />
+    <mesh name="rim_0_17" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_17.obj" />
+    <mesh name="rim_0_18" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_18.obj" />
+    <mesh name="rim_0_19" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_19.obj" />
+    <mesh name="rim_0_20" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_20.obj" />
+    <mesh name="rim_0_21" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_21.obj" />
+    <mesh name="rim_0_22" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_22.obj" />
+    <mesh name="rim_0_23" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_23.obj" />
+    <mesh name="rim_0_24" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_24.obj" />
+    <mesh name="rim_0_25" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_25.obj" />
+    <mesh name="rim_0_26" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_26.obj" />
+    <mesh name="rim_0_27" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_27.obj" />
+    <mesh name="rim_0_28" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_28.obj" />
+    <mesh name="rim_0_29" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_29.obj" />
+    <mesh name="rim_0_30" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_30.obj" />
+    <mesh name="rim_0_31" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_0_31.obj" />
+    <mesh name="rim_1_00" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_00.obj" />
+    <mesh name="rim_1_01" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_01.obj" />
+    <mesh name="rim_1_02" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_02.obj" />
+    <mesh name="rim_1_03" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_03.obj" />
+    <mesh name="rim_1_04" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_04.obj" />
+    <mesh name="rim_1_05" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_05.obj" />
+    <mesh name="rim_1_06" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_06.obj" />
+    <mesh name="rim_1_07" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_07.obj" />
+    <mesh name="rim_1_08" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_08.obj" />
+    <mesh name="rim_1_09" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_09.obj" />
+    <mesh name="rim_1_10" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_10.obj" />
+    <mesh name="rim_1_11" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_11.obj" />
+    <mesh name="rim_1_12" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_12.obj" />
+    <mesh name="rim_1_13" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_13.obj" />
+    <mesh name="rim_1_14" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_14.obj" />
+    <mesh name="rim_1_15" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_15.obj" />
+    <mesh name="rim_1_16" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_16.obj" />
+    <mesh name="rim_1_17" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_17.obj" />
+    <mesh name="rim_1_18" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_18.obj" />
+    <mesh name="rim_1_19" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_19.obj" />
+    <mesh name="rim_1_20" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_20.obj" />
+    <mesh name="rim_1_21" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_21.obj" />
+    <mesh name="rim_1_22" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_22.obj" />
+    <mesh name="rim_1_23" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_23.obj" />
+    <mesh name="rim_1_24" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_24.obj" />
+    <mesh name="rim_1_25" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_25.obj" />
+    <mesh name="rim_1_26" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_26.obj" />
+    <mesh name="rim_1_27" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_27.obj" />
+    <mesh name="rim_1_28" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_28.obj" />
+    <mesh name="rim_1_29" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_29.obj" />
+    <mesh name="rim_1_30" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_30.obj" />
+    <mesh name="rim_1_31" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_1_31.obj" />
+    <mesh name="rim_2_00" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_00.obj" />
+    <mesh name="rim_2_01" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_01.obj" />
+    <mesh name="rim_2_02" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_02.obj" />
+    <mesh name="rim_2_03" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_03.obj" />
+    <mesh name="rim_2_04" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_04.obj" />
+    <mesh name="rim_2_05" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_05.obj" />
+    <mesh name="rim_2_06" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_06.obj" />
+    <mesh name="rim_2_07" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_07.obj" />
+    <mesh name="rim_2_08" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_08.obj" />
+    <mesh name="rim_2_09" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_09.obj" />
+    <mesh name="rim_2_10" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_10.obj" />
+    <mesh name="rim_2_11" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_11.obj" />
+    <mesh name="rim_2_12" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_12.obj" />
+    <mesh name="rim_2_13" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_13.obj" />
+    <mesh name="rim_2_14" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_14.obj" />
+    <mesh name="rim_2_15" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_15.obj" />
+    <mesh name="rim_2_16" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_16.obj" />
+    <mesh name="rim_2_17" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_17.obj" />
+    <mesh name="rim_2_18" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_18.obj" />
+    <mesh name="rim_2_19" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_19.obj" />
+    <mesh name="rim_2_20" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_20.obj" />
+    <mesh name="rim_2_21" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_21.obj" />
+    <mesh name="rim_2_22" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_22.obj" />
+    <mesh name="rim_2_23" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_23.obj" />
+    <mesh name="rim_2_24" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_24.obj" />
+    <mesh name="rim_2_25" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_25.obj" />
+    <mesh name="rim_2_26" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_26.obj" />
+    <mesh name="rim_2_27" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_27.obj" />
+    <mesh name="rim_2_28" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_28.obj" />
+    <mesh name="rim_2_29" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_29.obj" />
+    <mesh name="rim_2_30" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_30.obj" />
+    <mesh name="rim_2_31" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_2_31.obj" />
+    <mesh name="rim_3_00" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_00.obj" />
+    <mesh name="rim_3_01" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_01.obj" />
+    <mesh name="rim_3_02" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_02.obj" />
+    <mesh name="rim_3_03" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_03.obj" />
+    <mesh name="rim_3_04" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_04.obj" />
+    <mesh name="rim_3_05" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_05.obj" />
+    <mesh name="rim_3_06" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_06.obj" />
+    <mesh name="rim_3_07" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_07.obj" />
+    <mesh name="rim_3_08" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_08.obj" />
+    <mesh name="rim_3_09" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_09.obj" />
+    <mesh name="rim_3_10" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_10.obj" />
+    <mesh name="rim_3_11" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_11.obj" />
+    <mesh name="rim_3_12" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_12.obj" />
+    <mesh name="rim_3_13" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_13.obj" />
+    <mesh name="rim_3_14" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_14.obj" />
+    <mesh name="rim_3_15" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_15.obj" />
+    <mesh name="rim_3_16" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_16.obj" />
+    <mesh name="rim_3_17" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_17.obj" />
+    <mesh name="rim_3_18" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_18.obj" />
+    <mesh name="rim_3_19" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_19.obj" />
+    <mesh name="rim_3_20" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_20.obj" />
+    <mesh name="rim_3_21" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_21.obj" />
+    <mesh name="rim_3_22" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_22.obj" />
+    <mesh name="rim_3_23" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_23.obj" />
+    <mesh name="rim_3_24" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_24.obj" />
+    <mesh name="rim_3_25" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_25.obj" />
+    <mesh name="rim_3_26" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_26.obj" />
+    <mesh name="rim_3_27" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_27.obj" />
+    <mesh name="rim_3_28" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_28.obj" />
+    <mesh name="rim_3_29" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_29.obj" />
+    <mesh name="rim_3_30" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_30.obj" />
+    <mesh name="rim_3_31" file="__LEASH_ROOT__/research/v4/candidates/s1_pan_authored_physics_20260927/rim_3_31.obj" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .012" mass=".3" diaginertia=".0015 .0015 .0025" />
+        <geom name="pan_floor_collision" type="cylinder" pos="0.0075 0 .0029" size=".070 .0021" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_00_collision" type="mesh" mesh="rim_0_00" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_01_collision" type="mesh" mesh="rim_0_01" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_02_collision" type="mesh" mesh="rim_0_02" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_03_collision" type="mesh" mesh="rim_0_03" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_04_collision" type="mesh" mesh="rim_0_04" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_05_collision" type="mesh" mesh="rim_0_05" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_06_collision" type="mesh" mesh="rim_0_06" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_07_collision" type="mesh" mesh="rim_0_07" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_08_collision" type="mesh" mesh="rim_0_08" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_09_collision" type="mesh" mesh="rim_0_09" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_10_collision" type="mesh" mesh="rim_0_10" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_11_collision" type="mesh" mesh="rim_0_11" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_12_collision" type="mesh" mesh="rim_0_12" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_13_collision" type="mesh" mesh="rim_0_13" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_14_collision" type="mesh" mesh="rim_0_14" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_15_collision" type="mesh" mesh="rim_0_15" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_16_collision" type="mesh" mesh="rim_0_16" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_17_collision" type="mesh" mesh="rim_0_17" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_18_collision" type="mesh" mesh="rim_0_18" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_19_collision" type="mesh" mesh="rim_0_19" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_20_collision" type="mesh" mesh="rim_0_20" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_21_collision" type="mesh" mesh="rim_0_21" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_22_collision" type="mesh" mesh="rim_0_22" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_23_collision" type="mesh" mesh="rim_0_23" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_24_collision" type="mesh" mesh="rim_0_24" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_25_collision" type="mesh" mesh="rim_0_25" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_26_collision" type="mesh" mesh="rim_0_26" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_27_collision" type="mesh" mesh="rim_0_27" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_28_collision" type="mesh" mesh="rim_0_28" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_29_collision" type="mesh" mesh="rim_0_29" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_30_collision" type="mesh" mesh="rim_0_30" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_0_31_collision" type="mesh" mesh="rim_0_31" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_00_collision" type="mesh" mesh="rim_1_00" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_01_collision" type="mesh" mesh="rim_1_01" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_02_collision" type="mesh" mesh="rim_1_02" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_03_collision" type="mesh" mesh="rim_1_03" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_04_collision" type="mesh" mesh="rim_1_04" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_05_collision" type="mesh" mesh="rim_1_05" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_06_collision" type="mesh" mesh="rim_1_06" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_07_collision" type="mesh" mesh="rim_1_07" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_08_collision" type="mesh" mesh="rim_1_08" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_09_collision" type="mesh" mesh="rim_1_09" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_10_collision" type="mesh" mesh="rim_1_10" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_11_collision" type="mesh" mesh="rim_1_11" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_12_collision" type="mesh" mesh="rim_1_12" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_13_collision" type="mesh" mesh="rim_1_13" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_14_collision" type="mesh" mesh="rim_1_14" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_15_collision" type="mesh" mesh="rim_1_15" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_16_collision" type="mesh" mesh="rim_1_16" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_17_collision" type="mesh" mesh="rim_1_17" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_18_collision" type="mesh" mesh="rim_1_18" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_19_collision" type="mesh" mesh="rim_1_19" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_20_collision" type="mesh" mesh="rim_1_20" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_21_collision" type="mesh" mesh="rim_1_21" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_22_collision" type="mesh" mesh="rim_1_22" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_23_collision" type="mesh" mesh="rim_1_23" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_24_collision" type="mesh" mesh="rim_1_24" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_25_collision" type="mesh" mesh="rim_1_25" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_26_collision" type="mesh" mesh="rim_1_26" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_27_collision" type="mesh" mesh="rim_1_27" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_28_collision" type="mesh" mesh="rim_1_28" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_29_collision" type="mesh" mesh="rim_1_29" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_30_collision" type="mesh" mesh="rim_1_30" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_1_31_collision" type="mesh" mesh="rim_1_31" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_00_collision" type="mesh" mesh="rim_2_00" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_01_collision" type="mesh" mesh="rim_2_01" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_02_collision" type="mesh" mesh="rim_2_02" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_03_collision" type="mesh" mesh="rim_2_03" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_04_collision" type="mesh" mesh="rim_2_04" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_05_collision" type="mesh" mesh="rim_2_05" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_06_collision" type="mesh" mesh="rim_2_06" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_07_collision" type="mesh" mesh="rim_2_07" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_08_collision" type="mesh" mesh="rim_2_08" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_09_collision" type="mesh" mesh="rim_2_09" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_10_collision" type="mesh" mesh="rim_2_10" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_11_collision" type="mesh" mesh="rim_2_11" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_12_collision" type="mesh" mesh="rim_2_12" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_13_collision" type="mesh" mesh="rim_2_13" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_14_collision" type="mesh" mesh="rim_2_14" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_15_collision" type="mesh" mesh="rim_2_15" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_16_collision" type="mesh" mesh="rim_2_16" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_17_collision" type="mesh" mesh="rim_2_17" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_18_collision" type="mesh" mesh="rim_2_18" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_19_collision" type="mesh" mesh="rim_2_19" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_20_collision" type="mesh" mesh="rim_2_20" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_21_collision" type="mesh" mesh="rim_2_21" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_22_collision" type="mesh" mesh="rim_2_22" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_23_collision" type="mesh" mesh="rim_2_23" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_24_collision" type="mesh" mesh="rim_2_24" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_25_collision" type="mesh" mesh="rim_2_25" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_26_collision" type="mesh" mesh="rim_2_26" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_27_collision" type="mesh" mesh="rim_2_27" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_28_collision" type="mesh" mesh="rim_2_28" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_29_collision" type="mesh" mesh="rim_2_29" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_30_collision" type="mesh" mesh="rim_2_30" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_2_31_collision" type="mesh" mesh="rim_2_31" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_00_collision" type="mesh" mesh="rim_3_00" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_01_collision" type="mesh" mesh="rim_3_01" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_02_collision" type="mesh" mesh="rim_3_02" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_03_collision" type="mesh" mesh="rim_3_03" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_04_collision" type="mesh" mesh="rim_3_04" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_05_collision" type="mesh" mesh="rim_3_05" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_06_collision" type="mesh" mesh="rim_3_06" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_07_collision" type="mesh" mesh="rim_3_07" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_08_collision" type="mesh" mesh="rim_3_08" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_09_collision" type="mesh" mesh="rim_3_09" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_10_collision" type="mesh" mesh="rim_3_10" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_11_collision" type="mesh" mesh="rim_3_11" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_12_collision" type="mesh" mesh="rim_3_12" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_13_collision" type="mesh" mesh="rim_3_13" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_14_collision" type="mesh" mesh="rim_3_14" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_15_collision" type="mesh" mesh="rim_3_15" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_16_collision" type="mesh" mesh="rim_3_16" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_17_collision" type="mesh" mesh="rim_3_17" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_18_collision" type="mesh" mesh="rim_3_18" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_19_collision" type="mesh" mesh="rim_3_19" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_20_collision" type="mesh" mesh="rim_3_20" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_21_collision" type="mesh" mesh="rim_3_21" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_22_collision" type="mesh" mesh="rim_3_22" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_23_collision" type="mesh" mesh="rim_3_23" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_24_collision" type="mesh" mesh="rim_3_24" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_25_collision" type="mesh" mesh="rim_3_25" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_26_collision" type="mesh" mesh="rim_3_26" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_27_collision" type="mesh" mesh="rim_3_27" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_28_collision" type="mesh" mesh="rim_3_28" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_29_collision" type="mesh" mesh="rim_3_29" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_30_collision" type="mesh" mesh="rim_3_30" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="rim_3_31_collision" type="mesh" mesh="rim_3_31" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom name="pan_shell_visual" type="mesh" mesh="pan_shell" material="brushed_steel" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="handle_collision" type="mesh" mesh="insulated_handle" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".035 .040 .044 1" />
+        <geom name="handle_visual" type="mesh" mesh="insulated_handle" material="grip_polymer" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="handle_connector_collision" type="capsule" fromto=".105 0 .032 .138 0 .039" size=".007" material="brushed_steel" group="0" friction=".95 .3 .1" solref=".001 1" solimp=".998 .998 .001" rgba=".62 .66 .69 1" />
+        <geom type="capsule" fromto=".105 0 .032 .138 0 .039" size=".007" material="brushed_steel" name="handle_connector_visual" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 .0008" size=".001" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 .057" size=".001" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos=".2615 0 .03" size=".001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

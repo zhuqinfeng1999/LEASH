@@ -1,0 +1,18 @@
+<mujoco model="v4_unbranded_soup_can">
+  <asset>
+    <material name="can_metal" rgba=".68 .72 .75 1" specular=".6" shininess=".5" />
+    <material name="can_label" rgba=".78 .21 .14 1" specular=".1" />
+    <material name="can_lid" rgba=".70 .73 .75 1" specular=".7" />
+  <texture name="i_derived_tag_tex" type="2d" file="__LEASH_ROOT__/research/v4/candidates/i4_named_label_pose_v2_20260926/generated/I4-03/text.png" /><material name="i_derived_tag_ink" texture="i_derived_tag_tex" texuniform="false" specular="0" shininess="0" /><mesh name="i_derived_tag_face" file="__LEASH_ROOT__/research/v4/candidates/i4_common_park_readable_tag_20260927/I4-03/tag_face.obj" inertia="shell" /></asset>
+  <worldbody><body><body name="object">
+    <inertial pos="0 0 .042" mass=".34" diaginertia=".00020 .00020 .00009" />
+    <geom name="body_visual" type="cylinder" pos="0 0 .042" size=".030 .041" material="can_label" group="1" contype="0" conaffinity="0" />
+    <geom name="lid_visual" type="cylinder" pos="0 0 .084" size=".030 .002" material="can_lid" group="1" contype="0" conaffinity="0" />
+    <geom name="rim_visual" type="cylinder" pos="0 0 .082" size=".031 .003" material="can_metal" group="1" contype="0" conaffinity="0" />
+    <geom name="can_collision" type="cylinder" pos="0 0 .042" size=".030 .042" rgba="0 0 0 0" friction=".8 .005 .001" mass="0" group="0" />
+  <geom name="i_derived_tag_card" type="box" pos="-0.07866949422830778 0.06173419374918774 0.09999999999999998" size=".10 .06 .0006" rgba=".97 .95 .88 1" mass="0" contype="0" conaffinity="0" group="1" quat="0.8509378451779831 0.2908191059572763 0.14145797773021931 0.413906597906506" /><geom name="i_derived_tag_print" type="mesh" mesh="i_derived_tag_face" pos="-0.07866949422830778 0.06173419374918774 0.09999999999999998" material="i_derived_tag_ink" mass="0" contype="0" conaffinity="0" group="1" quat="0.8509378451779831 0.2908191059572763 0.14145797773021931 0.413906597906506" /><geom name="i_derived_tag_tie" type="capsule" fromto="0.0 -0.029 0.014 -0.041341081518689524 0.032441524650827044 0.06327767515972937" size=".0012" rgba=".28 .18 .11 1" mass="0" contype="0" conaffinity="0" group="1" /></body>
+  <site name="bottom_site" pos="0 0 0" size=".001" />
+  <site name="top_site" pos="0 0 .086" size=".001" />
+  <site name="horizontal_radius_site" pos=".031 0 0" size=".001" />
+  </body></worldbody>
+</mujoco>

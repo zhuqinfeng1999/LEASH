@@ -1,0 +1,57 @@
+<mujoco model="v4_paper_bin">
+  <asset>
+    <material name="bin_metal" rgba=".19 .24 .29 .65" specular=".55" shininess=".45" />
+    <material name="waste_paper" rgba=".85 .82 .70 1" />
+    <material name="paper_white" rgba=".94 .93 .86 1" />
+    <material name="paper_cream" rgba=".88 .84 .71 1" />
+    <material name="paper_shadow" rgba=".72 .68 .59 1" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .047" mass="1.05" diaginertia=".005 .005 .005" />
+        <geom name="bin_base" type="box" pos="0 0 .004" size=".085 .085 .004" material="bin_metal" mass=".65" friction=".8 .005 .001" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_n" type="box" pos="0 .088 .064" size=".09 .004 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_s" type="box" pos="0 -.088 .064" size=".09 .004 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_e" type="box" pos=".088 0 .064" size=".004 .084 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_w" type="box" pos="-.088 0 .064" size=".004 .084 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom type="box" pos="0 0 .004" size=".085 .085 .004" friction=".8 .005 .001" name="bin_base_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos="0 .088 .064" size=".09 .004 .060" name="bin_wall_n_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos="0 -.088 .064" size=".09 .004 .060" name="bin_wall_s_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos=".088 0 .064" size=".004 .084 .060" name="bin_wall_e_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos="-.088 0 .064" size=".004 .084 .060" name="bin_wall_w_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom name="paper_00_body" type="box" pos="-0.053 -0.049 0.093" size=".018 .014 .004" euler="0.215 0.188 0.595" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_00_fold" type="box" pos="-0.050 -0.051 0.100" size=".013 .004 .002" euler="-0.167 0.037 1.395" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_01_body" type="box" pos="-0.015 -0.049 0.098" size=".018 .014 .004" euler="0.014 -0.177 -0.107" material="paper_cream" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_01_fold" type="box" pos="-0.012 -0.051 0.105" size=".013 .004 .002" euler="-0.123 -0.022 0.693" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_02_body" type="box" pos="0.023 -0.050 0.103" size=".018 .014 .004" euler="-0.022 -0.228 -0.391" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_02_fold" type="box" pos="0.026 -0.052 0.110" size=".013 .004 .002" euler="-0.166 0.084 0.409" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_03_body" type="box" pos="0.058 -0.039 0.108" size=".018 .014 .004" euler="0.006 0.112 -0.110" material="paper_shadow" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_03_fold" type="box" pos="0.061 -0.041 0.115" size=".013 .004 .002" euler="-0.056 -0.177 0.690" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_04_body" type="box" pos="-0.057 -0.013 0.093" size=".018 .014 .004" euler="0.043 0.076 0.396" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_04_fold" type="box" pos="-0.054 -0.015 0.100" size=".013 .004 .002" euler="0.048 0.188 1.196" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_05_body" type="box" pos="-0.021 -0.014 0.098" size=".018 .014 .004" euler="0.125 -0.063 -0.192" material="paper_cream" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_05_fold" type="box" pos="-0.018 -0.016 0.105" size=".013 .004 .002" euler="0.029 0.064 0.608" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_06_body" type="box" pos="0.014 -0.014 0.103" size=".018 .014 .004" euler="-0.199 -0.012 -0.260" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_06_fold" type="box" pos="0.017 -0.016 0.110" size=".013 .004 .002" euler="0.087 0.036 0.540" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_07_body" type="box" pos="0.052 -0.010 0.108" size=".018 .014 .004" euler="0.068 -0.153 -0.074" material="paper_shadow" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_07_fold" type="box" pos="0.055 -0.012 0.115" size=".013 .004 .002" euler="-0.129 -0.071 0.726" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_08_body" type="box" pos="-0.049 0.025 0.093" size=".018 .014 .004" euler="-0.146 -0.185 0.442" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_08_fold" type="box" pos="-0.046 0.023 0.100" size=".013 .004 .002" euler="-0.161 -0.184 1.242" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_09_body" type="box" pos="-0.014 0.025 0.098" size=".018 .014 .004" euler="0.035 0.154 -0.314" material="paper_cream" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_09_fold" type="box" pos="-0.011 0.023 0.105" size=".013 .004 .002" euler="-0.068 -0.052 0.486" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_10_body" type="box" pos="0.023 0.027 0.103" size=".018 .014 .004" euler="-0.094 0.133 -0.296" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_10_fold" type="box" pos="0.026 0.025 0.110" size=".013 .004 .002" euler="0.020 -0.097 0.504" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_11_body" type="box" pos="0.055 0.046 0.108" size=".018 .014 .004" euler="0.136 0.099 -0.550" material="paper_shadow" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_11_fold" type="box" pos="0.058 0.044 0.115" size=".013 .004 .002" euler="0.131 -0.105 0.250" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_12_body" type="box" pos="-0.027 0.058 0.093" size=".018 .014 .004" euler="0.201 0.044 0.064" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_12_fold" type="box" pos="-0.024 0.056 0.100" size=".013 .004 .002" euler="0.178 -0.133 0.864" material="paper_white" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_13_body" type="box" pos="0.020 0.057 0.098" size=".018 .014 .004" euler="-0.213 -0.040 0.665" material="paper_cream" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_13_fold" type="box" pos="0.023 0.055 0.105" size=".013 .004 .002" euler="-0.191 0.124 1.465" material="paper_white" group="1" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 .124" size=".001" />
+      <site name="horizontal_radius_site" pos=".115 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

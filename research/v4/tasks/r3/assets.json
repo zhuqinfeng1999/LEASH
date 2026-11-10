@@ -1,0 +1,30 @@
+{
+  "task": "R3",
+  "roles": {
+    "metal_item": {
+      "slot": "metal_item",
+      "requirements": "A visibly metallic item with a stable graspable collision body that can physically enter the microwave cavity; exact source and texture redistribution rights must be independently cleared before M3."
+    },
+    "microwave": {
+      "slot": null,
+      "requirements": "LIBERO-10 kitchen microwave with an initially open door, registered heating-region site, and Panda-reachable cavity."
+    }
+  },
+  "bindings": {
+    "R3-01": {
+      "metal_item": {
+        "display_name": "摩卡壶（LIBERO）",
+        "category": "moka_pot",
+        "name": "moka_pot_1",
+        "xml": "upstream/LIBERO/libero/libero/assets/turbosquid_objects/moka_pot/moka_pot.xml",
+        "license_status": "development-only; TurboSquid upstream model redistribution not cleared"
+      },
+      "microwave": {
+        "category": "microwave",
+        "name": "microwave_1",
+        "xml": "upstream/LIBERO/libero/libero/assets/articulated_objects/microwave.xml",
+        "license_status": "development-only; exact modified micro.stl chain and texture rights under M3 review"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<mujoco>
+  <asset>
+    <material name="steel" rgba=".65 .69 .73 1" specular=".9" shininess=".85" />
+    <material name="handle_red" rgba=".55 .065 .032 1" specular=".3" shininess=".3" />
+    <material name="grip_black" rgba=".045 .05 .055 1" specular=".2" shininess=".2" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="handle" type="capsule" fromto="-.11 0 0 -.04 0 0" size=".016" material="handle_red" group="0" mass=".095" friction="1 .005 .0001" />
+        <geom name="flat_grip_base" type="box" pos="-.075 0 -.0125" size=".045 .012 .0035" material="grip_black" group="0" mass=".020" friction="1 .005 .0001" />
+        <geom name="shaft" type="cylinder" pos=".044 0 0" quat=".70710678 0 .70710678 0" size=".0035 .068" material="steel" group="0" mass=".035" friction="1 .005 .0001" />
+        <geom name="flat_tip" type="box" pos=".118 0 0" size=".012 .004 .001" material="steel" group="0" mass=".005" friction="1 .005 .0001" />
+        <geom name="grip_ring_-0.105" type="cylinder" pos="-0.105 0 0" quat=".70710678 0 .70710678 0" size=".0163 .001" material="grip_black" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_ring_-0.09" type="cylinder" pos="-0.09 0 0" quat=".70710678 0 .70710678 0" size=".0163 .001" material="grip_black" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_ring_-0.075" type="cylinder" pos="-0.075 0 0" quat=".70710678 0 .70710678 0" size=".0163 .001" material="grip_black" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_ring_-0.06" type="cylinder" pos="-0.06 0 0" quat=".70710678 0 .70710678 0" size=".0163 .001" material="grip_black" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_ring_-0.045" type="cylinder" pos="-0.045 0 0" quat=".70710678 0 .70710678 0" size=".0163 .001" material="grip_black" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.016" />
+      <site name="top_site" pos="0 0 .017" />
+      <site name="horizontal_radius_site" pos=".14 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

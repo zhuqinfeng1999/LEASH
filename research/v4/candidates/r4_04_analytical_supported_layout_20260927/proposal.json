@@ -1,0 +1,66 @@
+{
+  "kind": "ONE_ANALYTIC_WHOLE_ENVELOPE_PLACEMENT_NOT_GRASP_QUALIFICATION",
+  "baseline_yaw_deg": 0,
+  "source_shift_xy_m": [
+    0.08000000000000006,
+    0.05604453358744599
+  ],
+  "source_nominal_xy_m": [
+    5.551115123125783e-17,
+    -0.183955466412554
+  ],
+  "source_original_common_slot_xy_m": [
+    -0.08,
+    -0.24
+  ],
+  "crib_original_common_slot_xy_m": [
+    -0.08,
+    0.24
+  ],
+  "source_all_yaw10deg_xy20mm_relative_bounds_m": [
+    [
+      -0.3294298808978847,
+      0.3294298808978846
+    ],
+    [
+      -0.24304315254824801,
+      0.24304315254824793
+    ]
+  ],
+  "crib_all_yaw10deg_xy20mm_relative_bounds_m": [
+    [
+      -0.1798122413594306,
+      0.1798122413594306
+    ],
+    [
+      -0.15791093282510807,
+      0.1579109328251081
+    ]
+  ],
+  "table_bounds_xy_m": [
+    [
+      -0.45,
+      -0.45
+    ],
+    [
+      0.45,
+      0.45
+    ]
+  ],
+  "source_feasible_center_x_m": [
+    -0.11757011910211529,
+    0.1175701191021154
+  ],
+  "source_feasible_center_y_m": [
+    -0.203956847451752,
+    -0.163954085373356
+  ],
+  "chosen_rule": "Midpoint of whole-table and below-crib separating feasible intervals; no per-seed point alignment/search.",
+  "common_yaw_and_xy_jitter_kept": true,
+  "geometry_margin_m": 0.003,
+  "pillow_mesh_mass_inertia_unchanged": true,
+  "initial_only": true,
+  "actual_controls": 0,
+  "models": [],
+  "GPU_calls": 0
+}

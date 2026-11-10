@@ -1,0 +1,128 @@
+{
+  "source_only": true,
+  "Scene_IK_controls_models_GPU": 0,
+  "prior_same_sourceX_minus150_proposal_not_feasible_for_whole_board": true,
+  "cause": "Actual18mm board220x180 is wider than canVcradle150x116. Full\u00b120mm\u00b110deg board envelopes also lose5mm lateral clearance to g3/g4, so their Xfront must be considered. No unchanged-.15 overlay qualification claimed.",
+  "source_and_board_one_derived_nominal_xy": [
+    -0.1991780806127539,
+    0.072
+  ],
+  "source_offset_fromL": [
+    -0.11917808061275391,
+    0.312
+  ],
+  "oven_layout_unchanged": [
+    0.1797790481490994,
+    0.0
+  ],
+  "board_half_envelope_xy": [
+    0.12395718882136661,
+    0.10773399731446107
+  ],
+  "board_y_interval": [
+    -0.055733997314461076,
+    0.19973399731446106
+  ],
+  "actual_device_intersections": [
+    {
+      "geom": "microwave_1_g3",
+      "board_Y_disjoint_5mm": false,
+      "device_Xfront": -0.050220891791387307,
+      "device_Y": [
+        0.1996653083692106,
+        0.36049334154413326
+      ]
+    },
+    {
+      "geom": "microwave_1_g4",
+      "board_Y_disjoint_5mm": false,
+      "device_Xfront": -0.050220891791387307,
+      "device_Y": [
+        -0.36049334154413326,
+        -0.057852991935452666
+      ]
+    },
+    {
+      "geom": "microwave_1_g5",
+      "board_Y_disjoint_5mm": false,
+      "device_Xfront": 0.25746808390930004,
+      "device_Y": [
+        -0.1662158217295368,
+        0.30980079211871675
+      ]
+    },
+    {
+      "geom": "microwave_1_g6",
+      "board_Y_disjoint_5mm": false,
+      "device_Xfront": -0.04106782421940244,
+      "device_Y": [
+        -0.16006939751173713,
+        0.30188171394549507
+      ]
+    },
+    {
+      "geom": "microwave_1_g7",
+      "board_Y_disjoint_5mm": false,
+      "device_Xfront": -0.04106782421940244,
+      "device_Y": [
+        -0.16006939751173713,
+        0.30188171394549507
+      ]
+    },
+    {
+      "geom": "microwave_1_g8",
+      "board_Y_disjoint_5mm": true,
+      "device_Xfront": -0.09001697309061066,
+      "device_Y": [
+        -0.360321429848243,
+        -0.10056859856147034
+      ]
+    },
+    {
+      "geom": "microwave_1_g14",
+      "board_Y_disjoint_5mm": true,
+      "device_Xfront": -0.43998778321672205,
+      "device_Y": [
+        0.4725000166018165,
+        0.7166890735576692
+      ]
+    },
+    {
+      "geom": "microwave_1_g15",
+      "board_Y_disjoint_5mm": true,
+      "device_Xfront": -0.4586113605195473,
+      "device_Y": [
+        0.41894582537791275,
+        0.7145959789990858
+      ]
+    },
+    {
+      "geom": "microwave_1_g16",
+      "board_Y_disjoint_5mm": true,
+      "device_Xfront": -0.4586113605195473,
+      "device_Y": [
+        0.41894582537791275,
+        0.7145959789990858
+      ]
+    },
+    {
+      "geom": "microwave_1_g17",
+      "board_Y_disjoint_5mm": true,
+      "device_Xfront": -0.48987556198622906,
+      "device_Y": [
+        0.2599770692792703,
+        0.6826692689118321
+      ]
+    }
+  ],
+  "controlling_device_Xfront": -0.050220891791387307,
+  "Xconstruction": "sourceX=controllingactualpanelXfront\u22125mm\u221220mmsourcejitter\u2212wholeboardrotatedhalfX; no scan",
+  "whole_board_table_margins_xy": [
+    0.10686473056587947,
+    0.2502660026855389
+  ],
+  "new_nominal_authored_grip_X_ignoringyaw": -0.1401780806127539,
+  "footring_support_worst_case_margin_board_short_axis_m": 0.009682210097732916,
+  "footring_support": "Original independentlyjittered board/source \u00b120mm retained; actual bottom footring\u226433.98mm boundingradius and20+20mm relativeXY have positive short-axis margin. Outer134mm rim need not whollyfitboard to support its61mm footring. Actual newdynamics/native still unproved.",
+  "approval_needed": "Root can authorize one ownR305 beforecompilethinconfiguration and wholepathcopied eligibility; this sourceonlylayout calculation doesnotauthorizephysical/model runs."
+}

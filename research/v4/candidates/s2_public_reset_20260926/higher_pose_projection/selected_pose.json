@@ -1,0 +1,17 @@
+{
+  "initial_joint_qpos_rad": [
+    0.03542792974580277,
+    0.17744469754524766,
+    0.023647851273437038,
+    -1.5880322412777526,
+    -0.0008430068621900337,
+    1.708767838731211,
+    0.844359276435456
+  ],
+  "target_eef_m": [
+    -0.055,
+    0.035,
+    1.34
+  ],
+  "reason": "1.30m seed0 projected, but basket clipped in7/10 disturbed seeds; 1.34m reset-only next candidate"
+}

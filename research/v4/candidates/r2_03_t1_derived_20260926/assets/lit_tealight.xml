@@ -1,0 +1,25 @@
+<mujoco model="r2_03_lit_tealight">
+  <asset>
+    <material name="aluminium" rgba=".65 .68 .70 1" specular=".6" shininess=".6" emission="0" />
+    <material name="ivory_wax" rgba=".94 .90 .79 1" specular=".08" shininess=".08" emission="0" />
+    <material name="wick" rgba=".13 .095 .07 1" specular=".01" shininess=".01" emission="0" />
+    <material name="orange_flame" rgba="1 .43 .06 .95" specular=".01" shininess=".01" emission=".85" />
+    <material name="yellow_flame" rgba="1 .85 .22 1" specular=".01" shininess=".01" emission=".9" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .008" mass=".024" diaginertia=".000003 .000003 .000004" />
+        <geom name="tealight_cup_collision" type="cylinder" pos="0 0 .008" size=".019 .008" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" friction="1.2 .005 .001" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="tealight_aluminium_visual" type="cylinder" pos="0 0 .008" size=".019 .008" material="aluminium" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="tealight_wax_visual" type="cylinder" pos="0 0 .0148" size=".0176 .0006" material="ivory_wax" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="tealight_wick_visual" type="capsule" fromto="0 0 .015 0 0 .020" size=".0007" material="wick" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="tealight_flame_visual" type="ellipsoid" pos="0 0 .0285" size=".004 .0032 .0105" material="orange_flame" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="tealight_flame_core_visual" type="ellipsoid" pos="0 0 .0245" size=".0025 .0022 .0065" material="yellow_flame" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 0.039" size=".001" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos="0.021 0 0" size=".001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

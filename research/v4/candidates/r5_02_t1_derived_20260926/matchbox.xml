@@ -1,0 +1,19 @@
+<mujoco model="original_r5_02_matchbox_56x38x18mm">
+  <asset>
+    <texture name="match_label" type="2d" file="__LEASH_ROOT__/research/v4/candidates/r5_02_t1_derived_20260926/matches.png"/>
+    <material name="match_label_material" texture="match_label" texrepeat="1 1"/>
+  </asset>
+  <worldbody><body><body name="object">
+    <inertial pos="0 0 0" mass=".025" diaginertia=".0000037 .0000072 .0000093"/>
+    <geom name="matchbox_sleeve" type="box" size=".028 .019 .009" rgba=".79 .17 .10 1" group="1" contype="0" conaffinity="0"/>
+    <geom name="matchbox_top_label" type="box" size=".027 .018 .00015" pos="0 0 .0092" material="match_label_material" group="1" contype="0" conaffinity="0"/>
+    <geom name="matchbox_tray_end" type="box" size=".0004 .017 .0075" pos=".0282 0 0" rgba=".84 .76 .59 1" group="1" contype="0" conaffinity="0"/>
+    <geom name="matchbox_striker_front" type="box" size=".024 .0003 .006" pos="0 -.0192 0" rgba=".24 .15 .12 1" group="1" contype="0" conaffinity="0"/>
+    <geom name="matchbox_striker_rear" type="box" size=".024 .0003 .006" pos="0 .0192 0" rgba=".24 .15 .12 1" group="1" contype="0" conaffinity="0"/>
+    <geom name="matchbox_collision" type="box" size=".028 .019 .009" mass="0" rgba="0 0 0 0" group="0" contype="1" conaffinity="1" friction="1 .005 .001"/>
+  </body>
+    <site name="bottom_site" pos="0 0 -.009" size=".001"/>
+    <site name="top_site" pos="0 0 .0094" size=".001"/>
+    <site name="horizontal_radius_site" pos=".029 .020 0" size=".001"/>
+  </body></worldbody>
+</mujoco>

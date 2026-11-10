@@ -1,0 +1,20 @@
+{
+  "initial_joint_qpos_rad": [
+    -6.230646377405647e-08,
+    0.4475650980251117,
+    1.0045822704145412e-07,
+    -0.8959319123314518,
+    -3.337373723118948e-08,
+    0.8601139806640606,
+    0.7853981868486318
+  ],
+  "target_eef_m": [
+    -0.06,
+    0.0,
+    1.44
+  ],
+  "rotation": "same pitch35 orientation as accepted R2-02 public reset",
+  "eef_miss_m": 3.564939249210758e-06,
+  "revision": "r2-03-reset35-higher1.44-v3",
+  "actual_native_images_required": true
+}

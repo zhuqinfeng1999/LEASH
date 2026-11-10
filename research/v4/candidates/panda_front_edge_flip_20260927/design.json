@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "parent": "research/v4/candidates/panda_front_surface_remesh_20260927/link5_vis_0_smooth_front.obj",
+  "parent_sha256": "7f223fe2716604a2d80cbaeb9f80f35265c75e4e9b5486fb7af38672e8845e51",
+  "output_sha256": "39a0056d9f917bb9d16c00ffab891a0be97969458dc4814027abcc294267d522",
+  "vertices": 635,
+  "triangles": 1205,
+  "exact_boundary_segments": 63,
+  "flips": 3874,
+  "rounds": 32,
+  "area_before_m2": 0.0022960189110516863,
+  "area_after_m2": 0.0022960189110516937,
+  "min_signed_triangle_area_m2": 2.7919325174973936e-08,
+  "all_existing_vertex_normal_texture_and_nonpatch_lines_exact": true,
+  "no_height_fit": true,
+  "before": {
+    "triangles": 1205,
+    "longest_edge_mm": {
+      "0": 1.096698601317962,
+      "50": 20.591260281974005,
+      "90": 61.56984231861021,
+      "95": 78.75809999258195,
+      "99": 106.34018050347645,
+      "100": 116.36566538940481
+    },
+    "min_angle_deg": {
+      "0": 0.0002656745499877674,
+      "50": 0.4157455537004991,
+      "90": 9.576337585440811,
+      "95": 18.434948822922202,
+      "99": 44.9999999999999,
+      "100": 58.46031230450828
+    },
+    "edges_gt20mm": 619,
+    "min_angle_lt1deg": 762
+  },
+  "after": {
+    "triangles": 1205,
+    "longest_edge_mm": {
+      "0": 1.096698601317962,
+      "50": 2.828427124746191,
+      "90": 3.224429266980174,
+      "95": 5.355707062922278,
+      "99": 13.382949081747155,
+      "100": 32.774398174731544
+    },
+    "min_angle_deg": {
+      "0": 0.10882247302041696,
+      "50": 44.99999999999987,
+      "90": 45.000000000000064,
+      "95": 45.00000000000012,
+      "99": 50.452345439946555,
+      "100": 58.46031230450828
+    },
+    "edges_gt20mm": 6,
+    "min_angle_lt1deg": 16
+  },
+  "wall_seconds": 2.6859988048672676,
+  "controls": 0,
+  "GPU": false,
+  "native_appearance": "pending_root"
+}

@@ -1,0 +1,22 @@
+<mujoco>
+  <asset>
+    <material name="steel" rgba=".68 .71 .75 1" specular=".95" shininess=".85" />
+    <material name="wood_handle" rgba=".19 .065 .026 1" specular=".25" shininess=".25" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="blade" type="box" pos=".0675 0 .0025" size=".0925 .04 .0015" material="steel" group="0" mass=".27" friction="1 .005 .0001" />
+        <geom name="cutting_edge_finish" type="box" pos=".0675 -.038 .0025" size=".0925 .002 .00155" rgba=".88 .89 .90 1" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="handle_collision" type="box" pos="-.073 0 0" size=".0475 .013 .012" material="wood_handle" group="0" mass=".075" friction="1 .005 .0001" />
+        <geom name="bolster" type="box" pos="-.025 0 0" size=".003 .014 .013" material="steel" group="0" mass=".015" />
+        <geom name="rivet_-0.104" type="cylinder" pos="-0.104 0 .0123" size=".0026 .0004" material="steel" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="rivet_-0.073" type="cylinder" pos="-0.073 0 .0123" size=".0026 .0004" material="steel" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="rivet_-0.042" type="cylinder" pos="-0.042 0 .0123" size=".0026 .0004" material="steel" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.013" />
+      <site name="top_site" pos="0 0 .014" />
+      <site name="horizontal_radius_site" pos=".17 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

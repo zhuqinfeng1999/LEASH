@@ -1,0 +1,25 @@
+<mujoco>
+  <asset>
+    <material name="glass" rgba=".62 .77 .68 .65" specular=".92" shininess=".82" />
+    <material name="cap_metal" rgba=".55 .58 .56 1" specular=".8" shininess=".7" />
+    <material name="label_paper" rgba=".94 .92 .86 1" specular=".06" shininess=".04" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="glass_body" type="box" pos="-.035 0 0" size=".065 .023 .026" material="glass" mass="0.175" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="glass_shoulder" type="ellipsoid" pos=".040 0 0" size=".020 .023 .026" material="glass" mass="0.025" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="glass_neck" type="cylinder" pos=".073 0 0" size=".014 .021" material="glass" mass="0.015" group="0" friction=".9 .005 .0001" solref=".02 1" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="cap" type="cylinder" pos=".098 0 0" size=".015 .004" material="cap_metal" mass="0.009" group="0" friction=".9 .005 .0001" solref=".02 1" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="paper_label" type="box" pos="-.035 0 .0263" size=".036 .019 .0003" material="label_paper" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="cap_ridge_0.091" type="cylinder" pos="0.091 0 0" size=".0156 .0005" material="cap_metal" quat="0.707106781187 0 0.707106781187 0" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="cap_ridge_0.094" type="cylinder" pos="0.094 0 0" size=".0156 .0005" material="cap_metal" quat="0.707106781187 0 0.707106781187 0" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="cap_ridge_0.097" type="cylinder" pos="0.097 0 0" size=".0156 .0005" material="cap_metal" quat="0.707106781187 0 0.707106781187 0" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="cap_ridge_0.1" type="cylinder" pos="0.1 0 0" size=".0156 .0005" material="cap_metal" quat="0.707106781187 0 0.707106781187 0" group="1" mass="0" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.026" />
+      <site name="top_site" pos="0 0 .026" />
+      <site name="horizontal_radius_site" pos=".115 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

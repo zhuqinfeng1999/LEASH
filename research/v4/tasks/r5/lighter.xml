@@ -1,0 +1,16 @@
+<mujoco model="v4_r5_lighter_provisional">
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass="0.10" diaginertia=".000035 .00007 .00008" />
+        <geom name="lighter_grip" type="box" size=".040 .015 .014" group="1" contype="0" conaffinity="0" rgba=".12 .26 .43 1" />
+        <geom name="lighter_cap" type="box" size=".010 .014 .011" group="1" contype="0" conaffinity="0" pos=".031 0 .004" rgba=".67 .69 .70 1" />
+        <geom name="lighter_striker" type="cylinder" size=".007 .014" group="1" contype="0" conaffinity="0" pos=".027 0 .015" rgba=".25 .26 .28 1" quat=".7071068 .7071068 0 0" />
+        <geom name="lighter_collision" type="box" size=".040 .015 .014" group="0" contype="1" conaffinity="1" rgba="0 0 0 0" mass="0" friction="1 .005 .001" />
+      </body>
+      <site name="bottom_site" pos="0 0 -0.014" size=".001" />
+      <site name="top_site" pos="0 0 0.026" size=".001" />
+      <site name="horizontal_radius_site" pos=".043 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

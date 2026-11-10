@@ -1,0 +1,219 @@
+<mujoco>
+  <asset>
+    <material name="d08_aluminum" rgba=".46 .49 .52 1" specular=".65" shininess=".40" />
+    <material name="d08_key" rgba=".028 .035 .040 1" specular=".16" shininess=".18" />
+    <material name="d08_glass" rgba=".025 .040 .052 1" specular=".8" shininess=".8" />
+    <material name="d08_rubber" rgba=".035 .04 .042 1" specular=".06" shininess=".05" />
+    <mesh name="d08_laptop_base" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/laptop_base.obj" />
+    <mesh name="d08_laptop_lid" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/laptop_lid.obj" />
+    <mesh name="d08_screen_face" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/screen_face.obj" inertia="shell" />
+    <texture name="d08_desktop" type="2d" file="${PROJECT_ROOT}/research/v4/tasks/p3/assets/screen_unbranded_2k.png" />
+    <material name="d08_display" texture="d08_desktop" texuniform="false" specular=".1" shininess=".1" />
+    <mesh name="d08_key_width_0" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="1.07462687 1 1" />
+    <mesh name="d08_key_width_1" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="1.41044776 1 1" />
+    <mesh name="d08_key_width_2" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="1.74626866 1 1" />
+    <mesh name="d08_key_width_3" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="2.08208955 1 1" />
+    <mesh name="d08_key_width_4" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="2.41791045 1 1" />
+    <mesh name="d08_key_width_5" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="2.75373134 1 1" />
+    <mesh name="d08_key_width_6" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="3.42537313 1 1" />
+    <mesh name="d08_key_width_7" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v1/keycap.obj" scale="7.79104478 1 1" />
+    <mesh name="d08_key_legends" file="${PROJECT_ROOT}/research/v2/assets/cup-laptop-v2/key_legends.obj" inertia="shell" />
+    <texture name="d08_key_legend_texture" type="2d" file="${PROJECT_ROOT}/research/v4/tasks/p3/assets/key_legends_noto.png" />
+    <material name="d08_key_legend_material" texture="d08_key_legend_texture" texuniform="false" specular=".15" shininess=".15" />
+  </asset>
+  <worldbody>
+    <body name="d08_laptop" pos="0 0 0.9">
+      <geom name="d08_laptop_base" type="mesh" mesh="d08_laptop_base" pos="0 0 .012" material="d08_aluminum" />
+      <geom type="cylinder" pos="-0.125 -0.08 0.002" size=".010 .002" material="d08_rubber" />
+      <geom type="cylinder" pos="-0.125 0.08 0.002" size=".010 .002" material="d08_rubber" />
+      <geom type="cylinder" pos="0.125 -0.08 0.002" size=".010 .002" material="d08_rubber" />
+      <geom type="cylinder" pos="0.125 0.08 0.002" size=".010 .002" material="d08_rubber" />
+      <geom type="box" pos="0 .027 .0201" size=".140 .058 .00015" material="d08_key" />
+      <geom type="box" pos="0 -.076 .0202" size=".045 .023 .0002" rgba=".36 .39 .42 1" />
+      <geom type="cylinder" pos="-0.102 0.104 0.022" size=".005 .030" euler="0 90 0" material="d08_aluminum" />
+      <geom type="cylinder" pos="0.102 0.104 0.022" size=".005 .030" euler="0 90 0" material="d08_aluminum" />
+      <body name="d08_laptop_screen" pos="0 .103 .023" euler="-12 0 0">
+        <geom name="d08_lid" type="mesh" mesh="d08_laptop_lid" pos="0 0 .108" material="d08_aluminum" />
+        <geom type="box" pos="0 -.0036 .109" size=".148 .00015 .100" material="d08_glass" contype="0" conaffinity="0" />
+        <geom name="d08_screen_pixels" type="mesh" mesh="d08_screen_face" material="d08_display" contype="0" conaffinity="0" group="1" />
+        <geom type="sphere" pos="0 -.00395 .205" size=".0016" material="d08_glass" contype="0" conaffinity="0" />
+      </body>
+      <geom type="box" pos="-0.1551 -0.035 0.012" size=".00015 .008 .002" material="d08_key" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.1551 0.015 0.012" size=".00015 .008 .002" material="d08_key" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.1551 0.055 0.012" size=".00015 .008 .002" material="d08_key" contype="0" conaffinity="0" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.117 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.099 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.081 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.063 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.045 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.027 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.009 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.009 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.027 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.045 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.063 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.081 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.099 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.117 0.075 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.126 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.108 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.09 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.072 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.054 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.036 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.018 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="2.60208521e-17 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.018 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.036 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.054 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.072 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.09 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.099 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.081 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.063 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.045 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.027 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.009 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.009 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.027 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.045 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.063 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.081 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.099 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0945 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0765 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0585 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0405 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0225 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0045 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0135 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0315 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0495 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0675 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0855 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0855 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0675 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0495 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0315 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.0135 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0045 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0225 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0405 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0585 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.0765 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="-0.1035 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.09 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.108 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_0" pos="0.126 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_1" pos="-0.12375 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_1" pos="-0.08325 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_1" pos="0.04725 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_1" pos="0.06975 -0.025 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_2" pos="-0.1215 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_2" pos="0.1215 0.035 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_3" pos="-0.11925 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_4" pos="0.117 0.055 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_5" pos="0.11475 0.015 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_5" pos="-0.11475 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_6" pos="0.11025 -0.005 .0209" material="d08_key" group="1" />
+      <geom type="mesh" mesh="d08_key_width_7" pos="-0.018 -0.025 .0209" material="d08_key" group="1" />
+      <geom name="d08_key_print" type="mesh" mesh="d08_key_legends" material="d08_key_legend_material" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 -0.005 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 -0.002 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.001 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.004 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.007 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.01 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.013 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.016 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.019 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.022 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.025 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.028 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.031 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.034 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.037 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.04 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.043 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.046 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.049 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.052 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.055 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.058 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.061 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.144 0.064 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 -0.005 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 -0.002 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.001 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.004 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.007 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.01 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.013 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.016 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.019 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.022 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.025 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.028 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.031 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.034 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.037 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.04 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.043 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.046 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.049 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.052 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.055 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.058 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.061 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="-0.146 0.064 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 -0.005 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 -0.002 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.001 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.004 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.007 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.01 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.013 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.016 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.019 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.022 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.025 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.028 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.031 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.034 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.037 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.04 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.043 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.046 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.049 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.052 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.055 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.058 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.061 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.144 0.064 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 -0.005 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 -0.002 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.001 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.004 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.007 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.01 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.013 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.016 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.019 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.022 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.025 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.028 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.031 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.034 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.037 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.04 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.043 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.046 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.049 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.052 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.055 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.058 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.061 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+      <geom type="box" pos="0.146 0.064 .02004" size=".0005 .00075 .00003" material="d08_key" group="1" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+</mujoco>

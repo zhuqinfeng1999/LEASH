@@ -1,0 +1,18 @@
+<mujoco>
+  <asset>
+    <texture name="prep_wood" type="2d" file="__LEASH_ROOT__/research/upstream/polyhaven/wood_table_diff_1k.png" />
+    <material name="wood" texture="prep_wood" specular=".08" shininess=".12" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".24" diaginertia=".00068 .00100 .00165" />
+        <geom name="board_collision" type="box" size=".11 .09 .009" material="wood" group="0" mass="0" contype="1" conaffinity="1" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="board_visual" type="box" size=".11 .09 .009" material="wood" group="1" mass="0" contype="0" conaffinity="0" friction="1 .005 .0001" solref=".02 1" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.009" />
+      <site name="top_site" pos="0 0 .009" />
+      <site name="horizontal_radius_site" pos=".145 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

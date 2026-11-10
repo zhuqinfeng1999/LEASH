@@ -1,0 +1,18 @@
+{
+  "initial_joint_qpos_rad": [
+    -1.5872741014960017e-09,
+    0.10839921115471746,
+    1.6879204264943066e-09,
+    -1.6545515584161539,
+    -1.5809876980842932e-10,
+    1.5412950764573905,
+    0.7853981635214736
+  ],
+  "target_eef_m": [
+    -0.06,
+    0.0,
+    1.34
+  ],
+  "pitch_deg": 20.0,
+  "kind": "CPU IK/projection-selected reset only; native occlusion acceptance pending"
+}

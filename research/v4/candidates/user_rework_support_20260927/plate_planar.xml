@@ -1,0 +1,9 @@
+<mujoco model="s3_plate"><asset /><worldbody><body><body name="object">
+      <inertial pos="0 0 .006" mass=".31" diaginertia=".00036 .00036 .00067" />
+      <geom name="plate_base" type="cylinder" pos="0 0 .004" size=".067 .004" rgba=".94 .94 .89 1" friction=".9 .005 .001" group="0" solref=".02 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="plate_rim" type="cylinder" pos="0 0 .009" size=".070 .003" rgba=".88 .90 .91 1" group="1" contype="0" conaffinity="0" />
+      <geom name="plate_food_surface" type="cylinder" pos="0 0 .0123" size=".059 .0008" rgba=".96 .96 .93 1" group="1" contype="0" conaffinity="0" />
+      <geom name="plate_grip_edge" type="box" pos="-.069 0 .014" size=".009 .018 .008" rgba=".9 .91 .91 1" friction="1 .005 .001" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+    <geom name="plate_base_visual" type="cylinder" pos="0 0 .004" size=".067 .004" rgba=".94 .94 .89 1" friction=".9 .005 .001" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="plate_grip_edge_visual" type="box" pos="-.069 0 .014" size=".009 .018 .008" rgba=".9 .91 .91 1" friction="1 .005 .001" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+    <geom name="plate_flat_bottom_contact" type="box" pos="0 0 .002" size=".045 .045 .002" mass="0" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" friction=".9 .005 .001" solref=".02 1" priority="1" /></body><site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" /><site name="top_site" pos="0 0 .022" size=".001" rgba="0 0 0 0" /><site name="horizontal_radius_site" pos=".078 0 .01" size=".001" rgba="0 0 0 0" /></body></worldbody></mujoco>

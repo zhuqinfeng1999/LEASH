@@ -1,0 +1,11 @@
+# Authored normal200x120mm noncolliding printed paper label
+v -0.1 -0.06 0.0007
+v 0.1 -0.06 0.0007
+v 0.1 0.06 0.0007
+v -0.1 0.06 0.0007
+vt 0 0
+vt 1 0
+vt 1 1
+vt 0 1
+f 1/1 2/2 3/3
+f 1/1 3/3 4/4

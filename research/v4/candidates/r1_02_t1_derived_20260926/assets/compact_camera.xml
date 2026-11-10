@@ -1,0 +1,32 @@
+<mujoco model="original_compact_camera">
+  <asset>
+    <material name="camera_graphite" rgba=".085 .095 .105 1" specular=".45" shininess=".45" />
+    <material name="camera_metal" rgba=".45 .49 .52 1" specular=".8" shininess=".7" />
+    <material name="camera_glass" rgba=".015 .06 .105 1" specular=".95" shininess=".95" />
+    <material name="camera_grip" rgba=".035 .038 .042 1" specular=".1" shininess=".15" />
+    <material name="camera_flash" rgba=".9 .9 .85 1" specular=".6" shininess=".6" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .014" mass=".14" diaginertia=".000045 .000095 .00011" />
+        <geom name="camera_body_visual" type="box" pos="0 0 0.014" size="0.043 0.026 0.014" group="1" contype="0" conaffinity="0" mass="0" material="camera_graphite" />
+        <geom name="camera_body_collision" type="box" pos="0 0 0.014" size="0.043 0.026 0.014" group="0" contype="1" conaffinity="1" mass="0" material="camera_graphite" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="camera_lens_barrel_visual" type="cylinder" pos="-0.018 0 0.032" size="0.018 0.004" group="1" contype="0" conaffinity="0" mass="0" material="camera_metal" />
+        <geom name="camera_lens_barrel_collision" type="cylinder" pos="-0.018 0 0.032" size="0.018 0.004" group="0" contype="1" conaffinity="1" mass="0" material="camera_metal" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="camera_lens_glass" type="cylinder" pos="-0.018 0 0.0361" size="0.014 0.0002" group="1" contype="0" conaffinity="0" mass="0" material="camera_glass" />
+        <geom name="camera_grip_texture" type="box" pos="0.032 0 0.0282" size="0.01 0.024 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="camera_grip" />
+        <geom name="camera_flash_window" type="box" pos="-0.03 0.02 0.0284" size="0.009 0.003 0.0004" group="1" contype="0" conaffinity="0" mass="0" material="camera_flash" />
+        <geom name="camera_shutter_button" type="cylinder" pos="0.029 0.023 0.032" size="0.004 0.004" group="1" contype="0" conaffinity="0" mass="0" material="camera_metal" />
+        <geom name="camera_grip_rib_0" type="box" pos="0.032 -0.02 0.0288" size="0.009 0.0005 0.00025" group="1" contype="0" conaffinity="0" mass="0" material="camera_graphite" />
+        <geom name="camera_grip_rib_1" type="box" pos="0.032 -0.01 0.0288" size="0.009 0.0005 0.00025" group="1" contype="0" conaffinity="0" mass="0" material="camera_graphite" />
+        <geom name="camera_grip_rib_2" type="box" pos="0.032 0.0 0.0288" size="0.009 0.0005 0.00025" group="1" contype="0" conaffinity="0" mass="0" material="camera_graphite" />
+        <geom name="camera_grip_rib_3" type="box" pos="0.032 0.009999999999999998 0.0288" size="0.009 0.0005 0.00025" group="1" contype="0" conaffinity="0" mass="0" material="camera_graphite" />
+        <geom name="camera_grip_rib_4" type="box" pos="0.032 0.02 0.0288" size="0.009 0.0005 0.00025" group="1" contype="0" conaffinity="0" mass="0" material="camera_graphite" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 0.042" size=".001" />
+      <site name="horizontal_radius_site" pos="0.055 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,24 @@
+<mujoco model="v3_paper_bin">
+  <asset>
+    <material name="bin_metal" rgba=".19 .24 .29 .65" specular=".55" shininess=".45" />
+    <material name="waste_paper" rgba=".85 .82 .70 1" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .047" mass="1.05" diaginertia=".005 .005 .005" />
+        <geom name="bin_base" type="box" pos="0 0 .004" size=".085 .085 .004" material="bin_metal" mass=".65" friction=".8 .005 .001" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_n" type="box" pos="0 .088 .064" size=".09 .004 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_s" type="box" pos="0 -.088 .064" size=".09 .004 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_e" type="box" pos=".088 0 .064" size=".004 .084 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="bin_wall_w" type="box" pos="-.088 0 .064" size=".004 .084 .060" material="bin_metal" mass=".10" group="1" contype="0" conaffinity="0" />
+        <geom name="paper_a" type="ellipsoid" pos="-.029 -.015 .020" size=".025 .019 .012" material="waste_paper" contype="0" conaffinity="0" group="1" />
+        <geom name="paper_b" type="ellipsoid" pos=".022 .020 .018" size=".026 .018 .011" material="waste_paper" contype="0" conaffinity="0" group="1" />
+        <geom name="paper_c" type="ellipsoid" pos="-.008 .030 .021" size=".019 .022 .013" material="waste_paper" contype="0" conaffinity="0" group="1" />
+      <geom type="box" pos="0 0 .004" size=".085 .085 .004" friction=".8 .005 .001" name="bin_base_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /><geom type="box" pos="0 .088 .064" size=".09 .004 .060" name="bin_wall_n_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /><geom type="box" pos="0 -.088 .064" size=".09 .004 .060" name="bin_wall_s_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /><geom type="box" pos=".088 0 .064" size=".004 .084 .060" name="bin_wall_e_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /><geom type="box" pos="-.088 0 .064" size=".004 .084 .060" name="bin_wall_w_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /></body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 .124" size=".001" />
+      <site name="horizontal_radius_site" pos=".115 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,16 @@
+<mujoco model="e2_upright_dictionary"><asset>
+    <texture name="cover_texture" type="2d" file="__LEASH_ROOT__/research/v4/candidates/e2_base_cat_20260926/assets/dictionary_cover.png"/>
+    <material name="cover" rgba=".27 .07 .10 1" specular=".15"/>
+    <material name="cover_print" texture="cover_texture" rgba="1 1 1 1"/>
+    <material name="pages" rgba=".85 .81 .71 1"/>
+    <material name="foil" rgba=".65 .49 .20 1"/></asset>
+    <worldbody><body><body name="object"><inertial pos="0 0 .14" mass="1.2" diaginertia=".008 .013 .006"/>
+    <geom name="body" type="box" pos="0 0 .14" size=".113 .026 .14" rgba="0 0 0 0" group="0"/>
+    <geom name="pages_visual" type="box" pos=".003 0 .14" size=".104 .021 .138" material="pages" group="1" contype="0" conaffinity="0"/>
+    <geom name="cover_front" type="box" pos="0 -.024 .14" size=".113 .002 .14" material="cover" group="1" contype="0" conaffinity="0"/>
+    <geom name="cover_back" type="box" pos="0 .024 .14" size=".113 .002 .14" material="cover" group="1" contype="0" conaffinity="0"/>
+    <geom name="cover_print" type="box" pos="0 -.0262 .14" size=".111 .0002 .138" material="cover_print" group="1" contype="0" conaffinity="0"/>
+    <geom name="spine" type="box" pos="-.11 0 .14" size=".003 .026 .14" material="cover" group="1" contype="0" conaffinity="0"/>
+    <geom name="band_a" type="box" pos="-.113 0 .045" size=".0003 .026 .003" material="foil" group="1" contype="0" conaffinity="0"/>
+    <geom name="band_b" type="box" pos="-.113 0 .235" size=".0003 .026 .003" material="foil" group="1" contype="0" conaffinity="0"/>
+    </body></body></worldbody></mujoco>

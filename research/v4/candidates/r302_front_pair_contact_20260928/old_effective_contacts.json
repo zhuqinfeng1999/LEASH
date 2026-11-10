@@ -1,0 +1,109 @@
+{
+  "kind": "actual old effective source contacts from saved80 frame, one mj_forward/no physics",
+  "rows": [
+    {
+      "can": "steel_thermos_1_can_body_collision",
+      "rail": "r302_v_rail_-1",
+      "old_geoms_order": [
+        "steel_thermos_1_can_body_collision",
+        "r302_v_rail_-1"
+      ],
+      "dim": 3,
+      "old_solref": [
+        0.004,
+        1.0
+      ],
+      "old_solreffriction": [
+        0.0,
+        0.0
+      ],
+      "solimp": [
+        0.98,
+        0.999,
+        0.0001,
+        0.5,
+        2.0
+      ],
+      "friction": [
+        1.0,
+        1.0,
+        0.005,
+        0.0001,
+        0.0001
+      ],
+      "margin": 0.0,
+      "gap": 0.0,
+      "includemargin": 0.0,
+      "geom_margin": [
+        0.0,
+        0.0
+      ],
+      "geom_gap": [
+        0.0,
+        0.0
+      ],
+      "old_dist_m": -2.441390745665696e-06,
+      "new_solref": [
+        0.02,
+        1.0
+      ]
+    },
+    {
+      "can": "steel_thermos_1_can_body_collision",
+      "rail": "r302_v_rail_1",
+      "old_geoms_order": [
+        "steel_thermos_1_can_body_collision",
+        "r302_v_rail_1"
+      ],
+      "dim": 3,
+      "old_solref": [
+        0.004,
+        1.0
+      ],
+      "old_solreffriction": [
+        0.0,
+        0.0
+      ],
+      "solimp": [
+        0.98,
+        0.999,
+        0.0001,
+        0.5,
+        2.0
+      ],
+      "friction": [
+        1.0,
+        1.0,
+        0.005,
+        0.0001,
+        0.0001
+      ],
+      "margin": 0.0,
+      "gap": 0.0,
+      "includemargin": 0.0,
+      "geom_margin": [
+        0.0,
+        0.0
+      ],
+      "geom_gap": [
+        0.0,
+        0.0
+      ],
+      "old_dist_m": -2.8076151110481935e-06,
+      "new_solref": [
+        0.02,
+        1.0
+      ]
+    }
+  ],
+  "dt_s": 0.002,
+  "old_npair": 0,
+  "Scene_constructors": 0,
+  "FK_calls": 1,
+  "controls": 0,
+  "inputs_sha256": {
+    "__LEASH_ROOT__/research/v4/candidates/r302_front_slot_fixed80_reset_20260928/startup_seed0/compiled_model.mjb": "22216736030586c0ab0f501cdf6ed0541814021fb4ff396f002a28925627c1d5",
+    "__LEASH_ROOT__/research/v4/candidates/r302_front_slot_fixed80_reset_20260928/startup_seed0/constructor_data.npz": "19b49f037dd34845ebd0b774bbd976d9bdbcc43616ab5b1e50385f1ecde997ea",
+    "__LEASH_ROOT__/research/v4/candidates/r302_front_slot_fixed80_reset_20260928/final_source_freeze.json": "4eb14bdaf6316046d24b50dec023618e97858828cb7f750a3566cc8c4bfad0ea"
+  }
+}

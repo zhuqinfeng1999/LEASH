@@ -1,0 +1,15 @@
+{
+  "initial_joint_qpos_rad": [
+    -7.5693894480779e-07,
+    0.3139607612574106,
+    9.366600998258563e-07,
+    -1.3638623850303497,
+    -2.0846010280789844e-07,
+    1.1943943997498139,
+    0.7853983398089244
+  ],
+  "origin": "__LEASH_ROOT__/research/v4/candidates/p4_public_reset_20260926/selected_pose_v2.json",
+  "revision": "r2-02-reset-only-v1",
+  "ten_seed_full_geometry_screen": true,
+  "actual_native_images_required": true
+}

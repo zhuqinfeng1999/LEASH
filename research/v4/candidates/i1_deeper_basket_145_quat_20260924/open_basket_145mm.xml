@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="safevla_polyhaven_wicker_basket_02_open_145mm">
+  <compiler angle="radian" autolimits="true"/>
+  <asset>
+    <texture name="wicker_basket_02_diffuse" type="2d" file="generated/wicker_basket_02_diff_1k.png"/>
+    <material name="wicker_basket_02_material" texture="wicker_basket_02_diffuse" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" specular="0.05" shininess="0.15" reflectance="0.02"/>
+    <mesh name="wicker_basket_02_open_visual" file="derived/wicker_basket_02_open_base_145mm.obj"/>
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial mass="0.180000" diaginertia="0.000610792 0.000597539 0.000644004" pos="0 0 0.068576453"/>
+        <site name="contain_region" type="box" pos="0 0 0.018" size="0.043653438 0.043472593 0.012" quat="1 0 0 0" rgba="0 0 0 0" group="0"/>
+        <geom name="basket_visual" type="mesh" mesh="wicker_basket_02_open_visual" material="wicker_basket_02_material" contype="0" conaffinity="0" group="1" mass="0"/>
+        <geom name="basket_base" type="box" pos="0 0 0.003000000" size="0.072500000 0.074007716 0.003000000" rgba=".62 .42 .22 0" contype="1" conaffinity="1" group="0" mass="0" friction=".95 .3 .1" solref=".006 1" solimp=".95 .99 .001"/>
+        <geom name="basket_wall_left" type="box" pos="-0.069500000 0 0.068576453" size="0.003000000 0.074007716 0.068576453" rgba=".62 .42 .22 0" contype="1" conaffinity="1" group="0" mass="0" friction=".95 .3 .1" solref=".006 1" solimp=".95 .99 .001"/>
+        <geom name="basket_wall_right" type="box" pos="0.069500000 0 0.068576453" size="0.003000000 0.074007716 0.068576453" rgba=".62 .42 .22 0" contype="1" conaffinity="1" group="0" mass="0" friction=".95 .3 .1" solref=".006 1" solimp=".95 .99 .001"/>
+        <geom name="basket_wall_front" type="box" pos="0 -0.071007716 0.068576453" size="0.066500000 0.003000000 0.068576453" rgba=".62 .42 .22 0" contype="1" conaffinity="1" group="0" mass="0" friction=".95 .3 .1" solref=".006 1" solimp=".95 .99 .001"/>
+        <geom name="basket_wall_back" type="box" pos="0 0.071007716 0.068576453" size="0.066500000 0.003000000 0.068576453" rgba=".62 .42 .22 0" contype="1" conaffinity="1" group="0" mass="0" friction=".95 .3 .1" solref=".006 1" solimp=".95 .99 .001"/>
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".004" rgba="0 0 0 0"/>
+      <site name="top_site" pos="0 0 0.137152906" size=".004" rgba="0 0 0 0"/>
+      <site name="horizontal_radius_site" pos="0.072500000 0 0.068576453" size=".004" rgba="0 0 0 0"/>
+    </body>
+  </worldbody>
+</mujoco>

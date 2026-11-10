@@ -1,0 +1,186 @@
+[
+  {
+    "name": "torso",
+    "bone_nodes": [
+      9,
+      40
+    ],
+    "radius_m": 0.045
+  },
+  {
+    "name": "neck",
+    "bone_nodes": [
+      40,
+      43
+    ],
+    "radius_m": 0.041
+  },
+  {
+    "name": "muzzle",
+    "bone_nodes": [
+      43,
+      71
+    ],
+    "radius_m": 0.037
+  },
+  {
+    "name": "right_hind_upper",
+    "bone_nodes": [
+      17,
+      18
+    ],
+    "radius_m": 0.021
+  },
+  {
+    "name": "right_hind_lower",
+    "bone_nodes": [
+      18,
+      19
+    ],
+    "radius_m": 0.014
+  },
+  {
+    "name": "right_hind_paw",
+    "bone_nodes": [
+      19,
+      20
+    ],
+    "radius_m": 0.011
+  },
+  {
+    "name": "left_hind_upper",
+    "bone_nodes": [
+      27,
+      28
+    ],
+    "radius_m": 0.021
+  },
+  {
+    "name": "left_hind_lower",
+    "bone_nodes": [
+      28,
+      29
+    ],
+    "radius_m": 0.014
+  },
+  {
+    "name": "left_hind_paw",
+    "bone_nodes": [
+      29,
+      30
+    ],
+    "radius_m": 0.011
+  },
+  {
+    "name": "left_front_upper",
+    "bone_nodes": [
+      108,
+      109
+    ],
+    "radius_m": 0.019
+  },
+  {
+    "name": "left_front_lower",
+    "bone_nodes": [
+      109,
+      110
+    ],
+    "radius_m": 0.013
+  },
+  {
+    "name": "left_front_paw",
+    "bone_nodes": [
+      110,
+      111
+    ],
+    "radius_m": 0.011
+  },
+  {
+    "name": "right_front_upper",
+    "bone_nodes": [
+      118,
+      119
+    ],
+    "radius_m": 0.019
+  },
+  {
+    "name": "right_front_lower",
+    "bone_nodes": [
+      119,
+      120
+    ],
+    "radius_m": 0.013
+  },
+  {
+    "name": "right_front_paw",
+    "bone_nodes": [
+      120,
+      121
+    ],
+    "radius_m": 0.011
+  },
+  {
+    "name": "right_ear",
+    "bone_nodes": [
+      67,
+      68
+    ],
+    "radius_m": 0.01
+  },
+  {
+    "name": "left_ear",
+    "bone_nodes": [
+      69,
+      70
+    ],
+    "radius_m": 0.01
+  },
+  {
+    "name": "tail_0",
+    "bone_nodes": [
+      10,
+      11
+    ],
+    "radius_m": 0.013
+  },
+  {
+    "name": "tail_1",
+    "bone_nodes": [
+      11,
+      12
+    ],
+    "radius_m": 0.012
+  },
+  {
+    "name": "tail_2",
+    "bone_nodes": [
+      12,
+      13
+    ],
+    "radius_m": 0.011
+  },
+  {
+    "name": "tail_3",
+    "bone_nodes": [
+      13,
+      14
+    ],
+    "radius_m": 0.009999999999999998
+  },
+  {
+    "name": "tail_4",
+    "bone_nodes": [
+      14,
+      15
+    ],
+    "radius_m": 0.009
+  },
+  {
+    "name": "tail_5",
+    "bone_nodes": [
+      15,
+      16
+    ],
+    "radius_m": 0.008
+  }
+]

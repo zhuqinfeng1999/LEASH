@@ -1,0 +1,90 @@
+<mujoco model="s2_pill_dish">
+  <asset>
+    <material name="ceramic" rgba=".88 .86 .80 1" specular=".34" shininess=".28" />
+    <material name="rim_ceramic" rgba=".82 .79 .73 1" specular=".31" shininess=".27" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .008" mass=".21" diaginertia=".0014 .0014 .0022" />
+        <geom name="dish_base" material="ceramic" group="0" type="cylinder" pos="0 0 .004" size=".120 .004" friction=".8 .005 .001" />
+        <geom name="dish_base_vis" material="ceramic" group="1" contype="0" conaffinity="0" type="cylinder" pos="0 0 .004" size=".120 .004" friction=".8 .005 .001" />
+        <geom name="rim_00" material="rim_ceramic" group="0" type="box" pos="0.1160000 0.0000000 .012" size=".004 .011 .009" quat="1.00000000 0 0 0.00000000" friction=".8 .005 .001" />
+        <geom name="rim_00_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1160000 0.0000000 .012" size=".004 .011 .009" quat="1.00000000 0 0 0.00000000" friction=".8 .005 .001" />
+        <geom name="rim_01" material="rim_ceramic" group="0" type="box" pos="0.1142377 0.0201432 .012" size=".004 .011 .009" quat="0.99619470 0 0 0.08715574" friction=".8 .005 .001" />
+        <geom name="rim_01_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1142377 0.0201432 .012" size=".004 .011 .009" quat="0.99619470 0 0 0.08715574" friction=".8 .005 .001" />
+        <geom name="rim_02" material="rim_ceramic" group="0" type="box" pos="0.1090043 0.0396743 .012" size=".004 .011 .009" quat="0.98480775 0 0 0.17364818" friction=".8 .005 .001" />
+        <geom name="rim_02_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1090043 0.0396743 .012" size=".004 .011 .009" quat="0.98480775 0 0 0.17364818" friction=".8 .005 .001" />
+        <geom name="rim_03" material="rim_ceramic" group="0" type="box" pos="0.1004589 0.0580000 .012" size=".004 .011 .009" quat="0.96592583 0 0 0.25881905" friction=".8 .005 .001" />
+        <geom name="rim_03_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1004589 0.0580000 .012" size=".004 .011 .009" quat="0.96592583 0 0 0.25881905" friction=".8 .005 .001" />
+        <geom name="rim_04" material="rim_ceramic" group="0" type="box" pos="0.0888612 0.0745634 .012" size=".004 .011 .009" quat="0.93969262 0 0 0.34202014" friction=".8 .005 .001" />
+        <geom name="rim_04_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0888612 0.0745634 .012" size=".004 .011 .009" quat="0.93969262 0 0 0.34202014" friction=".8 .005 .001" />
+        <geom name="rim_05" material="rim_ceramic" group="0" type="box" pos="0.0745634 0.0888612 .012" size=".004 .011 .009" quat="0.90630779 0 0 0.42261826" friction=".8 .005 .001" />
+        <geom name="rim_05_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0745634 0.0888612 .012" size=".004 .011 .009" quat="0.90630779 0 0 0.42261826" friction=".8 .005 .001" />
+        <geom name="rim_06" material="rim_ceramic" group="0" type="box" pos="0.0580000 0.1004589 .012" size=".004 .011 .009" quat="0.86602540 0 0 0.50000000" friction=".8 .005 .001" />
+        <geom name="rim_06_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0580000 0.1004589 .012" size=".004 .011 .009" quat="0.86602540 0 0 0.50000000" friction=".8 .005 .001" />
+        <geom name="rim_07" material="rim_ceramic" group="0" type="box" pos="0.0396743 0.1090043 .012" size=".004 .011 .009" quat="0.81915204 0 0 0.57357644" friction=".8 .005 .001" />
+        <geom name="rim_07_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0396743 0.1090043 .012" size=".004 .011 .009" quat="0.81915204 0 0 0.57357644" friction=".8 .005 .001" />
+        <geom name="rim_08" material="rim_ceramic" group="0" type="box" pos="0.0201432 0.1142377 .012" size=".004 .011 .009" quat="0.76604444 0 0 0.64278761" friction=".8 .005 .001" />
+        <geom name="rim_08_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0201432 0.1142377 .012" size=".004 .011 .009" quat="0.76604444 0 0 0.64278761" friction=".8 .005 .001" />
+        <geom name="rim_09" material="rim_ceramic" group="0" type="box" pos="0.0000000 0.1160000 .012" size=".004 .011 .009" quat="0.70710678 0 0 0.70710678" friction=".8 .005 .001" />
+        <geom name="rim_09_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0000000 0.1160000 .012" size=".004 .011 .009" quat="0.70710678 0 0 0.70710678" friction=".8 .005 .001" />
+        <geom name="rim_10" material="rim_ceramic" group="0" type="box" pos="-0.0201432 0.1142377 .012" size=".004 .011 .009" quat="0.64278761 0 0 0.76604444" friction=".8 .005 .001" />
+        <geom name="rim_10_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0201432 0.1142377 .012" size=".004 .011 .009" quat="0.64278761 0 0 0.76604444" friction=".8 .005 .001" />
+        <geom name="rim_11" material="rim_ceramic" group="0" type="box" pos="-0.0396743 0.1090043 .012" size=".004 .011 .009" quat="0.57357644 0 0 0.81915204" friction=".8 .005 .001" />
+        <geom name="rim_11_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0396743 0.1090043 .012" size=".004 .011 .009" quat="0.57357644 0 0 0.81915204" friction=".8 .005 .001" />
+        <geom name="rim_12" material="rim_ceramic" group="0" type="box" pos="-0.0580000 0.1004589 .012" size=".004 .011 .009" quat="0.50000000 0 0 0.86602540" friction=".8 .005 .001" />
+        <geom name="rim_12_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0580000 0.1004589 .012" size=".004 .011 .009" quat="0.50000000 0 0 0.86602540" friction=".8 .005 .001" />
+        <geom name="rim_13" material="rim_ceramic" group="0" type="box" pos="-0.0745634 0.0888612 .012" size=".004 .011 .009" quat="0.42261826 0 0 0.90630779" friction=".8 .005 .001" />
+        <geom name="rim_13_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0745634 0.0888612 .012" size=".004 .011 .009" quat="0.42261826 0 0 0.90630779" friction=".8 .005 .001" />
+        <geom name="rim_14" material="rim_ceramic" group="0" type="box" pos="-0.0888612 0.0745634 .012" size=".004 .011 .009" quat="0.34202014 0 0 0.93969262" friction=".8 .005 .001" />
+        <geom name="rim_14_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0888612 0.0745634 .012" size=".004 .011 .009" quat="0.34202014 0 0 0.93969262" friction=".8 .005 .001" />
+        <geom name="rim_15" material="rim_ceramic" group="0" type="box" pos="-0.1004589 0.0580000 .012" size=".004 .011 .009" quat="0.25881905 0 0 0.96592583" friction=".8 .005 .001" />
+        <geom name="rim_15_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1004589 0.0580000 .012" size=".004 .011 .009" quat="0.25881905 0 0 0.96592583" friction=".8 .005 .001" />
+        <geom name="rim_16" material="rim_ceramic" group="0" type="box" pos="-0.1090043 0.0396743 .012" size=".004 .011 .009" quat="0.17364818 0 0 0.98480775" friction=".8 .005 .001" />
+        <geom name="rim_16_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1090043 0.0396743 .012" size=".004 .011 .009" quat="0.17364818 0 0 0.98480775" friction=".8 .005 .001" />
+        <geom name="rim_17" material="rim_ceramic" group="0" type="box" pos="-0.1142377 0.0201432 .012" size=".004 .011 .009" quat="0.08715574 0 0 0.99619470" friction=".8 .005 .001" />
+        <geom name="rim_17_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1142377 0.0201432 .012" size=".004 .011 .009" quat="0.08715574 0 0 0.99619470" friction=".8 .005 .001" />
+        <geom name="rim_18" material="rim_ceramic" group="0" type="box" pos="-0.1160000 0.0000000 .012" size=".004 .011 .009" quat="0.00000000 0 0 1.00000000" friction=".8 .005 .001" />
+        <geom name="rim_18_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1160000 0.0000000 .012" size=".004 .011 .009" quat="0.00000000 0 0 1.00000000" friction=".8 .005 .001" />
+        <geom name="rim_19" material="rim_ceramic" group="0" type="box" pos="-0.1142377 -0.0201432 .012" size=".004 .011 .009" quat="-0.08715574 0 0 0.99619470" friction=".8 .005 .001" />
+        <geom name="rim_19_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1142377 -0.0201432 .012" size=".004 .011 .009" quat="-0.08715574 0 0 0.99619470" friction=".8 .005 .001" />
+        <geom name="rim_20" material="rim_ceramic" group="0" type="box" pos="-0.1090043 -0.0396743 .012" size=".004 .011 .009" quat="-0.17364818 0 0 0.98480775" friction=".8 .005 .001" />
+        <geom name="rim_20_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1090043 -0.0396743 .012" size=".004 .011 .009" quat="-0.17364818 0 0 0.98480775" friction=".8 .005 .001" />
+        <geom name="rim_21" material="rim_ceramic" group="0" type="box" pos="-0.1004589 -0.0580000 .012" size=".004 .011 .009" quat="-0.25881905 0 0 0.96592583" friction=".8 .005 .001" />
+        <geom name="rim_21_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.1004589 -0.0580000 .012" size=".004 .011 .009" quat="-0.25881905 0 0 0.96592583" friction=".8 .005 .001" />
+        <geom name="rim_22" material="rim_ceramic" group="0" type="box" pos="-0.0888612 -0.0745634 .012" size=".004 .011 .009" quat="-0.34202014 0 0 0.93969262" friction=".8 .005 .001" />
+        <geom name="rim_22_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0888612 -0.0745634 .012" size=".004 .011 .009" quat="-0.34202014 0 0 0.93969262" friction=".8 .005 .001" />
+        <geom name="rim_23" material="rim_ceramic" group="0" type="box" pos="-0.0745634 -0.0888612 .012" size=".004 .011 .009" quat="-0.42261826 0 0 0.90630779" friction=".8 .005 .001" />
+        <geom name="rim_23_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0745634 -0.0888612 .012" size=".004 .011 .009" quat="-0.42261826 0 0 0.90630779" friction=".8 .005 .001" />
+        <geom name="rim_24" material="rim_ceramic" group="0" type="box" pos="-0.0580000 -0.1004589 .012" size=".004 .011 .009" quat="-0.50000000 0 0 0.86602540" friction=".8 .005 .001" />
+        <geom name="rim_24_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0580000 -0.1004589 .012" size=".004 .011 .009" quat="-0.50000000 0 0 0.86602540" friction=".8 .005 .001" />
+        <geom name="rim_25" material="rim_ceramic" group="0" type="box" pos="-0.0396743 -0.1090043 .012" size=".004 .011 .009" quat="-0.57357644 0 0 0.81915204" friction=".8 .005 .001" />
+        <geom name="rim_25_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0396743 -0.1090043 .012" size=".004 .011 .009" quat="-0.57357644 0 0 0.81915204" friction=".8 .005 .001" />
+        <geom name="rim_26" material="rim_ceramic" group="0" type="box" pos="-0.0201432 -0.1142377 .012" size=".004 .011 .009" quat="-0.64278761 0 0 0.76604444" friction=".8 .005 .001" />
+        <geom name="rim_26_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0201432 -0.1142377 .012" size=".004 .011 .009" quat="-0.64278761 0 0 0.76604444" friction=".8 .005 .001" />
+        <geom name="rim_27" material="rim_ceramic" group="0" type="box" pos="-0.0000000 -0.1160000 .012" size=".004 .011 .009" quat="-0.70710678 0 0 0.70710678" friction=".8 .005 .001" />
+        <geom name="rim_27_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="-0.0000000 -0.1160000 .012" size=".004 .011 .009" quat="-0.70710678 0 0 0.70710678" friction=".8 .005 .001" />
+        <geom name="rim_28" material="rim_ceramic" group="0" type="box" pos="0.0201432 -0.1142377 .012" size=".004 .011 .009" quat="-0.76604444 0 0 0.64278761" friction=".8 .005 .001" />
+        <geom name="rim_28_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0201432 -0.1142377 .012" size=".004 .011 .009" quat="-0.76604444 0 0 0.64278761" friction=".8 .005 .001" />
+        <geom name="rim_29" material="rim_ceramic" group="0" type="box" pos="0.0396743 -0.1090043 .012" size=".004 .011 .009" quat="-0.81915204 0 0 0.57357644" friction=".8 .005 .001" />
+        <geom name="rim_29_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0396743 -0.1090043 .012" size=".004 .011 .009" quat="-0.81915204 0 0 0.57357644" friction=".8 .005 .001" />
+        <geom name="rim_30" material="rim_ceramic" group="0" type="box" pos="0.0580000 -0.1004589 .012" size=".004 .011 .009" quat="-0.86602540 0 0 0.50000000" friction=".8 .005 .001" />
+        <geom name="rim_30_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0580000 -0.1004589 .012" size=".004 .011 .009" quat="-0.86602540 0 0 0.50000000" friction=".8 .005 .001" />
+        <geom name="rim_31" material="rim_ceramic" group="0" type="box" pos="0.0745634 -0.0888612 .012" size=".004 .011 .009" quat="-0.90630779 0 0 0.42261826" friction=".8 .005 .001" />
+        <geom name="rim_31_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0745634 -0.0888612 .012" size=".004 .011 .009" quat="-0.90630779 0 0 0.42261826" friction=".8 .005 .001" />
+        <geom name="rim_32" material="rim_ceramic" group="0" type="box" pos="0.0888612 -0.0745634 .012" size=".004 .011 .009" quat="-0.93969262 0 0 0.34202014" friction=".8 .005 .001" />
+        <geom name="rim_32_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.0888612 -0.0745634 .012" size=".004 .011 .009" quat="-0.93969262 0 0 0.34202014" friction=".8 .005 .001" />
+        <geom name="rim_33" material="rim_ceramic" group="0" type="box" pos="0.1004589 -0.0580000 .012" size=".004 .011 .009" quat="-0.96592583 0 0 0.25881905" friction=".8 .005 .001" />
+        <geom name="rim_33_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1004589 -0.0580000 .012" size=".004 .011 .009" quat="-0.96592583 0 0 0.25881905" friction=".8 .005 .001" />
+        <geom name="rim_34" material="rim_ceramic" group="0" type="box" pos="0.1090043 -0.0396743 .012" size=".004 .011 .009" quat="-0.98480775 0 0 0.17364818" friction=".8 .005 .001" />
+        <geom name="rim_34_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1090043 -0.0396743 .012" size=".004 .011 .009" quat="-0.98480775 0 0 0.17364818" friction=".8 .005 .001" />
+        <geom name="rim_35" material="rim_ceramic" group="0" type="box" pos="0.1142377 -0.0201432 .012" size=".004 .011 .009" quat="-0.99619470 0 0 0.08715574" friction=".8 .005 .001" />
+        <geom name="rim_35_vis" material="rim_ceramic" group="1" contype="0" conaffinity="0" type="box" pos="0.1142377 -0.0201432 .012" size=".004 .011 .009" quat="-0.99619470 0 0 0.08715574" friction=".8 .005 .001" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 .021" size=".001" />
+      <site name="horizontal_radius_site" pos=".120 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

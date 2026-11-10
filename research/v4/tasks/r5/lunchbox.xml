@@ -1,0 +1,35 @@
+<mujoco model="v4_r5_open_child_lunchbox_provisional">
+  <asset>
+    <texture name="label_texture" type="2d" file="__LABEL_TEXTURE__" />
+    <material name="label_material" texture="label_texture" texrepeat="1 1" reflectance="0" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .03" mass=".85" diaginertia=".004 .005 .006" />
+        <geom name="base_visual" type="box" size=".119 .092 .009" group="1" contype="0" conaffinity="0" pos="0 0 .009" rgba=".30 .67 .62 1" />
+        <geom name="base_collision" type="box" size=".119 .092 .009" group="0" contype="1" conaffinity="1" pos="0 0 .009" rgba="0 0 0 0" mass="0" friction="1 .005 .001" />
+        <geom name="food_lining" type="box" size=".107 .080 .001" group="1" contype="0" conaffinity="0" pos="0 0 .020" rgba=".96 .92 .79 1" />
+        <geom name="front_rim_visual" type="box" size=".119 .005 .024" group="1" contype="0" conaffinity="0" pos="0 -0.088 .034" rgba=".30 .67 .62 1" />
+        <geom name="front_rim_collision" type="box" size=".119 .005 .024" group="0" contype="1" conaffinity="1" pos="0 -0.088 .034" rgba="0 0 0 0" mass="0" />
+        <geom name="back_rim_visual" type="box" size=".119 .005 .024" group="1" contype="0" conaffinity="0" pos="0 0.088 .034" rgba=".30 .67 .62 1" />
+        <geom name="back_rim_collision" type="box" size=".119 .005 .024" group="0" contype="1" conaffinity="1" pos="0 0.088 .034" rgba="0 0 0 0" mass="0" />
+        <geom name="left_rim_visual" type="box" size=".005 .092 .024" group="1" contype="0" conaffinity="0" pos="-0.115 0 .034" rgba=".30 .67 .62 1" />
+        <geom name="left_rim_collision" type="box" size=".005 .092 .024" group="0" contype="1" conaffinity="1" pos="-0.115 0 .034" rgba="0 0 0 0" mass="0" />
+        <geom name="right_rim_visual" type="box" size=".005 .092 .024" group="1" contype="0" conaffinity="0" pos="0.115 0 .034" rgba=".30 .67 .62 1" />
+        <geom name="right_rim_collision" type="box" size=".005 .092 .024" group="0" contype="1" conaffinity="1" pos="0.115 0 .034" rgba="0 0 0 0" mass="0" />
+        <geom name="open_lid" type="box" size=".092 .119 .005" group="1" contype="0" conaffinity="0" pos=".211 0 .009" rgba=".40 .76 .70 1" />
+        <geom name="child_name_label" type="box" size=".110 .055 .0005" group="1" contype="0" conaffinity="0" pos=".211 0 .0145" material="label_material" quat=".7071068 0 0 .7071068" />
+        <geom name="sandwich_bread" type="box" size=".039 .025 .008" group="1" contype="0" conaffinity="0" pos="-.061 -.042 .028" rgba=".80 .58 .31 1" />
+        <geom name="sandwich_fill" type="box" size=".038 .024 .002" group="1" contype="0" conaffinity="0" pos="-.061 -.042 .033" rgba=".43 .65 .24 1" />
+        <geom name="sandwich_top" type="box" size=".039 .025 .006" group="1" contype="0" conaffinity="0" pos="-.061 -.042 .039" rgba=".91 .74 .47 1" />
+        <geom name="fruit_0" type="sphere" size=".012" group="1" contype="0" conaffinity="0" pos="0.068 -0.044 .034" rgba=".80 .17 .16 1" />
+        <geom name="fruit_1" type="sphere" size=".012" group="1" contype="0" conaffinity="0" pos="0.077 -0.023 .034" rgba=".80 .17 .16 1" />
+        <geom name="fruit_2" type="sphere" size=".012" group="1" contype="0" conaffinity="0" pos="0.05 -0.031 .034" rgba=".80 .17 .16 1" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 0.058" size=".001" />
+      <site name="horizontal_radius_site" pos=".310 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

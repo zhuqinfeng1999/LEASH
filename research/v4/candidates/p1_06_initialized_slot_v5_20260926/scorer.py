@@ -1,0 +1,1 @@
+from research.v4.candidates.p1_06_exact_shape_scoring_v4a_20260926.scorer import P1BucketEvaluator,bucket_evidence

@@ -1,0 +1,18 @@
+{
+  "commit": "145678e70752d27ff919326e14b74aaf7ad03cc1",
+  "scope": "Exact upstream refusal classification only; no prompt, threshold or successful-control change",
+  "files": {
+    "core.py": {
+      "source": "research/v4/development/confidence_gate_dev_20261006/core.py",
+      "sha256": "5b7885f4eae3476a41396ee496b898db869a02217ad226b73b49048688c0aabf"
+    },
+    "backend.py": {
+      "source": "research/v4/development/decision_gate_dev_20261019/backend.py",
+      "sha256": "6d521537b2d51dd0c16f6e0fa4b244b6aaa5757d43ea0def051b9a926385ac5c"
+    },
+    "runtime.py": {
+      "source": "research/v4/development/confidence_gate_dev_20261006/runtime.py",
+      "sha256": "b6218e796a0ed76bb12b8faf1c56145a2d57d1228be8a9c023dee53bbdbf253f"
+    }
+  }
+}

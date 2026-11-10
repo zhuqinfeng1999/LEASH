@@ -1,0 +1,49 @@
+<mujoco model="r2_04_glowing_charcoal">
+  <asset>
+    <material name="charcoal" rgba=".055 .050 .043 1" specular=".025" shininess=".02" emission="0" />
+    <material name="ash" rgba=".26 .23 .20 1" specular=".025" shininess=".02" emission="0" />
+    <material name="ember_red" rgba=".85 .105 .025 1" specular=".025" shininess=".02" emission=".7" />
+    <material name="ember_orange" rgba="1 .32 .065 1" specular=".025" shininess=".02" emission=".9" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .017" mass=".035" diaginertia=".000007 .000008 .000008" />
+        <geom name="charcoal_block_collision" type="box" pos="0 0 .017" size=".022 .018 .017" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" friction="1.1 .005 .001" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="charcoal_body_visual" type="box" pos="0 0 .017" size=".022 .018 .017" material="charcoal" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_0_visual" type="ellipsoid" pos="-0.012964583440549945 -0.014564969068326257 0.03278319603734174" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_1_visual" type="ellipsoid" pos="-0.011300999445223487 -0.015364098363314675 0.03206526564079677" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_2_visual" type="ellipsoid" pos="-0.003866818529227309 -0.0042719390676264485 0.03337353872136178" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_3_visual" type="ellipsoid" pos="0.01708348684210217 -0.0010155222864720991 0.033165625209661126" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_4_visual" type="ellipsoid" pos="0.010269573825481552 -0.0025354979787296835 0.0334700046352881" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_5_visual" type="ellipsoid" pos="0.007591700595905561 -0.01595278618778425 0.03394743749019912" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_6_visual" type="ellipsoid" pos="0.017694034581235345 0.0013193653831200906 0.03230720805921502" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_7_visual" type="ellipsoid" pos="0.002299844682455348 0.004951560136616653 0.03348757658818474" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_8_visual" type="ellipsoid" pos="-0.009970547270680643 -0.00759273968571144 0.032194274963962245" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_9_visual" type="ellipsoid" pos="0.009973439016842271 -0.0012774287050731203 0.033160779413720316" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_10_visual" type="ellipsoid" pos="0.00996946283436952 -0.012296467334739422 0.03316568723726929" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_11_visual" type="ellipsoid" pos="-0.0050532673375366065 -0.001704933183153028 0.03225416858330207" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_12_visual" type="ellipsoid" pos="-0.0008643170414072456 -0.003734540361482769 0.03247957943090983" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_13_visual" type="ellipsoid" pos="0.01878576164616085 -0.008322029081088353 0.03253704687536386" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_14_visual" type="ellipsoid" pos="0.011248842536715434 -0.001836712683380948 0.03374403156166035" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_15_visual" type="ellipsoid" pos="-0.009245361936067998 -0.012201783250568109 0.03314501905951" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_16_visual" type="ellipsoid" pos="-0.013841877202811412 0.012770152931502087 0.0331451402760537" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_ash_17_visual" type="ellipsoid" pos="-0.007964668131518401 0.01422450124364712 0.03241014536726309" size=".003 .0025 .001" material="ash" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_top_0_visual" type="capsule" fromto="-0.015 -0.009 .0342 -0.004 -0.003999999999999999 .0342" size=".0012" material="ember_orange" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_top_1_visual" type="capsule" fromto="-0.004 -0.004 .0342 0.01 0.004999999999999999 .0342" size=".0012" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_top_2_visual" type="capsule" fromto="0.01 0.005 .0342 0.019 -0.001 .0342" size=".0012" material="ember_orange" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_top_3_visual" type="capsule" fromto="-0.015 0.008 .0342 -0.004999999999999999 -0.004 .0342" size=".0012" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_top_4_visual" type="capsule" fromto="-0.005 -0.004 .0342 -0.003 -0.016 .0342" size=".0012" material="ember_orange" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_side_-1_0_visual" type="capsule" fromto="-0.013 -0.0182 .004 -0.009999999999999998 -0.0182 .031" size=".0010" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_side_-1_1_visual" type="capsule" fromto="0.0 -0.0182 .004 0.003 -0.0182 .031" size=".0010" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_side_-1_2_visual" type="capsule" fromto="0.013 -0.0182 .004 0.016 -0.0182 .031" size=".0010" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_side_1_0_visual" type="capsule" fromto="-0.013 0.0182 .004 -0.009999999999999998 0.0182 .031" size=".0010" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_side_1_1_visual" type="capsule" fromto="0.0 0.0182 .004 0.003 0.0182 .031" size=".0010" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="charcoal_glow_side_1_2_visual" type="capsule" fromto="0.013 0.0182 .004 0.016 0.0182 .031" size=".0010" material="ember_red" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 0.036" size=".001" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos="0.03 0 0" size=".001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

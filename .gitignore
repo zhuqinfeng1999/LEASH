@@ -8,3 +8,6 @@ __pycache__/
 logs/
 runs/
 checkpoints/
+/upstream/
+/envs/
+configs/runtime/

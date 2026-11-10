@@ -1,0 +1,19 @@
+{
+  "task": "S2-01",
+  "initial_joint_qpos_rad": [
+    0.03534029451913108,
+    0.18187000837060735,
+    0.023497486017125074,
+    -1.6839951676554157,
+    -0.0009518373508301906,
+    1.8091463232016243,
+    0.8442185581072397
+  ],
+  "target_eef_m": [
+    -0.055,
+    0.035,
+    1.3
+  ],
+  "original_camera_mount_and_intrinsics": true,
+  "method": "Offline fixed reset pose; not an online IK/perception tool."
+}

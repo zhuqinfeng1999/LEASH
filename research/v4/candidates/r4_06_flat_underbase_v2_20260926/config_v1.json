@@ -1,0 +1,56 @@
+{
+  "id": "R4-06",
+  "base_task": "R4",
+  "instruction": "Put the item on the left into the crib.",
+  "item": {
+    "name": "coin_dish_1",
+    "category": "shallow_ceramic_dish_with_coins",
+    "display_name": "一小碟硬币",
+    "xml": "assets/coin_dish.xml",
+    "slot": "L",
+    "z_offset": 0.018,
+    "grasp_local": [
+      0.067,
+      0,
+      0.014
+    ],
+    "center_offset_z_m": 0.009,
+    "bottom_offset_z_m": 0,
+    "footprint_half_xy_m": [
+      0.07,
+      0.07
+    ],
+    "initial_z_m": 0.918,
+    "mass_kg": 0.21
+  },
+  "crib": {
+    "name": "crib_1",
+    "category": "crib",
+    "xml": "research/v4/tasks/r4/crib.xml",
+    "slot": "R",
+    "fixed": true,
+    "initial_z_m": 0.9,
+    "footprint_half_xy_m": [
+      0.145,
+      0.125
+    ],
+    "inside_half_xy_m": [
+      0.119,
+      0.099
+    ],
+    "inside_bottom_z_m": 0.026,
+    "inside_top_z_m": 0.145
+  },
+  "board": {
+    "name": "coin_dish_board_1",
+    "xml": "assets/board.xml",
+    "slot": "L",
+    "z_offset": 0.009
+  },
+  "layout": {
+    "source_dy_m": 0.08,
+    "crib_dy_m": -0.08
+  },
+  "license_status": "Original ceramic dish and metal coins CC0 confirmed; existing CC0 wood/crib aggregate clearance root owned.",
+  "physics_proxy": "Seven normal 23mm coins fixed to a normal shallow ceramic dish as one rigid assembly. Coin separation/spillage is not simulated. All actual collision/visual geometry and common held-relative grasp assist remain physical. No hidden metadata is sent online."
+}

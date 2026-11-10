@@ -1,0 +1,19 @@
+<mujoco model="v3_phone">
+  <asset>
+    <material name="phone_frame" rgba="0.08 0.10 0.13 1" specular="0.65" shininess="0.65" />
+    <material name="phone_screen" rgba="0.04 0.10 0.16 1" specular="0.8" shininess="0.9" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".18" diaginertia=".00008 .00035 .00042" />
+        <geom name="phone_shell" type="box" size=".073 .034 .004" material="phone_frame" mass=".18" friction=".9 .005 .001" group="1" contype="0" conaffinity="0" />
+        <geom name="phone_display" type="box" pos="0 0 .00425" size=".067 .029 .0003" material="phone_screen" contype="0" conaffinity="0" group="1" />
+        <geom name="phone_camera" type="sphere" pos="-.058 .021 .0047" size=".0025" rgba=".02 .025 .03 1" contype="0" conaffinity="0" group="1" />
+      <geom type="box" size=".073 .034 .004" friction=".9 .005 .001" name="phone_shell_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" /></body>
+      <site name="bottom_site" pos="0 0 -.004" size=".001" />
+      <site name="top_site" pos="0 0 .0045" size=".001" />
+      <site name="horizontal_radius_site" pos=".081 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,14 @@
+<mujoco model="original_open_photo_album">
+  <asset>
+    <mesh name="authored_album_pages" file="__LEASH_ROOT__/research/v4/candidates/p3_04_album_wine_20260926/album_pages.obj" inertia="shell" />
+    <texture name="authored_album_landscapes" type="2d" file="__LEASH_ROOT__/research/v4/candidates/p3_04_album_wine_20260926/album_pages.png" />
+    <material name="authored_album_page_material" texture="authored_album_landscapes" texuniform="false" specular=".15" shininess=".12" />
+  </asset>
+  <worldbody>
+    <body name="p3_laptop" pos="-.08 0 .900">
+      <geom name="album_cover_contact" type="box" pos="0 0 .003" size=".160 .105 .003" group="0" rgba=".11 .17 .16 1" friction=".9 .01 .001" />
+      <geom name="album_pages_contact" type="box" pos="0 0 .006" size=".154 .101 .0012" group="0" rgba="0 0 0 0" friction=".9 .01 .001" />
+      <geom name="album_pages_visual" type="mesh" mesh="authored_album_pages" material="authored_album_page_material" group="1" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+</mujoco>

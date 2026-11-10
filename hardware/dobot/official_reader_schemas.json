@@ -1,0 +1,114 @@
+[
+  {
+    "name": "view_env_state",
+    "input_schema": {
+      "properties": {
+        "step": {
+          "default": -1,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "readonly": true
+  },
+  {
+    "name": "view_camera_meta",
+    "input_schema": {
+      "properties": {
+        "step": {
+          "default": -1,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "readonly": true
+  },
+  {
+    "name": "view_perception_setup",
+    "input_schema": {
+      "properties": {
+        "step": {
+          "default": -1,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "readonly": true
+  },
+  {
+    "name": "back_project",
+    "input_schema": {
+      "properties": {
+        "row": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "col": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "step": {
+          "type": "integer"
+        },
+        "camera": {
+          "enum": [
+            "wrist",
+            "third_person"
+          ],
+          "type": "string"
+        },
+        "debug": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "row",
+        "col"
+      ],
+      "type": "object"
+    },
+    "readonly": true
+  },
+  {
+    "name": "back_project_correspondence",
+    "input_schema": {
+      "properties": {
+        "third_person_row": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "third_person_col": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "wrist_row": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "wrist_col": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "pixels": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "step": {
+          "type": "integer"
+        },
+        "debug": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "readonly": true
+  }
+]

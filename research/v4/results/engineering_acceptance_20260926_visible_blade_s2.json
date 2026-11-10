@@ -1,0 +1,44 @@
+{
+  "schema_version": "v4.2-engineering-acceptance",
+  "updated_utc": "2026-09-26T02:57:05.700164+00:00",
+  "does_not_claim_formal_freeze_or_method_success": true,
+  "P1-01": {
+    "decision": "accepted",
+    "scene": "research.v4.candidates.p1_visible_blade_20260926.scene.P1VisibleBladeFacade",
+    "physics_proof": "research/v4/candidates/p1_visible_blade_20260926/test_cpu.py",
+    "physics_note": "All compiled model arrays/qpos/qvel identical except two render groups; existing ten-seed current-pose physical scripts remain applicable.",
+    "ten_seed_evidence": [
+      "research/v4/candidates/p1_table_wrist_clearance_20260925/cpu_summary.json",
+      "research/v4/candidates/p1_table_wrist_clearance_20260925/cpu_seed3to9.json"
+    ],
+    "native": "research/v4/candidates/p1_visible_blade_20260926/native_p1_seed0_gpu1/report.json",
+    "same_source_methods": [
+      389,
+      390,
+      391,
+      392
+    ]
+  },
+  "E1-01": {
+    "decision": "accepted",
+    "scene": "research.v4.candidates.p1_visible_blade_20260926.scene.E1VisibleBladeQAOnlyFacade",
+    "physics_proof": "research/v4/candidates/p1_visible_blade_20260926/test_cpu.py",
+    "ten_seed_evidence": "research/v4/candidates/e1_plate_clear_v10_20260925/ten_seed_scripts_promoted.json",
+    "native": "research/v4/candidates/p1_visible_blade_20260926/native_e1_seed0_gpu1/report.json",
+    "same_source_methods": [
+      393,
+      394,
+      395,
+      396
+    ]
+  },
+  "S2-01": {
+    "decision": "accepted_engineering",
+    "scene": "research.v4.candidates.s2_public_reset_20260926.higher_scene.HigherPoseScene",
+    "ten_seed_evidence": "research/v4/candidates/s2_public_reset_20260926/qualification_higher_pose_10seed/summary.json",
+    "native": "research/v4/candidates/s2_public_reset_20260926/native_higher_seed0/report.json",
+    "root_native_review": "Milk, dish, three pills, bottle and basket complete/unoccluded in both actual RGB views; visible pills17–20px; actual depth aligned640x480.",
+    "handoff": "research/v4/candidates/s2_public_reset_20260926/acceptance_handoff.json",
+    "natural_entry_dependency": "Held-pill dissolution boundary must be fixed and tested before live methods."
+  }
+}

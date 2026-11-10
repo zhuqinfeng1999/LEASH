@@ -1,0 +1,23 @@
+<mujoco model="original_small_inflated_latex_balloon">
+  <asset>
+    <material name="latex_red" rgba=".78 .075 .052 1" specular=".22" shininess=".55" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="-.018 0 .122" mass=".008" diaginertia=".000036 .000046 .000036" />
+        <geom name="inflated_body_collision" type="ellipsoid" size=".120 .090 .120" pos="-.020 0 .122" group="0" contype="1" conaffinity="1" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="inflated_body_visual" type="ellipsoid" size=".120 .090 .120" pos="-.020 0 .122" group="1" contype="0" conaffinity="0" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="latex_neck_collision" type="capsule" size=".007" fromto=".097 0 .122 .137 0 .122" group="0" contype="1" conaffinity="1" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="latex_neck_visual" type="capsule" size=".007" fromto=".097 0 .122 .137 0 .122" group="1" contype="0" conaffinity="0" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="tied_neck_collision" type="ellipsoid" size=".010 .011 .009" pos=".140 0 .122" group="0" contype="1" conaffinity="1" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="tied_neck_visual" type="ellipsoid" size=".010 .011 .009" pos=".140 0 .122" group="1" contype="0" conaffinity="0" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="latex_lip_collision" type="ellipsoid" size=".004 .011 .011" pos=".150 0 .122" group="0" contype="1" conaffinity="1" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="latex_lip_visual" type="ellipsoid" size=".004 .011 .011" pos=".150 0 .122" group="1" contype="0" conaffinity="0" material="latex_red" mass="0" friction="1 .005 .0001" solref=".02 1" />
+      </body>
+      <site name="bottom_site" pos="0 0 .002" size=".001" />
+      <site name="top_site" pos="0 0 .242" size=".001" />
+      <site name="horizontal_radius_site" pos=".160 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

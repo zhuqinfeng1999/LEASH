@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="safevla_original_moka_pot">
+  <compiler angle="radian" autolimits="true" />
+  <option timestep="0.002" gravity="0 0 -9.81" />
+  <asset>
+    <texture name="moka_brushed_aluminium_2k" type="2d" file="../../tasks/r3/original_moka_candidate/generated/brushed_aluminium_albedo_2k.png" />
+    <texture name="moka_satin_grip_2k" type="2d" file="../../tasks/r3/original_moka_candidate/generated/satin_grip_albedo_2k.png" />
+    <material name="moka_aluminium" rgba="0.91 0.94 0.94 1" reflectance="0.33" shininess="0.66" specular="0.58" texture="moka_brushed_aluminium_2k" texuniform="false" texrepeat="1 1" />
+    <material name="moka_steel" rgba="0.96 0.97 0.96 1" reflectance="0.38" shininess="0.72" specular="0.58" texture="moka_brushed_aluminium_2k" texuniform="false" texrepeat="1 1" />
+    <material name="moka_bright_steel" rgba="1 1 0.99 1" reflectance="0.46" shininess="0.82" specular="0.58" texture="moka_brushed_aluminium_2k" texuniform="false" texrepeat="1 1" />
+    <material name="moka_dark_steel" rgba="0.38 0.41 0.42 1" reflectance="0.14" shininess="0.48" specular="0.58" texture="moka_brushed_aluminium_2k" texuniform="false" texrepeat="1 1" />
+    <material name="moka_polymer" rgba="0.72 0.75 0.77 1" reflectance="0.03" shininess="0.18" specular="0.12" texture="moka_satin_grip_2k" texuniform="false" texrepeat="1 1" />
+    <material name="moka_gasket" rgba="0.18 0.20 0.21 1" reflectance="0.02" shininess="0.08" specular="0.58" />
+    <mesh name="moka_boiler_foot" file="../../tasks/r3/original_moka_candidate/generated/boiler_foot.obj" inertia="shell" />
+    <mesh name="moka_closed_lid" file="../../tasks/r3/original_moka_candidate/generated/closed_lid.obj" inertia="shell" />
+    <mesh name="moka_curved_grip" file="../../tasks/r3/original_moka_candidate/generated/curved_grip.obj" inertia="shell" />
+    <mesh name="moka_grip_mount_lower" file="../../tasks/r3/original_moka_candidate/generated/grip_mount_lower.obj" inertia="shell" />
+    <mesh name="moka_grip_mount_upper" file="../../tasks/r3/original_moka_candidate/generated/grip_mount_upper.obj" inertia="shell" />
+    <mesh name="moka_hinge_pin" file="../../tasks/r3/original_moka_candidate/generated/hinge_pin.obj" inertia="shell" />
+    <mesh name="moka_hinge_socket" file="../../tasks/r3/original_moka_candidate/generated/hinge_socket.obj" inertia="shell" />
+    <mesh name="moka_joint_band" file="../../tasks/r3/original_moka_candidate/generated/joint_band.obj" inertia="shell" />
+    <mesh name="moka_lid_knob" file="../../tasks/r3/original_moka_candidate/generated/lid_knob.obj" inertia="shell" />
+    <mesh name="moka_lower_chamber" file="../../tasks/r3/original_moka_candidate/generated/lower_chamber.obj" inertia="shell" />
+    <mesh name="moka_pour_spout" file="../../tasks/r3/original_moka_candidate/generated/pour_spout.obj" inertia="shell" />
+    <mesh name="moka_pressure_valve" file="../../tasks/r3/original_moka_candidate/generated/pressure_valve.obj" inertia="shell" />
+    <mesh name="moka_rim" file="../../tasks/r3/original_moka_candidate/generated/rim.obj" inertia="shell" />
+    <mesh name="moka_seam_gasket" file="../../tasks/r3/original_moka_candidate/generated/seam_gasket.obj" inertia="shell" />
+    <mesh name="moka_spout_lip_left" file="../../tasks/r3/original_moka_candidate/generated/spout_lip_left.obj" inertia="shell" />
+    <mesh name="moka_spout_lip_right" file="../../tasks/r3/original_moka_candidate/generated/spout_lip_right.obj" inertia="shell" />
+    <mesh name="moka_upper_chamber" file="../../tasks/r3/original_moka_candidate/generated/upper_chamber.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <body name="moka_wrapper">
+      <body name="object">
+        <inertial pos="0 0.004 -0.012" mass="0.420" diaginertia="0.00110 0.00118 0.00043" />
+        <geom name="visual_boiler_foot" type="mesh" mesh="moka_boiler_foot" material="moka_dark_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_closed_lid" type="mesh" mesh="moka_closed_lid" material="moka_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_curved_grip" type="mesh" mesh="moka_curved_grip" material="moka_polymer" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_grip_mount_lower" type="mesh" mesh="moka_grip_mount_lower" material="moka_dark_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_grip_mount_upper" type="mesh" mesh="moka_grip_mount_upper" material="moka_dark_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_hinge_pin" type="mesh" mesh="moka_hinge_pin" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_hinge_socket" type="mesh" mesh="moka_hinge_socket" material="moka_dark_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_joint_band" type="mesh" mesh="moka_joint_band" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_lid_knob" type="mesh" mesh="moka_lid_knob" material="moka_polymer" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_lower_chamber" type="mesh" mesh="moka_lower_chamber" material="moka_aluminium" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_pour_spout" type="mesh" mesh="moka_pour_spout" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_pressure_valve" type="mesh" mesh="moka_pressure_valve" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_rim" type="mesh" mesh="moka_rim" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_seam_gasket" type="mesh" mesh="moka_seam_gasket" material="moka_gasket" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_spout_lip_left" type="mesh" mesh="moka_spout_lip_left" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_spout_lip_right" type="mesh" mesh="moka_spout_lip_right" material="moka_bright_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="visual_upper_chamber" type="mesh" mesh="moka_upper_chamber" material="moka_steel" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="contact_00" type="cylinder" pos="0.000000 0.000000 -0.048000" size="0.039000 0.020000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+        <geom name="contact_01" type="cylinder" pos="0.000000 0.000000 -0.012000" size="0.037000 0.018000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+        <geom name="contact_02" type="cylinder" pos="0.000000 0.000000 0.022000" size="0.036000 0.027000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+        <geom name="contact_03" type="cylinder" pos="0.000000 0.000000 0.054000" size="0.038000 0.011000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+        <geom name="contact_04" type="cylinder" pos="0.000000 0.000000 0.071000" size="0.009000 0.011000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+        <geom name="contact_05" type="box" pos="0.000000 -0.045000 0.053000" size="0.012000 0.012000 0.012000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+        <geom name="contact_06" type="box" pos="0.000000 0.078000 0.002000" size="0.010000 0.010000 0.043000" group="0" rgba="0.5 0.5 0.5 0.08" mass="0" contype="1" conaffinity="1" friction="0.95 0.3 0.1" solref="0.006 1" solimp="0.95 0.99 0.001" />
+      </body>
+      <site name="bottom_site" pos="0 0 -0.058" size="0.005" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 0.084" size="0.005" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos="0.04 0 0" size="0.005" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

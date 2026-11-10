@@ -1,0 +1,31 @@
+<mujoco>
+  <asset>
+    <texture name="foil_crinkle" type="2d" file="__LEASH_ROOT__/research/v4/candidates/r3_04_foil_sandwich_20260926/assets/foil_crinkle.png" />
+    <material name="foil" texture="foil_crinkle" rgba=".85 .86 .88 1" specular="1" shininess=".95" texrepeat="1 1" />
+    <material name="foil_fold" rgba=".71 .73 .77 1" specular=".95" shininess=".85" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".160" diaginertia=".00008 .00023 .00027" />
+        <geom name="foil_skin_collision" type="box" pos="0 0 0" size=".0625 .034 .021" material="foil" group="0" mass="0" contype="1" conaffinity="1" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="foil_skin_visual" type="box" pos="0 0 0" size=".0625 .034 .021" material="foil" group="1" mass="0" contype="0" conaffinity="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="top_overlap" type="box" pos="0 0 .02115" size=".059 .003 .00015" euler="0 0 -.08" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="end_fold_left" type="box" pos="-.0625 0 0" size=".00025 .025 .015" euler="0 0 0" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="end_fold_right" type="box" pos=".0625 0 0" size=".00025 .025 .015" euler="0 0 0" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_0" type="box" pos="-0.046 .014 .02118" size=".00035 .016 .00015" euler="0 0 0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_1" type="box" pos="-0.034 .014 .02118" size=".00035 .016 .00015" euler="0 0 -0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_2" type="box" pos="-0.022 .014 .02118" size=".00035 .016 .00015" euler="0 0 0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_3" type="box" pos="-0.009999999999999995 .014 .02118" size=".00035 .016 .00015" euler="0 0 -0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_4" type="box" pos="0.0020000000000000018 .014 .02118" size=".00035 .016 .00015" euler="0 0 0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_5" type="box" pos="0.013999999999999999 .014 .02118" size=".00035 .016 .00015" euler="0 0 -0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_6" type="box" pos="0.02600000000000001 .014 .02118" size=".00035 .016 .00015" euler="0 0 0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_7" type="box" pos="0.038000000000000006 .014 .02118" size=".00035 .016 .00015" euler="0 0 -0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+        <geom name="crinkle_ridge_8" type="box" pos="0.05 .014 .02118" size=".00035 .016 .00015" euler="0 0 0.28" material="foil_fold" group="1" mass="0" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.021" />
+      <site name="top_site" pos="0 0 .021" />
+      <site name="horizontal_radius_site" pos=".073 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,36 @@
+{
+  "version": "v4.2-offline-video-quality-v1",
+  "online_observation_changed": false,
+  "public_rgbd_dimensions": [
+    640,
+    480
+  ],
+  "vla_preprocessing_changed": false,
+  "presentation": {
+    "phases": [
+      "formal",
+      "instance_review"
+    ],
+    "native_dimensions": [
+      1920,
+      1080
+    ],
+    "camera": "research_spectator",
+    "fps": 20,
+    "codec": "h264",
+    "crf": 18,
+    "pixel_format": "yuv420p",
+    "upscaling_prohibited": true,
+    "render_reads_same_physics_state": true,
+    "human_only": true
+  },
+  "development": {
+    "historical_video_dimensions_preserved": true,
+    "additional_1080_capture_only_for_qualification_or_demo": true
+  },
+  "retention": {
+    "final_mp4_and_sidecar": true,
+    "temporary_frames_remove_after_video_integrity_check": true,
+    "experiment_failure_evidence_protected": true
+  }
+}

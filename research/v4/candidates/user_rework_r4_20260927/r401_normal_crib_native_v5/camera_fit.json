@@ -1,0 +1,55 @@
+{
+  "camera_name": "v4_r4_spectator",
+  "original_legacy_name": true,
+  "offline_only": true,
+  "position": [
+    1.25,
+    -0.9,
+    1.65
+  ],
+  "target": [
+    -0.48,
+    0.617269983311714,
+    0.61
+  ],
+  "xyaxes": [
+    0.6593705523026694,
+    0.7518181128145774,
+    -0.0,
+    -0.3096358635865281,
+    0.27156138819458936,
+    0.9112519105180809
+  ],
+  "fovy_deg": 64.3757428235462,
+  "aspect": 1.3333333333333333,
+  "whole_crib_and_original_bag_bound": [
+    [
+      -1.168117839227011,
+      -0.26,
+      0.0
+    ],
+    [
+      0.20811783922701108,
+      1.494539966623428,
+      1.22
+    ]
+  ],
+  "projection_normalized_x_range": [
+    -0.597988252127504,
+    0.5694019417583979
+  ],
+  "projection_normalized_y_range": [
+    -0.8999999999999998,
+    0.48895221012206896
+  ],
+  "min_positive_depth_m": 1.2754299481535512,
+  "frustum_bounding_pass": true,
+  "source": "Actual79solid continuous-domain derived range + conservative bag/source/heldstage bound",
+  "position_source": "Existing accepted common-tabletop spectator position only; legacy own identity/aim separately derived. Not namedR402-camera equivalence.",
+  "online_camera_changes": false,
+  "geometry_input_sha256": "5f8a7d793b1f7ef0c0afe7f43810fbe4bd79cdbb3ac761a2c68493ac302b14e4",
+  "native_visual_pending": true,
+  "fit_rule": "Keep one explicit fixedposition/look. Derive verticalFOV directly from maximal whole-group bounding-corner ray dividedby0.90frame margin; no angle/pose scan.",
+  "previous55_fov_conservative_bbox_failed": true,
+  "first_projection_evidence": "camera_fit_first_bbox55.json"
+}

@@ -1,0 +1,60 @@
+<mujoco>
+  <asset>
+    <material name="washpan_blue" rgba=".20 .46 .58 1" specular=".25" shininess=".3" />
+    <material name="washpan_rim" rgba=".16 .37 .47 1" specular=".2" shininess=".25" />
+    <material name="dish_white" rgba=".94 .93 .88 1" specular=".55" shininess=".7" />
+    <material name="water" rgba=".59 .77 .83 .36" specular=".92" shininess=".9" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="plate" type="box" pos="0 0 0" size=".245 .170 .003" material="washpan_blue" group="0" mass=".35" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="left_wall" type="box" pos="-.2475 0 .0395" size=".0025 .175 .0425" material="washpan_blue" group="0" mass=".065" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="right_wall" type="box" pos=".2475 0 .0395" size=".0025 .175 .0425" material="washpan_blue" group="0" mass=".065" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="rear_wall" type="box" pos="0 .1725 .0395" size=".245 .0025 .0425" material="washpan_blue" group="0" mass=".065" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="front_wall" type="box" pos="0 -.1725 .0395" size=".245 .0025 .0425" material="washpan_blue" group="0" mass=".065" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="left_rim" type="box" pos="-.2475 0 .084" size=".0035 .175 .002" material="washpan_rim" group="0" mass=".018" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="right_rim" type="box" pos=".2475 0 .084" size=".0035 .175 .002" material="washpan_rim" group="0" mass=".018" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="rear_rim" type="box" pos="0 .1725 .084" size=".245 .0035 .002" material="washpan_rim" group="0" mass=".018" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="front_rim" type="box" pos="0 -.1725 .084" size=".245 .0035 .002" material="washpan_rim" group="0" mass=".018" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_base" type="cylinder" pos="-.085 -.055 .007" size=".060 .004" material="dish_white" group="0" mass=".11" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_0" type="sphere" pos="-0.02600000000000001 -0.055 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_1" type="sphere" pos="-0.027133668456209417 -0.04348967100104843 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_2" type="sphere" pos="-0.03049110758183409 -0.032421677490459704 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_3" type="sphere" pos="-0.03594329287414984 -0.022221356251843474 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_4" type="sphere" pos="-0.043280699909993704 -0.013280699909993705 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_5" type="sphere" pos="-0.05222135625184347 -0.005943292874149832 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_6" type="sphere" pos="-0.06242167749045971 -0.0004911075818340854 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_7" type="sphere" pos="-0.07348967100104843 0.0028663315437905887 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_8" type="sphere" pos="-0.085 0.003999999999999997 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_9" type="sphere" pos="-0.09651032899895157 0.0028663315437905887 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_10" type="sphere" pos="-0.1075783225095403 -0.0004911075818340854 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_11" type="sphere" pos="-0.11777864374815653 -0.005943292874149818 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_12" type="sphere" pos="-0.12671930009000631 -0.013280699909993698 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_13" type="sphere" pos="-0.1340567071258502 -0.022221356251843474 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_14" type="sphere" pos="-0.13950889241816591 -0.0324216774904597 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_15" type="sphere" pos="-0.14286633154379058 -0.04348967100104841 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_16" type="sphere" pos="-0.14400000000000002 -0.05499999999999999 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_17" type="sphere" pos="-0.14286633154379058 -0.06651032899895157 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_18" type="sphere" pos="-0.13950889241816594 -0.07757832250954029 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_19" type="sphere" pos="-0.1340567071258502 -0.08777864374815651 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_20" type="sphere" pos="-0.12671930009000631 -0.09671930009000629 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_21" type="sphere" pos="-0.11777864374815653 -0.10405670712585016 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_22" type="sphere" pos="-0.10757832250954033 -0.1095088924181659 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_23" type="sphere" pos="-0.0965103289989516 -0.11286633154379058 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_24" type="sphere" pos="-0.08500000000000002 -0.11399999999999999 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_25" type="sphere" pos="-0.07348967100104843 -0.11286633154379058 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_26" type="sphere" pos="-0.062421677490459695 -0.10950889241816592 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_27" type="sphere" pos="-0.0522213562518435 -0.10405670712585019 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_28" type="sphere" pos="-0.04328069990999371 -0.09671930009000632 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_29" type="sphere" pos="-0.03594329287414984 -0.08777864374815653 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_30" type="sphere" pos="-0.030491107581834105 -0.07757832250954033 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="washdish_rim_31" type="sphere" pos="-0.027133668456209417 -0.0665103289989516 .012" size=".0028" material="dish_white" group="0" mass="0.0005625" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="water_surface_display" type="box" pos="0 0 .035" size=".244 .169 .00025" material="water" group="1" mass="0" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.003" />
+      <site name="top_site" pos="0 0 .086" />
+      <site name="horizontal_radius_site" pos=".31 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

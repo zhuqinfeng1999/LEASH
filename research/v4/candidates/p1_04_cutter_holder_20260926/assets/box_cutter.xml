@@ -1,0 +1,38 @@
+<mujoco model="original_extended_utility_knife">
+  <asset>
+    <material name="cutter_orange" rgba=".93 .46 .075 1" specular=".4" shininess=".5" />
+    <material name="cutter_rubber" rgba=".09 .105 .12 1" specular=".4" shininess=".5" />
+    <material name="cutter_steel" rgba=".67 .72 .76 1" specular=".4" shininess=".5" />
+    <mesh name="extended_blade" file="__LEASH_ROOT__/research/v4/candidates/p1_04_cutter_holder_20260926/assets/extended_blade.obj" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="-.015 0 0" mass=".075" diaginertia=".000009 .00016 .00016" />
+        <geom name="handle" type="box" group="0" pos="-.011 0 0" size=".0625 .012 .006" material="cutter_orange" friction="1 .005 .0001" />
+        <geom name="handle_visual" type="box" group="1" pos="-.011 0 0" size=".0625 .012 .006" material="cutter_orange" contype="0" conaffinity="0" mass="0" />
+        <geom name="rear_rounding" type="capsule" group="0" fromto="-.0735 -.006 0 -.0735 .006 0" size=".006" material="cutter_rubber" friction="1 .005 .0001" />
+        <geom name="rear_rounding_visual" type="capsule" group="1" fromto="-.0735 -.006 0 -.0735 .006 0" size=".006" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="bolster" type="box" group="0" pos=".0475 0 .0005" size=".004 .013 .0065" material="cutter_steel" friction="1 .005 .0001" />
+        <geom name="bolster_visual" type="box" group="1" pos=".0475 0 .0005" size=".004 .013 .0065" material="cutter_steel" contype="0" conaffinity="0" mass="0" />
+        <geom name="blade" type="mesh" group="0" mesh="extended_blade" material="cutter_steel" friction="1 .005 .0001" />
+        <geom name="dark_inset" type="box" group="1" pos="-.014 0 .0062" size=".045 .008 .0006" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="slider_rail" type="box" group="1" pos="-.010 0 .0070" size=".039 .002 .0005" material="cutter_steel" contype="0" conaffinity="0" mass="0" />
+        <geom name="thumb_slider" type="box" group="1" pos=".013 0 .0095" size=".011 .007 .002" material="cutter_orange" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_0" type="box" group="1" pos="-0.053 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_1" type="box" group="1" pos="-0.045 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_2" type="box" group="1" pos="-0.037 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_3" type="box" group="1" pos="-0.028999999999999998 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_4" type="box" group="1" pos="-0.020999999999999998 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_5" type="box" group="1" pos="-0.012999999999999998 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="grip_rib_6" type="box" group="1" pos="-0.0049999999999999975 -.0122 0" size=".001 .0008 .005" material="cutter_rubber" contype="0" conaffinity="0" mass="0" />
+        <geom name="blade_score_0" type="box" group="1" pos="0.05 0 .0009" size=".0002 .009 .0001" rgba=".3 .34 .38 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="blade_score_1" type="box" group="1" pos="0.057 0 .0009" size=".0002 .009 .0001" rgba=".3 .34 .38 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="blade_score_2" type="box" group="1" pos="0.064 0 .0009" size=".0002 .009 .0001" rgba=".3 .34 .38 1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.006" />
+      <site name="top_site" pos="0 0 .012" />
+      <site name="horizontal_radius_site" pos=".080 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

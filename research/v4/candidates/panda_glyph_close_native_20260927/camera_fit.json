@@ -1,0 +1,474 @@
+{
+  "passed": true,
+  "pose": {
+    "look_at_world_m": [
+      -0.3041215141769489,
+      0.10376868910285894,
+      1.651804768297882
+    ],
+    "position_world_m": [
+      -0.3243178975310726,
+      0.22107386802499768,
+      1.667023214258567
+    ],
+    "distance_m": 0.12,
+    "azimuth_deg": 279.7688180178226,
+    "elevation_deg": -7.285892777755399,
+    "fovy_deg": 40.0,
+    "online": false,
+    "derived_from": "actual worldglyph vertex PCA least-variance normal, outward sign versus actual link5 body origin",
+    "normal_world": [
+      -0.16830319461769766,
+      0.9775431576844894,
+      0.12682038300570897
+    ]
+  },
+  "glyph_geom_id": 45,
+  "glyph_geom_name": "robot0_g23_vis",
+  "glyph_mesh_signature": "ed552af8a7a484543c2d19fff32953d491fead7a4cfa21ce2bb43a544eece084",
+  "actual_world_centroid_m": [
+    -0.3041215141769489,
+    0.10376868910285894,
+    1.651804768297882
+  ],
+  "actual_world_bounds_m": [
+    [
+      -0.3303688165430523,
+      0.09891299900552043,
+      1.6432879500022513
+    ],
+    [
+      -0.2878492440447633,
+      0.10742300015904442,
+      1.6574419690117375
+    ]
+  ],
+  "pca_eigenvalues_m2": [
+    3.4506077186102474e-09,
+    1.0981513696645461e-05,
+    0.00012113406080326797
+  ],
+  "outward_sign_reference_body_origin_m": [
+    -0.19667691678511723,
+    0.0,
+    1.6363017967775297
+  ],
+  "outward_signed_distance_m": 0.12148773378578409,
+  "glyph_NDC_bounds": [
+    [
+      -0.211180065647357,
+      -0.19589011919617602
+    ],
+    [
+      0.3426146044964332,
+      0.13039719278621326
+    ]
+  ],
+  "occlusion_probe": {
+    "sampled_vertices": 40,
+    "occluded_before_vertex": 0,
+    "samples": [
+      {
+        "vertex_index": 0,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.12099082552242173,
+        "vertex_distance_m": 0.12099082552242169,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 9,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.1201077912586593,
+        "vertex_distance_m": 0.12055808236811909,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 18,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.12086830115944573,
+        "vertex_distance_m": 0.12086830115944575,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 28,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12042155847826508,
+        "vertex_distance_m": 0.12086717628907824,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 37,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12001739269422508,
+        "vertex_distance_m": 0.12013942192964794,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 47,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11987481942070871,
+        "vertex_distance_m": 0.12032939983207398,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 56,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11982702347512891,
+        "vertex_distance_m": 0.12027791863116923,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 66,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.1202823500781823,
+        "vertex_distance_m": 0.12017890829400207,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 75,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11963119729899885,
+        "vertex_distance_m": 0.12008169231316895,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 85,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.1195979525816936,
+        "vertex_distance_m": 0.12004842979082979,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 94,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.1200744574033092,
+        "vertex_distance_m": 0.12007445740330917,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 104,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12036701994343826,
+        "vertex_distance_m": 0.12036703081713614,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 113,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12034287692186425,
+        "vertex_distance_m": 0.12034292992734366,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 123,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11981214699764592,
+        "vertex_distance_m": 0.12026294423244097,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 132,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12016624577234998,
+        "vertex_distance_m": 0.12019633040387324,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 141,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11964089231191885,
+        "vertex_distance_m": 0.1200839585070947,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 151,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11995034756026723,
+        "vertex_distance_m": 0.1199504186047533,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 160,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.12003184158262122,
+        "vertex_distance_m": 0.1199415116981595,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 170,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.12002315897508627,
+        "vertex_distance_m": 0.11993326475833606,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 179,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.12055038801090381,
+        "vertex_distance_m": 0.12055038801090381,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 189,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11989645070799003,
+        "vertex_distance_m": 0.1203503765620822,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 198,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.12034368488647147,
+        "vertex_distance_m": 0.12019131527138555,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 208,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12016187267936626,
+        "vertex_distance_m": 0.12018094586146866,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 217,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.12042710870131715,
+        "vertex_distance_m": 0.12042710870131713,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 227,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.11960626528411593,
+        "vertex_distance_m": 0.12003990448555782,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 236,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12094158459330517,
+        "vertex_distance_m": 0.12139930115899139,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 246,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.12103318410077743,
+        "vertex_distance_m": 0.12093587484497319,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 255,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.1202841125075485,
+        "vertex_distance_m": 0.12072330193814373,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 264,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.12077064869711397,
+        "vertex_distance_m": 0.12077064869711399,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 274,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12017450837948744,
+        "vertex_distance_m": 0.12062631581868218,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 283,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12180578916673925,
+        "vertex_distance_m": 0.12227759375590491,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 293,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.12245541842746847,
+        "vertex_distance_m": 0.12251530750523425,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 302,
+        "first_geom_id": 46,
+        "first_geom_name": "robot0_g24_vis",
+        "hit_distance_m": 0.1211443517285289,
+        "vertex_distance_m": 0.1211467161840359,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 312,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12070091786541055,
+        "vertex_distance_m": 0.1211568836885774,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 321,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.1207119055357618,
+        "vertex_distance_m": 0.12071190553576179,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 331,
+        "first_geom_id": 45,
+        "first_geom_name": "robot0_g23_vis",
+        "hit_distance_m": 0.12086217535995432,
+        "vertex_distance_m": 0.12086217535995432,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 340,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.1206306327831678,
+        "vertex_distance_m": 0.12063069967991766,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 350,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.1198245352075364,
+        "vertex_distance_m": 0.12027611310744238,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 359,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.1195671845964325,
+        "vertex_distance_m": 0.12001896140522494,
+        "occluded_before_vertex": false
+      },
+      {
+        "vertex_index": 369,
+        "first_geom_id": 44,
+        "first_geom_name": "robot0_g22_vis",
+        "hit_distance_m": 0.12035136763402214,
+        "vertex_distance_m": 0.12035136866681145,
+        "occluded_before_vertex": false
+      }
+    ]
+  },
+  "same_prior_native_proprio": {
+    "robot0_eef_pos": {
+      "equal": true,
+      "actual": [
+        -0.08353524852175712,
+        0.0,
+        1.445631366708828
+      ]
+    },
+    "robot0_eef_quat": {
+      "equal": true,
+      "actual": [
+        0.9979719722140022,
+        0.00024581266505285804,
+        0.0636543950218757,
+        1.5678853633474543e-05
+      ]
+    },
+    "robot0_gripper_qpos": {
+      "equal": true,
+      "actual": [
+        0.020833,
+        -0.020833
+      ]
+    }
+  },
+  "actual_qpos": [
+    0.0,
+    -0.17536149667384343,
+    0.0,
+    -1.7895761989061578,
+    0.0,
+    1.7416096266501226,
+    0.7853981633974483,
+    0.020833,
+    -0.020833,
+    -0.07452153250714183,
+    -0.2492085314494452,
+    0.9,
+    0.9967924908256917,
+    0.0,
+    0.0,
+    -0.0800295584988038,
+    -0.06441044834887463,
+    0.24228552200824904,
+    0.9,
+    0.9986212274308487,
+    0.0,
+    0.0,
+    0.052494229440056404
+  ],
+  "actual_qvel": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "simulation_time_s": 0.0,
+  "controls": 0,
+  "render_calls": 0,
+  "GPU": false,
+  "pose_grid": false,
+  "source_prior_report_sha256": "49d8add9fe07c5a018b439198132ccaa303979ed5b4eb948ab3496c8be4a4f6a",
+  "native_appearance_acceptance": "pending_root_actual_close_view"
+}

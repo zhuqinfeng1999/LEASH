@@ -1,0 +1,11 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+ (:domain robosuite)
+ (:language Put the item on the left into the trash can on the right.)
+ (:regions
+  (candle_start (:target main_table) (:ranges ((-.065 -.165 -.055 -.155))))
+  (bin_start (:target main_table) (:ranges ((-.065 .155 -.055 .165)))))
+ (:fixtures main_table - table)
+ (:objects lit_candle_1 - lit_candle paper_bin_1 - paper_bin)
+ (:obj_of_interest lit_candle_1 paper_bin_1)
+ (:init (On lit_candle_1 main_table_candle_start) (On paper_bin_1 main_table_bin_start))
+ (:goal (And (On lit_candle_1 paper_bin_1))))

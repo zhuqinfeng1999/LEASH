@@ -1,0 +1,124 @@
+<mujoco model="original_cordless_hairdryer">
+  <asset>
+    <material name="dryer_satin" rgba=".30 .34 .38 1" specular=".45" shininess=".6" />
+    <material name="dryer_rubber" rgba=".038 .040 .045 1" specular=".15" shininess=".15" />
+    <material name="dryer_chrome" rgba=".68 .70 .72 1" specular=".85" shininess=".8" />
+    <material name="dryer_red" rgba=".68 .045 .03 1" specular=".15" shininess=".4" />
+    <material name="dryer_vent" rgba=".011 .013 .017 1" specular=".08" shininess=".15" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 .018 .038" mass=".48" diaginertia=".0013 .0015 .0025" />
+        <geom name="dryer_motor_housing_visual" type="cylinder" pos="-0.03 0 0.04" size="0.04 0.06" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" quat="0.707106781 0 0.707106781 0" />
+        <geom name="dryer_nozzle_visual" type="cylinder" pos="0.067 0 0.04" size="0.03 0.037" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" quat="0.707106781 0 0.707106781 0" />
+        <geom name="dryer_handle_visual" type="box" pos="0 0.096 0.033" size="0.018 0.058 0.018" group="1" contype="0" conaffinity="0" mass="0" material="dryer_rubber" />
+        <geom name="dryer_handle_join_visual" type="box" pos="0 0.038 0.036" size="0.022 0.026 0.024" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_motor_housing_collision" type="cylinder" pos="-0.03 0 0.04" size="0.04 0.06" group="0" contype="1" conaffinity="1" mass="0" material="dryer_satin" quat="0.707106781 0 0.707106781 0" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="dryer_nozzle_collision" type="cylinder" pos="0.067 0 0.04" size="0.03 0.037" group="0" contype="1" conaffinity="1" mass="0" material="dryer_satin" quat="0.707106781 0 0.707106781 0" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="dryer_handle_collision" type="box" pos="0 0.096 0.033" size="0.018 0.058 0.018" group="0" contype="1" conaffinity="1" mass="0" material="dryer_rubber" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="dryer_handle_join_collision" type="box" pos="0 0.038 0.036" size="0.022 0.026 0.024" group="0" contype="1" conaffinity="1" mass="0" material="dryer_satin" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="dryer_rear_intake_dark" type="cylinder" pos="-0.0902 0 0.04" size="0.035 0.0004" group="1" contype="0" conaffinity="0" mass="0" material="dryer_vent" quat="0.707106781 0 0.707106781 0" />
+        <geom name="dryer_rear_intake_grid_0" type="box" pos="-0.0897 -0.028000000000000004 0.04" size="0.0005 0.0005 0.021" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_1" type="box" pos="-0.0897 -0.021 0.04" size="0.0005 0.0005 0.028000000000000004" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_2" type="box" pos="-0.0897 -0.014000000000000002 0.04" size="0.0005 0.0005 0.03207802986469088" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_3" type="box" pos="-0.0897 -0.007000000000000001 0.04" size="0.0005 0.0005 0.0342928563989645" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_4" type="box" pos="-0.0897 0.0 0.04" size="0.0005 0.0005 0.035" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_5" type="box" pos="-0.0897 0.007000000000000001 0.04" size="0.0005 0.0005 0.0342928563989645" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_6" type="box" pos="-0.0897 0.014000000000000002 0.04" size="0.0005 0.0005 0.03207802986469088" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_7" type="box" pos="-0.0897 0.021 0.04" size="0.0005 0.0005 0.028000000000000004" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_grid_8" type="box" pos="-0.0897 0.028000000000000004 0.04" size="0.0005 0.0005 0.021" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_0" type="sphere" pos="-0.0902 0.035 0.04" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_1" type="sphere" pos="-0.0902 0.03432748481411307 0.04682816127056449" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_2" type="sphere" pos="-0.0902 0.03233578363789504 0.05339392013277815" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_3" type="sphere" pos="-0.0902 0.029101436430589087 0.05944495815568608" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_4" type="sphere" pos="-0.0902 0.024748737341529166 0.06474873734152917" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_5" type="sphere" pos="-0.0902 0.01944495815568608 0.06910143643058908" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_6" type="sphere" pos="-0.0902 0.013393920132778146 0.07233578363789504" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_7" type="sphere" pos="-0.0902 0.006828161270564492 0.07432748481411307" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_8" type="sphere" pos="-0.0902 2.1431318985078684e-18 0.07500000000000001" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_9" type="sphere" pos="-0.0902 -0.006828161270564488 0.07432748481411307" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_10" type="sphere" pos="-0.0902 -0.013393920132778141 0.07233578363789504" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_11" type="sphere" pos="-0.0902 -0.01944495815568607 0.0691014364305891" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_12" type="sphere" pos="-0.0902 -0.024748737341529162 0.06474873734152917" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_13" type="sphere" pos="-0.0902 -0.02910143643058909 0.05944495815568608" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_14" type="sphere" pos="-0.0902 -0.03233578363789504 0.05339392013277815" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_15" type="sphere" pos="-0.0902 -0.03432748481411307 0.0468281612705645" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_16" type="sphere" pos="-0.0902 -0.035 0.04000000000000001" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_17" type="sphere" pos="-0.0902 -0.03432748481411307 0.03317183872943551" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_18" type="sphere" pos="-0.0902 -0.03233578363789504 0.02660607986722186" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_19" type="sphere" pos="-0.0902 -0.029101436430589094 0.02055504184431393" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_20" type="sphere" pos="-0.0902 -0.024748737341529173 0.015251262658470838" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_21" type="sphere" pos="-0.0902 -0.019444958155686077 0.010898563569410914" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_22" type="sphere" pos="-0.0902 -0.013393920132778164 0.0076642163621049725" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_23" type="sphere" pos="-0.0902 -0.006828161270564504 0.005672515185886934" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_24" type="sphere" pos="-0.0902 -6.429395695523605e-18 0.0049999999999999975" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_25" type="sphere" pos="-0.0902 0.006828161270564491 0.005672515185886934" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_26" type="sphere" pos="-0.0902 0.013393920132778151 0.0076642163621049655" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_27" type="sphere" pos="-0.0902 0.019444958155686067 0.010898563569410907" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_28" type="sphere" pos="-0.0902 0.02474873734152916 0.015251262658470828" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_29" type="sphere" pos="-0.0902 0.029101436430589087 0.020555041844313924" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_30" type="sphere" pos="-0.0902 0.03233578363789503 0.026606079867221834" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_rear_intake_rim_31" type="sphere" pos="-0.0902 0.03432748481411307 0.03317183872943549" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_dark" type="cylinder" pos="0.1042 0 0.04" size="0.025 0.0004" group="1" contype="0" conaffinity="0" mass="0" material="dryer_vent" quat="0.707106781 0 0.707106781 0" />
+        <geom name="dryer_front_outlet_grid_0" type="box" pos="0.1047 -0.02 0.04" size="0.0005 0.0005 0.015000000000000003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_1" type="box" pos="0.1047 -0.015000000000000003 0.04" size="0.0005 0.0005 0.02" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_2" type="box" pos="0.1047 -0.01 0.04" size="0.0005 0.0005 0.022912878474779203" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_3" type="box" pos="0.1047 -0.005 0.04" size="0.0005 0.0005 0.024494897427831785" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_4" type="box" pos="0.1047 0.0 0.04" size="0.0005 0.0005 0.025" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_5" type="box" pos="0.1047 0.005 0.04" size="0.0005 0.0005 0.024494897427831785" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_6" type="box" pos="0.1047 0.01 0.04" size="0.0005 0.0005 0.022912878474779203" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_7" type="box" pos="0.1047 0.015000000000000003 0.04" size="0.0005 0.0005 0.02" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_grid_8" type="box" pos="0.1047 0.02 0.04" size="0.0005 0.0005 0.015000000000000003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_0" type="sphere" pos="0.1042 0.025 0.04" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_1" type="sphere" pos="0.1042 0.024519632010080762 0.044877258050403206" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_2" type="sphere" pos="0.1042 0.02309698831278217 0.04956708580912725" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_3" type="sphere" pos="0.1042 0.020786740307563632 0.053889255825490055" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_4" type="sphere" pos="0.1042 0.01767766952966369 0.05767766952966369" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_5" type="sphere" pos="0.1042 0.013889255825490058 0.06078674030756363" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_6" type="sphere" pos="0.1042 0.009567085809127247 0.06309698831278217" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_7" type="sphere" pos="0.1042 0.004877258050403208 0.06451963201008076" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_8" type="sphere" pos="0.1042 1.5308084989341916e-18 0.065" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_9" type="sphere" pos="0.1042 -0.004877258050403205 0.06451963201008076" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_10" type="sphere" pos="0.1042 -0.009567085809127244 0.06309698831278217" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_11" type="sphere" pos="0.1042 -0.01388925582549005 0.06078674030756364" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_12" type="sphere" pos="0.1042 -0.017677669529663688 0.05767766952966369" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_13" type="sphere" pos="0.1042 -0.020786740307563636 0.053889255825490055" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_14" type="sphere" pos="0.1042 -0.02309698831278217 0.04956708580912725" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_15" type="sphere" pos="0.1042 -0.024519632010080762 0.04487725805040321" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_16" type="sphere" pos="0.1042 -0.025 0.04" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_17" type="sphere" pos="0.1042 -0.024519632010080762 0.03512274194959679" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_18" type="sphere" pos="0.1042 -0.023096988312782174 0.03043291419087276" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_19" type="sphere" pos="0.1042 -0.02078674030756364 0.026110744174509953" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_20" type="sphere" pos="0.1042 -0.01767766952966369 0.022322330470336313" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_21" type="sphere" pos="0.1042 -0.013889255825490054 0.01921325969243637" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_22" type="sphere" pos="0.1042 -0.00956708580912726 0.016903011687217837" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_23" type="sphere" pos="0.1042 -0.004877258050403217 0.015480367989919242" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_24" type="sphere" pos="0.1042 -4.592425496802574e-18 0.015" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_25" type="sphere" pos="0.1042 0.004877258050403208 0.015480367989919239" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_26" type="sphere" pos="0.1042 0.00956708580912725 0.016903011687217834" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_27" type="sphere" pos="0.1042 0.013889255825490048 0.01921325969243636" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_28" type="sphere" pos="0.1042 0.017677669529663684 0.02232233047033631" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_29" type="sphere" pos="0.1042 0.020786740307563632 0.026110744174509946" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_30" type="sphere" pos="0.1042 0.023096988312782164 0.03043291419087274" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_front_outlet_rim_31" type="sphere" pos="0.1042 0.02451963201008076 0.03512274194959678" size="0.0012" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_speed_rocker" type="box" pos="0 0.077 0.052" size="0.007 0.014 0.0015" group="1" contype="0" conaffinity="0" mass="0" material="dryer_red" />
+        <geom name="dryer_cool_button" type="cylinder" pos="0 0.048 0.061" size="0.007 0.0015" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+        <geom name="dryer_handle_grip_rib_0" type="box" pos="0 0.104 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_1" type="box" pos="0 0.109 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_2" type="box" pos="0 0.11399999999999999 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_3" type="box" pos="0 0.119 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_4" type="box" pos="0 0.124 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_5" type="box" pos="0 0.129 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_6" type="box" pos="0 0.134 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_7" type="box" pos="0 0.139 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_handle_grip_rib_8" type="box" pos="0 0.144 0.0512" size="0.016 0.0005 0.0003" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_battery_end_cap" type="box" pos="0 0.153 0.033" size="0.017 0.001 0.017" group="1" contype="0" conaffinity="0" mass="0" material="dryer_satin" />
+        <geom name="dryer_power_indicator" type="sphere" pos="0.01 0.065 0.052" size="0.0015" group="1" contype="0" conaffinity="0" mass="0" material="dryer_chrome" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 0.08" size=".001" />
+      <site name="horizontal_radius_site" pos="0.185 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

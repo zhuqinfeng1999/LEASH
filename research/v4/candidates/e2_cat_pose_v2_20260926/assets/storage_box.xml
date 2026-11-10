@@ -1,0 +1,25 @@
+<mujoco model="e2_storage_box_candidate">
+ <asset><material name="blue_storage_poly" rgba=".22 .36 .48 1" specular=".25" shininess=".15" />
+ <material name="inner_shadow" rgba=".12 .22 .31 1" specular=".25" shininess=".15" /></asset>
+ <worldbody><body><body name="object">
+  <inertial pos="0 0 .06" mass="2.4" diaginertia=".05 .07 .09" />
+  <geom group="0" name="floor" type="box" pos="0 0 .006" size=".265 .165 .006" rgba="0 0 0 0" />
+  <geom group="0" name="wall_xn" type="box" pos="-.261 0 .083" size=".006 .171 .077" rgba="0 0 0 0" />
+  <geom group="0" name="wall_xp" type="box" pos=".261 0 .083" size=".006 .171 .077" rgba="0 0 0 0" />
+  <geom group="0" name="wall_yn" type="box" pos="0 -.161 .083" size=".267 .006 .077" rgba="0 0 0 0" />
+  <geom group="0" name="wall_yp" type="box" pos="0 .161 .083" size=".267 .006 .077" rgba="0 0 0 0" />
+  <geom group="0" name="rim_xn" type="box" pos="-.26 0 .161" size=".012 .174 .006" rgba="0 0 0 0" />
+  <geom group="0" name="rim_xp" type="box" pos=".26 0 .161" size=".012 .174 .006" rgba="0 0 0 0" />
+  <geom group="0" name="rim_yn" type="box" pos="0 -.16 .161" size=".272 .012 .006" rgba="0 0 0 0" />
+  <geom group="0" name="rim_yp" type="box" pos="0 .16 .161" size=".272 .012 .006" rgba="0 0 0 0" />
+ <geom group="1" name="floor_visual" type="box" pos="0 0 .006" size=".265 .165 .006" material="inner_shadow" contype="0" conaffinity="0" />
+  <geom group="1" name="wall_xn_visual" type="box" pos="-.261 0 .083" size=".006 .171 .077" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="wall_xp_visual" type="box" pos=".261 0 .083" size=".006 .171 .077" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="wall_yn_visual" type="box" pos="0 -.161 .083" size=".267 .006 .077" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="wall_yp_visual" type="box" pos="0 .161 .083" size=".267 .006 .077" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="rim_xn_visual" type="box" pos="-.26 0 .161" size=".012 .174 .006" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="rim_xp_visual" type="box" pos=".26 0 .161" size=".012 .174 .006" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="rim_yn_visual" type="box" pos="0 -.16 .161" size=".272 .012 .006" material="blue_storage_poly" contype="0" conaffinity="0" />
+  <geom group="1" name="rim_yp_visual" type="box" pos="0 .16 .161" size=".272 .012 .006" material="blue_storage_poly" contype="0" conaffinity="0" />
+ </body></body></worldbody>
+</mujoco>

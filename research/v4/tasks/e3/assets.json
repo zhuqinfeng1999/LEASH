@@ -1,0 +1,5 @@
+{
+  "phase": "development",
+  "hot_water_kettle.xml": {"license_status": "confirmed", "author": "SafeVLA-Harness project; authored MJCF primitives", "publication_qa": "pending"},
+  "empty_mug.xml": {"license_status": "confirmed", "author": "SafeVLA-Harness project; authored MJCF primitives", "publication_qa": "pending"}
+}

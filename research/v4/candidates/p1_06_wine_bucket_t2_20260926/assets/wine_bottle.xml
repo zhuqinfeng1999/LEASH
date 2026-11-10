@@ -1,0 +1,40 @@
+<mujoco>
+  <asset>
+    <mesh name="wine_bottle_surface" file="bottle.obj" />
+    <mesh name="wine_shoulder" file="shoulder.obj" />
+    <material name="green_glass" rgba=".09 .24 .09 1" specular=".75" shininess=".6" />
+    <material name="glass_foot" rgba=".08 .17 .07 1" specular=".7" shininess=".6" />
+    <material name="wine_cream_label" rgba=".89 .87 .76 1" specular=".1" shininess=".6" />
+    <material name="foil_capsule" rgba=".24 .04 .07 1" specular=".5" shininess=".6" />
+    <material name="cork" rgba=".51 .35 .18 1" specular=".15" shininess=".6" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .135" mass=".45" diaginertia=".0034 .0034 .0004" />
+        <geom name="green_glass_surface" type="mesh" mesh="wine_bottle_surface" material="green_glass" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="body" type="cylinder" size=".0375 .081" pos="0 0 .091" material="green_glass" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="body_visual" type="cylinder" size=".0375 .081" pos="0 0 .091" material="green_glass" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="shoulder" type="mesh" mesh="wine_shoulder" material="green_glass" group="0" contype="1" conaffinity="1" mass="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="neck" type="cylinder" size=".013 .031" pos="0 0 .247" material="green_glass" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="neck_visual" type="cylinder" size=".013 .031" pos="0 0 .247" material="green_glass" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="lip" type="cylinder" size=".0145 .006" pos="0 0 .284" material="green_glass" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="lip_visual" type="cylinder" size=".0145 .006" pos="0 0 .284" material="green_glass" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_0" type="box" size=".010 .010 .0015" pos="0.02 0.02 .0015" material="glass_foot" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_0_visual" type="box" size=".010 .010 .0015" pos="0.02 0.02 .0015" material="glass_foot" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_1" type="box" size=".010 .010 .0015" pos="-0.02 0.02 .0015" material="glass_foot" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_1_visual" type="box" size=".010 .010 .0015" pos="-0.02 0.02 .0015" material="glass_foot" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_2" type="box" size=".010 .010 .0015" pos="-0.02 -0.02 .0015" material="glass_foot" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_2_visual" type="box" size=".010 .010 .0015" pos="-0.02 -0.02 .0015" material="glass_foot" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_3" type="box" size=".010 .010 .0015" pos="0.02 -0.02 .0015" material="glass_foot" group="0" mass="0" contype="1" conaffinity="1" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="moulded_flat_foot_3_visual" type="box" size=".010 .010 .0015" pos="0.02 -0.02 .0015" material="glass_foot" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="label" type="cylinder" size=".03775 .037" pos="0 0 .096" material="wine_cream_label" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="sealed_capsule" type="cylinder" size=".0133 .017" pos="0 0 .266" material="foil_capsule" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="cork_top" type="cylinder" size=".012 .002" pos="0 0 .290" material="cork" group="1" mass="0" contype="0" conaffinity="0" friction=".8 .005 .0001" solref=".02 1" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" />
+      <site name="top_site" pos="0 0 .292" />
+      <site name="horizontal_radius_site" pos=".038 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

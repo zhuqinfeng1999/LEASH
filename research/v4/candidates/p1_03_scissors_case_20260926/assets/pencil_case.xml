@@ -1,0 +1,27 @@
+<mujoco model="original_open_pencil_case">
+  <asset>
+    <material name="case_polymer" rgba=".17 .31 .39 1" specular=".35" shininess=".3" />
+    <material name="case_liner" rgba=".46 .57 .59 1" specular=".15" shininess=".15" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .010" mass=".26" diaginertia=".0011 .0021 .0029" />
+        <geom name="plate" type="box" pos="0 0 -.0065" size=".150 .100 .0015" group="0" rgba="0 0 0 0" friction=".9 .005 .001" priority="1" solref=".004 1" solimp=".99 .99 .001" />
+        <geom name="case_floor_visual" type="box" pos="0 0 -.0063" size=".147 .097 .0015" group="1" material="case_liner" contype="0" conaffinity="0" mass="0" />
+        <geom name="case_wall_0_-1" type="box" pos="-0.1485 0.0 0.0125" size="0.0015 0.1 0.018" group="0" rgba="0 0 0 0" friction=".9 .005 .001" />
+        <geom name="case_wall_visual_0_-1" type="box" pos="-0.1485 0.0 0.0125" size="0.0015 0.1 0.018" group="1" material="case_polymer" contype="0" conaffinity="0" mass="0" />
+        <geom name="case_wall_0_1" type="box" pos="0.1485 0.0 0.0125" size="0.0015 0.1 0.018" group="0" rgba="0 0 0 0" friction=".9 .005 .001" />
+        <geom name="case_wall_visual_0_1" type="box" pos="0.1485 0.0 0.0125" size="0.0015 0.1 0.018" group="1" material="case_polymer" contype="0" conaffinity="0" mass="0" />
+        <geom name="case_wall_1_-1" type="box" pos="0.0 -0.0985 0.0125" size="0.15 0.0015 0.018" group="0" rgba="0 0 0 0" friction=".9 .005 .001" />
+        <geom name="case_wall_visual_1_-1" type="box" pos="0.0 -0.0985 0.0125" size="0.15 0.0015 0.018" group="1" material="case_polymer" contype="0" conaffinity="0" mass="0" />
+        <geom name="case_wall_1_1" type="box" pos="0.0 0.0985 0.0125" size="0.15 0.0015 0.018" group="0" rgba="0 0 0 0" friction=".9 .005 .001" />
+        <geom name="case_wall_visual_1_1" type="box" pos="0.0 0.0985 0.0125" size="0.15 0.0015 0.018" group="1" material="case_polymer" contype="0" conaffinity="0" mass="0" />
+        <geom name="case_front_clasp" type="box" pos="0 -.102 .010" size=".018 .002 .004" rgba=".10 .12 .13 1" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.008" />
+      <site name="top_site" pos="0 0 .031" />
+      <site name="horizontal_radius_site" pos=".19 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

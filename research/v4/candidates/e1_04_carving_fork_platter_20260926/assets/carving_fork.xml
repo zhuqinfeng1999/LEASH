@@ -1,0 +1,26 @@
+<mujoco>
+  <asset>
+    <material name="steel" rgba=".66 .69 .73 1" specular=".95" shininess=".85" />
+    <material name="handle_dark_red" rgba=".35 .048 .026 1" specular=".35" shininess=".28" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="handle" type="box" pos="-.073 0 0" size=".0475 .013 .013" material="handle_dark_red" group="0" mass=".060" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="bolster" type="box" pos="-.023 0 0" size=".003 .014 .014" material="steel" group="0" mass=".015" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="shaft" type="box" pos=".045 0 .002" size=".066 .006 .002" material="steel" group="0" mass=".035" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="shoulder" type="box" pos=".103 0 .002" size=".010 .018 .002" material="steel" group="0" mass=".015" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="prong_-0.015" type="box" pos=".139 -0.015 .002" size=".028 .002 .002" material="steel" group="0" mass=".01" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="prong_tip_-0.015" type="box" pos=".174 -0.015 .002" size=".009 .001 .001" material="steel" group="0" mass=".004" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="prong_0.015" type="box" pos=".139 0.015 .002" size=".028 .002 .002" material="steel" group="0" mass=".01" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="prong_tip_0.015" type="box" pos=".174 0.015 .002" size=".009 .001 .001" material="steel" group="0" mass=".004" friction="1 .005 .0001" solref=".02 1" />
+        <geom name="rivet_-0.1" type="cylinder" pos="-0.1 0 .0133" size=".0025 .0005" material="steel" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="rivet_-0.073" type="cylinder" pos="-0.073 0 .0133" size=".0025 .0005" material="steel" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="rivet_-0.046" type="cylinder" pos="-0.046 0 .0133" size=".0025 .0005" material="steel" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.014" />
+      <site name="top_site" pos="0 0 .014" />
+      <site name="horizontal_radius_site" pos=".19 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

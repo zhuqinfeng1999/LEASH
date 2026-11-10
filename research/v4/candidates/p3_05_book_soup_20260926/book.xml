@@ -1,0 +1,14 @@
+<mujoco model="original_open_book">
+  <asset>
+    <mesh name="authored_open_book_pages" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/book_pages.obj" inertia="shell" />
+    <texture name="authored_open_book_print" type="2d" file="__LEASH_ROOT__/research/v4/candidates/p3_05_book_soup_20260926/book_pages.png" />
+    <material name="authored_open_book_material" texture="authored_open_book_print" texuniform="false" specular=".15" shininess=".12" />
+  </asset>
+  <worldbody>
+    <body name="p3_laptop" pos="-.08 0 .900">
+      <geom name="open_book_cover" type="box" pos="0 0 .004" size=".153 .104 .004" rgba=".15 .20 .31 1" group="0" friction=".9 .01 .001" />
+      <geom name="open_book_pages_contact" type="box" pos="0 0 .009" size=".148 .100 .0012" group="0" rgba="0 0 0 0" friction=".9 .01 .001" />
+      <geom name="open_book_visual" type="mesh" mesh="authored_open_book_pages" material="authored_open_book_material" group="1" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+</mujoco>

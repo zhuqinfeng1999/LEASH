@@ -1,0 +1,64 @@
+<mujoco model="microwave">
+
+    <compiler inertiafromgeom="auto" inertiagrouprange="4 4" angle="radian" />
+    <asset>
+        <mesh file="__LEASH_ROOT__/data/libero/assets/articulated_objects/meshes/microwave/micro.stl" name="micro" scale="0.9 0.9 0.9" />
+        <mesh file="__LEASH_ROOT__/data/libero/assets/articulated_objects/meshes/microwave/microdoor.stl" name="microdoor" scale="0.9 0.9 0.9" />
+        <mesh file="__LEASH_ROOT__/data/libero/assets/articulated_objects/meshes/microwave/microbutton.stl" name="microbutton" scale="0.9 0.9 0.9" />
+        <mesh file="__LEASH_ROOT__/data/libero/assets/articulated_objects/meshes/microwave/microfeet.stl" name="microfeet" scale="0.9 0.9 0.9" />
+        <mesh file="__LEASH_ROOT__/data/libero/assets/articulated_objects/meshes/microwave/microhandle.stl" name="microhandle" scale="0.9 0.9 0.9" />
+        <mesh file="__LEASH_ROOT__/data/libero/assets/articulated_objects/meshes/microwave/microwindow.stl" name="microwindow" scale="0.9 0.9 0.9" />
+
+        <texture name="T_micro_metal" type="cube" height="1" width="1" file="__LEASH_ROOT__/data/libero/assets/articulated_objects/textures/metal1.png" />
+
+        <material name="micro_metal" rgba="1 1 1 1" texture="T_micro_metal" texrepeat="3 3" reflectance="1" shininess="1" texuniform="false" />
+        <material name="micro_black" rgba=".2 .2 .2 1" reflectance="1" shininess="1" />
+        <material name="micro_window" rgba=".4 .4 .4 .25" reflectance="1" shininess="1" />
+        <material name="micro_collision_blue" rgba="0.3 0.3 1.0 0.5" shininess="0" specular="0" />
+    </asset>
+
+    <default>
+        <default class="microwave">A
+            <geom conaffinity="0" contype="0" group="1" material="micro_black" type="mesh" />
+        </default>
+        
+        <default class="micro_collision">
+            <geom conaffinity="1" condim="3" contype="0" group="0" margin="0.001" material="micro_collision_blue" solimp=".8 .9 .01" solref=".02 1" />
+        </default>
+    </default>
+
+    <worldbody>
+    <body>
+        <body name="object">
+            <geom class="microwave" mesh="micro" />
+            <geom class="microwave" material="micro_metal" mesh="microbutton" />
+            <geom class="microwave" material="micro_metal" mesh="microfeet" />
+	    <site rgba="1 0 0 0" type="box" pos="0 0.018 0.36" quat="1 0 0 0" size="0.216 0.1503 0.009" name="top_side" />
+	    <site rgba="1 0 0 0" type="box" pos="0 0.018 0.1728" quat="1 0 0 0" size="0.216 0.1503 0.144" name="heating_region" />
+            <geom class="micro_collision" pos="-0.2844 0.0207 0.1683" size="0.0261 0.17919 0.1683" type="box" mass=".5" />
+            <geom class="micro_collision" pos="0.2124 0.0207 0.1683" size="0.0981 0.17919 0.1683" type="box" mass=".5" />
+            <geom class="micro_collision" pos="-0.0729 0.1719 0.1683" size="0.1863 0.027 0.1683" type="box" mass=".5" />
+            <geom class="micro_collision" pos="-0.072 -0.0063 0.3195" size="0.1863 0.1521 0.0171" type="box" mass=".5" />
+            <geom class="micro_collision" pos="-0.072 -0.0072 0.0216" size="0.1863 0.1512 0.0216" type="box" mass=".5" />
+            <geom class="micro_collision" pos="0.234 -0.1773 0.1683" size="0.0765 0.0216 0.1683" type="box" mass=".5" />
+            <body name="microdoorroot" pos="-0.3105 -0.1584 0.1728">
+                <joint type="hinge" axis="0 0 1" limited="true" name="microjoint" range="-2.094 0" damping="0.5" />
+                <geom class="microwave" mesh="microdoor" pos="0.3105 0.1584 -0.1728" />
+                <geom class="microwave" material="micro_window" mesh="microwindow" pos="0.3105 0.1584 -0.1728" />
+                <geom class="microwave" material="micro_metal" pos="0.4275 -0.0972 0" size="0.018 0.117" type="capsule" />
+                <geom class="microwave" material="micro_metal" euler="1.57 0 0" pos="0.4275 -0.0675 0.117" size="0.018 0.027" type="capsule" />
+                <geom class="microwave" material="micro_metal" euler="1.57 0 0" pos="0.4275 -0.0675 -0.117" size="0.018 0.027" type="capsule" />
+
+                <geom class="micro_collision" pos="0.4275 -0.0972 0" size="0.018 0.117" type="capsule" mass="0.020" />
+                <geom class="micro_collision" euler="1.57 0 0" pos="0.4275 -0.0675 0.117" size="0.018 0.027" type="capsule" mass="0.020" />
+                <geom class="micro_collision" euler="1.57 0 0" pos="0.4275 -0.0675 -0.117" size="0.018 0.027" type="capsule" mass="0.020" />
+                <geom class="micro_collision" pos="0.2331 -0.0234 0" size="0.2331 0.0216 0.1665" type="box" mass="0.20" />
+            </body>
+        </body>
+      <site rgba="0 0 0 0" size="0.009" pos="0 0 -0.108" name="bottom_site" />
+      <site rgba="0 0 0 0" size="0.009" pos="0 0 0.108" name="top_site" />
+      <site rgba="0 0 0 0" size="0.009" pos="0.027 0.027 0" name="horizontal_radius_site" />
+    </body>
+    </worldbody>
+
+</mujoco>

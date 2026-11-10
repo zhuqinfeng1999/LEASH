@@ -1,0 +1,27 @@
+<mujoco>
+  <asset>
+    <material name="case_blue" rgba=".045 .13 .23 1" specular=".35" shininess=".28" />
+    <material name="case_dark" rgba=".03 .04 .055 1" specular=".15" shininess=".2" />
+    <material name="latch_metal" rgba=".60 .62 .65 1" specular=".8" shininess=".7" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="plate" type="box" pos="0 0 0" size=".18 .13 .008" material="case_dark" group="0" mass=".9" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="left_wall" type="box" pos="-.188 0 .038" size=".008 .146 .046" material="case_blue" group="0" mass=".20" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="right_wall" type="box" pos=".188 0 .038" size=".008 .146 .046" material="case_blue" group="0" mass=".20" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="rear_wall" type="box" pos="0 .138 .038" size=".18 .008 .046" material="case_blue" group="0" mass=".20" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="front_wall" type="box" pos="0 -.138 .038" size=".18 .008 .046" material="case_blue" group="0" mass=".20" friction=".8 .005 .0001" solref=".02 1" />
+        <geom name="latch_mount_-0.11" type="box" pos="-0.11 -.148 .051" size=".014 .004 .016" material="case_dark" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="latch_metal_-0.11" type="box" pos="-0.11 -.153 .051" size=".011 .002 .012" material="latch_metal" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="latch_mount_0.11" type="box" pos="0.11 -.148 .051" size=".014 .004 .016" material="case_dark" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="latch_metal_0.11" type="box" pos="0.11 -.153 .051" size=".011 .002 .012" material="latch_metal" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="side_handle_-0.198" type="box" pos="-0.198 0 .052" size=".006 .040 .008" material="case_dark" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="side_handle_0.198" type="box" pos="0.198 0 .052" size=".006 .040 .008" material="case_dark" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.008" />
+      <site name="top_site" pos="0 0 .084" />
+      <site name="horizontal_radius_site" pos=".245 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

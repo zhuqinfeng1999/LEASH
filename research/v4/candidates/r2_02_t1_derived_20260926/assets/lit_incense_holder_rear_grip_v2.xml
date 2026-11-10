@@ -1,0 +1,34 @@
+<mujoco model="r2_02_incense_in_ash_catcher">
+  <asset>
+    <texture name="ash_catcher_wood_tex" type="2d" file="__LEASH_ROOT__/research/v4/candidates/r2_02_t1_derived_20260926/assets/wood.png" />
+    <material name="ash_catcher_wood" texture="ash_catcher_wood_tex" shininess=".10" specular=".12" />
+    <material name="incense_coating" rgba=".27 .18 .12 1" shininess=".02" />
+    <material name="incense_ember" rgba="1 .21 .035 1" emission=".85" />
+    <material name="incense_smoke" rgba=".70 .72 .71 .22" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .013" mass=".115" diaginertia=".00013 .00055 .00057" />
+        <geom name="ash_catcher_base_collision" type="box" pos="0 0 .005" size=".084 .022 .005" material="ash_catcher_wood" friction="1.0 .005 .001" group="0" contype="1" conaffinity="1" mass="0" />
+        <geom name="incense_mount_collision" type="box" pos=".062 0 .021" size=".017 .014 .019" material="ash_catcher_wood" friction="1.3 .01 .002" group="0" contype="1" conaffinity="1" mass="0" />
+        <geom name="incense_stick_collision" type="capsule" fromto=".063 0 .042 -.145 0 .081" size=".0016" material="incense_coating" group="0" contype="1" conaffinity="1" mass="0" />
+        <geom name="ash_catcher_base_visual" type="box" pos="0 0 .005" size=".084 .022 .005" material="ash_catcher_wood" friction="1.0 .005 .001" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="incense_mount_visual" type="box" pos=".062 0 .021" size=".017 .014 .019" material="ash_catcher_wood" friction="1.3 .01 .002" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="incense_stick_visual" type="capsule" fromto=".063 0 .042 -.145 0 .081" size=".0016" material="incense_coating" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="ash_catcher_rim_-1" type="capsule" fromto="-.073 -0.021 .013 .073 -0.021 .013" size=".003" material="ash_catcher_wood" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="ash_catcher_rim_1" type="capsule" fromto="-.073 0.021 .013 .073 0.021 .013" size=".003" material="ash_catcher_wood" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="smoldering_tip_visual" type="sphere" pos="-.145 0 .081" size=".0021" material="incense_ember" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="smoke_visual_0" type="ellipsoid" pos="-0.145 0 0.093" size=".003 .003 .012" material="incense_smoke" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="smoke_visual_1" type="ellipsoid" pos="-0.1416341160607684 0 0.111" size=".003 .003 .012" material="incense_smoke" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="smoke_visual_2" type="ellipsoid" pos="-0.14136281029269726 0 0.129" size=".003 .003 .012" material="incense_smoke" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="smoke_visual_3" type="ellipsoid" pos="-0.14443551996776052 0 0.147" size=".003 .003 .012" material="incense_smoke" group="1" contype="0" conaffinity="0" mass="0" />
+        <geom name="rear_grip_end_collision" type="box" pos="-.062 0 .021" size=".017 .014 .019" material="ash_catcher_wood" friction="1.3 .01 .002" group="0" contype="1" conaffinity="1" mass="0" />
+        <geom name="rear_grip_end_visual" type="box" pos="-.062 0 .021" size=".017 .014 .019" material="ash_catcher_wood" friction="1.3 .01 .002" group="1" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 .160" size=".001" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos=".15 0 0" size=".001" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

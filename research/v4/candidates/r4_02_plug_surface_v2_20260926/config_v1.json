@@ -1,0 +1,56 @@
+{
+  "id": "R4-02",
+  "base_task": "R4",
+  "instruction": "Put the item on the left into the crib.",
+  "item": {
+    "name": "charging_cable_1",
+    "category": "rigid_coiled_charging_cable",
+    "display_name": "手机充电线",
+    "xml": "assets/cable.xml",
+    "slot": "L",
+    "z_offset": 0.018,
+    "grasp_local": [
+      0.075,
+      0,
+      0.011
+    ],
+    "center_offset_z_m": 0.007,
+    "bottom_offset_z_m": 0,
+    "footprint_half_xy_m": [
+      0.098,
+      0.084
+    ],
+    "initial_z_m": 0.918,
+    "mass_kg": 0.042
+  },
+  "crib": {
+    "name": "crib_1",
+    "category": "crib",
+    "xml": "research/v4/tasks/r4/crib.xml",
+    "slot": "R",
+    "fixed": true,
+    "initial_z_m": 0.9,
+    "footprint_half_xy_m": [
+      0.145,
+      0.125
+    ],
+    "inside_half_xy_m": [
+      0.119,
+      0.099
+    ],
+    "inside_bottom_z_m": 0.026,
+    "inside_top_z_m": 0.145
+  },
+  "board": {
+    "name": "cable_board_1",
+    "xml": "assets/board.xml",
+    "slot": "L",
+    "z_offset": 0.009
+  },
+  "layout": {
+    "source_dy_m": 0.08,
+    "crib_dy_m": -0.08
+  },
+  "license_status": "original cable CC0 confirmed; inherited crib visual and existing CC0 wood pending root aggregate clearance",
+  "physics_proxy": "1m flexible charging cable represented as one fixed coiled rigid object. Deformation/tangling not simulated. Plug/cord physical+visual dimensions match; no remote attachment/auto route/uprighting."
+}

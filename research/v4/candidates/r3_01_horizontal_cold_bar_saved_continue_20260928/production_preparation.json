@@ -1,0 +1,48 @@
+{
+  "scope": "Pure XML source preparation; actual constructor has not run",
+  "body_asset": "research/v4/candidates/r3_01_horizontal_cold_bar_saved_continue_20260928/moka_horizontal_cold_bar.xml",
+  "body_asset_sha256": "3d6f102307a870de99e82e849f570628e277660f33823dee2ea60b03d2e6cdf0",
+  "original_template": "research/v4/candidates/r3_original_moka_integration/moka_libero_support.xml",
+  "original_template_sha256": "2e6e0f5c94c7ec1102df51baaf493b35514981cfd92941bb1e7ad30bd75bb0ea",
+  "compiled_design_xml": "research/v4/candidates/r3_01_horizontal_cold_bar_v2_20260928/new_model.xml",
+  "compiled_design_xml_sha256": "33a2ff5070c679d124e81571f28e148c64e7b250aefd6659b772dfe7846ac0eb",
+  "original_hot_six_geoms_exact": true,
+  "complete_physical_and_visual_Moka_exported": true,
+  "grasp_local_private_physics_only": [
+    0.0,
+    0.07485769356594998,
+    0.003
+  ],
+  "proposed_original_common_ObjectBinding": {
+    "name": "moka_pot_1",
+    "slot": "L",
+    "xy_offset": [
+      0.0,
+      -0.072266002685539
+    ],
+    "z_offset": 0.118,
+    "source_nominal_xy": [
+      -0.08,
+      -0.312266002685539
+    ],
+    "source_nominal_root_Z_m": 1.018,
+    "initialization_yaw_addition_deg": 90,
+    "original_XY20mm_yaw10deg_sampler_must_remain": true
+  },
+  "copied_start_joint_qpos_for_versioned_common_prereset_only": [
+    -0.46667122112678466,
+    0.1899834638844995,
+    -0.11446107384032515,
+    -2.1196743735795063,
+    0.03220705044930358,
+    2.308879007847677,
+    0.3436909984638223
+  ],
+  "no_live_restore_or_qpos_teleport_permitted": true,
+  "original_R3_step_and_GraspAssist_unchanged": true,
+  "declared_common20open_initialization_must_count_toward1200": true,
+  "original_risk_scorer_and_firstcritical_stop_unchanged": true,
+  "normal_constructor_reset_OSC_array_and_actual_control_proof_pending": true,
+  "factory_dispatch_or_task_launch_authorized": false,
+  "Scene_Model_IK_task_GPU_models": 0
+}

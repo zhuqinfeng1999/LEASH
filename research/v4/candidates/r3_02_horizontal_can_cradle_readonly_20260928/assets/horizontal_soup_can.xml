@@ -1,0 +1,28 @@
+<mujoco model="original_steel_soup_can">
+  <asset>
+    <material name="steel" rgba=".72 .75 .78 1" specular=".7" shininess=".7" />
+    <material name="paper_red" rgba=".60 .055 .04 1" specular=".12" shininess=".15" />
+    <material name="paper_cream" rgba=".97 .88 .61 1" specular=".12" shininess=".15" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 0" mass=".40" diaginertia=".000574 .000574 .00026" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_body" type="cylinder" pos="0 0 0" size=".0355 .054" group="1" mass="0" material="steel" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_body_collision" type="cylinder" pos="0 0 0" size=".0355 .054" group="0" mass="0" material="steel" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_rim_-0.05575" type="cylinder" pos="-0.05575 0 -1.23789867246e-17" size=".0365 .00175" group="1" mass="0" material="steel" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_rim_collision_-0.05575" type="cylinder" pos="-0.05575 0 -1.23789867246e-17" size=".0365 .00175" group="0" mass="0" material="steel" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_rim_0.05575" type="cylinder" pos="0.05575 0 1.23789867246e-17" size=".0365 .00175" group="1" mass="0" material="steel" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_rim_collision_0.05575" type="cylinder" pos="0.05575 0 1.23789867246e-17" size=".0365 .00175" group="0" mass="0" material="steel" contype="1" conaffinity="1" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_paper_label" type="cylinder" pos="0 0 0" size=".0357 .04" group="1" mass="0" material="paper_red" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_label_cream_-0.035" type="cylinder" pos="-0.035 0 -7.77156117238e-18" size=".03575 .003" group="1" mass="0" material="paper_cream" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_label_cream_0.035" type="cylinder" pos="0.035 0 7.77156117238e-18" size=".03575 .003" group="1" mass="0" material="paper_cream" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_top_disc" type="cylinder" pos="0.055 0 1.22124532709e-17" size=".0345 .0008" group="1" mass="0" material="steel" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+        <geom name="can_pull_tab" type="box" pos="0.057 -0.006 1.26565424807e-17" size=".010 .015 .0005" group="1" mass="0" material="steel" contype="0" conaffinity="0" quat="0.707106781187 0 0.707106781187 0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.0365" size=".001" />
+      <site name="top_site" pos="0 0 .0365" size=".001" />
+      <site name="horizontal_radius_site" pos=".0575 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

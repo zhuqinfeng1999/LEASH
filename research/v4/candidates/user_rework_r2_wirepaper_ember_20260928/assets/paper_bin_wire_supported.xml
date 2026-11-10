@@ -1,0 +1,178 @@
+<mujoco model="v4_paper_bin">
+  <asset>
+    <material name="bin_metal" rgba=".19 .24 .29 .65" specular=".55" shininess=".45" />
+    <material name="waste_paper" rgba=".85 .82 .70 1" />
+    <material name="paper_white" rgba=".94 .93 .86 1" />
+    <material name="paper_cream" rgba=".88 .84 .71 1" />
+    <material name="paper_shadow" rgba=".72 .68 .59 1" />
+    <material name="wire_metal" rgba=".52 .57 .60 1" specular=".35" shininess=".25" />
+    <mesh name="folded_paper_00" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_00.obj" />
+    <mesh name="folded_paper_01" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_01.obj" />
+    <mesh name="folded_paper_02" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_02.obj" />
+    <mesh name="folded_paper_03" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_03.obj" />
+    <mesh name="folded_paper_04" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_04.obj" />
+    <mesh name="folded_paper_05" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_05.obj" />
+    <mesh name="folded_paper_06" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_06.obj" />
+    <mesh name="folded_paper_07" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_07.obj" />
+    <mesh name="folded_paper_08" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_08.obj" />
+    <mesh name="folded_paper_09" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_09.obj" />
+    <mesh name="folded_paper_10" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_10.obj" />
+    <mesh name="folded_paper_11" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_11.obj" />
+    <mesh name="folded_paper_12" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_12.obj" />
+    <mesh name="folded_paper_13" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_13.obj" />
+    <mesh name="folded_paper_14" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_14.obj" />
+    <mesh name="folded_paper_15" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_15.obj" />
+    <mesh name="folded_paper_16" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_16.obj" />
+    <mesh name="folded_paper_17" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_17.obj" />
+    <mesh name="folded_paper_18" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_18.obj" />
+    <mesh name="folded_paper_19" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_19.obj" />
+    <mesh name="folded_paper_20" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_20.obj" />
+    <mesh name="folded_paper_21" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_21.obj" />
+    <mesh name="folded_paper_22" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_22.obj" />
+    <mesh name="folded_paper_23" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_23.obj" />
+    <mesh name="folded_paper_24" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_24.obj" />
+    <mesh name="folded_paper_25" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_25.obj" />
+    <mesh name="folded_paper_26" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_26.obj" />
+    <mesh name="folded_paper_27" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_27.obj" />
+    <mesh name="folded_paper_28" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_28.obj" />
+    <mesh name="folded_paper_29" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_29.obj" />
+    <mesh name="folded_paper_30" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_30.obj" />
+    <mesh name="folded_paper_31" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_31.obj" />
+    <mesh name="folded_paper_32" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_32.obj" />
+    <mesh name="folded_paper_33" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_33.obj" />
+    <mesh name="folded_paper_34" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_34.obj" />
+    <mesh name="folded_paper_35" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_35.obj" />
+    <mesh name="folded_paper_36" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_36.obj" />
+    <mesh name="folded_paper_37" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_37.obj" />
+    <mesh name="folded_paper_38" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_38.obj" />
+    <mesh name="folded_paper_39" file="__LEASH_ROOT__/research/v4/candidates/user_rework_r2_wirepaper_ember_20260928/assets/folded_paper_39.obj" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .047" mass="1.05" diaginertia=".005 .005 .005" />
+        <geom name="bin_base" type="box" pos="0 0 .004" size=".085 .085 .004" material="bin_metal" mass=".65" friction=".8 .005 .001" group="1" contype="0" conaffinity="0" />
+        <geom type="box" pos="0 0 .004" size=".085 .085 .004" friction=".8 .005 .001" name="bin_base_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos="0 .088 .064" size=".09 .004 .060" name="bin_wall_n_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos="0 -.088 .064" size=".09 .004 .060" name="bin_wall_s_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos=".088 0 .064" size=".004 .084 .060" name="bin_wall_e_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom type="box" pos="-.088 0 .064" size=".004 .084 .060" name="bin_wall_w_collision" group="0" rgba="0 0 0 0" contype="1" conaffinity="1" mass="0" />
+        <geom name="wire_x_-1_horizontal_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.01 -0.088 0.084 0.01" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.023875 -0.088 0.084 0.023875" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.03775 -0.088 0.084 0.03775" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.051625000000000004 -0.088 0.084 0.051625000000000004" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.0655 -0.088 0.084 0.0655" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.079375 -0.088 0.084 0.079375" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.09325 -0.088 0.084 0.09325" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.107125 -0.088 0.084 0.107125" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_horizontal_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.121 -0.088 0.084 0.121" size=".0008" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.084 0.01 -0.088 -0.084 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.063 0.01 -0.088 -0.063 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.042 0.01 -0.088 -0.042 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 -0.021000000000000005 0.01 -0.088 -0.021000000000000005 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 0.0 0.01 -0.088 0.0 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 0.021000000000000005 0.01 -0.088 0.021000000000000005 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 0.041999999999999996 0.01 -0.088 0.041999999999999996 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 0.06300000000000001 0.01 -0.088 0.06300000000000001 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_-1_vertical_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.088 0.084 0.01 -0.088 0.084 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.01 0.088 0.084 0.01" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.023875 0.088 0.084 0.023875" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.03775 0.088 0.084 0.03775" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.051625000000000004 0.088 0.084 0.051625000000000004" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.0655 0.088 0.084 0.0655" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.079375 0.088 0.084 0.079375" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.09325 0.088 0.084 0.09325" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.107125 0.088 0.084 0.107125" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_horizontal_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.121 0.088 0.084 0.121" size=".0008" material="wire_metal" />
+        <geom name="wire_x_1_vertical_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.084 0.01 0.088 -0.084 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.063 0.01 0.088 -0.063 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.042 0.01 0.088 -0.042 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 -0.021000000000000005 0.01 0.088 -0.021000000000000005 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 0.0 0.01 0.088 0.0 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 0.021000000000000005 0.01 0.088 0.021000000000000005 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 0.041999999999999996 0.01 0.088 0.041999999999999996 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 0.06300000000000001 0.01 0.088 0.06300000000000001 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_x_1_vertical_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.088 0.084 0.01 0.088 0.084 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.01 0.084 -0.088 0.01" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.023875 0.084 -0.088 0.023875" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.03775 0.084 -0.088 0.03775" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.051625000000000004 0.084 -0.088 0.051625000000000004" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.0655 0.084 -0.088 0.0655" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.079375 0.084 -0.088 0.079375" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.09325 0.084 -0.088 0.09325" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.107125 0.084 -0.088 0.107125" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_horizontal_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.121 0.084 -0.088 0.121" size=".0008" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 -0.088 0.01 -0.084 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.063 -0.088 0.01 -0.063 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.042 -0.088 0.01 -0.042 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.021000000000000005 -0.088 0.01 -0.021000000000000005 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.0 -0.088 0.01 0.0 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.021000000000000005 -0.088 0.01 0.021000000000000005 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.041999999999999996 -0.088 0.01 0.041999999999999996 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.06300000000000001 -0.088 0.01 0.06300000000000001 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_-1_vertical_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.084 -0.088 0.01 0.084 -0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.01 0.084 0.088 0.01" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.023875 0.084 0.088 0.023875" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.03775 0.084 0.088 0.03775" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.051625000000000004 0.084 0.088 0.051625000000000004" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.0655 0.084 0.088 0.0655" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.079375 0.084 0.088 0.079375" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.09325 0.084 0.088 0.09325" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.107125 0.084 0.088 0.107125" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_horizontal_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.121 0.084 0.088 0.121" size=".0008" material="wire_metal" />
+        <geom name="wire_y_1_vertical_0" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.084 0.088 0.01 -0.084 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_1" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.063 0.088 0.01 -0.063 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_2" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.042 0.088 0.01 -0.042 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_3" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="-0.021000000000000005 0.088 0.01 -0.021000000000000005 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_4" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.0 0.088 0.01 0.0 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_5" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.021000000000000005 0.088 0.01 0.021000000000000005 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_6" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.041999999999999996 0.088 0.01 0.041999999999999996 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_7" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.06300000000000001 0.088 0.01 0.06300000000000001 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="wire_y_1_vertical_8" group="1" contype="0" conaffinity="0" mass="0" type="capsule" fromto="0.084 0.088 0.01 0.084 0.088 0.121" size=".00065" material="wire_metal" />
+        <geom name="folded_paper_00_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_00" material="paper_cream" />
+        <geom name="folded_paper_01_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_01" material="paper_white" />
+        <geom name="folded_paper_02_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_02" material="paper_white" />
+        <geom name="folded_paper_03_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_03" material="paper_cream" />
+        <geom name="folded_paper_04_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_04" material="paper_white" />
+        <geom name="folded_paper_05_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_05" material="paper_white" />
+        <geom name="folded_paper_06_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_06" material="paper_cream" />
+        <geom name="folded_paper_07_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_07" material="paper_white" />
+        <geom name="folded_paper_08_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_08" material="paper_white" />
+        <geom name="folded_paper_09_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_09" material="paper_cream" />
+        <geom name="folded_paper_10_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_10" material="paper_white" />
+        <geom name="folded_paper_11_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_11" material="paper_white" />
+        <geom name="folded_paper_12_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_12" material="paper_cream" />
+        <geom name="folded_paper_13_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_13" material="paper_white" />
+        <geom name="folded_paper_14_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_14" material="paper_white" />
+        <geom name="folded_paper_15_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_15" material="paper_cream" />
+        <geom name="folded_paper_16_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_16" material="paper_white" />
+        <geom name="folded_paper_17_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_17" material="paper_white" />
+        <geom name="folded_paper_18_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_18" material="paper_cream" />
+        <geom name="folded_paper_19_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_19" material="paper_white" />
+        <geom name="folded_paper_20_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_20" material="paper_white" />
+        <geom name="folded_paper_21_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_21" material="paper_cream" />
+        <geom name="folded_paper_22_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_22" material="paper_white" />
+        <geom name="folded_paper_23_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_23" material="paper_white" />
+        <geom name="folded_paper_24_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_24" material="paper_cream" />
+        <geom name="folded_paper_25_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_25" material="paper_white" />
+        <geom name="folded_paper_26_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_26" material="paper_white" />
+        <geom name="folded_paper_27_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_27" material="paper_cream" />
+        <geom name="folded_paper_28_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_28" material="paper_white" />
+        <geom name="folded_paper_29_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_29" material="paper_white" />
+        <geom name="folded_paper_30_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_30" material="paper_cream" />
+        <geom name="folded_paper_31_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_31" material="paper_white" />
+        <geom name="folded_paper_32_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_32" material="paper_white" />
+        <geom name="folded_paper_33_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_33" material="paper_cream" />
+        <geom name="folded_paper_34_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_34" material="paper_white" />
+        <geom name="folded_paper_35_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_35" material="paper_white" />
+        <geom name="folded_paper_36_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_36" material="paper_cream" />
+        <geom name="folded_paper_37_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_37" material="paper_white" />
+        <geom name="folded_paper_38_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_38" material="paper_white" />
+        <geom name="folded_paper_39_visual" group="1" contype="0" conaffinity="0" mass="0" type="mesh" mesh="folded_paper_39" material="paper_cream" />
+      </body>
+      <site name="bottom_site" pos="0 0 0" size=".001" />
+      <site name="top_site" pos="0 0 .124" size=".001" />
+      <site name="horizontal_radius_site" pos=".115 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

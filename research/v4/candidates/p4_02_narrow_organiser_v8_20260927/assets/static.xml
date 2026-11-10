@@ -1,0 +1,33 @@
+<mujoco><asset><texture name="towel_weave" type="2d" file="__LEASH_ROOT__/research/v4/candidates/p4_02_straightener_heatmat_20260926/assets/towel_weave.png" />
+    <material name="towel" texture="towel_weave" rgba="1 1 1 1" specular=".05" shininess=".05" texrepeat="2 1" />
+    <material name="vanity" rgba=".30 .18 .105 1" specular=".18" shininess=".2" />
+    <material name="mat" rgba=".17 .25 .30 1" specular=".08" shininess=".1" />
+  <material name="p402_authored_ceramic" rgba=".84 .81 .72 1" specular=".45" shininess=".35" /></asset><worldbody><body name="heat_resistant_left_tray">
+      <geom name="tray_ceramic_collision" type="box" pos="0 0 .006" size=".151 .096 .006" rgba=".28 .30 .33 1" group="1" />
+      <geom name="tray_border_visual" type="box" pos="0 0 .0125" size=".152 .097 .0005" rgba=".67 .70 .73 1" group="1" contype="0" conaffinity="0" mass="0" />
+    <body name="p402_horizontal_ceramic_cradle"><geom name="p402_ceramic_base" type="box" pos="0 0 0.022000000000000013" size=".14 .05 .01" quat="0.9912170506763825 0.0 0.0 0.13224506965635355" material="p402_authored_ceramic" group="1" friction="1 .005 .0001" mass="0" /></body></body>
+    <body name="tabletop_ironing_board">
+      <geom name="vanity_frame" type="box" pos="0 0 .020" size=".28 .12 .015" material="vanity" group="1" />
+      <geom name="vanity_foot_-1" type="box" pos="-0.15 0 .0025" size=".013 .10 .0025" material="vanity" group="1" />
+      <geom name="vanity_foot_1" type="box" pos="0.15 0 .0025" size=".013 .10 .0025" material="vanity" group="1" />
+      <geom name="towel_main" type="box" pos="0.1495834995539683 0.04154376290310783 0.137" size=".115 .04 .002" material="towel" group="1" friction="1 .005 .001" />
+      <geom name="towel_left_fold" type="box" pos="0.1495834995539683 -0.003456237096892169 0.137" size=".115 .005 .002" material="towel" group="1" friction="1 .005 .001" />
+      <geom name="towel_right_fold" type="box" pos="0.1495834995539683 0.08654376290310783 0.137" size=".115 .005 .002" material="towel" group="1" friction="1 .005 .001" />
+      <geom name="silicone_heat_mat" type="box" pos="0.0 -0.065 0.0385" size=".155 .05 .0035" material="mat" group="1" friction="1 .005 .001" />
+      <geom name="mat_rib_visual_0" type="box" pos="-0.14 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_1" type="box" pos="-0.12 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_2" type="box" pos="-0.1 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_3" type="box" pos="-0.08 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_4" type="box" pos="-0.06 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_5" type="box" pos="-0.039999999999999994 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_6" type="box" pos="-0.020000000000000004 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_7" type="box" pos="0.0 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_8" type="box" pos="0.020000000000000018 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_9" type="box" pos="0.03999999999999998 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_10" type="box" pos="0.06 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_11" type="box" pos="0.08000000000000002 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_12" type="box" pos="0.09999999999999998 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_13" type="box" pos="0.12 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="mat_rib_visual_14" type="box" pos="0.14 -0.065 0.0424" size=".001 .043 .0004" rgba=".23 .32 .36 1" group="1" contype="0" conaffinity="0" mass="0" />
+    <geom name="p402_narrow_vanity_organiser" type="box" pos="0.1545834995539683 0.04154376290310783 0.085" size=".110 .050 .050" material="vanity" group="1" friction="1 .005 .001" density="600" /></body>
+  </worldbody></mujoco>

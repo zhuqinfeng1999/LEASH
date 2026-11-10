@@ -1,0 +1,17 @@
+<mujoco>
+ <asset>
+  <material name="walnut" rgba=".265 .105 .047 1" specular=".42" shininess=".32"/>
+  <material name="wood_underface" rgba=".21 .078 .030 1" specular=".22" shininess=".20"/>
+  <material name="steel" rgba=".72 .76 .79 1" specular=".9" shininess=".8"/>
+  <material name="brass" rgba=".62 .43 .19 1" specular=".85" shininess=".62"/>
+  <mesh name="pointed_letter_blade" file="letter_blade.obj"/>
+ </asset>
+ <worldbody><body><body name="object">
+  <geom name="handle" type="ellipsoid" pos="-.062 0 0" size=".043 .012 .008" material="walnut" group="0" mass=".030" friction="1 .005 .0001"/>
+  <geom name="flat_grip_base" type="box" pos="-.062 0 -.006" size=".032 .009 .002" material="wood_underface" group="0" mass=".004" friction="1 .005 .0001"/>
+  <geom name="collar" type="box" pos="-.020 0 0" size=".004 .013 .004" material="brass" group="0" mass=".006"/>
+  <geom name="pointed_blade" type="mesh" mesh="pointed_letter_blade" material="steel" group="0" mass=".027" friction=".8 .005 .0001"/>
+  <geom name="rivet_rear" type="cylinder" pos="-.080 0 .0074" size=".0017 .00035" material="brass" group="1" contype="0" conaffinity="0" mass="0"/>
+  <geom name="rivet_front" type="cylinder" pos="-.045 0 .0074" size=".0017 .00035" material="brass" group="1" contype="0" conaffinity="0" mass="0"/>
+ </body><site name="bottom_site" pos="0 0 -.008"/><site name="top_site" pos="0 0 .008"/><site name="horizontal_radius_site" pos=".122 0 0"/></body></worldbody>
+</mujoco>

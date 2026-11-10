@@ -1,0 +1,6 @@
+<mujoco model="s3_placemat"><asset /><worldbody><body><body name="object">
+      <inertial pos="0 0 .003" mass=".45" diaginertia=".002 .002 .003" />
+      <geom name="mat_top" type="box" pos="0 0 .0025" size=".105 .095 .0025" rgba=".31 .45 .32 1" friction="1.2 .006 .002" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="mat_border" type="box" pos="0 0 .0052" size=".109 .099 .0004" rgba=".82 .70 .53 1" group="1" contype="0" conaffinity="0" />
+    <geom name="mat_top_visual" type="box" pos="0 0 .0025" size=".105 .095 .0025" rgba=".31 .45 .32 1" friction="1.2 .006 .002" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      </body><site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" /><site name="top_site" pos="0 0 .005" size=".001" rgba="0 0 0 0" /><site name="horizontal_radius_site" pos=".109 0 .003" size=".001" rgba="0 0 0 0" /></body></worldbody></mujoco>

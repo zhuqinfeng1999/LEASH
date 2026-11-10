@@ -1,0 +1,29 @@
+<mujoco>
+  <asset>
+    <material name="shell" rgba=".32 .075 .10 1" specular=".5" shininess=".5" />
+    <material name="black" rgba=".025 .03 .035 1" specular=".5" shininess=".5" />
+    <material name="chrome" rgba=".70 .73 .75 1" specular=".5" shininess=".5" />
+    <material name="heated" rgba=".93 .22 .075 1" specular=".5" shininess=".5" emission=".5" />
+    <material name="powered" rgba=".14 .90 .28 1" specular=".5" shininess=".5" emission=".5" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="lower_handle" type="box" pos="-0.0675 0 0" size="0.0475 0.017 0.007" mass="0.08" material="shell" group="0" friction="1 .005 .0001" />
+        <geom name="lower_housing" type="box" pos="0.05 0 0" size="0.07 0.0145 0.007" mass="0.06" material="shell" group="0" friction="1 .005 .0001" />
+        <geom name="lower_front_cap" type="box" pos="0.123 0 0" size="0.003 0.0145 0.007" mass="0.01" material="black" group="0" friction="1 .005 .0001" />
+        <geom name="upper_handle" type="box" pos="-0.06679443498376385 0.0 0.019909950180395257" size="0.0475 0.017 0.006" mass="0.055" material="shell" group="0" friction="1 .005 .0001" quat="0.9975640502598242 0 -0.0697564737441253 0" />
+        <geom name="upper_housing" type="box" pos="0.05451340343707852 0.0 0.036958655048003275" size="0.07 0.0145 0.006" mass="0.05" material="shell" group="0" friction="1 .005 .0001" quat="0.9975640502598242 0 -0.0697564737441253 0" />
+        <geom name="upper_front_cap" type="box" pos="0.12680297245521316 0.0 0.04711829141808804" size="0.003 0.0145 0.006" mass="0.008" material="black" group="0" friction="1 .005 .0001" quat="0.9975640502598242 0 -0.0697564737441253 0" />
+        <geom name="lower_heating_plate" type="box" pos="0.055 0 0.0085" size="0.065 0.015 0.0015" mass="0.02" material="heated" group="0" friction="1 .005 .0001" />
+        <geom name="upper_heating_plate" type="box" pos="0.05555720169427901 0.0 0.029531644532441493" size="0.065 0.015 0.0015" mass="0.02" material="heated" group="0" friction="1 .005 .0001" quat="0.9975640502598242 0 -0.0697564737441253 0" />
+        <geom name="hinge" type="cylinder" pos="-0.105 0 0.012" size="0.018 0.019" mass="0.016" material="black" group="0" friction="1 .005 .0001" quat="0.7071067811865476 0.7071067811865476 0 0" />
+        <geom name="power_indicator" type="box" pos="-0.08504266865307776 0.0 0.024010190167288475" size="0.004 0.003 0.0006" mass="0" material="powered" group="1" friction="1 .005 .0001" quat="0.9975640502598242 0 -0.0697564737441253 0" contype="0" conaffinity="0" />
+        <geom name="silver_hinge_pin" type="cylinder" pos="-0.105 -0.0194 0.012" size="0.006 0.0004" mass="0" material="chrome" group="1" friction="1 .005 .0001" quat="0.7071067811865476 0.7071067811865476 0 0" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -0.007" />
+      <site name="top_site" pos="0 0 0.057" />
+      <site name="horizontal_radius_site" pos="0.127 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

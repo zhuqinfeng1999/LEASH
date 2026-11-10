@@ -1,0 +1,43 @@
+<mujoco model="original_game_controller">
+  <asset>
+    <material name="pad_shell" rgba=".12 .14 .17 1" specular=".4" shininess=".55" />
+    <material name="pad_grip" rgba=".034 .037 .042 1" specular=".1" shininess=".2" />
+    <material name="pad_control" rgba=".015 .017 .020 1" specular=".2" shininess=".3" />
+    <material name="pad_gray" rgba=".49 .51 .54 1" specular=".25" shininess=".5" />
+    <material name="pad_red" rgba=".68 .045 .03 1" specular=".2" shininess=".4" />
+    <material name="pad_green" rgba=".10 .52 .10 1" specular=".2" shininess=".4" />
+    <material name="pad_blue" rgba=".08 .20 .75 1" specular=".2" shininess=".4" />
+    <material name="pad_yellow" rgba=".9 .65 .04 1" specular=".2" shininess=".4" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 .012 -.003" mass=".24" diaginertia=".00028 .00062 .00081" />
+        <geom name="gamepad_central_body_visual" type="box" pos="0 -0.019 0" size="0.06 0.025 0.021" group="1" contype="0" conaffinity="0" mass="0" material="pad_shell" />
+        <geom name="gamepad_left_grip_visual" type="ellipsoid" pos="-0.061 0.029 -0.004" size="0.024 0.039 0.022" group="1" contype="0" conaffinity="0" mass="0" material="pad_grip" />
+        <geom name="gamepad_right_grip_visual" type="ellipsoid" pos="0.061 0.029 -0.004" size="0.024 0.039 0.022" group="1" contype="0" conaffinity="0" mass="0" material="pad_grip" />
+        <geom name="gamepad_central_body_collision" type="box" pos="0 -0.019 0" size="0.06 0.025 0.021" group="0" contype="1" conaffinity="1" mass="0" material="pad_shell" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="gamepad_left_grip_collision" type="ellipsoid" pos="-0.061 0.029 -0.004" size="0.024 0.039 0.022" group="0" contype="1" conaffinity="1" mass="0" material="pad_grip" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="gamepad_right_grip_collision" type="ellipsoid" pos="0.061 0.029 -0.004" size="0.024 0.039 0.022" group="0" contype="1" conaffinity="1" mass="0" material="pad_grip" rgba="0 0 0 0" priority="1" solref=".004 1" solimp=".98 .999 .0001 .5 2" />
+        <geom name="gamepad_stick_base_-1" type="cylinder" pos="-0.032 -0.006 0.024" size="0.011 0.003" group="1" contype="0" conaffinity="0" mass="0" material="pad_gray" />
+        <geom name="gamepad_stick_cap_-1" type="cylinder" pos="-0.032 -0.006 0.029" size="0.0085 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_control" />
+        <geom name="gamepad_stick_base_1" type="cylinder" pos="0.032 -0.006 0.024" size="0.011 0.003" group="1" contype="0" conaffinity="0" mass="0" material="pad_gray" />
+        <geom name="gamepad_stick_cap_1" type="cylinder" pos="0.032 -0.006 0.029" size="0.0085 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_control" />
+        <geom name="gamepad_dpad_horizontal" type="box" pos="-0.047 -0.026 0.025" size="0.011 0.003 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_control" />
+        <geom name="gamepad_dpad_vertical" type="box" pos="-0.047 -0.026 0.025" size="0.003 0.011 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_control" />
+        <geom name="gamepad_face_button_0" type="cylinder" pos="0.05 -0.028 0.025" size="0.0032 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_red" />
+        <geom name="gamepad_face_button_1" type="cylinder" pos="0.042 -0.02 0.025" size="0.0032 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_green" />
+        <geom name="gamepad_face_button_2" type="cylinder" pos="0.034 -0.028 0.025" size="0.0032 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_blue" />
+        <geom name="gamepad_face_button_3" type="cylinder" pos="0.042 -0.036000000000000004 0.025" size="0.0032 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_yellow" />
+        <geom name="gamepad_shoulder_button_-1" type="box" pos="-0.047 -0.044 0.011" size="0.012 0.003 0.007" group="1" contype="0" conaffinity="0" mass="0" material="pad_control" />
+        <geom name="gamepad_shoulder_button_1" type="box" pos="0.047 -0.044 0.011" size="0.012 0.003 0.007" group="1" contype="0" conaffinity="0" mass="0" material="pad_control" />
+        <geom name="gamepad_menu_button" type="box" pos="-0.012 -0.022 0.025" size="0.004 0.0025 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_gray" />
+        <geom name="gamepad_home_button" type="cylinder" pos="0 -0.022 0.025" size="0.004 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_gray" />
+        <geom name="gamepad_option_button" type="box" pos="0.012 -0.022 0.025" size="0.004 0.0025 0.002" group="1" contype="0" conaffinity="0" mass="0" material="pad_gray" />
+      </body>
+      <site name="bottom_site" pos="0 0 -0.026" size=".001" />
+      <site name="top_site" pos="0 0 0.033" size=".001" />
+      <site name="horizontal_radius_site" pos="0.115 0 0" size=".001" />
+    </body>
+  </worldbody>
+</mujoco>

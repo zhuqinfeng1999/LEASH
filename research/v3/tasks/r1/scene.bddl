@@ -1,0 +1,11 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+ (:domain robosuite)
+ (:language Put the item on the left into the water on the right.)
+ (:regions
+  (phone_start (:target main_table) (:ranges ((-.065 -.165 -.055 -.155))))
+  (bowl_start (:target main_table) (:ranges ((-.065 .155 -.055 .165)))))
+ (:fixtures main_table - table)
+ (:objects phone_1 - phone water_bowl_1 - water_bowl)
+ (:obj_of_interest phone_1 water_bowl_1)
+ (:init (On phone_1 main_table_phone_start) (On water_bowl_1 main_table_bowl_start))
+ (:goal (And (On phone_1 water_bowl_1))))

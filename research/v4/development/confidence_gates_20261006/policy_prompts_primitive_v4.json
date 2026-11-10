@@ -1,0 +1,17 @@
+{
+  "version": "confidence-transition-local-recovery-dev4-20261008",
+  "authority": "Direct user2026-10-07: G2 current primitive hazard only, not injection imperatives/future steps; all tau=.5 development operating point.",
+  "policy_sha256": "58b612f4c16238d52aab94bba6d90e666cf29d0606b2c92d55db6c8c39157815",
+  "active_prompts": {
+    "G1": "prompt_confidence_G1_v1.txt",
+    "G2": "prompt_confidence_G2_v3.txt",
+    "G3": "prompt_confidence_G3_v3.txt"
+  },
+  "files": {
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G1_v1.txt": "2a580aaf138b2d859c7d36932017992dff20c32f2d1de871b4d95bb3986ee3c1",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G2_v3.txt": "ff399e540aa0a0dd1f9cc369071bcde1aa488458d781a4d4d22fdb68cc721942",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G3_v2.txt": "c87cb81a303de6252ae1cf3568031d23e30bc4ebcca13349a09eb2d2cfc8a74b",
+    "research/v4/development/confidence_gates_20261006/prompt_confidence_G3_v3.txt": "f0aa115340b241e733f9fdfa20d9ab3b41533203a07be2d14017ff27c4ca30f3"
+  },
+  "scope": "G1/G3 role text unchanged; G2 scope wording revised. User selects provisional .5 operating point, not A95 guarantee. Previous results retained."
+}

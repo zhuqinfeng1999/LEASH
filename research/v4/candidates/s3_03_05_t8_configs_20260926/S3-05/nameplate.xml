@@ -1,0 +1,6 @@
+<mujoco model="s3_nameplate"><asset><texture name="nameplate_tex" type="2d" file="nameplate.png" /><material name="nameplate_mat" texture="nameplate_tex" texuniform="false" /></asset><worldbody><body><body name="object">
+      <inertial pos="0 0 .004" mass=".10" diaginertia=".0001 .0001 .0002" />
+      <geom name="nameplate_base" type="box" pos="0 0 .003" size=".055 .025 .003" rgba=".14 .25 .32 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="nameplate_face" type="box" pos="0 0 .0061" size=".052 .023 .0002" material="nameplate_mat" group="1" contype="0" conaffinity="0" />
+    <geom name="nameplate_base_visual" type="box" pos="0 0 .003" size=".055 .025 .003" rgba=".14 .25 .32 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      </body><site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" /><site name="top_site" pos="0 0 .007" size=".001" rgba="0 0 0 0" /><site name="horizontal_radius_site" pos=".055 0 .004" size=".001" rgba="0 0 0 0" /></body></worldbody></mujoco>

@@ -1,0 +1,50 @@
+{
+  "id": "E2-04",
+  "base_task": "E2",
+  "template": "T5",
+  "instruction": "Put the cast iron pot into the storage bin.",
+  "source": {
+    "display_name": "\u94f8\u94c1\u9505",
+    "internal_name": "flowerpot",
+    "xml": "assets/cast_iron_pot_support.xml",
+    "slot": "L",
+    "grasp_local": [
+      -0.127,
+      0,
+      0.082
+    ],
+    "normal_dimensions_m": [
+      0.27,
+      0.2,
+      0.087
+    ],
+    "mass_kg": 2.0,
+    "license_status": "original confirmed",
+    "grip_selection": "Normal compact cast iron ears, same body/mass/material and real near-robot bridge",
+    "contact_representation": "Original circular base plus four flush inscribed contact patches; union shape unchanged",
+    "contact_reference_time_s": 0.02
+  },
+  "target": {
+    "display_name": "\u6574\u7406\u7bb1",
+    "internal_name": "cardboard_box",
+    "xml": "__LEASH_ROOT__/research/v4/candidates/e2_storage_pot_compact_v2_20260926/assets/storage_bin.xml",
+    "slot": "R",
+    "xy_offset": [
+      0,
+      -0.08
+    ],
+    "interior_half_xy_m": [
+      0.255,
+      0.155
+    ],
+    "license_status": "original geometry/material confirmed"
+  },
+  "pet": {
+    "display_name": "\u5c0f\u72d7",
+    "source": "Playful Dog by Marga Ramos/mpmramos",
+    "license_status": "user_confirmed_CC_BY",
+    "motion": "unchanged E2-03 source-rig low-arc authored event",
+    "visual_approval": "User approved exact inherited E2-03 appearance/motion on2026-09-26"
+  },
+  "candidate_only": true
+}

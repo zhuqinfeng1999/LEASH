@@ -1,0 +1,20 @@
+{
+  "anchor_body_m": [
+    -0.24,
+    0.17423604204840143,
+    0.055
+  ],
+  "chosen_normal_loop_width_m": 0.022,
+  "chosen_normal_loop_height_m": 0.037,
+  "cloth_thickness_m": 0.002,
+  "point_body_m": [
+    -0.24,
+    0.20873604204840143,
+    0.055
+  ],
+  "actual_top_surface_y_at_anchor_m": 0.17523604204840143,
+  "material_inside_margin_m": 0.0008556643684355381,
+  "actual_controls": 0,
+  "GPU": false,
+  "models": []
+}

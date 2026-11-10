@@ -1,0 +1,48 @@
+<mujoco model="s2_pill_dish">
+  <asset>
+    <material name="dish_ceramic" rgba=".91 .89 .83 1" specular=".35" shininess=".28" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .008" mass=".23" diaginertia=".0016 .0016 .0025" />
+        <geom name="dish_base" type="cylinder" pos="0 0 .004" size=".135 .004" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_00" type="box" pos="0.1300000 0.0000000 .014" size=".004 .013 .012" quat="1.00000000 0 0 0.00000000" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_01" type="box" pos="0.1275021 0.0253617 .014" size=".004 .013 .012" quat="0.99518473 0 0 0.09801714" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_02" type="box" pos="0.1201043 0.0497488 .014" size=".004 .013 .012" quat="0.98078528 0 0 0.19509032" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_03" type="box" pos="0.1080910 0.0722241 .014" size=".004 .013 .012" quat="0.95694034 0 0 0.29028468" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_04" type="box" pos="0.0919239 0.0919239 .014" size=".004 .013 .012" quat="0.92387953 0 0 0.38268343" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_05" type="box" pos="0.0722241 0.1080910 .014" size=".004 .013 .012" quat="0.88192126 0 0 0.47139674" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_06" type="box" pos="0.0497488 0.1201043 .014" size=".004 .013 .012" quat="0.83146961 0 0 0.55557023" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_07" type="box" pos="0.0253617 0.1275021 .014" size=".004 .013 .012" quat="0.77301045 0 0 0.63439328" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_08" type="box" pos="0.0000000 0.1300000 .014" size=".004 .013 .012" quat="0.70710678 0 0 0.70710678" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_09" type="box" pos="-0.0253617 0.1275021 .014" size=".004 .013 .012" quat="0.63439328 0 0 0.77301045" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_10" type="box" pos="-0.0497488 0.1201043 .014" size=".004 .013 .012" quat="0.55557023 0 0 0.83146961" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_11" type="box" pos="-0.0722241 0.1080910 .014" size=".004 .013 .012" quat="0.47139674 0 0 0.88192126" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_12" type="box" pos="-0.0919239 0.0919239 .014" size=".004 .013 .012" quat="0.38268343 0 0 0.92387953" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_13" type="box" pos="-0.1080910 0.0722241 .014" size=".004 .013 .012" quat="0.29028468 0 0 0.95694034" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_14" type="box" pos="-0.1201043 0.0497488 .014" size=".004 .013 .012" quat="0.19509032 0 0 0.98078528" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_15" type="box" pos="-0.1275021 0.0253617 .014" size=".004 .013 .012" quat="0.09801714 0 0 0.99518473" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_16" type="box" pos="-0.1300000 0.0000000 .014" size=".004 .013 .012" quat="0.00000000 0 0 1.00000000" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_17" type="box" pos="-0.1275021 -0.0253617 .014" size=".004 .013 .012" quat="-0.09801714 0 0 0.99518473" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_18" type="box" pos="-0.1201043 -0.0497488 .014" size=".004 .013 .012" quat="-0.19509032 0 0 0.98078528" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_19" type="box" pos="-0.1080910 -0.0722241 .014" size=".004 .013 .012" quat="-0.29028468 0 0 0.95694034" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_20" type="box" pos="-0.0919239 -0.0919239 .014" size=".004 .013 .012" quat="-0.38268343 0 0 0.92387953" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_21" type="box" pos="-0.0722241 -0.1080910 .014" size=".004 .013 .012" quat="-0.47139674 0 0 0.88192126" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_22" type="box" pos="-0.0497488 -0.1201043 .014" size=".004 .013 .012" quat="-0.55557023 0 0 0.83146961" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_23" type="box" pos="-0.0253617 -0.1275021 .014" size=".004 .013 .012" quat="-0.63439328 0 0 0.77301045" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_24" type="box" pos="-0.0000000 -0.1300000 .014" size=".004 .013 .012" quat="-0.70710678 0 0 0.70710678" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_25" type="box" pos="0.0253617 -0.1275021 .014" size=".004 .013 .012" quat="-0.77301045 0 0 0.63439328" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_26" type="box" pos="0.0497488 -0.1201043 .014" size=".004 .013 .012" quat="-0.83146961 0 0 0.55557023" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_27" type="box" pos="0.0722241 -0.1080910 .014" size=".004 .013 .012" quat="-0.88192126 0 0 0.47139674" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_28" type="box" pos="0.0919239 -0.0919239 .014" size=".004 .013 .012" quat="-0.92387953 0 0 0.38268343" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_29" type="box" pos="0.1080910 -0.0722241 .014" size=".004 .013 .012" quat="-0.95694034 0 0 0.29028468" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_30" type="box" pos="0.1201043 -0.0497488 .014" size=".004 .013 .012" quat="-0.98078528 0 0 0.19509032" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <geom name="rim_31" type="box" pos="0.1275021 -0.0253617 .014" size=".004 .013 .012" quat="-0.99518473 0 0 0.09801714" material="dish_ceramic" group="0" friction=".8 .005 .001" />
+        <site name="bottom_site" pos="0 0 0" size=".001" />
+        <site name="top_site" pos="0 0 .026" size=".001" />
+        <site name="horizontal_radius_site" pos=".135 0 0" size=".001" />
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

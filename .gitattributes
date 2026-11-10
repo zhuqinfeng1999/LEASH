@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.mp4 binary
+*.mjb binary
+*.npz binary
+*.jpg binary
+*.png binary
+*.msh binary
+*.stl binary
+*.ttf binary

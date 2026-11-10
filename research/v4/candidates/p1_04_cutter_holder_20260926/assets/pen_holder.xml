@@ -1,0 +1,53 @@
+<mujoco model="original_tall_wide_pen_holder">
+  <asset>
+    <material name="holder_coated_steel" rgba=".18 .23 .27 1" specular=".4" shininess=".5" />
+    <material name="holder_inside" rgba=".35 .39 .41 1" specular=".4" shininess=".5" />
+    <material name="holder_rim" rgba=".48 .53 .56 1" specular=".4" shininess=".5" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <inertial pos="0 0 .044" mass=".32" diaginertia=".0015 .002 .0021" />
+        <geom name="plate" type="box" group="0" pos="0 0 -.0065" size=".090 .065 .0015" material="holder_inside" friction="1 .005 .0001" />
+        <geom name="plate_visual" type="box" group="1" pos="0 0 -.0065" size=".090 .065 .0015" material="holder_inside" contype="0" conaffinity="0" mass="0" />
+        <geom name="holder_wall_0_-1" type="box" group="0" pos="-0.0885 0 0.0475" size="0.0015 0.065 0.055" material="holder_coated_steel" friction="1 .005 .0001" />
+        <geom name="holder_wall_0_-1_visual" type="box" group="1" pos="-0.0885 0 0.0475" size="0.0015 0.065 0.055" material="holder_coated_steel" contype="0" conaffinity="0" mass="0" />
+        <geom name="rolled_rim_0_-1" type="capsule" group="1" fromto="-0.0885 -0.062 0.1025 -0.0885 0.062 0.1025" size=".002" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="holder_wall_0_1" type="box" group="0" pos="0.0885 0 0.0475" size="0.0015 0.065 0.055" material="holder_coated_steel" friction="1 .005 .0001" />
+        <geom name="holder_wall_0_1_visual" type="box" group="1" pos="0.0885 0 0.0475" size="0.0015 0.065 0.055" material="holder_coated_steel" contype="0" conaffinity="0" mass="0" />
+        <geom name="rolled_rim_0_1" type="capsule" group="1" fromto="0.0885 -0.062 0.1025 0.0885 0.062 0.1025" size=".002" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="holder_wall_1_-1" type="box" group="0" pos="0 -0.0635 0.0475" size="0.09 0.0015 0.055" material="holder_coated_steel" friction="1 .005 .0001" />
+        <geom name="holder_wall_1_-1_visual" type="box" group="1" pos="0 -0.0635 0.0475" size="0.09 0.0015 0.055" material="holder_coated_steel" contype="0" conaffinity="0" mass="0" />
+        <geom name="rolled_rim_1_-1" type="capsule" group="1" fromto="-0.087 -0.0635 0.1025 0.087 -0.0635 0.1025" size=".002" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="holder_wall_1_1" type="box" group="0" pos="0 0.0635 0.0475" size="0.09 0.0015 0.055" material="holder_coated_steel" friction="1 .005 .0001" />
+        <geom name="holder_wall_1_1_visual" type="box" group="1" pos="0 0.0635 0.0475" size="0.09 0.0015 0.055" material="holder_coated_steel" contype="0" conaffinity="0" mass="0" />
+        <geom name="rolled_rim_1_1" type="capsule" group="1" fromto="-0.087 0.0635 0.1025 0.087 0.0635 0.1025" size=".002" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_0" type="box" group="1" pos="-0.08 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_1" type="box" group="1" pos="-0.064 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_2" type="box" group="1" pos="-0.048 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_3" type="box" group="1" pos="-0.032 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_4" type="box" group="1" pos="-0.016 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_5" type="box" group="1" pos="0.0 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_6" type="box" group="1" pos="0.016 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_7" type="box" group="1" pos="0.032 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_8" type="box" group="1" pos="0.048 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_9" type="box" group="1" pos="0.06400000000000002 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_-1_10" type="box" group="1" pos="0.08 -0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_0" type="box" group="1" pos="-0.08 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_1" type="box" group="1" pos="-0.064 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_2" type="box" group="1" pos="-0.048 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_3" type="box" group="1" pos="-0.032 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_4" type="box" group="1" pos="-0.016 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_5" type="box" group="1" pos="0.0 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_6" type="box" group="1" pos="0.016 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_7" type="box" group="1" pos="0.032 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_8" type="box" group="1" pos="0.048 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_9" type="box" group="1" pos="0.06400000000000002 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+        <geom name="front_rib_1_10" type="box" group="1" pos="0.08 0.0651 .047" size=".00065 .0004 .047" material="holder_rim" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.008" />
+      <site name="top_site" pos="0 0 .106" />
+      <site name="horizontal_radius_site" pos=".11 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,22 @@
+<mujoco model="s3_cookie_box"><asset><texture name="allergen_tex" type="2d" file="allergen_label.png" /><mesh name="label_plane" file="__LEASH_ROOT__/research/v4/candidates/s3_v42_tabletop_20260926/cookie_label_plane.obj" /><material name="allergen" texture="allergen_tex" texuniform="false" /></asset><worldbody><body><body name="object">
+      <inertial pos="0 0 .014" mass=".20" diaginertia=".0006 .0006 .001" />
+      <geom name="box_base" type="box" pos="0 0 .002" size=".085 .065 .002" rgba=".72 .49 .26 1" friction=".9 .005 .001" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="box_wall_x1" type="box" pos=".083 0 .014" size=".002 .065 .012" rgba=".74 .50 .26 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="box_wall_x2" type="box" pos="-.083 0 .014" size=".002 .065 .012" rgba=".74 .50 .26 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="box_wall_y1" type="box" pos="0 .063 .014" size=".081 .002 .012" rgba=".74 .50 .26 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="box_wall_y2" type="box" pos="0 -.063 .014" size=".081 .002 .012" rgba=".74 .50 .26 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="stack_cookie_lower" type="box" pos="0 0 .012" size="0.026 0.011 .008" rgba="0.71 0.49 0.23 1" friction=".95 .005 .001" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="stack_cookie_upper" type="box" pos="0 0 .029" size="0.026 0.011 .008" rgba="0.71 0.49 0.23 1" friction=".95 .005 .001" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="box_hinge" type="box" pos=".087 0 .0255" size=".004 .080 .001" rgba=".71 .46 .23 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="box_folded_lid" type="box" pos=".190 0 .0255" size=".100 .080 .001" rgba=".71 .46 .23 1" group="0" solref=".004 1" solimp=".99 .99 .001" priority="1" />
+      <geom name="allergen_label" type="mesh" mesh="label_plane" material="allergen" group="1" contype="0" conaffinity="0" />
+    <geom name="box_base_visual" type="box" pos="0 0 .002" size=".085 .065 .002" rgba=".72 .49 .26 1" friction=".9 .005 .001" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="box_wall_x1_visual" type="box" pos=".083 0 .014" size=".002 .065 .012" rgba=".74 .50 .26 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="box_wall_x2_visual" type="box" pos="-.083 0 .014" size=".002 .065 .012" rgba=".74 .50 .26 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="box_wall_y1_visual" type="box" pos="0 .063 .014" size=".081 .002 .012" rgba=".74 .50 .26 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="box_wall_y2_visual" type="box" pos="0 -.063 .014" size=".081 .002 .012" rgba=".74 .50 .26 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="stack_cookie_lower_visual" type="box" pos="0 0 .012" size="0.026 0.011 .008" rgba="0.71 0.49 0.23 1" friction=".95 .005 .001" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="stack_cookie_upper_visual" type="box" pos="0 0 .029" size="0.026 0.011 .008" rgba="0.71 0.49 0.23 1" friction=".95 .005 .001" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="box_hinge_visual" type="box" pos=".087 0 .0255" size=".004 .080 .001" rgba=".71 .46 .23 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      <geom name="box_folded_lid_visual" type="box" pos=".190 0 .0255" size=".100 .080 .001" rgba=".71 .46 .23 1" group="1" solref=".004 1" solimp=".99 .99 .001" priority="1" contype="0" conaffinity="0" mass="0" />
+      </body><site name="bottom_site" pos="0 0 0" size=".001" rgba="0 0 0 0" /><site name="top_site" pos=".29 0 .028" size=".001" rgba="0 0 0 0" /><site name="horizontal_radius_site" pos=".29 0 .014" size=".001" rgba="0 0 0 0" /></body></worldbody></mujoco>

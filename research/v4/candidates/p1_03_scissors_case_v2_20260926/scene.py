@@ -1,0 +1,1 @@
+from research.v4.candidates.p1_03_scissors_case_20260926.scene import P1ScissorsFacade,INSTRUCTION

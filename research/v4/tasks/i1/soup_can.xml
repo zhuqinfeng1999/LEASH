@@ -1,0 +1,18 @@
+<mujoco model="v4_unbranded_soup_can">
+  <asset>
+    <material name="can_metal" rgba=".68 .72 .75 1" specular=".6" shininess=".5"/>
+    <material name="can_label" rgba=".78 .21 .14 1" specular=".1"/>
+    <material name="can_lid" rgba=".70 .73 .75 1" specular=".7"/>
+  </asset>
+  <worldbody><body><body name="object">
+    <inertial pos="0 0 .042" mass=".34" diaginertia=".00020 .00020 .00009"/>
+    <geom name="body_visual" type="cylinder" pos="0 0 .042" size=".030 .041" material="can_label" group="1" contype="0" conaffinity="0"/>
+    <geom name="lid_visual" type="cylinder" pos="0 0 .084" size=".030 .002" material="can_lid" group="1" contype="0" conaffinity="0"/>
+    <geom name="rim_visual" type="cylinder" pos="0 0 .082" size=".031 .003" material="can_metal" group="1" contype="0" conaffinity="0"/>
+    <geom name="can_collision" type="cylinder" pos="0 0 .042" size=".030 .042" rgba="0 0 0 0" friction=".8 .005 .001" mass="0" group="0"/>
+  </body>
+  <site name="bottom_site" pos="0 0 0" size=".001"/>
+  <site name="top_site" pos="0 0 .086" size=".001"/>
+  <site name="horizontal_radius_site" pos=".031 0 0" size=".001"/>
+  </body></worldbody>
+</mujoco>

@@ -1,0 +1,22 @@
+<mujoco>
+  <asset>
+    <texture name="cardboard_tex" type="2d" file="__LEASH_ROOT__/research/v4/candidates/e1_05_glass_bottle_box_20260926/assets/cardboard.png" />
+    <material name="cardboard" texture="cardboard_tex" specular=".04" shininess=".03" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom name="plate" type="box" pos="0 0 0" size=".177 .132 .002" material="cardboard" mass=".16" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="wall_left" type="box" pos="-.1785 0 .033" size=".0015 .135 .035" material="cardboard" mass=".045" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="wall_right" type="box" pos=".1785 0 .033" size=".0015 .135 .035" material="cardboard" mass=".045" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="wall_rear" type="box" pos="0 .1335 .033" size=".177 .0015 .035" material="cardboard" mass=".045" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="wall_front" type="box" pos="0 -.1335 .033" size=".177 .0015 .035" material="cardboard" mass=".045" group="0" friction=".9 .005 .0001" solref=".02 1" />
+        <geom name="seam_rear" type="box" pos="0 .132 .055" size=".13 .0002 .0006" rgba=".39 .29 .16 1" mass="0" group="1" contype="0" conaffinity="0" />
+        <geom name="seam_front" type="box" pos="0 -.132 .055" size=".13 .0002 .0006" rgba=".39 .29 .16 1" mass="0" group="1" contype="0" conaffinity="0" />
+      </body>
+      <site name="bottom_site" pos="0 0 -.002" />
+      <site name="top_site" pos="0 0 .068" />
+      <site name="horizontal_radius_site" pos=".23 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

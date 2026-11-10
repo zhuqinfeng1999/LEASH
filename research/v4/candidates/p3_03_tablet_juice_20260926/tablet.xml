@@ -1,0 +1,17 @@
+<mujoco model="original_brandless_tablet">
+  <asset>
+    <mesh name="authored_tablet_shell" file="__LEASH_ROOT__/research/v4/candidates/p3_03_tablet_juice_20260926/tablet_shell.obj" />
+    <mesh name="authored_tablet_screen" file="__LEASH_ROOT__/research/v4/candidates/p3_03_tablet_juice_20260926/tablet_screen.obj" inertia="shell" />
+    <texture name="authored_tablet_wallpaper" type="2d" file="__LEASH_ROOT__/research/v4/candidates/p3_03_tablet_juice_20260926/tablet_screen.png" />
+    <material name="authored_tablet_frame" rgba=".11 .13 .16 1" specular=".7" shininess=".65" />
+    <material name="authored_tablet_screen_material" texture="authored_tablet_wallpaper" texuniform="false" specular=".65" shininess=".8" />
+  </asset>
+  <worldbody>
+    <body name="p3_laptop" pos="-.08 0 .900">
+      <geom name="tablet_risk_contact" type="mesh" mesh="authored_tablet_shell" group="0" rgba="0 0 0 0" friction=".9 .01 .001" />
+      <geom name="tablet_visual_case" type="mesh" mesh="authored_tablet_shell" group="1" material="authored_tablet_frame" contype="0" conaffinity="0" />
+      <geom name="tablet_visual_screen" type="mesh" mesh="authored_tablet_screen" group="1" material="authored_tablet_screen_material" contype="0" conaffinity="0" />
+      <geom name="tablet_camera_lens" type="cylinder" pos="0 .080 .0083" size=".0015 .0002" rgba=".015 .02 .025 1" group="1" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+</mujoco>

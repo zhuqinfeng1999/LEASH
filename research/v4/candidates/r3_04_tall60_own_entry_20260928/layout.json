@@ -1,0 +1,393 @@
+{
+  "source_only": true,
+  "Scene_controls_IK_GPU_models": 0,
+  "actual_source_nominal_xy": [
+    -0.08,
+    -0.15999999999999998
+  ],
+  "actual_old_oven_nominal_xy": [
+    -0.04,
+    0.16999999999999998
+  ],
+  "new_oven_nominal_xy": [
+    0.33875321006107667,
+    0.0
+  ],
+  "new_oven_yaw_rad": -1.5707963267948966,
+  "translation_from_actual_old_oven": [
+    0.37875321006107665,
+    -0.16999999999999998,
+    0.0
+  ],
+  "source_solid_records": [
+    {
+      "geom": "foil_skin_collision",
+      "relative_xy20_yaw10": [
+        -0.08745452260393864,
+        0.08745452260393864,
+        -0.06433647470659822,
+        0.06433647470659822
+      ]
+    },
+    {
+      "geom": "foil_skin_visual",
+      "relative_xy20_yaw10": [
+        -0.08745452260393864,
+        0.08745452260393864,
+        -0.06433647470659822,
+        0.06433647470659822
+      ]
+    },
+    {
+      "geom": "top_overlap",
+      "relative_xy20_yaw10": [
+        -0.08358579097066153,
+        0.08358579097066153,
+        -0.03374009292065287,
+        0.03374009292065287
+      ]
+    },
+    {
+      "geom": "end_fold_left",
+      "relative_xy20_yaw10": [
+        -0.08613789094318931,
+        -0.03696307818333669,
+        -0.055516616973905086,
+        0.055516616973905086
+      ]
+    },
+    {
+      "geom": "end_fold_right",
+      "relative_xy20_yaw10": [
+        0.03696307818333669,
+        0.08613789094318931,
+        -0.055516616973905086,
+        0.055516616973905086
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_0",
+      "relative_xy20_yaw10": [
+        -0.07093421382856956,
+        -0.01919609108555376,
+        -0.033739914047548725,
+        0.06123130332237364
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_1",
+      "relative_xy20_yaw10": [
+        -0.059588529155422884,
+        -0.007850406412407095,
+        -0.031572908106028655,
+        0.05923075299988738
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_2",
+      "relative_xy20_yaw10": [
+        -0.04729882775627656,
+        0.004439294986739237,
+        -0.029572357783542398,
+        0.05706374705836731
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_3",
+      "relative_xy20_yaw10": [
+        -0.035953143083129885,
+        0.0157849796598859,
+        -0.02740535184202233,
+        0.05506319673588106
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_4",
+      "relative_xy20_yaw10": [
+        -0.023663441683983558,
+        0.028074681059032228,
+        -0.026016166420686885,
+        0.053872700556408165
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_5",
+      "relative_xy20_yaw10": [
+        -0.012317757010836901,
+        0.039420365732178886,
+        -0.028183172362206955,
+        0.05567456163703187
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_6",
+      "relative_xy20_yaw10": [
+        -2.8055611690561838e-05,
+        0.05171006713132523,
+        -0.030183722684693215,
+        0.05784156757855194
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_7",
+      "relative_xy20_yaw10": [
+        0.011317629061456103,
+        0.0630557518044719,
+        -0.032350728626213285,
+        0.0598421179010382
+      ]
+    },
+    {
+      "geom": "crinkle_ridge_8",
+      "relative_xy20_yaw10": [
+        0.023607330460602424,
+        0.07534545320361821,
+        -0.03435127894869954,
+        0.06200912384255827
+      ]
+    },
+    {
+      "geom": "own_board_board_collision",
+      "relative_xy20_yaw10": [
+        -0.1439571888213666,
+        0.1439571888213666,
+        -0.12773399731446106,
+        0.12773399731446106
+      ]
+    },
+    {
+      "geom": "own_board_board_visual",
+      "relative_xy20_yaw10": [
+        -0.1439571888213666,
+        0.1439571888213666,
+        -0.12773399731446106,
+        0.12773399731446106
+      ]
+    }
+  ],
+  "source_visual_records": [],
+  "full_actual_device_panel_records": [
+    {
+      "geom": "microwave_1_g3",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        -0.22999993994048673,
+        0.27077098091519214,
+        0.19966530836921062,
+        0.3604933415441333
+      ],
+      "source_xml_pos": "-0.28439999999999999 0.0207 0.1983",
+      "source_xml_size": "0.026100000000000002 0.17918999999999999 0.1983",
+      "source_Y_disjoint5mm": true,
+      "new_world_xy20_yaw10": [
+        0.10875327012058994,
+        0.6095241909762688,
+        0.19966530836921062,
+        0.3604933415441333
+      ]
+    },
+    {
+      "geom": "microwave_1_g4",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        -0.2299999399404867,
+        0.27077098091519214,
+        -0.36049334154413326,
+        -0.057852991935452666
+      ],
+      "source_xml_pos": "0.21240000000000001 0.0207 0.1983",
+      "source_xml_size": "0.098100000000000007 0.17918999999999999 0.1983",
+      "source_Y_disjoint5mm": false,
+      "new_world_xy20_yaw10": [
+        0.10875327012058997,
+        0.6095241909762688,
+        -0.36049334154413326,
+        -0.057852991935452666
+      ]
+    },
+    {
+      "geom": "microwave_1_g5",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        0.0776890357602006,
+        0.2608878697253965,
+        -0.1662158217295368,
+        0.3098007921187168
+      ],
+      "source_xml_pos": "-0.072900000000000006 0.1719 0.1983",
+      "source_xml_size": "0.18629999999999999 0.027 0.1983",
+      "source_Y_disjoint5mm": false,
+      "new_world_xy20_yaw10": [
+        0.41644224582127726,
+        0.5996410797864732,
+        -0.1662158217295368,
+        0.3098007921187168
+      ]
+    },
+    {
+      "geom": "microwave_1_g6",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        -0.22084687236850187,
+        0.20843829468054803,
+        -0.16006939751173715,
+        0.30188171394549507
+      ],
+      "source_xml_pos": "-0.071999999999999995 -0.0063 0.3795",
+      "source_xml_size": "0.1863 0.1521 0.0171",
+      "source_Y_disjoint5mm": false,
+      "new_world_xy20_yaw10": [
+        0.1179063376925748,
+        0.5471915047416247,
+        -0.16006939751173715,
+        0.30188171394549507
+      ]
+    },
+    {
+      "geom": "microwave_1_g7",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        -0.22084687236850187,
+        0.20666564072512603,
+        -0.16006939751173715,
+        0.30188171394549507
+      ],
+      "source_xml_pos": "-0.072 -0.0072 0.0216",
+      "source_xml_size": "0.1863 0.1512 0.0216",
+      "source_Y_disjoint5mm": false,
+      "new_world_xy20_yaw10": [
+        0.1179063376925748,
+        0.5454188507862027,
+        -0.16006939751173715,
+        0.30188171394549507
+      ]
+    },
+    {
+      "geom": "microwave_1_g8",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        -0.2697960212397101,
+        -0.0794168079784189,
+        -0.36032142984824306,
+        -0.10056859856147034
+      ],
+      "source_xml_pos": "0.23400000000000001 -0.17730000000000001 0.1983",
+      "source_xml_size": "0.076499999999999999 0.021600000000000001 0.1983",
+      "source_Y_disjoint5mm": false,
+      "new_world_xy20_yaw10": [
+        0.06895718882136659,
+        0.2593364020826578,
+        -0.36032142984824306,
+        -0.10056859856147034
+      ]
+    },
+    {
+      "geom": "microwave_1_g14",
+      "source_xml_type": "capsule",
+      "relative_xy20_yaw10_front": [
+        -0.6197668313658216,
+        -0.3340807096065528,
+        0.4725000166018165,
+        0.7166890735576692
+      ],
+      "source_xml_pos": "0.42749999999999999 -0.097199999999999995 -2.7755575615628914e-17",
+      "source_xml_size": "0.017999999999999999 0.14408333333333334",
+      "source_Y_disjoint5mm": true,
+      "new_world_xy20_yaw10": [
+        -0.2810136213047449,
+        0.004672500454523887,
+        0.4725000166018165,
+        0.7166890735576692
+      ]
+    },
+    {
+      "geom": "microwave_1_g15",
+      "source_xml_type": "capsule",
+      "relative_xy20_yaw10_front": [
+        -0.6383904086686467,
+        -0.3357862890967672,
+        0.4189458253779127,
+        0.7145959789990858
+      ],
+      "source_xml_pos": "0.42749999999999999 -0.067500000000000004 0.14408333333333331",
+      "source_xml_size": "0.017999999999999999 0.027",
+      "source_Y_disjoint5mm": true,
+      "new_world_xy20_yaw10": [
+        -0.29963719860757004,
+        0.0029669209643094496,
+        0.4189458253779127,
+        0.7145959789990858
+      ]
+    },
+    {
+      "geom": "microwave_1_g16",
+      "source_xml_type": "capsule",
+      "relative_xy20_yaw10_front": [
+        -0.6383904086686467,
+        -0.3357862890967672,
+        0.4189458253779127,
+        0.7145959789990858
+      ],
+      "source_xml_pos": "0.42749999999999999 -0.067500000000000004 -0.14408333333333334",
+      "source_xml_size": "0.017999999999999999 0.027",
+      "source_Y_disjoint5mm": true,
+      "new_world_xy20_yaw10": [
+        -0.29963719860757004,
+        0.0029669209643094496,
+        0.4189458253779127,
+        0.7145959789990858
+      ]
+    },
+    {
+      "geom": "microwave_1_g17",
+      "source_xml_type": "box",
+      "relative_xy20_yaw10_front": [
+        -0.5056703033526776,
+        -0.20112676317111355,
+        0.04604776370147114,
+        0.8324641813213755
+      ],
+      "source_xml_pos": "0.2331 -0.023400000000000001 2.7755575615628914e-17",
+      "source_xml_size": "0.2331 0.021600000000000001 0.19650000000000001",
+      "source_Y_disjoint5mm": true,
+      "new_world_xy20_yaw10": [
+        -0.16691709329160093,
+        0.13762644688996312,
+        0.04604776370147114,
+        0.8324641813213755
+      ]
+    }
+  ],
+  "controlling_actual_geom": "microwave_1_g8",
+  "continuous_yaw_method": "Analytic endpoint + stationary extrema for all box/OBJ vertices and capsule endpoints; exact vertical-cylinder radial bound; independent XY20mm/YAW10deg source/device. Not a pose grid.",
+  "selection": "Minimum positiveX nominal atY0 which guarantees 5mm sufficient XY source/full-device separation for every Y-overlapping panel; no source/board/PARK/grasp change.",
+  "cart_support": "Existing actual tableXY[-.45,.45] plus original real cartX[.45,.85] Y[-.40,.40] top.900 covers chassis-bottom footprint; open door remains hinge-supported. Dynamic cart load not yet measured.",
+  "R305_actual_new_center_correction": [
+    0.23875321006107666,
+    0.0
+  ],
+  "R305_common_position_reused": false,
+  "source_prefix_full_arm_new_device_contact_verified": false,
+  "native_visual_ready": false,
+  "actual_own_foil_and_board_visual_and_solid_union_xy20_yaw10_world": [
+    -0.22395718882136662,
+    0.0639571888213666,
+    -0.28773399731446103,
+    -0.03226600268553892
+  ],
+  "original_r304_prefix_available": true,
+  "instance": "R3-04",
+  "object": "foil-wrapped sandwich",
+  "own_normal_dimensions_mass": [
+    0.125,
+    0.068,
+    0.042,
+    0.16
+  ],
+  "source_board_dimensions": [
+    0.22,
+    0.18,
+    0.018
+  ],
+  "source_only_correspondence_correction": "Root mistaken mug/spoon name corrected to exact registry foil sandwich before any Scene/control; no changed task identity."
+}
