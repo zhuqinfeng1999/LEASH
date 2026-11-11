@@ -2,7 +2,8 @@
   <img src="media/leash.png" width="86" alt="LEASH mascot">
   <h1>LEASH: Stay Safe in Agentic Robotics</h1>
   <p><strong>RoboRisk tests when a robot should refuse, replan, or stop.<br>LEASH checks those decisions before the robot acts.</strong></p>
-  <p><a href="#run-roborisk">Run RoboRisk</a> · <a href="#use-leash">Use LEASH</a> · <a href="#reproduce-the-results">Reproduce the results</a> · <a href="#project-video">Watch the video</a> · <a href="https://zhuqinfeng1999.github.io/LEASH/">Project page</a></p>
+  <p><a href="https://arxiv.org/abs/2611.14115"><strong>Paper</strong></a> · <a href="https://zhuqinfeng1999.github.io/LEASH/"><strong>Project page</strong></a> · <a href="https://youtu.be/xDup5gznvuw"><strong>Full video</strong></a> · <a href="https://x.com/zhuqinfeng1999/status/2120383358652031368"><strong>Discuss on X</strong></a></p>
+  <p><a href="#run-roborisk">Run RoboRisk</a> · <a href="#use-leash">Use LEASH</a> · <a href="#reproduce-the-results">Reproduce the results</a> · <a href="#citation">Cite this work</a></p>
 </div>
 
 ## Abstract
@@ -137,6 +138,20 @@ The script checks that each of the 12 configurations covers all 92 tasks and thr
 
 ## Project video
 
-[![Watch the English project overview](media/overview.jpg)](media/overview.mp4)
+[![Watch the full video on YouTube](media/overview.jpg)](https://youtu.be/xDup5gznvuw)
 
-[Watch or download the English overview · 3 min 19 s](media/overview.mp4)
+[Watch the full uncut video on YouTube](https://youtu.be/xDup5gznvuw) · [Download the English project overview · 3 min 19 s](media/overview.mp4)
+
+## Citation
+
+```bibtex
+@misc{zhu2026leash,
+  title   = {{LEASH}: Stay Safe in Agentic Robotics},
+  author  = {Zhu, Qinfeng and Zhao, Weiguang and Sun, Ke and Guo, Xihao and
+             Jiang, Yunxi and Zhang, Rui and Fan, Lei and Huang, Kaizhu},
+  year    = {2026},
+  eprint  = {2611.14115},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/2611.14115}
+}
+```
