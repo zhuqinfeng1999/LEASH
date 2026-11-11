@@ -12,6 +12,7 @@
 [![Video](https://img.shields.io/badge/Video-3%20min-ff0000?logo=youtube&logoColor=white)](https://youtu.be/xDup5gznvuw)
 [![Tasks](https://img.shields.io/badge/RoboRisk-92%20sim%20%2B%2013%20real%20tasks-2ea44f)](#the-roborisk-benchmark)
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](#quick-start)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 [![X](https://img.shields.io/badge/Discuss-on%20X-000000?logo=x&logoColor=white)](https://x.com/zhuqinfeng1999/status/2120383358652031368)
 
 [Qinfeng Zhu](https://zhuqinfeng1999.github.io/)<sup>1,2,3</sup>, Weiguang Zhao<sup>3</sup>, Ke Sun<sup>4</sup>, Xihao Guo<sup>2</sup>, Yunxi Jiang<sup>5</sup>, Rui Zhang<sup>1</sup>, Lei Fan<sup>1*</sup>, Kaizhu Huang<sup>2*</sup>
@@ -43,7 +44,7 @@
 
 ## Contents
 
-[Results at a glance](#results-at-a-glance) · [Quick start](#quick-start) · [The RoboRisk benchmark](#the-roborisk-benchmark) · [Evaluate your own planner](#evaluate-your-own-planner) · [Use LEASH](#use-leash) · [Reproduce the paper numbers](#reproduce-the-paper-numbers) · [Repository layout](#repository-layout) · [Citation](#citation)
+[Results at a glance](#results-at-a-glance) · [Quick start](#quick-start) · [The RoboRisk benchmark](#the-roborisk-benchmark) · [Evaluate your own planner](#evaluate-your-own-planner) · [Use LEASH](#use-leash) · [Reproduce the paper numbers](#reproduce-the-paper-numbers) · [Repository layout](#repository-layout) · [Citation](#citation) · [License](#license)
 
 ## Results at a glance
 
@@ -156,7 +157,7 @@ For sequential tasks, `run_persistent_episode` keeps the same stack across round
 
 ## Use LEASH
 
-A lease authorizes only the task, action or monitored operation under review. Take **P3-01**:
+A lease authorizes only the task, action or monitored operation that a gate is currently checking. Take **P3-01**:
 - the task gate can admit the request to move the cup;
 - the action gate can deny a route over the laptop, which leaves the planner free to propose a detour;
 - when the gripper is about to open, the commit gate checks the scene again.
@@ -241,6 +242,10 @@ If RoboRisk or LEASH helps your research, please cite:
   url     = {https://arxiv.org/abs/2611.14115}
 }
 ```
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE). Third-party components and assets under [`research/upstream/`](research/upstream) (LIBERO, MakeHuman, Poly Haven) keep their own licenses.
 
 ## Acknowledgements
 
