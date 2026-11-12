@@ -11,6 +11,7 @@
 [![Project page](https://img.shields.io/badge/Project-page-6a48db)](https://zhuqinfeng1999.github.io/LEASH/)
 [![Video](https://img.shields.io/badge/Video-3%20min-ff0000?logo=youtube&logoColor=white)](https://youtu.be/xDup5gznvuw)
 [![Tasks](https://img.shields.io/badge/RoboRisk-92%20sim%20%2B%2013%20real%20tasks-2ea44f)](#the-roborisk-benchmark)
+[![Hugging Face dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-RoboRisk-ffd21e)](https://huggingface.co/datasets/zhuqinfeng/RoboRisk)
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](#quick-start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 [![X](https://img.shields.io/badge/Discuss-on%20X-000000?logo=x&logoColor=white)](https://x.com/zhuqinfeng1999/status/2120383358652031368)
@@ -25,6 +26,7 @@
 
 ## News
 
+- **2026-11-12** · RoboRisk is on the [Hugging Face Hub](https://huggingface.co/datasets/zhuqinfeng/RoboRisk): the task catalog for both settings, a third-person and a wrist image for every task, and the 3,312 simulation outcomes, loadable with `datasets`.
 - **2026-11-11** · The paper is on [arXiv](https://arxiv.org/abs/2611.14115). We released the RoboRisk task catalog, the simulator entry points, LEASH, the Dobot hardware bridge, the 3,312 counted simulation outcomes and the [project video](https://youtu.be/xDup5gznvuw).
 
 ## Highlights
@@ -120,6 +122,15 @@ For example, the prompt for **P3-01** is **“Put the cup on the coaster on the 
 | [`benchmark/trial-settings.csv`](benchmark/trial-settings.csv) | per-trial start conditions (ordinary or object already in the gripper) |
 
 The [task explorer](https://zhuqinfeng1999.github.io/LEASH/#tasks) on the project page pairs every prompt with its wrist and third-person images. The paper lists the full physical experiment inventory.
+
+The same catalog, the task images and the simulation outcomes are also on the [Hugging Face Hub](https://huggingface.co/datasets/zhuqinfeng/RoboRisk):
+
+```python
+from datasets import load_dataset
+
+tasks = load_dataset("zhuqinfeng/RoboRisk", "tasks")  # splits: simulation, physical
+images = load_dataset("zhuqinfeng/RoboRisk", "task_images", split="physical")
+```
 
 <details>
 <summary><strong>Reconstruct the starting state of a particular paper trial</strong></summary>
