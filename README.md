@@ -15,6 +15,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](#quick-start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 [![X](https://img.shields.io/badge/Discuss-on%20X-000000?logo=x&logoColor=white)](https://x.com/zhuqinfeng1999/status/2120383358652031368)
+[![新智元](https://img.shields.io/badge/WeChat-%E6%96%B0%E6%99%BA%E5%85%83-07c160?logo=wechat&logoColor=white)](https://mp.weixin.qq.com/s/CLHBRDxdYLwiefJj3WTzVg)
 
 [Qinfeng Zhu](https://zhuqinfeng1999.github.io/)<sup>1,2,3</sup>, Weiguang Zhao<sup>3</sup>, Ke Sun<sup>4</sup>, Xihao Guo<sup>2</sup>, Yunxi Jiang<sup>5</sup>, Rui Zhang<sup>1</sup>, Lei Fan<sup>1*</sup>, Kaizhu Huang<sup>2*</sup>
 
@@ -26,6 +27,7 @@
 
 ## News
 
+- **2026-11-17** · 新智元 (Xinzhiyuan) covered LEASH in a [Chinese article](https://mp.weixin.qq.com/s/CLHBRDxdYLwiefJj3WTzVg) that includes the real-robot videos.
 - **2026-11-12** · RoboRisk is on the [Hugging Face Hub](https://huggingface.co/datasets/zhuqinfeng/RoboRisk): the task catalog for both settings, a third-person and a wrist image for every task, and the 3,312 simulation outcomes, loadable with `datasets`.
 - **2026-11-11** · The paper is on [arXiv](https://arxiv.org/abs/2611.14115). We released the RoboRisk task catalog, the simulator entry points, LEASH, the Dobot hardware bridge, the 3,312 counted simulation outcomes and the [project video](https://youtu.be/xDup5gznvuw).
 
